@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="ASCII"?>
+<SokobanLanguage:Board xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SokobanLanguage="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore" width="8" height="8">
+  <fields right="//@fields.1" bottom="//@fields.8"/>
+  <fields left="//@fields.0" right="//@fields.2" bottom="//@fields.9" col="1"/>
+  <fields left="//@fields.1" right="//@fields.3" bottom="//@fields.10" col="2"/>
+  <fields left="//@fields.2" right="//@fields.4" bottom="//@fields.11" col="3"/>
+  <fields left="//@fields.3" right="//@fields.5" bottom="//@fields.12" col="4"/>
+  <fields left="//@fields.4" right="//@fields.6" bottom="//@fields.13" col="5"/>
+  <fields left="//@fields.5" right="//@fields.7" bottom="//@fields.14" col="6"/>
+  <fields left="//@fields.6" bottom="//@fields.15" col="7"/>
+  <fields right="//@fields.9" top="//@fields.0" bottom="//@fields.16" row="1"/>
+  <fields left="//@fields.8" right="//@fields.10" top="//@fields.1" bottom="//@fields.17" row="1" col="1"/>
+  <fields left="//@fields.9" right="//@fields.11" top="//@fields.2" bottom="//@fields.18" row="1" col="2"/>
+  <fields left="//@fields.10" right="//@fields.12" top="//@fields.3" bottom="//@fields.19" row="1" col="3"/>
+  <fields left="//@fields.11" right="//@fields.13" top="//@fields.4" bottom="//@fields.20" row="1" col="4"/>
+  <fields left="//@fields.12" right="//@fields.14" top="//@fields.5" bottom="//@fields.21" row="1" col="5"/>
+  <fields left="//@fields.13" right="//@fields.15" top="//@fields.6" bottom="//@fields.22" row="1" col="6"/>
+  <fields left="//@fields.14" top="//@fields.7" bottom="//@fields.23" row="1" col="7"/>
+  <fields right="//@fields.17" top="//@fields.8" bottom="//@fields.24" row="2"/>
+  <fields left="//@fields.16" right="//@fields.18" top="//@fields.9" bottom="//@fields.25" row="2" col="1"/>
+  <fields left="//@fields.17" right="//@fields.19" top="//@fields.10" bottom="//@fields.26" row="2" col="2">
+    <figure xsi:type="SokobanLanguage:Boulder"/>
+  </fields>
+  <fields left="//@fields.18" right="//@fields.20" top="//@fields.11" bottom="//@fields.27" row="2" col="3"/>
+  <fields left="//@fields.19" right="//@fields.21" top="//@fields.12" bottom="//@fields.28" row="2" col="4">
+    <figure xsi:type="SokobanLanguage:Block"/>
+  </fields>
+  <fields left="//@fields.20" right="//@fields.22" top="//@fields.13" bottom="//@fields.29" row="2" col="5"/>
+  <fields left="//@fields.21" right="//@fields.23" top="//@fields.14" bottom="//@fields.30" row="2" col="6"/>
+  <fields left="//@fields.22" top="//@fields.15" bottom="//@fields.31" row="2" col="7"/>
+  <fields right="//@fields.25" top="//@fields.16" bottom="//@fields.32" row="3"/>
+  <fields left="//@fields.24" right="//@fields.26" top="//@fields.17" bottom="//@fields.33" row="3" col="1"/>
+  <fields left="//@fields.25" right="//@fields.27" top="//@fields.18" bottom="//@fields.34" row="3" col="2"/>
+  <fields left="//@fields.26" right="//@fields.28" top="//@fields.19" bottom="//@fields.35" row="3" col="3">
+    <figure xsi:type="SokobanLanguage:Sokoban"/>
+  </fields>
+  <fields left="//@fields.27" right="//@fields.29" top="//@fields.20" bottom="//@fields.36" row="3" col="4">
+    <figure xsi:type="SokobanLanguage:Block"/>
+  </fields>
+  <fields left="//@fields.28" right="//@fields.30" top="//@fields.21" bottom="//@fields.37" row="3" col="5"/>
+  <fields left="//@fields.29" right="//@fields.31" top="//@fields.22" bottom="//@fields.38" row="3" col="6"/>
+  <fields left="//@fields.30" top="//@fields.23" bottom="//@fields.39" row="3" col="7"/>
+  <fields right="//@fields.33" top="//@fields.24" bottom="//@fields.40" row="4"/>
+  <fields left="//@fields.32" right="//@fields.34" top="//@fields.25" bottom="//@fields.41" row="4" col="1"/>
+  <fields left="//@fields.33" right="//@fields.35" top="//@fields.26" bottom="//@fields.42" row="4" col="2"/>
+  <fields left="//@fields.34" right="//@fields.36" top="//@fields.27" bottom="//@fields.43" row="4" col="3"/>
+  <fields left="//@fields.35" right="//@fields.37" top="//@fields.28" bottom="//@fields.44" row="4" col="4"/>
+  <fields left="//@fields.36" right="//@fields.38" top="//@fields.29" bottom="//@fields.45" row="4" col="5"/>
+  <fields left="//@fields.37" right="//@fields.39" top="//@fields.30" bottom="//@fields.46" row="4" col="6"/>
+  <fields left="//@fields.38" top="//@fields.31" bottom="//@fields.47" row="4" col="7"/>
+  <fields right="//@fields.41" top="//@fields.32" bottom="//@fields.48" row="5"/>
+  <fields left="//@fields.40" right="//@fields.42" top="//@fields.33" bottom="//@fields.49" row="5" col="1"/>
+  <fields left="//@fields.41" right="//@fields.43" top="//@fields.34" bottom="//@fields.50" row="5" col="2"/>
+  <fields left="//@fields.42" right="//@fields.44" top="//@fields.35" bottom="//@fields.51" row="5" col="3"/>
+  <fields left="//@fields.43" right="//@fields.45" top="//@fields.36" bottom="//@fields.52" row="5" col="4"/>
+  <fields left="//@fields.44" right="//@fields.46" top="//@fields.37" bottom="//@fields.53" row="5" col="5"/>
+  <fields left="//@fields.45" right="//@fields.47" top="//@fields.38" bottom="//@fields.54" row="5" col="6"/>
+  <fields left="//@fields.46" top="//@fields.39" bottom="//@fields.55" row="5" col="7"/>
+  <fields right="//@fields.49" top="//@fields.40" bottom="//@fields.56" row="6"/>
+  <fields left="//@fields.48" right="//@fields.50" top="//@fields.41" bottom="//@fields.57" row="6" col="1"/>
+  <fields left="//@fields.49" right="//@fields.51" top="//@fields.42" bottom="//@fields.58" row="6" col="2"/>
+  <fields left="//@fields.50" right="//@fields.52" top="//@fields.43" bottom="//@fields.59" row="6" col="3"/>
+  <fields left="//@fields.51" right="//@fields.53" top="//@fields.44" bottom="//@fields.60" row="6" col="4"/>
+  <fields left="//@fields.52" right="//@fields.54" top="//@fields.45" bottom="//@fields.61" row="6" col="5"/>
+  <fields left="//@fields.53" right="//@fields.55" top="//@fields.46" bottom="//@fields.62" row="6" col="6"/>
+  <fields left="//@fields.54" top="//@fields.47" bottom="//@fields.63" row="6" col="7"/>
+  <fields right="//@fields.57" top="//@fields.48" row="7"/>
+  <fields left="//@fields.56" right="//@fields.58" top="//@fields.49" row="7" col="1"/>
+  <fields left="//@fields.57" right="//@fields.59" top="//@fields.50" row="7" col="2"/>
+  <fields left="//@fields.58" right="//@fields.60" top="//@fields.51" row="7" col="3"/>
+  <fields left="//@fields.59" right="//@fields.61" top="//@fields.52" row="7" col="4"/>
+  <fields left="//@fields.60" right="//@fields.62" top="//@fields.53" row="7" col="5"/>
+  <fields left="//@fields.61" right="//@fields.63" top="//@fields.54" row="7" col="6"/>
+  <fields left="//@fields.62" top="//@fields.55" row="7" col="7"/>
+</SokobanLanguage:Board>
