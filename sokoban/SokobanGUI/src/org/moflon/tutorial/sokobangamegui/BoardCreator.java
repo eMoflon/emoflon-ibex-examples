@@ -23,7 +23,7 @@ public class BoardCreator {
 	 *            Specifies the board height or rather the count of fields in the Y
 	 *            direction.
 	 * @return New instance of the "Board" class containing an empty board with the
-	 *         givne size.
+	 *         given size.
 	 */
 	public static Board createEmptyBoard(int width, int height) {
 		/* Setup tutorial factory and create board with given size */
