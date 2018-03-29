@@ -1,9 +1,9 @@
-package org.emoflon.sokobanrules;
+package org.emoflon.tutorial.sokobanrules;
 
 import org.eclipse.emf.common.util.URI;
 import org.emoflon.ibex.gt.democles.runtime.DemoclesGTEngine;
-import org.emoflon.sokobanrules.api.SokobanrulesAPI;
-import org.emoflon.sokobanrules.api.SokobanrulesApp;
+import org.emoflon.tutorial.sokobanrules.api.SokobanrulesAPI;
+import org.emoflon.tutorial.sokobanrules.api.SokobanrulesApp;
 
 import SokobanLanguage.Board;
 
