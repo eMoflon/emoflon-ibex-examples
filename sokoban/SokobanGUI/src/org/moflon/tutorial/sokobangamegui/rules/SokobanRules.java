@@ -24,22 +24,22 @@ public class SokobanRules {
 	}
 
 	public Result validateBoard(Board board) {
-		if (!api.atLeatOneSokoban().hasMatches())
+		if (!api.oneSokoban().hasMatches())
 			return new Result(false, "You need to have at least one Sokoban!");
 
 		if (api.moreThanOneSokoban().hasMatches())
 			return new Result(false, "You cannot have more than one Sokoban!");
 
-		if (!api.atLeastOneBlock().hasMatches())
+		if (!api.oneBlock().hasMatches())
 			return new Result(false, "You must have at least one block!");
 
-		if (!api.atLeastOneEndField().hasMatches())
+		if (!api.oneEndField().hasMatches())
 			return new Result(false, "You must have at least one end field!");
 
-		if (api.atLeastOneBlock().countMatches() != api.atLeastOneEndField().countMatches())
+		if (api.oneBlock().countMatches() != api.oneEndField().countMatches())
 			return new Result(false, "You must have exactly as many end fields as blocks!");
 
-		return api.aTargetFieldIsOccupied()//
+		return api.anOccupiedEndField()//
 				.findAnyMatch()//
 				.map(m -> m.getField())//
 				.map(f -> new Result(false, "Field [" + f.getRow() + ", " + f.getCol() + "] " + //

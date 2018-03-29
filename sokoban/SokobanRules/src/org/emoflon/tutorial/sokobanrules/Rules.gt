@@ -5,17 +5,17 @@ rule moreThanOneSokoban() {
 	otherSokoban:Sokoban
 }
 
-rule atLeatOneSokoban(){
+rule oneSokoban(){
 	sokoban:Sokoban
 }
 
-rule atLeastOneEndField(){
+rule oneEndField(){
 	field:Field {
 		.endPos == true
 	}
 }
 
-rule aTargetFieldIsOccupied(){
+rule anOccupiedEndField(){
 	fig:Figure
 	
 	field:Field {
@@ -24,6 +24,6 @@ rule aTargetFieldIsOccupied(){
 	}
 }
 
-rule atLeastOneBlock(){
+rule oneBlock(){
 	block:Block
 }
