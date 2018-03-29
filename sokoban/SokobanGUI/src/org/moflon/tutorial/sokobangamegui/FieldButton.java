@@ -15,6 +15,10 @@ public class FieldButton extends JButton {
 	/* Reference to the field which is represented by this button */
 	private Field field;
 	
+	public FieldButton() {
+		setOpaque(true);
+	}
+	
 	/**
 	 * @param field Sets the field object.
 	 */

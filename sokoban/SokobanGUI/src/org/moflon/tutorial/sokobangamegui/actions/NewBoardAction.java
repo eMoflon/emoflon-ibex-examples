@@ -62,7 +62,7 @@ public class NewBoardAction implements ActionListener {
 		}
 		
 		// /* Create new board with entered size */
-		// view.getController().newBoard(width, height);	
+		view.getController().newBoard(width, height);	
 	}
 
 }

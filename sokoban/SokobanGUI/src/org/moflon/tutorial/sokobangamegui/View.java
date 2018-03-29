@@ -21,6 +21,7 @@ import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JPopupMenu;
 
@@ -29,12 +30,12 @@ import org.moflon.tutorial.sokobangamegui.actions.ClearBoardAction;
 import org.moflon.tutorial.sokobangamegui.actions.FieldSelectedAction;
 import org.moflon.tutorial.sokobangamegui.actions.LoadSaveAction;
 import org.moflon.tutorial.sokobangamegui.actions.NewBoardAction;
-import org.moflon.tutorial.sokobangamegui.addon.GUIAddOn;
+import org.moflon.tutorial.sokobangamegui.actions.PlayAction;
 
 import SokobanLanguage.Board;
-import SokobanLanguage.SokobanLanguageFactory;
 import SokobanLanguage.Field;
 import SokobanLanguage.Figure;
+import SokobanLanguage.SokobanLanguageFactory;
 
 /**
  * Custom view class (inherited from JFrame). This represents the whole window
@@ -43,7 +44,6 @@ import SokobanLanguage.Figure;
  * @author Matthias Senker (Comments by Lukas Hermanns)
  */
 public class View extends JFrame {
-
 	private static final long serialVersionUID = 1L;
 
 	/* Board and controller references */
@@ -52,6 +52,9 @@ public class View extends JFrame {
 
 	/* JFrame main window and field buttons */
 	private FieldButton[][] buttons;
+	private PlayAction playAction;
+	private JPopupMenu figureMenu;
+
 
 	/* Icon list (implemented as hash-map to quick access via string) */
 	private Map<String, ImageIcon> icons;
@@ -92,6 +95,8 @@ public class View extends JFrame {
 		JMenuItem loadItem = new JMenuItem("Load Model...");
 		JMenuItem saveItem = new JMenuItem("Save Model...");
 
+		JMenuItem playToggle = new JMenuItem();
+
 		/* Create the action listeners */
 		ActionListener loadSaveAction = new LoadSaveAction(this, saveItem, loadItem);
 
@@ -99,19 +104,36 @@ public class View extends JFrame {
 		clearBoardItem.addActionListener(new ClearBoardAction(this));
 		loadItem.addActionListener(loadSaveAction);
 		saveItem.addActionListener(loadSaveAction);
+		
+		playAction = new PlayAction(playToggle, this, controller);
+		playToggle.addActionListener(playAction);
 
 		fileMenu.add(newBoardItem);
 		fileMenu.add(clearBoardItem);
 		fileMenu.addSeparator();
 		fileMenu.add(loadItem);
 		fileMenu.add(saveItem);
+		fileMenu.add(playToggle);
 
 		menuBar.add(fileMenu);
 
 		/* Create popup menu */
-		final JPopupMenu figureMenu = new JPopupMenu();
+		figureMenu = new JPopupMenu();
 
-		JMenuItem noElementItem = new JMenuItem("none");
+		JMenuItem endPos = new JMenuItem("Toggle End");
+		endPos.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				FieldButton fieldButton = (FieldButton) figureMenu.getInvoker();
+				fieldButton.getField().setEndPos(!fieldButton.getField().isEndPos());
+				updateView();
+			}
+		});
+		figureMenu.add(endPos);
+		
+		figureMenu.addSeparator();
+
+		JMenuItem noElementItem = new JMenuItem("None");
 		noElementItem.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -120,7 +142,9 @@ public class View extends JFrame {
 			}
 		});
 		figureMenu.add(noElementItem);
-
+		
+		figureMenu.addSeparator();
+		
 		for (EClass elementClass : controller.getFigureClasses()) {
 			JMenuItem elementClassItem = new JMenuItem(elementClass.getName());
 
@@ -186,42 +210,21 @@ public class View extends JFrame {
 			}
 		});
 
-		tryAddingParser();
-
 		pack();
 		setVisible(true);
-	}
-
-	/**
-	 * if the ParserAddOn class exists, it will be loaded and the parser will be
-	 * added to the menu. otherwise nothing will happen. this method could be easily
-	 * extended, to load whatever AddOn can be found in a certain folder.
-	 */
-	private void tryAddingParser() {
-		try {
-			ClassLoader classLoader = this.getClass().getClassLoader();
-			@SuppressWarnings("unchecked")
-			Class<GUIAddOn> clazz = (Class<GUIAddOn>) classLoader
-					.loadClass("org.moflon.tutorial.boardgamegui.addon.ParserAddOn");
-			GUIAddOn parserAddon = clazz.newInstance();
-			parserAddon.install(this);
-		} catch (Exception e) {
-			// oh well... no parser for us.
-		}
 	}
 
 	/**
 	 * Updates the view by setting up field text, icon, border, color etc.
 	 */
 	public void updateView() {
-		/* Get selected figure from board */
 		Figure selectedFigure = board.getSelectedFigure();
 		Field selectedField = null;
 
 		if (selectedFigure != null) {
 			selectedField = selectedFigure.getField();
 		}
-
+		
 		for (int row = 0; row < board.getHeight(); row++) {
 			for (int col = 0; col < board.getWidth(); col++) {
 				/* Get field button at current row and column in array */
@@ -260,8 +263,17 @@ public class View extends JFrame {
 					button.setBorder(BorderFactory.createLineBorder(Color.GRAY));
 					button.setBackground(null);
 				}
+				
+				/* Check if popup menu should be shown */
+				if(playAction.isPlayModus()) {
+					button.setComponentPopupMenu(null);
+				} else {
+					button.setComponentPopupMenu(figureMenu);
+				}
 			}
 		}
+		
+		this.repaint();
 	}
 
 	/**
@@ -304,4 +316,13 @@ public class View extends JFrame {
 		return controller;
 	}
 
+	public void selectField(Field field) {
+		if(playAction.isPlayModus()) {
+			controller.selectField(field);
+		}
+	}
+
+	public void showMessage(String message) {
+		JOptionPane.showMessageDialog(this, message, "Uh oh...", JOptionPane.INFORMATION_MESSAGE);
+	}
 }

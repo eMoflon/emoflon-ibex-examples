@@ -22,7 +22,12 @@ public class Controller {
 	/* The controller class knows all objects, the view and the board */
 	private View view;
 	private Board board;
+	private SokobanRules sokobanRules;
 
+	public Controller() {
+		sokobanRules = new SokobanRules();
+	}
+	
 	/**
 	 * Main function or rather program entry point.
 	 * @param args Specifies the program arguments (or rather parameters).
@@ -56,7 +61,7 @@ public class Controller {
 	 */
 	public void clearBoard() {
 		try {
-			// TODO:  Clear board
+			board.getFields().forEach(f -> f.setFigure(null));
 			view.updateView();
 		} catch (UnsupportedOperationException e) {
 			/* Ignore internal exceptions */
@@ -88,13 +93,29 @@ public class Controller {
 	public void selectField(Field field) {
 		try {
 			/* Select field object and update view */
-			// TODO:  React to field selection
+			if(board.getSelectedFigure() == null) {
+				board.setSelectedFigure(field.getFigure());
+			} else {
+				moveTo(field);
+			}
+			
 			view.updateView();
 		} catch (UnsupportedOperationException e) {
 			/* Ignore internal exceptions */
 		}
 	}
 	
+	private void moveTo(Field field) {
+		Figure figure = board.getSelectedFigure();
+		Result result = sokobanRules.move(figure, field);
+		
+		if(result.isSuccess()) {
+			board.setSelectedFigure(null);
+		} else {
+			view.showMessage(result.getReason());			
+		}
+	}
+
 	/**
 	 * Gets a list of all figure class types.
 	 * @return List of EClass containing all figure class types.
@@ -182,5 +203,17 @@ public class Controller {
 		return board;
 	}
 
+	public void newBoard(int width, int height) {
+		switchBoard(BoardCreator.createEmptyBoard(width, height));
+	}
 
+	public boolean boardIsValid() {
+		Result result = sokobanRules.validateBoard(board);
+		if(!result.isSuccess()) {
+			view.showMessage(result.getReason());
+			return false;
+		} else {
+			return true;
+		}
+	}
 }

@@ -24,7 +24,6 @@ public class FieldSelectedAction implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		/* Select field with controller */
-		view.getController().selectField(field);
+		view.selectField(field);
 	}
-
 }
