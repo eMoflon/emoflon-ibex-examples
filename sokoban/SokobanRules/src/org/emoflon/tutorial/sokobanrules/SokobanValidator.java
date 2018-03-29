@@ -17,5 +17,4 @@ public class SokobanValidator extends SokobanrulesApp {
 	public SokobanrulesAPI getAPI() {
 		return initAPI(new DemoclesGTEngine());
 	}
-
 }
