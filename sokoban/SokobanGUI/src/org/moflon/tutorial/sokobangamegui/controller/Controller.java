@@ -1,4 +1,4 @@
-package org.moflon.tutorial.sokobangamegui;
+package org.moflon.tutorial.sokobangamegui.controller;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -7,6 +7,9 @@ import java.util.List;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EClassifier;
 import org.moflon.core.utilities.eMoflonEMFUtil;
+import org.moflon.tutorial.sokobangamegui.rules.Result;
+import org.moflon.tutorial.sokobangamegui.rules.SokobanRules;
+import org.moflon.tutorial.sokobangamegui.view.View;
 
 import SokobanLanguage.Board;
 import SokobanLanguage.Field;

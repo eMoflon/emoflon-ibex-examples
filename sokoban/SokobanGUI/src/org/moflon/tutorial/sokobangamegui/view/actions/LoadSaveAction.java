@@ -1,4 +1,4 @@
-package org.moflon.tutorial.sokobangamegui.actions;
+package org.moflon.tutorial.sokobangamegui.view.actions;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -8,7 +8,7 @@ import javax.swing.JFileChooser;
 import javax.swing.filechooser.FileFilter;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
-import org.moflon.tutorial.sokobangamegui.View;
+import org.moflon.tutorial.sokobangamegui.view.View;
 
 /**
  * Custom action listener for load- and save-action.

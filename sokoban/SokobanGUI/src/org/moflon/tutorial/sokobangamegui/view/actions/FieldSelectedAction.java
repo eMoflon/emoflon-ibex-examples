@@ -1,9 +1,9 @@
-package org.moflon.tutorial.sokobangamegui.actions;
+package org.moflon.tutorial.sokobangamegui.view.actions;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import org.moflon.tutorial.sokobangamegui.View;
+import org.moflon.tutorial.sokobangamegui.view.View;
 
 import SokobanLanguage.Field;
 

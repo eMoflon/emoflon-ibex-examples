@@ -1,4 +1,4 @@
-package org.moflon.tutorial.sokobangamegui;
+package org.moflon.tutorial.sokobangamegui.controller;
 
 import SokobanLanguage.Board;
 import SokobanLanguage.Field;

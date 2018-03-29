@@ -1,5 +1,6 @@
-package org.moflon.tutorial.sokobangamegui;
+package org.moflon.tutorial.sokobangamegui.view;
 
+import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.GridLayout;
@@ -21,16 +22,19 @@ import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JPopupMenu;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+import javax.swing.border.BevelBorder;
 
 import org.eclipse.emf.ecore.EClass;
-import org.moflon.tutorial.sokobangamegui.actions.ClearBoardAction;
-import org.moflon.tutorial.sokobangamegui.actions.FieldSelectedAction;
-import org.moflon.tutorial.sokobangamegui.actions.LoadSaveAction;
-import org.moflon.tutorial.sokobangamegui.actions.NewBoardAction;
-import org.moflon.tutorial.sokobangamegui.actions.PlayAction;
+import org.moflon.tutorial.sokobangamegui.controller.Controller;
+import org.moflon.tutorial.sokobangamegui.view.actions.ClearBoardAction;
+import org.moflon.tutorial.sokobangamegui.view.actions.FieldSelectedAction;
+import org.moflon.tutorial.sokobangamegui.view.actions.LoadSaveAction;
+import org.moflon.tutorial.sokobangamegui.view.actions.NewBoardAction;
+import org.moflon.tutorial.sokobangamegui.view.actions.PlayAction;
 
 import SokobanLanguage.Board;
 import SokobanLanguage.Field;
@@ -54,10 +58,12 @@ public class View extends JFrame {
 	private FieldButton[][] buttons;
 	private PlayAction playAction;
 	private JPopupMenu figureMenu;
-
+	private JTextArea statusBar;
+	private JScrollPane statusPanel;
 
 	/* Icon list (implemented as hash-map to quick access via string) */
 	private Map<String, ImageIcon> icons;
+
 
 	/**
 	 * The view constructor
@@ -210,10 +216,24 @@ public class View extends JFrame {
 			}
 		});
 
+		/* Status bar */
+		statusBar = new JTextArea(5, 30);
+		statusPanel = new JScrollPane(statusBar);
+		statusPanel.setBorder(new BevelBorder(BevelBorder.LOWERED));
+		add(statusPanel, BorderLayout.SOUTH);
+		statusPanel.setPreferredSize(new Dimension(getWidth(), 22));
+		
+		updateStatus("Welcome to Sokoban!");
+		
 		pack();
 		setVisible(true);
 	}
 
+	public void updateStatus(String status) {
+		statusBar.append(status);	
+		statusBar.setCaretPosition(statusBar.getDocument().getLength());
+	}
+	
 	/**
 	 * Updates the view by setting up field text, icon, border, color etc.
 	 */
@@ -323,6 +343,6 @@ public class View extends JFrame {
 	}
 
 	public void showMessage(String message) {
-		JOptionPane.showMessageDialog(this, message, "Uh oh...", JOptionPane.INFORMATION_MESSAGE);
+		updateStatus("\n" + message);
 	}
 }

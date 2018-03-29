@@ -1,4 +1,4 @@
-package org.moflon.tutorial.sokobangamegui;
+package org.moflon.tutorial.sokobangamegui.rules;
 
 public class Result {
 	private boolean success;

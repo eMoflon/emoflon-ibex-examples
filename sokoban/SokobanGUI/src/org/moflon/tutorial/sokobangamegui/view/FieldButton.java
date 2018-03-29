@@ -1,4 +1,4 @@
-package org.moflon.tutorial.sokobangamegui;
+package org.moflon.tutorial.sokobangamegui.view;
 
 import javax.swing.JButton;
 

@@ -1,12 +1,12 @@
-package org.moflon.tutorial.sokobangamegui.actions;
+package org.moflon.tutorial.sokobangamegui.view.actions;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.JMenuItem;
 
-import org.moflon.tutorial.sokobangamegui.Controller;
-import org.moflon.tutorial.sokobangamegui.View;
+import org.moflon.tutorial.sokobangamegui.controller.Controller;
+import org.moflon.tutorial.sokobangamegui.view.View;
 
 public class PlayAction implements ActionListener {
 	public static final String PLAY  = "Play Game!";
