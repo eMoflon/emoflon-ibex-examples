@@ -1,0 +1,77 @@
+import "platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore"
+
+rule moreThanOneSokoban() {
+	sokoban:Sokoban 
+	otherSokoban:Sokoban
+}
+
+rule atLeatOneSokoban(){
+	sokoban:Sokoban
+}
+
+rule atLeastOneEndField(){
+	field:Field{
+		.endPos == true
+	}
+}
+
+rule aTargetFieldIsOccupied(){
+	fig:Figure
+	
+	field:Field {
+		.endPos == true
+		-figure->fig
+	}
+}
+
+rule atLeastOneBlock(){
+	block:Block
+}
+
+rule blockIsNotOnFirstRow(){
+	block:Block {
+		-field->field
+	}
+	
+	field:Field {
+		-top->otherField
+	}
+	
+	otherField:Field
+}
+
+rule blockIsNotOnLastRow(){
+	block:Block {
+		-field->field
+	}
+	
+	field:Field {
+		-bottom->otherField
+	}
+	
+	otherField:Field
+}
+
+rule blockIsNotOnFirstCol(){
+	block:Block {
+		-field->field
+	}
+	
+	field:Field {
+		-left->otherField
+	}
+	
+	otherField:Field
+}
+
+rule blockIsNotOnLastCol(){
+	block:Block {
+		-field->field
+	}
+	
+	field:Field {
+		-right->otherField
+	}
+	
+	otherField:Field
+}
