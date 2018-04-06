@@ -1,29 +1,30 @@
 import "platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore"
 
-rule moreThanOneSokoban() {
-	sokoban:Sokoban 
-	otherSokoban:Sokoban
+pattern moreThanOneSokoban() {
+	sokoban: Sokoban
+
+	otherSokoban: Sokoban
 }
 
-rule oneSokoban(){
-	sokoban:Sokoban
+pattern oneSokoban() {
+	sokoban: Sokoban
 }
 
-rule oneEndField(){
-	field:Field {
+pattern oneEndField() {
+	field: Field {
 		.endPos == true
 	}
 }
 
-rule anOccupiedEndField(){
-	fig:Figure
-	
-	field:Field {
+pattern anOccupiedEndField() {
+	fig: Figure
+
+	field: Field {
 		.endPos == true
-		-figure->fig
+		-figure -> fig
 	}
 }
 
-rule oneBlock(){
-	block:Block
+pattern oneBlock() {
+	block: Block
 }
