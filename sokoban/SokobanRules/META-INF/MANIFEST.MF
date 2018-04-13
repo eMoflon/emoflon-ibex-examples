@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Bundle-SymbolicName: SokobanRules; singleton:=true
-Export-Package: org.emoflon.tutorial.sokobanrules,
- org.emoflon.tutorial.sokobanrules.api,
- org.emoflon.tutorial.sokobanrules.api.matches,
- org.emoflon.tutorial.sokobanrules.api.rules
+Export-Package: SokobanRules,
+ SokobanRules.api,
+ SokobanRules.api.matches,
+ SokobanRules.api.rules
 Bundle-Name: SokobanRules
 Bundle-Version: 1.0.0.qualifier
 Require-Bundle: org.emoflon.ibex.common,
