@@ -1,0 +1,79 @@
+import "platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore"
+
+abstract rule moveSokoban {
+	from: Field
+
+	to: Field
+
+	fig: Sokoban {
+		-- -field -> from
+		++ -field -> to
+	}
+}
+
+abstract rule pushBlock {
+	to: Field
+
+	next: Field
+
+	block: Block {
+		-- -field -> to
+		++ -field -> next
+	}
+}
+
+rule moveSokobanUp
+refines moveSokoban {
+	from: Field {
+		-top -> to
+	}
+}
+
+rule pushBlockUp
+refines pushBlock, moveSokobanUp {
+	to: Field {
+		-top -> next
+	}
+}
+
+rule moveSokobanDown
+refines moveSokoban {
+	from: Field {
+		-bottom -> to
+	}
+}
+
+rule pushBlockDown
+refines pushBlock, moveSokobanDown {
+	to: Field {
+		-bottom -> next
+	}
+}
+
+rule moveSokobanLeft
+refines moveSokoban {
+	from: Field {
+		-left -> to
+	}
+}
+
+rule pushBlockLeft
+refines pushBlock, moveSokobanLeft {
+	to: Field {
+		-left -> next
+	}
+}
+
+rule moveSokobanRight
+refines moveSokoban {
+	from: Field {
+		-right -> to
+	}
+}
+
+rule pushBlockRight
+refines pushBlock, moveSokobanRight {
+	to: Field {
+		-right -> next
+	}
+}
