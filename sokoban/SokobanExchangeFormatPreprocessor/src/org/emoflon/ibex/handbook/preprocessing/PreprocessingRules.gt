@@ -1,0 +1,45 @@
+import "platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore"
+import "platform:/resource/SokobanExchangeFormatPreprocessor/model/SokobanExchangeFormatPreprocessor.ecore"
+
+rule completeFirstRow {
+	l:Row {
+		-next->r	
+		-firstEntry->le
+	}
+	
+	r:Row {
+		-firstEntry->re
+	}
+	
+	le:Entry
+	re:Entry
+	
+	++ link:NextLink {
+		++ -src->le
+		++ -trg->re
+	}
+}
+
+rule completeAllOtherRows {
+	tl:Entry {
+		-next->bl
+	}
+	
+	
+	tr:Entry {
+		-next->br
+	}
+	
+	link:NextLink {
+		-src->tl
+		-trg->tr
+	}
+	
+	bl:Entry
+	br:Entry	
+	
+	++ newLink:NextLink {
+		++ -src->bl
+		++ -trg->br
+	}
+}
