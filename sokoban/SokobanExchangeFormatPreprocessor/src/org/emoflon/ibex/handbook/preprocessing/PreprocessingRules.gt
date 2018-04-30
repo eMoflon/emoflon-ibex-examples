@@ -2,44 +2,45 @@ import "platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchange
 import "platform:/resource/SokobanExchangeFormatPreprocessor/model/SokobanExchangeFormatPreprocessor.ecore"
 
 rule completeFirstRow {
-	l:Row {
-		-next->r	
-		-firstEntry->le
+	l: Row {
+		-next -> r
+		-firstEntry -> le
 	}
-	
-	r:Row {
-		-firstEntry->re
+
+	r: Row {
+		-firstEntry -> re
 	}
-	
-	le:Entry
-	re:Entry
-	
-	++ link:NextLink {
-		++ -src->le
-		++ -trg->re
+
+	le: Entry
+
+	re: Entry
+
+	++ link: NextLink {
+		++ -src -> le
+		++ -trg -> re
 	}
 }
 
 rule completeAllOtherRows {
-	tl:Entry {
-		-next->bl
+	tl: Entry {
+		-next -> bl
 	}
-	
-	
-	tr:Entry {
-		-next->br
+
+	tr: Entry {
+		-next -> br
 	}
-	
-	link:NextLink {
-		-src->tl
-		-trg->tr
+
+	link: NextLink {
+		-src -> tl
+		-trg -> tr
 	}
-	
-	bl:Entry
-	br:Entry	
-	
-	++ newLink:NextLink {
-		++ -src->bl
-		++ -trg->br
+
+	bl: Entry
+
+	br: Entry
+
+	++ newLink: NextLink {
+		++ -src -> bl
+		++ -trg -> br
 	}
 }

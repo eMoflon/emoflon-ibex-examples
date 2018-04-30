@@ -28,5 +28,6 @@ Require-Bundle: org.eclipse.xtext,
 Bundle-ManifestVersion: 2
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
-Bundle-Vendor: My Company
+Bundle-Vendor: eMoflon::IBeX Developers
 Import-Package: org.apache.log4j
+Automatic-Module-Name: sokobanExchangeFormat

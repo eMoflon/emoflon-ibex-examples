@@ -1,9 +1,6 @@
 Manifest-Version: 1.0
 Bundle-SymbolicName: SokobanExchangeFormatPreprocessor;singleton:=true
-Export-Package: api,
- api.matches,
- api.rules,
- SokobanExchangeFormatPreprocessor,
+Export-Package: SokobanExchangeFormatPreprocessor,
  SokobanExchangeFormatPreprocessor.impl,
  SokobanExchangeFormatPreprocessor.util,
  org.emoflon.ibex.handbook.preprocessing.api,
@@ -21,3 +18,5 @@ Bundle-ManifestVersion: 2
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-Vendor: 
+ eMoflon::IBeX Developers
+Automatic-Module-Name: SokobanExchangeFormatPreprocessor
