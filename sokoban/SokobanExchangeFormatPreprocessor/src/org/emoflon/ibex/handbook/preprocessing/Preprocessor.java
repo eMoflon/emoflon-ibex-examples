@@ -3,7 +3,6 @@ package org.emoflon.ibex.handbook.preprocessing;
 import java.io.File;
 import java.util.Optional;
 
-import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.emoflon.ibex.handbook.preprocessing.api.PreprocessingAPI;
 import org.emoflon.ibex.handbook.preprocessing.api.PreprocessingDemoclesApp;
@@ -24,11 +23,5 @@ public class Preprocessor extends PreprocessingDemoclesApp {
 		Optional<InitMatch> o = api.init().apply();
 		api.updateMatches();
 		System.out.println("Could init be applied? " + o.isPresent());
-	}
-	
-	public static void main(String[] args) {
-		PreprocessingDemoclesApp p = new PreprocessingDemoclesApp();
-		p.loadModel(URI.createURI("./instances/src.xmi", true));
-		System.out.println("There should be one match: " + p.initAPI().init().countMatches());
 	}
 }
