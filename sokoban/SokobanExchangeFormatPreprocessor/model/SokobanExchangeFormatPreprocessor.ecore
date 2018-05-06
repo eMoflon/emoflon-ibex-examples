@@ -9,4 +9,10 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="src" lowerBound="1" eType="ecore:EClass ../../sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Entry"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="trg" lowerBound="1" eType="ecore:EClass ../../sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Entry"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExtendedBoard">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="links" upperBound="-1"
+        eType="#//NextLink" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="board" eType="ecore:EClass ../../sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Board"
+        containment="true"/>
+  </eClassifiers>
 </ecore:EPackage>

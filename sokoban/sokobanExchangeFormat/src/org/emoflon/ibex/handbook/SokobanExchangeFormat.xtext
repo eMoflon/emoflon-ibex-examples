@@ -5,13 +5,15 @@ import "http://www.eclipse.org/emf/2002/Ecore" as ecore
 generate sokobanExchangeFormat "http://www.emoflon.org/ibex/handbook/SokobanExchangeFormat"
 
 
-// Wall...................: # 
-// Pusher.................: @ 
-// Pusher on goal square..: + 
-// Box....................: $ 
-// Box on goal square.....: * 
-// Goal square............: .  
-// Floor..................:   
+// Block.................: $ 
+// Boulder...............: # 
+// Sokoban...............: @ 
+
+// Block on end field....: * 
+// Sokoban on end field..: +
+
+// End field.............: . 
+// Field.................:   
 
 Board :
 	firstRow=Row
@@ -21,17 +23,34 @@ Row :
 	firstEntry=Entry (NEWLINE next=Row)?
 ;
 
-Entry:
-	symbol=(
+Entry: 
+	End | Normal
+;
+
+End: {End}
+	(END_FIELD | symbol=EndSymbol) (next=Entry)? 
+;
+
+Normal: {Normal}
+	(FIELD | symbol=NormalSymbol) (next=Entry)?
+;
+
+EndSymbol:
+	value=(
+		SOKOBAN_ON_END_FIELD |
+		BOX_ON_END_FIELD
+	)
+;
+
+NormalSymbol:
+	value=(
 		BOULDER | 
 		SOKOBAN | 
-		SOKOBAN_ON_END_FIELD |
-		BOX |
-		BOX_ON_END_FIELD |
-		END_FIELD |
-		FIELD
-	) (next=Entry)?
+		BOX
+	)
 ;
+
+Symbol : EndSymbol | NormalSymbol ;
 
 terminal BOULDER: '#';
 terminal SOKOBAN: '@';

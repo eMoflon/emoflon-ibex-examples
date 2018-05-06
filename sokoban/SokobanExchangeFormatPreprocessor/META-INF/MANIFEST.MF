@@ -3,6 +3,7 @@ Bundle-SymbolicName: SokobanExchangeFormatPreprocessor;singleton:=true
 Export-Package: SokobanExchangeFormatPreprocessor,
  SokobanExchangeFormatPreprocessor.impl,
  SokobanExchangeFormatPreprocessor.util,
+ org.emoflon.ibex.handbook.preprocessing,
  org.emoflon.ibex.handbook.preprocessing.api,
  org.emoflon.ibex.handbook.preprocessing.api.matches,
  org.emoflon.ibex.handbook.preprocessing.api.rules

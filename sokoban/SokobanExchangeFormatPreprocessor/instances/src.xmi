@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sokobanExchangeFormat:Board xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sokobanExchangeFormat="http://www.emoflon.org/ibex/handbook/SokobanExchangeFormat">
+  <firstRow>
+    <firstEntry xsi:type="sokobanExchangeFormat:Normal">
+      <next xsi:type="sokobanExchangeFormat:Normal">
+        <next xsi:type="sokobanExchangeFormat:Normal">
+          <next xsi:type="sokobanExchangeFormat:Normal">
+            <next xsi:type="sokobanExchangeFormat:Normal">
+              <next xsi:type="sokobanExchangeFormat:Normal">
+                <next xsi:type="sokobanExchangeFormat:Normal">
+                  <next xsi:type="sokobanExchangeFormat:Normal">
+                    <symbol value="#"/>
+                  </next>
+                  <symbol value="#"/>
+                </next>
+                <symbol value="#"/>
+              </next>
+              <symbol value="#"/>
+            </next>
+            <symbol value="#"/>
+          </next>
+          <symbol value="#"/>
+        </next>
+        <symbol value="#"/>
+      </next>
+      <symbol value="#"/>
+    </firstEntry>
+    <next>
+      <firstEntry xsi:type="sokobanExchangeFormat:Normal">
+        <next xsi:type="sokobanExchangeFormat:Normal">
+          <next xsi:type="sokobanExchangeFormat:Normal">
+            <next xsi:type="sokobanExchangeFormat:Normal">
+              <next xsi:type="sokobanExchangeFormat:Normal">
+                <next xsi:type="sokobanExchangeFormat:Normal">
+                  <next xsi:type="sokobanExchangeFormat:Normal">
+                    <next xsi:type="sokobanExchangeFormat:Normal">
+                      <symbol value="#"/>
+                    </next>
+                  </next>
+                </next>
+              </next>
+            </next>
+          </next>
+        </next>
+        <symbol value="#"/>
+      </firstEntry>
+      <next>
+        <firstEntry xsi:type="sokobanExchangeFormat:Normal">
+          <next xsi:type="sokobanExchangeFormat:Normal">
+            <next xsi:type="sokobanExchangeFormat:Normal">
+              <next xsi:type="sokobanExchangeFormat:Normal">
+                <next xsi:type="sokobanExchangeFormat:Normal">
+                  <next xsi:type="sokobanExchangeFormat:Normal">
+                    <next xsi:type="sokobanExchangeFormat:Normal">
+                      <next xsi:type="sokobanExchangeFormat:Normal">
+                        <symbol value="#"/>
+                      </next>
+                    </next>
+                  </next>
+                </next>
+                <symbol value="$"/>
+              </next>
+            </next>
+            <symbol value="@"/>
+          </next>
+          <symbol value="#"/>
+        </firstEntry>
+        <next>
+          <firstEntry xsi:type="sokobanExchangeFormat:Normal">
+            <next xsi:type="sokobanExchangeFormat:Normal">
+              <next xsi:type="sokobanExchangeFormat:Normal">
+                <next xsi:type="sokobanExchangeFormat:Normal">
+                  <next xsi:type="sokobanExchangeFormat:Normal">
+                    <next xsi:type="sokobanExchangeFormat:Normal">
+                      <next xsi:type="sokobanExchangeFormat:Normal">
+                        <next xsi:type="sokobanExchangeFormat:Normal">
+                          <symbol value="#"/>
+                        </next>
+                      </next>
+                    </next>
+                    <symbol value="$"/>
+                  </next>
+                </next>
+              </next>
+            </next>
+            <symbol value="#"/>
+          </firstEntry>
+          <next>
+            <firstEntry xsi:type="sokobanExchangeFormat:Normal">
+              <next xsi:type="sokobanExchangeFormat:Normal">
+                <next xsi:type="sokobanExchangeFormat:End">
+                  <next xsi:type="sokobanExchangeFormat:Normal">
+                    <next xsi:type="sokobanExchangeFormat:End">
+                      <next xsi:type="sokobanExchangeFormat:Normal">
+                        <next xsi:type="sokobanExchangeFormat:Normal">
+                          <next xsi:type="sokobanExchangeFormat:Normal">
+                            <symbol value="#"/>
+                          </next>
+                        </next>
+                      </next>
+                    </next>
+                  </next>
+                </next>
+              </next>
+              <symbol value="#"/>
+            </firstEntry>
+            <next>
+              <firstEntry xsi:type="sokobanExchangeFormat:Normal">
+                <next xsi:type="sokobanExchangeFormat:Normal">
+                  <next xsi:type="sokobanExchangeFormat:Normal">
+                    <next xsi:type="sokobanExchangeFormat:Normal">
+                      <next xsi:type="sokobanExchangeFormat:Normal">
+                        <next xsi:type="sokobanExchangeFormat:Normal">
+                          <next xsi:type="sokobanExchangeFormat:Normal">
+                            <next xsi:type="sokobanExchangeFormat:Normal">
+                              <symbol value="#"/>
+                            </next>
+                            <symbol value="#"/>
+                          </next>
+                          <symbol value="#"/>
+                        </next>
+                        <symbol value="#"/>
+                      </next>
+                      <symbol value="#"/>
+                    </next>
+                    <symbol value="#"/>
+                  </next>
+                  <symbol value="#"/>
+                </next>
+                <symbol value="#"/>
+              </firstEntry>
+            </next>
+          </next>
+        </next>
+      </next>
+    </next>
+  </firstRow>
+</sokobanExchangeFormat:Board>

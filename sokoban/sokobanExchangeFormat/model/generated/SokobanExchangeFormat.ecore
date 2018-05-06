@@ -12,8 +12,20 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="next" eType="#//Row" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Entry">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="symbol" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="next" eType="#//Entry"
         containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="End" eSuperTypes="#//Entry">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="symbol" eType="#//EndSymbol"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Normal" eSuperTypes="#//Entry">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="symbol" eType="#//NormalSymbol"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="EndSymbol" eSuperTypes="#//Symbol"/>
+  <eClassifiers xsi:type="ecore:EClass" name="NormalSymbol" eSuperTypes="#//Symbol"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Symbol">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
 </ecore:EPackage>
