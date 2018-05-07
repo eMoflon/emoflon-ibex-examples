@@ -1,0 +1,4 @@
+#using SokobanImportExport.*
+#using AttrCondDefLibrary.*
+
+#rule BoardNormalEntryRule #extends BoardToBoardRule, NormalRule #with SokobanImportExport

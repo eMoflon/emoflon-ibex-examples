@@ -1,0 +1,31 @@
+// Add imports here
+#import "platform:/resource/SokobanExchangeFormatPreprocessor/model/SokobanExchangeFormatPreprocessor.ecore"
+#import "platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore"
+#import "platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore"
+
+#schema SokobanImportExport
+	
+#source {
+	SokobanExchangeFormatPreprocessor
+	sokobanExchangeFormat
+}
+
+#target { 
+	SokobanLanguage
+}
+
+#correspondence {
+	EntryToField {
+		#src->Entry
+		#trg->Field
+	}
+	
+	BoardToBoard {
+		#src->sokobanExchangeFormat.Board
+		#trg->SokobanLanguage.Board
+	}
+}
+
+#attributeConditions {
+	
+}

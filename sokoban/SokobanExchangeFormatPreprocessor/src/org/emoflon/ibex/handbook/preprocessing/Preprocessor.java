@@ -9,6 +9,7 @@ import org.emoflon.ibex.handbook.preprocessing.api.PreprocessingDemoclesApp;
 import org.emoflon.ibex.handbook.preprocessing.api.matches.InitMatch;
 
 public class Preprocessor extends PreprocessingDemoclesApp {
+
 	public Preprocessor(ResourceSet resourceSet) {
 		File root = new File(Preprocessor.class.getResource(".").getFile());
 		workspacePath = root.getParentFile().getParentFile().getParentFile().getParentFile().getParentFile()

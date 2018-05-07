@@ -1,0 +1,4 @@
+#using SokobanImportExport.*
+#using AttrCondDefLibrary.*
+
+#rule NormalRowRule #extends RowRule, NormalRule #with SokobanImportExport

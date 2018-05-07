@@ -1,0 +1,4 @@
+#using SokobanImportExport.*
+#using AttrCondDefLibrary.*
+
+#rule BoardEndEntryRule #extends BoardToBoardRule, EndRule #with SokobanImportExport

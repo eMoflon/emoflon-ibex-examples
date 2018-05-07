@@ -17,7 +17,7 @@ import org.eclipse.xtext.validation.Issue;
 
 import com.google.inject.Injector;
 
-public class TestMain {
+public class RunParser {
 	public static void main(String[] args) throws IOException {
 		// do this only once per application
 		Injector injector = new SokobanExchangeFormatStandaloneSetup().createInjectorAndDoEMFRegistration();

@@ -1,0 +1,14 @@
+#using SokobanImportExport.*
+#using AttrCondDefLibrary.*
+
+#rule BlockOnEndRule #extends SymbolToFigure, EndSymbolRule #with SokobanImportExport
+
+#source { 
+	++ s:Symbol {
+		value := "*"
+	}
+}
+
+#target {
+	++ fig:Block
+}

@@ -1,6 +1,7 @@
 import "platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore"
 import "platform:/resource/SokobanExchangeFormatPreprocessor/model/SokobanExchangeFormatPreprocessor.ecore"
 
+
 rule init {
 	++ ext: ExtendedBoard {
 		++ -board -> board

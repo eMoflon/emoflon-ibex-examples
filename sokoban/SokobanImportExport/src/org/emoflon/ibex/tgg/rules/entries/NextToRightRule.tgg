@@ -1,0 +1,25 @@
+#using SokobanImportExport.*
+#using AttrCondDefLibrary.*
+
+#abstract #rule NextToRightRule #extends EntryToFieldRule #with SokobanImportExport
+
+#source { 
+	e:Entry {
+		++ -next->ne
+	}
+	
+	++ ne:Entry	
+}
+
+#target {
+	f:Field {
+		++ -right->nf
+	}
+	
+	++ nf:Field
+}
+
+#attributeConditions {
+	add(f.col, 1, nf.col)
+	eq_int(f.row, nf.row)
+}

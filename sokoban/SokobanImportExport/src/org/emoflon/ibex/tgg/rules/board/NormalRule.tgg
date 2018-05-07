@@ -1,0 +1,14 @@
+#using SokobanImportExport.*
+#using AttrCondDefLibrary.*
+
+#abstract #rule NormalRule #with SokobanImportExport
+
+#source { 
+	++ ne:Normal
+}
+
+#target {
+	++ nf:Field {
+		endPos := false
+	}
+}
