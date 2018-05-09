@@ -1,0 +1,12 @@
+#using SokobanImportExport.*
+#using AttrCondDefLibrary.*
+
+#abstract #rule EndSymbolRule #with SokobanImportExport
+
+#source {
+	e:End {
+		++ -symbol->s
+	}
+	 
+	++ s:EndSymbol
+}

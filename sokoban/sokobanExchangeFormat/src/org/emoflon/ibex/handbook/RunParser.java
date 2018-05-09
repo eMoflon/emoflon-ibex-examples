@@ -1,47 +1,51 @@
 package org.emoflon.ibex.handbook;
 
-import java.io.IOException;
 import java.util.List;
+import java.util.Optional;
 
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.resource.Resource;
-import org.eclipse.emf.ecore.resource.ResourceSet;
-import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
-import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
 import org.eclipse.xtext.resource.XtextResource;
 import org.eclipse.xtext.resource.XtextResourceSet;
 import org.eclipse.xtext.util.CancelIndicator;
 import org.eclipse.xtext.validation.CheckMode;
 import org.eclipse.xtext.validation.IResourceValidator;
 import org.eclipse.xtext.validation.Issue;
+import org.emoflon.ibex.handbook.sokobanExchangeFormat.Board;
 
 import com.google.inject.Injector;
 
 public class RunParser {
-	public static void main(String[] args) throws IOException {
-		// do this only once per application
-		Injector injector = new SokobanExchangeFormatStandaloneSetup().createInjectorAndDoEMFRegistration();
-
-		// obtain a resourceset from the injector
+	private final static Injector injector = new SokobanExchangeFormatStandaloneSetup().createInjectorAndDoEMFRegistration();
+	
+	private URI fileURI;
+	
+	public RunParser(String filePath) {
+		fileURI = URI.createFileURI(filePath);
+	}
+	
+	public Optional<Board> parse() {
+		// Obtain a resource set from the injector
 		XtextResourceSet resourceSet = injector.getInstance(XtextResourceSet.class);
 
-		// load a resource by URI, in this case from the file system
-		Resource resource = resourceSet.getResource(URI.createFileURI("./boards/simplest.sok"), true);
+		// Load a resource by URI, in this case from the file system
+		Resource resource = resourceSet.getResource(fileURI, true);
 
 		// Validation
 		IResourceValidator validator = ((XtextResource) resource).getResourceServiceProvider().getResourceValidator();
 		List<Issue> issues = validator.validate(resource, CheckMode.ALL, CancelIndicator.NullImpl);
 		for (Issue issue : issues) {
-			System.out.println(issue.getMessage());
+			System.err.println(issue.getMessage());
 		}
 
-		if (issues.isEmpty()) {
-			ResourceSet rs = new ResourceSetImpl();
-			rs.getResourceFactoryRegistry().getExtensionToFactoryMap().put(Resource.Factory.Registry.DEFAULT_EXTENSION,
-					new XMIResourceFactoryImpl());
-			Resource r = rs.createResource(resource.getURI().appendFileExtension("xmi"));
-			r.getContents().add(resource.getContents().get(0));
-			r.save(null);
-		}
+		if (issues.isEmpty())
+			return Optional.of((Board) resource.getContents().get(0));
+		
+		return Optional.empty();
+	}
+	
+	public static void main(String[] args) {
+		RunParser sokParser = new RunParser("/Users/tony/git/emoflon-ibex-examples/sokoban/SokobanGUI/boards/simplest.sok");
+		Optional<org.emoflon.ibex.handbook.sokobanExchangeFormat.Board> board = sokParser.parse();
 	}
 }

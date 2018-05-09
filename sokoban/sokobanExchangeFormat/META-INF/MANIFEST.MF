@@ -21,10 +21,7 @@ Require-Bundle: org.eclipse.xtext,
  org.antlr.runtime,
  org.eclipse.xtext.util,
  org.eclipse.xtend.lib,
- org.eclipse.emf.common,
- org.emoflon.ibex.common,
- org.emoflon.ibex.gt,
- org.emoflon.ibex.gt.democles
+ org.eclipse.emf.common
 Bundle-ManifestVersion: 2
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8

@@ -1,0 +1,4 @@
+#using SokobanImportExport.*
+#using AttrCondDefLibrary.*
+
+#rule NextToRightNormalRule #extends NextToRightRule, NormalRule #with SokobanImportExport

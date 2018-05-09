@@ -45,13 +45,13 @@ public class INITIAL_FWD extends SYNC {
 
 	@Override
 	public void saveModels() throws IOException {
-		determineWidthAndHeight();
-		t.save(null);
-		c.save(null);
-		p.save(null);
+//		determineWidthAndHeight();
+//		t.save(null);
+//		c.save(null);
+//		p.save(null);
 	}
 
-	private void determineWidthAndHeight() {
+	public void postprocess() {
 		Board b = (Board) t.getContents().get(0);
 		
 		b.getFields().stream().max((f1,f2) -> f1.getRow() - f2.getRow())
@@ -63,8 +63,7 @@ public class INITIAL_FWD extends SYNC {
 
 	@Override
 	public void loadModels() throws IOException {
-		s = loadResource(projectPath + "/instances/src.xmi");
-		preprocess();
+		s = createResource(projectPath + "/instances/src.xmi");
 		t = createResource(projectPath + "/instances/trg.xmi");
 		c = createResource(projectPath + "/instances/corr.xmi");
 		p = createResource(projectPath + "/instances/protocol.xmi");
@@ -72,7 +71,7 @@ public class INITIAL_FWD extends SYNC {
 		EcoreUtil.resolveAll(rs);
 	}
 
-	private void preprocess() {
+	public void preprocess() {
 		Preprocessor p = new Preprocessor(getResourceSet());
 		p.preprocess();
 	}

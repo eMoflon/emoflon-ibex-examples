@@ -1,11 +1,15 @@
 package org.moflon.tutorial.sokobangamegui.controller;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EClassifier;
+import org.emoflon.ibex.handbook.RunParser;
+import org.emoflon.ibex.tgg.run.sokobanimportexport.INITIAL_FWD;
 import org.moflon.core.utilities.eMoflonEMFUtil;
 import org.moflon.tutorial.sokobangamegui.rules.Result;
 import org.moflon.tutorial.sokobangamegui.rules.SokobanRules;
@@ -19,7 +23,8 @@ import SokobanLanguage.SokobanLanguagePackage;
 /**
  * This is the controller class which controls the board and view.
  * 
- * @author Matthias Senker (Comments by Lukas Hermanns)
+ * @author Initial version by Matthias Senker (Comments by Lukas Hermanns).
+ *         Reworked for IBeX by Anthony Anjorin.
  */
 public class Controller {
 
@@ -93,6 +98,35 @@ public class Controller {
 		/* Load the specified model and switch to the new board */
 		Board newBoard = (Board) eMoflonEMFUtil.loadModel(filePath);
 		switchBoard(newBoard);
+	}
+
+	/**
+	 * Load, parse, and transform the given .sok file to a {@link Board}.
+	 * 
+	 * @param filePath
+	 * @throws IOException
+	 */
+	public void loadSOKFile(String filePath) {
+		RunParser sokParser = new RunParser(filePath);
+		Optional<org.emoflon.ibex.handbook.sokobanExchangeFormat.Board> board = sokParser.parse();
+
+		board.ifPresent(b -> {
+			try {
+				INITIAL_FWD fwd = new INITIAL_FWD();
+				fwd.getSourceResource().getContents().add(b);
+				fwd.preprocess();
+				fwd.forward();
+				fwd.postprocess();
+				fwd.terminate();
+				switchBoard((Board) fwd.getTargetResource().getContents().get(0));
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		});
+	}
+
+	public void saveSOKFile(String filePath) {
+		// TODO
 	}
 
 	/**

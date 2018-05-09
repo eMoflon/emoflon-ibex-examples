@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="ASCII"?>
+<tgg:TripleGraphGrammarFile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tgg="http://www.moflon.org/ide/tgg/mosl/TGG">
+  <imports name="platform:/resource/SokobanExchangeFormatPreprocessor/model/SokobanExchangeFormatPreprocessor.ecore"/>
+  <imports name="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore"/>
+  <imports name="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore"/>
+  <schema name="SokobanImportExport">
+    <sourceTypes href="platform:/resource/SokobanExchangeFormatPreprocessor/model/SokobanExchangeFormatPreprocessor.ecore#/"/>
+    <sourceTypes href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#/"/>
+    <targetTypes href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#/"/>
+    <correspondenceTypes name="EntryToField">
+      <source href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Entry"/>
+      <target href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#//Field"/>
+    </correspondenceTypes>
+    <correspondenceTypes name="BoardToBoard">
+      <source href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Board"/>
+      <target href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#//Board"/>
+    </correspondenceTypes>
+    <attributeCondDefs name="add">
+      <params paramName="summand1">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+      </params>
+      <params paramName="summand2">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+      </params>
+      <params paramName="result">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+      </params>
+      <allowedSyncAdornments>
+        <value>B</value>
+        <value>B</value>
+        <value>B</value>
+      </allowedSyncAdornments>
+      <allowedSyncAdornments>
+        <value>B</value>
+        <value>B</value>
+        <value>F</value>
+      </allowedSyncAdornments>
+      <allowedSyncAdornments>
+        <value>B</value>
+        <value>F</value>
+        <value>B</value>
+      </allowedSyncAdornments>
+      <allowedSyncAdornments>
+        <value>F</value>
+        <value>B</value>
+        <value>B</value>
+      </allowedSyncAdornments>
+      <allowedGenAdornments>
+        <value>B</value>
+        <value>B</value>
+        <value>B</value>
+      </allowedGenAdornments>
+      <allowedGenAdornments>
+        <value>B</value>
+        <value>B</value>
+        <value>F</value>
+      </allowedGenAdornments>
+      <allowedGenAdornments>
+        <value>B</value>
+        <value>F</value>
+        <value>B</value>
+      </allowedGenAdornments>
+      <allowedGenAdornments>
+        <value>F</value>
+        <value>B</value>
+        <value>B</value>
+      </allowedGenAdornments>
+      <allowedGenAdornments>
+        <value>F</value>
+        <value>F</value>
+        <value>B</value>
+      </allowedGenAdornments>
+      <allowedGenAdornments>
+        <value>F</value>
+        <value>B</value>
+        <value>F</value>
+      </allowedGenAdornments>
+      <allowedGenAdornments>
+        <value>B</value>
+        <value>F</value>
+        <value>F</value>
+      </allowedGenAdornments>
+    </attributeCondDefs>
+    <attributeCondDefs name="eq_int">
+      <params paramName="a">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </params>
+      <params paramName="b">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </params>
+      <allowedSyncAdornments>
+        <value>B</value>
+        <value>B</value>
+      </allowedSyncAdornments>
+      <allowedSyncAdornments>
+        <value>B</value>
+        <value>F</value>
+      </allowedSyncAdornments>
+      <allowedSyncAdornments>
+        <value>F</value>
+        <value>B</value>
+      </allowedSyncAdornments>
+      <allowedGenAdornments>
+        <value>B</value>
+        <value>B</value>
+      </allowedGenAdornments>
+      <allowedGenAdornments>
+        <value>B</value>
+        <value>F</value>
+      </allowedGenAdornments>
+      <allowedGenAdornments>
+        <value>F</value>
+        <value>B</value>
+      </allowedGenAdornments>
+      <allowedGenAdornments>
+        <value>F</value>
+        <value>F</value>
+      </allowedGenAdornments>
+    </attributeCondDefs>
+  </schema>
+  <rules name="BoardEndEntryRule" supertypes="//@rules.2 //@rules.3" schema="//@schema"/>
+  <rules name="BoardNormalEntryRule" supertypes="//@rules.2 //@rules.4" schema="//@schema"/>
+  <rules name="BoardToBoardRule" abstractRule="true" schema="//@schema">
+    <sourcePatterns name="extBoard">
+      <op value="++"/>
+      <type href="platform:/resource/SokobanExchangeFormatPreprocessor/model/SokobanExchangeFormatPreprocessor.ecore#//ExtendedBoard"/>
+      <linkVariablePatterns target="//@rules.2/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/SokobanExchangeFormatPreprocessor/model/SokobanExchangeFormatPreprocessor.ecore#//ExtendedBoard/board"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="sokBoard">
+      <op value="++"/>
+      <type href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Board"/>
+      <linkVariablePatterns target="//@rules.2/@sourcePatterns.2">
+        <op value="++"/>
+        <type href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Board/firstRow"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="row">
+      <op value="++"/>
+      <type href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Row"/>
+      <linkVariablePatterns target="//@rules.2/@sourcePatterns.3">
+        <op value="++"/>
+        <type href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Row/firstEntry"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="ne">
+      <op value="++"/>
+      <type href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Entry"/>
+    </sourcePatterns>
+    <targetPatterns name="board">
+      <op value="++"/>
+      <type href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#//Board"/>
+      <linkVariablePatterns target="//@rules.2/@targetPatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#//Board/fields"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="nf">
+      <op value="++"/>
+      <type href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#//Field"/>
+      <attributeAssignments op=":=">
+        <attribute href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#//Field/row"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="0"/>
+      </attributeAssignments>
+      <attributeAssignments op=":=">
+        <attribute href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#//Field/col"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="0"/>
+      </attributeAssignments>
+    </targetPatterns>
+    <correspondencePatterns name="e2f" type="//@schema/@correspondenceTypes.0" source="//@rules.2/@sourcePatterns.3" target="//@rules.2/@targetPatterns.1">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="b2b" type="//@schema/@correspondenceTypes.1" source="//@rules.2/@sourcePatterns.1" target="//@rules.2/@targetPatterns.0">
+      <op value="++"/>
+    </correspondencePatterns>
+  </rules>
+  <rules name="EndRule" abstractRule="true" schema="//@schema">
+    <sourcePatterns name="ne">
+      <op value="++"/>
+      <type href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//End"/>
+    </sourcePatterns>
+    <targetPatterns name="nf">
+      <op value="++"/>
+      <type href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#//Field"/>
+      <attributeAssignments op=":=">
+        <attribute href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#//Field/endPos"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="true"/>
+      </attributeAssignments>
+    </targetPatterns>
+  </rules>
+  <rules name="NormalRule" abstractRule="true" schema="//@schema">
+    <sourcePatterns name="ne">
+      <op value="++"/>
+      <type href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Normal"/>
+    </sourcePatterns>
+    <targetPatterns name="nf">
+      <op value="++"/>
+      <type href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#//Field"/>
+      <attributeAssignments op=":=">
+        <attribute href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#//Field/endPos"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="false"/>
+      </attributeAssignments>
+    </targetPatterns>
+  </rules>
+  <rules name="EntryToFieldRule" abstractRule="true" schema="//@schema">
+    <sourcePatterns name="e">
+      <type href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Entry"/>
+    </sourcePatterns>
+    <sourcePatterns name="ne">
+      <op value="++"/>
+      <type href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Entry"/>
+    </sourcePatterns>
+    <targetPatterns name="f">
+      <type href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#//Field"/>
+    </targetPatterns>
+    <targetPatterns name="nf">
+      <op value="++"/>
+      <type href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#//Field"/>
+    </targetPatterns>
+    <targetPatterns name="board">
+      <type href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#//Board"/>
+      <linkVariablePatterns target="//@rules.5/@targetPatterns.0">
+        <type href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#//Board/fields"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.5/@targetPatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#//Board/fields"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <correspondencePatterns name="l2lf" type="//@schema/@correspondenceTypes.0" source="//@rules.5/@sourcePatterns.0" target="//@rules.5/@targetPatterns.0"/>
+    <correspondencePatterns name="r2rf" type="//@schema/@correspondenceTypes.0" source="//@rules.5/@sourcePatterns.1" target="//@rules.5/@targetPatterns.1">
+      <op value="++"/>
+    </correspondencePatterns>
+  </rules>
+  <rules name="NextToRightEndRule" supertypes="//@rules.8 //@rules.3" schema="//@schema"/>
+  <rules name="NextToRightNormalRule" supertypes="//@rules.8 //@rules.4" schema="//@schema"/>
+  <rules name="NextToRightRule" abstractRule="true" supertypes="//@rules.5" schema="//@schema">
+    <sourcePatterns name="e">
+      <type href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Entry"/>
+      <linkVariablePatterns target="//@rules.8/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Entry/next"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="ne">
+      <op value="++"/>
+      <type href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Entry"/>
+    </sourcePatterns>
+    <targetPatterns name="f">
+      <type href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#//Field"/>
+      <linkVariablePatterns target="//@rules.8/@targetPatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#//Field/right"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="nf">
+      <op value="++"/>
+      <type href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#//Field"/>
+    </targetPatterns>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.8/@targetPatterns.0">
+        <attribute href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#//Field/col"/>
+      </values>
+      <values xsi:type="tgg:LiteralExpression" value="1"/>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.8/@targetPatterns.1">
+        <attribute href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#//Field/col"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.1">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.8/@targetPatterns.0">
+        <attribute href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#//Field/row"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.8/@targetPatterns.1">
+        <attribute href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#//Field/row"/>
+      </values>
+    </attrConditions>
+  </rules>
+  <rules name="BlockOnEndRule" supertypes="//@rules.16 //@rules.12" schema="//@schema">
+    <sourcePatterns name="s">
+      <op value="++"/>
+      <type href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Symbol"/>
+      <attributeAssignments op=":=">
+        <attribute href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Symbol/value"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;*&quot;"/>
+      </attributeAssignments>
+    </sourcePatterns>
+    <targetPatterns name="fig">
+      <op value="++"/>
+      <type href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#//Block"/>
+    </targetPatterns>
+  </rules>
+  <rules name="BlockRule" supertypes="//@rules.16 //@rules.13" schema="//@schema">
+    <sourcePatterns name="s">
+      <op value="++"/>
+      <type href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Symbol"/>
+      <attributeAssignments op=":=">
+        <attribute href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Symbol/value"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;$&quot;"/>
+      </attributeAssignments>
+    </sourcePatterns>
+    <targetPatterns name="fig">
+      <op value="++"/>
+      <type href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#//Block"/>
+    </targetPatterns>
+  </rules>
+  <rules name="BoulderRule" supertypes="//@rules.16 //@rules.13" schema="//@schema">
+    <sourcePatterns name="s">
+      <op value="++"/>
+      <type href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Symbol"/>
+      <attributeAssignments op=":=">
+        <attribute href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Symbol/value"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;#&quot;"/>
+      </attributeAssignments>
+    </sourcePatterns>
+    <targetPatterns name="fig">
+      <op value="++"/>
+      <type href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#//Boulder"/>
+    </targetPatterns>
+  </rules>
+  <rules name="EndSymbolRule" abstractRule="true" schema="//@schema">
+    <sourcePatterns name="e">
+      <type href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//End"/>
+      <linkVariablePatterns target="//@rules.12/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//End/symbol"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="s">
+      <op value="++"/>
+      <type href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//EndSymbol"/>
+    </sourcePatterns>
+  </rules>
+  <rules name="NormalSymbolRule" abstractRule="true" schema="//@schema">
+    <sourcePatterns name="e">
+      <type href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Normal"/>
+      <linkVariablePatterns target="//@rules.13/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Normal/symbol"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="s">
+      <op value="++"/>
+      <type href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//NormalSymbol"/>
+    </sourcePatterns>
+  </rules>
+  <rules name="SokobanOnEndRule" supertypes="//@rules.16 //@rules.12" schema="//@schema">
+    <sourcePatterns name="s">
+      <op value="++"/>
+      <type href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Symbol"/>
+      <attributeAssignments op=":=">
+        <attribute href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Symbol/value"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;+&quot;"/>
+      </attributeAssignments>
+    </sourcePatterns>
+    <targetPatterns name="fig">
+      <op value="++"/>
+      <type href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#//Sokoban"/>
+    </targetPatterns>
+  </rules>
+  <rules name="SokobanRule" supertypes="//@rules.16 //@rules.13" schema="//@schema">
+    <sourcePatterns name="s">
+      <op value="++"/>
+      <type href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Symbol"/>
+      <attributeAssignments op=":=">
+        <attribute href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Symbol/value"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;@&quot;"/>
+      </attributeAssignments>
+    </sourcePatterns>
+    <targetPatterns name="fig">
+      <op value="++"/>
+      <type href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#//Sokoban"/>
+    </targetPatterns>
+  </rules>
+  <rules name="SymbolToFigure" abstractRule="true" schema="//@schema">
+    <sourcePatterns name="e">
+      <type href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Entry"/>
+    </sourcePatterns>
+    <sourcePatterns name="s">
+      <op value="++"/>
+      <type href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Symbol"/>
+    </sourcePatterns>
+    <targetPatterns name="f">
+      <type href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#//Field"/>
+      <linkVariablePatterns target="//@rules.16/@targetPatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#//Field/figure"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="fig">
+      <op value="++"/>
+      <type href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#//Figure"/>
+    </targetPatterns>
+    <correspondencePatterns name="e2f" type="//@schema/@correspondenceTypes.0" source="//@rules.16/@sourcePatterns.0" target="//@rules.16/@targetPatterns.0"/>
+  </rules>
+  <rules name="LinkToBottomRule" supertypes="//@rules.18" schema="//@schema">
+    <sourcePatterns name="e">
+      <type href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Entry"/>
+    </sourcePatterns>
+    <sourcePatterns name="ne">
+      <type href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Entry"/>
+    </sourcePatterns>
+    <targetPatterns name="f">
+      <type href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#//Field"/>
+      <linkVariablePatterns target="//@rules.17/@targetPatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#//Field/bottom"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="nf">
+      <type href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#//Field"/>
+    </targetPatterns>
+    <correspondencePatterns name="l2lf" type="//@schema/@correspondenceTypes.0" source="//@rules.17/@sourcePatterns.0" target="//@rules.17/@targetPatterns.0"/>
+    <correspondencePatterns name="r2rf" type="//@schema/@correspondenceTypes.0" source="//@rules.17/@sourcePatterns.1" target="//@rules.17/@targetPatterns.1"/>
+  </rules>
+  <rules name="NextLinkRule" abstractRule="true" schema="//@schema">
+    <sourcePatterns name="e">
+      <op value="++"/>
+      <type href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Entry"/>
+    </sourcePatterns>
+    <sourcePatterns name="ne">
+      <op value="++"/>
+      <type href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Entry"/>
+    </sourcePatterns>
+    <sourcePatterns name="link">
+      <op value="++"/>
+      <type href="platform:/resource/SokobanExchangeFormatPreprocessor/model/SokobanExchangeFormatPreprocessor.ecore#//NextLink"/>
+      <linkVariablePatterns target="//@rules.18/@sourcePatterns.0">
+        <op value="++"/>
+        <type href="platform:/resource/SokobanExchangeFormatPreprocessor/model/SokobanExchangeFormatPreprocessor.ecore#//NextLink/src"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.18/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/SokobanExchangeFormatPreprocessor/model/SokobanExchangeFormatPreprocessor.ecore#//NextLink/trg"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="extBoard">
+      <type href="platform:/resource/SokobanExchangeFormatPreprocessor/model/SokobanExchangeFormatPreprocessor.ecore#//ExtendedBoard"/>
+      <linkVariablePatterns target="//@rules.18/@sourcePatterns.2">
+        <op value="++"/>
+        <type href="platform:/resource/SokobanExchangeFormatPreprocessor/model/SokobanExchangeFormatPreprocessor.ecore#//ExtendedBoard/links"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+  </rules>
+  <rules name="EndRowRule" supertypes="//@rules.21 //@rules.3" schema="//@schema"/>
+  <rules name="NormalRowRule" supertypes="//@rules.21 //@rules.4" schema="//@schema"/>
+  <rules name="RowRule" abstractRule="true" supertypes="//@rules.5 //@rules.18" schema="//@schema">
+    <sourcePatterns name="e">
+      <type href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Entry"/>
+    </sourcePatterns>
+    <sourcePatterns name="ne">
+      <op value="++"/>
+      <type href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Entry"/>
+    </sourcePatterns>
+    <sourcePatterns name="r">
+      <type href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Row"/>
+      <linkVariablePatterns target="//@rules.21/@sourcePatterns.0">
+        <type href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Row/firstEntry"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.21/@sourcePatterns.3">
+        <op value="++"/>
+        <type href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Row/next"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="nr">
+      <op value="++"/>
+      <type href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Row"/>
+      <linkVariablePatterns target="//@rules.21/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Row/firstEntry"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <targetPatterns name="f">
+      <type href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#//Field"/>
+      <linkVariablePatterns target="//@rules.21/@targetPatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#//Field/bottom"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="nf">
+      <op value="++"/>
+      <type href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#//Field"/>
+    </targetPatterns>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.21/@targetPatterns.0">
+        <attribute href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#//Field/row"/>
+      </values>
+      <values xsi:type="tgg:LiteralExpression" value="1"/>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.21/@targetPatterns.1">
+        <attribute href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#//Field/row"/>
+      </values>
+    </attrConditions>
+    <attrConditions name="//@schema/@attributeCondDefs.1">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.21/@targetPatterns.0">
+        <attribute href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#//Field/col"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.21/@targetPatterns.1">
+        <attribute href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#//Field/col"/>
+      </values>
+    </attrConditions>
+  </rules>
+</tgg:TripleGraphGrammarFile>
