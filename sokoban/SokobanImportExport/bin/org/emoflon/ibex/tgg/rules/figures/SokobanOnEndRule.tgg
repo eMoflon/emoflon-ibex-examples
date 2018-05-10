@@ -4,8 +4,8 @@
 #rule SokobanOnEndRule #extends SymbolToFigure, EndSymbolRule #with SokobanImportExport
 
 #source { 
-	++ s:Symbol {
-		value := "+"
+	++ s:EndSymbol {
+		value := enum::EndValue::SOKOBAN_ON_END_FIELD
 	}
 }
 

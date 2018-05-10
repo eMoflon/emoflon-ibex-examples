@@ -43,15 +43,13 @@ public class INITIAL_BWD extends SYNC {
 	
 	@Override
 	public void saveModels() throws IOException {
-		s.save(null);
-		c.save(null);
-		p.save(null);
+		
 	}
 
 	@Override
 	public void loadModels() throws IOException {
 		s = createResource(projectPath + "/instances/src.xmi");
-		t = loadResource(projectPath + "/instances/trg.xmi");
+		t = createResource(projectPath + "/instances/trg.xmi");
 		c = createResource(projectPath + "/instances/corr.xmi");
 		p = createResource(projectPath + "/instances/protocol.xmi");
 
@@ -68,7 +66,7 @@ public class INITIAL_BWD extends SYNC {
 			IbexOptions options = new IbexOptions();
 			options.projectName("SokobanImportExport");
 			options.projectPath("SokobanImportExport");
-			options.debug(true);
+			options.debug(false);
 			options.blackInterpSupportsAttrConstrs(true);
 			options.userDefinedConstraints(new UserDefinedRuntimeTGGAttrConstraintFactory());
 			return options;

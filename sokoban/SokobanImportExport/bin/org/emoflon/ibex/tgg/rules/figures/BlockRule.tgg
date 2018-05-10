@@ -4,8 +4,8 @@
 #rule BlockRule #extends SymbolToFigure, NormalSymbolRule #with SokobanImportExport
 
 #source { 
-	++ s:Symbol {
-		value := "$"
+	++ s:NormalSymbol {
+		value := enum::NormalValue::BOX
 	}
 }
 

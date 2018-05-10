@@ -6,15 +6,23 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
+import org.apache.log4j.Level;
+import org.apache.log4j.Logger;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EClassifier;
-import org.emoflon.ibex.handbook.RunParser;
-import org.emoflon.ibex.tgg.run.sokobanimportexport.INITIAL_FWD;
+import org.eclipse.emf.ecore.resource.ResourceSet;
+import org.emoflon.ibex.handbook.api.RunParser;
+import org.emoflon.ibex.handbook.api.RunSerialiser;
+import org.emoflon.ibex.handbook.preprocessing.Preprocessor;
+import org.emoflon.ibex.tgg.operational.strategies.sync.SYNC;
+import org.emoflon.ibex.tgg.run.sokobanimportexport.INITIAL_BWD;
+import org.emoflon.ibex.tgg.run.sokobanimportexport.SYNC_App;
 import org.moflon.core.utilities.eMoflonEMFUtil;
 import org.moflon.tutorial.sokobangamegui.rules.Result;
 import org.moflon.tutorial.sokobangamegui.rules.SokobanRules;
 import org.moflon.tutorial.sokobangamegui.view.View;
 
+import SokobanExchangeFormatPreprocessor.ExtendedBoard;
 import SokobanLanguage.Board;
 import SokobanLanguage.Field;
 import SokobanLanguage.Figure;
@@ -28,10 +36,14 @@ import SokobanLanguage.SokobanLanguagePackage;
  */
 public class Controller {
 
+	private static final Logger logger = Logger.getLogger(Controller.class);
+	
 	/* The controller class knows all objects, the view and the board */
 	private View view;
 	private Board board;
 	private SokobanRules sokobanRules;
+	
+	private SYNC sync;
 
 	/**
 	 * Main function or rather program entry point.
@@ -40,6 +52,8 @@ public class Controller {
 	 *            Specifies the program arguments (or rather parameters).
 	 */
 	public static void main(String[] args) {
+		Logger.getRootLogger().setLevel(Level.DEBUG);
+		
 		/* Create an instance of this class and create an empty board */
 		Controller controller = new Controller();
 		controller.switchBoard(BoardCreator.createEmptyBoard(8, 8));
@@ -112,21 +126,66 @@ public class Controller {
 
 		board.ifPresent(b -> {
 			try {
-				INITIAL_FWD fwd = new INITIAL_FWD();
-				fwd.getSourceResource().getContents().add(b);
-				fwd.preprocess();
-				fwd.forward();
-				fwd.postprocess();
-				fwd.terminate();
-				switchBoard((Board) fwd.getTargetResource().getContents().get(0));
+				if(sync != null)
+					sync.terminate();
+				sync = new SYNC_App();
+				
+				long tic = System.currentTimeMillis();
+				logger.debug("Starting preprocessing");
+				sync.getSourceResource().getContents().add(b);
+				preprocess(sync.getResourceSet());
+				long toc = System.currentTimeMillis();
+				logger.debug("Finished: " + (toc - tic)/1000.0 + "s");
+				
+				logger.debug("Starting sync");
+				sync.forward();
+				toc = System.currentTimeMillis();
+				logger.debug("Finished: " + (toc - tic)/1000.0 + "s");
+				
+				Board sokBoard = (Board) sync.getTargetResource().getContents().get(0);
+				postprocess(sokBoard);
+				switchBoard(sokBoard);
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
 		});
 	}
+	
+	private void preprocess(ResourceSet rs) {
+		Preprocessor p = new Preprocessor(rs);
+		p.preprocess();
+	}
+	
+	private void postprocess(Board b) {
+		b.getFields().stream().max((f1,f2) -> f1.getRow() - f2.getRow())
+			.ifPresent(f -> b.setHeight(f.getRow() + 1));
+		
+		b.getFields().stream().max((f1,f2) -> f1.getCol() - f2.getCol())
+		.ifPresent(f -> b.setWidth(f.getCol() + 1));
+	}
 
 	public void saveSOKFile(String filePath) {
-		// TODO
+		try {
+			if(!(sync instanceof SYNC_App)) {
+				sync.terminate();
+				sync = new INITIAL_BWD();
+				sync.getTargetResource().getContents().add(board);
+			}
+						
+			long tic = System.currentTimeMillis();
+			logger.debug("Starting sync");
+			sync.backward();
+			long toc = System.currentTimeMillis();
+			logger.debug("Finished: " + (toc - tic)/1000.0 + "s");
+			
+			switchBoard(board);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		RunSerialiser serialiser = new RunSerialiser();
+		ExtendedBoard extBoard = (ExtendedBoard) sync.getSourceResource().getContents().get(0);
+		serialiser.unparse(filePath, extBoard.getBoard());
 	}
 
 	/**

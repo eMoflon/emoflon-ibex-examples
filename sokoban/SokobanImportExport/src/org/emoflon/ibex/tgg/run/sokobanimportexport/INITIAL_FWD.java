@@ -5,14 +5,11 @@ import java.io.IOException;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.eclipse.emf.ecore.util.EcoreUtil;
-import org.emoflon.ibex.handbook.preprocessing.Preprocessor;
 import org.emoflon.ibex.tgg.compiler.patterns.PatternSuffixes;
 import org.emoflon.ibex.tgg.operational.csp.constraints.factories.UserDefinedRuntimeTGGAttrConstraintFactory;
 import org.emoflon.ibex.tgg.operational.defaults.IbexOptions;
 import org.emoflon.ibex.tgg.operational.strategies.sync.SYNC;
 import org.emoflon.ibex.tgg.runtime.engine.DemoclesTGGEngine;
-
-import SokobanLanguage.Board;
 
 public class INITIAL_FWD extends SYNC {
 
@@ -51,16 +48,6 @@ public class INITIAL_FWD extends SYNC {
 //		p.save(null);
 	}
 
-	public void postprocess() {
-		Board b = (Board) t.getContents().get(0);
-		
-		b.getFields().stream().max((f1,f2) -> f1.getRow() - f2.getRow())
-			.ifPresent(f -> b.setHeight(f.getRow() + 1));
-		
-		b.getFields().stream().max((f1,f2) -> f1.getCol() - f2.getCol())
-		.ifPresent(f -> b.setWidth(f.getCol() + 1));
-	}
-
 	@Override
 	public void loadModels() throws IOException {
 		s = createResource(projectPath + "/instances/src.xmi");
@@ -69,11 +56,6 @@ public class INITIAL_FWD extends SYNC {
 		p = createResource(projectPath + "/instances/protocol.xmi");
 
 		EcoreUtil.resolveAll(rs);
-	}
-
-	public void preprocess() {
-		Preprocessor p = new Preprocessor(getResourceSet());
-		p.preprocess();
 	}
 
 	@Override

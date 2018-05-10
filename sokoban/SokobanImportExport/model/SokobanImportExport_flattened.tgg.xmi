@@ -11,8 +11,11 @@
     <nodes name="s" bindingType="CREATE" incomingEdges="//@rules.0/@edges.0">
       <type href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//EndSymbol"/>
       <attrExpr>
-        <attribute href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Symbol/value"/>
-        <valueExpr xsi:type="org.emoflon.ibex.tgg.core.language.misc.expressions:TGGLiteralExpression" value="&quot;*&quot;"/>
+        <attribute href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//EndSymbol/value"/>
+        <valueExpr xsi:type="org.emoflon.ibex.tgg.core.language.misc.expressions:TGGEnumExpression">
+          <eenum href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//EndValue"/>
+          <literal href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//EndValue/BOX_ON_END_FIELD"/>
+        </valueExpr>
       </attrExpr>
     </nodes>
     <nodes name="f" domainType="TRG" incomingEdges="//@rules.0/@edges.2" outgoingEdges="//@rules.0/@edges.1" incomingCorrsTarget="//@rules.0/@nodes.4">
@@ -42,8 +45,11 @@
     <nodes name="s" bindingType="CREATE" incomingEdges="//@rules.1/@edges.0">
       <type href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//NormalSymbol"/>
       <attrExpr>
-        <attribute href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Symbol/value"/>
-        <valueExpr xsi:type="org.emoflon.ibex.tgg.core.language.misc.expressions:TGGLiteralExpression" value="&quot;$&quot;"/>
+        <attribute href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//NormalSymbol/value"/>
+        <valueExpr xsi:type="org.emoflon.ibex.tgg.core.language.misc.expressions:TGGEnumExpression">
+          <eenum href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//NormalValue"/>
+          <literal href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//NormalValue/BOX"/>
+        </valueExpr>
       </attrExpr>
     </nodes>
     <nodes name="f" domainType="TRG" incomingEdges="//@rules.1/@edges.2" outgoingEdges="//@rules.1/@edges.1" incomingCorrsTarget="//@rules.1/@nodes.4">
@@ -85,16 +91,16 @@
     <nodes name="nf" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.2/@edges.3" outgoingEdges="//@rules.2/@edges.4" incomingCorrsTarget="//@rules.2/@nodes.7">
       <type href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#//Field"/>
       <attrExpr>
+        <attribute href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#//Field/endPos"/>
+        <valueExpr xsi:type="org.emoflon.ibex.tgg.core.language.misc.expressions:TGGLiteralExpression" value="true"/>
+      </attrExpr>
+      <attrExpr>
         <attribute href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#//Field/row"/>
         <valueExpr xsi:type="org.emoflon.ibex.tgg.core.language.misc.expressions:TGGLiteralExpression" value="0"/>
       </attrExpr>
       <attrExpr>
         <attribute href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#//Field/col"/>
         <valueExpr xsi:type="org.emoflon.ibex.tgg.core.language.misc.expressions:TGGLiteralExpression" value="0"/>
-      </attrExpr>
-      <attrExpr>
-        <attribute href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#//Field/endPos"/>
-        <valueExpr xsi:type="org.emoflon.ibex.tgg.core.language.misc.expressions:TGGLiteralExpression" value="true"/>
       </attrExpr>
     </nodes>
     <nodes xsi:type="org.emoflon.ibex.tgg.core.language:TGGRuleCorr" name="b2b" domainType="CORR" bindingType="CREATE" source="//@rules.2/@nodes.3" target="//@rules.2/@nodes.4">
@@ -139,16 +145,16 @@
     <nodes name="nf" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.3/@edges.3" outgoingEdges="//@rules.3/@edges.4" incomingCorrsTarget="//@rules.3/@nodes.7">
       <type href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#//Field"/>
       <attrExpr>
+        <attribute href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#//Field/endPos"/>
+        <valueExpr xsi:type="org.emoflon.ibex.tgg.core.language.misc.expressions:TGGLiteralExpression" value="false"/>
+      </attrExpr>
+      <attrExpr>
         <attribute href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#//Field/row"/>
         <valueExpr xsi:type="org.emoflon.ibex.tgg.core.language.misc.expressions:TGGLiteralExpression" value="0"/>
       </attrExpr>
       <attrExpr>
         <attribute href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#//Field/col"/>
         <valueExpr xsi:type="org.emoflon.ibex.tgg.core.language.misc.expressions:TGGLiteralExpression" value="0"/>
-      </attrExpr>
-      <attrExpr>
-        <attribute href="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore#//Field/endPos"/>
-        <valueExpr xsi:type="org.emoflon.ibex.tgg.core.language.misc.expressions:TGGLiteralExpression" value="false"/>
       </attrExpr>
     </nodes>
     <nodes xsi:type="org.emoflon.ibex.tgg.core.language:TGGRuleCorr" name="b2b" domainType="CORR" bindingType="CREATE" source="//@rules.3/@nodes.3" target="//@rules.3/@nodes.4">
@@ -231,8 +237,11 @@
     <nodes name="s" bindingType="CREATE" incomingEdges="//@rules.5/@edges.0">
       <type href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//NormalSymbol"/>
       <attrExpr>
-        <attribute href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Symbol/value"/>
-        <valueExpr xsi:type="org.emoflon.ibex.tgg.core.language.misc.expressions:TGGLiteralExpression" value="&quot;#&quot;"/>
+        <attribute href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//NormalSymbol/value"/>
+        <valueExpr xsi:type="org.emoflon.ibex.tgg.core.language.misc.expressions:TGGEnumExpression">
+          <eenum href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//NormalValue"/>
+          <literal href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//NormalValue/BOULDER"/>
+        </valueExpr>
       </attrExpr>
     </nodes>
     <nodes name="f" domainType="TRG" incomingEdges="//@rules.5/@edges.2" outgoingEdges="//@rules.5/@edges.1" incomingCorrsTarget="//@rules.5/@nodes.4">
@@ -877,8 +886,11 @@
     <nodes name="s" bindingType="CREATE" incomingEdges="//@rules.19/@edges.0">
       <type href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//EndSymbol"/>
       <attrExpr>
-        <attribute href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Symbol/value"/>
-        <valueExpr xsi:type="org.emoflon.ibex.tgg.core.language.misc.expressions:TGGLiteralExpression" value="&quot;+&quot;"/>
+        <attribute href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//EndSymbol/value"/>
+        <valueExpr xsi:type="org.emoflon.ibex.tgg.core.language.misc.expressions:TGGEnumExpression">
+          <eenum href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//EndValue"/>
+          <literal href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//EndValue/SOKOBAN_ON_END_FIELD"/>
+        </valueExpr>
       </attrExpr>
     </nodes>
     <nodes name="f" domainType="TRG" incomingEdges="//@rules.19/@edges.2" outgoingEdges="//@rules.19/@edges.1" incomingCorrsTarget="//@rules.19/@nodes.4">
@@ -908,8 +920,11 @@
     <nodes name="s" bindingType="CREATE" incomingEdges="//@rules.20/@edges.0">
       <type href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//NormalSymbol"/>
       <attrExpr>
-        <attribute href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Symbol/value"/>
-        <valueExpr xsi:type="org.emoflon.ibex.tgg.core.language.misc.expressions:TGGLiteralExpression" value="&quot;@&quot;"/>
+        <attribute href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//NormalSymbol/value"/>
+        <valueExpr xsi:type="org.emoflon.ibex.tgg.core.language.misc.expressions:TGGEnumExpression">
+          <eenum href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//NormalValue"/>
+          <literal href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//NormalValue/SOKOBAN"/>
+        </valueExpr>
       </attrExpr>
     </nodes>
     <nodes name="f" domainType="TRG" incomingEdges="//@rules.20/@edges.2" outgoingEdges="//@rules.20/@edges.1" incomingCorrsTarget="//@rules.20/@nodes.4">

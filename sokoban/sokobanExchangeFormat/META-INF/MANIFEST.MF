@@ -1,16 +1,17 @@
 Manifest-Version: 1.0
 Bundle-SymbolicName: sokobanExchangeFormat; singleton:=true
-Export-Package: org.emoflon.ibex.handbook.sokobanExchangeFormat.impl,
- org.emoflon.ibex.handbook.scoping,
+Export-Package: org.emoflon.ibex.handbook,
+ org.emoflon.ibex.handbook.api,
+ org.emoflon.ibex.handbook.generator,
  org.emoflon.ibex.handbook.parser.antlr,
  org.emoflon.ibex.handbook.parser.antlr.internal,
+ org.emoflon.ibex.handbook.scoping,
  org.emoflon.ibex.handbook.serializer,
+ org.emoflon.ibex.handbook.services,
  org.emoflon.ibex.handbook.sokobanExchangeFormat,
- org.emoflon.ibex.handbook,
- org.emoflon.ibex.handbook.generator,
- org.emoflon.ibex.handbook.validation,
+ org.emoflon.ibex.handbook.sokobanExchangeFormat.impl,
  org.emoflon.ibex.handbook.sokobanExchangeFormat.util,
- org.emoflon.ibex.handbook.services
+ org.emoflon.ibex.handbook.validation
 Bundle-Name: sokobanExchangeFormat
 Bundle-Version: 1.0.0.qualifier
 Require-Bundle: org.eclipse.xtext,

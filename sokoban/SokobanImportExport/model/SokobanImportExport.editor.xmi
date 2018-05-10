@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ASCII"?>
 <tgg:TripleGraphGrammarFile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tgg="http://www.moflon.org/ide/tgg/mosl/TGG">
+  <imports name="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore"/>
   <imports name="platform:/resource/SokobanExchangeFormatPreprocessor/model/SokobanExchangeFormatPreprocessor.ecore"/>
   <imports name="platform:/resource/SokobanLanguage/model/SokobanLanguage.ecore"/>
-  <imports name="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore"/>
   <schema name="SokobanImportExport">
     <sourceTypes href="platform:/resource/SokobanExchangeFormatPreprocessor/model/SokobanExchangeFormatPreprocessor.ecore#/"/>
     <sourceTypes href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#/"/>
@@ -280,10 +280,13 @@
   <rules name="BlockOnEndRule" supertypes="//@rules.16 //@rules.12" schema="//@schema">
     <sourcePatterns name="s">
       <op value="++"/>
-      <type href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Symbol"/>
+      <type href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//EndSymbol"/>
       <attributeAssignments op=":=">
-        <attribute href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Symbol/value"/>
-        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;*&quot;"/>
+        <attribute href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//EndSymbol/value"/>
+        <valueExp xsi:type="tgg:EnumExpression">
+          <eenum href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//EndValue"/>
+          <literal href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//EndValue/BOX_ON_END_FIELD"/>
+        </valueExp>
       </attributeAssignments>
     </sourcePatterns>
     <targetPatterns name="fig">
@@ -294,10 +297,13 @@
   <rules name="BlockRule" supertypes="//@rules.16 //@rules.13" schema="//@schema">
     <sourcePatterns name="s">
       <op value="++"/>
-      <type href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Symbol"/>
+      <type href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//NormalSymbol"/>
       <attributeAssignments op=":=">
-        <attribute href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Symbol/value"/>
-        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;$&quot;"/>
+        <attribute href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//NormalSymbol/value"/>
+        <valueExp xsi:type="tgg:EnumExpression">
+          <eenum href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//NormalValue"/>
+          <literal href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//NormalValue/BOX"/>
+        </valueExp>
       </attributeAssignments>
     </sourcePatterns>
     <targetPatterns name="fig">
@@ -308,10 +314,13 @@
   <rules name="BoulderRule" supertypes="//@rules.16 //@rules.13" schema="//@schema">
     <sourcePatterns name="s">
       <op value="++"/>
-      <type href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Symbol"/>
+      <type href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//NormalSymbol"/>
       <attributeAssignments op=":=">
-        <attribute href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Symbol/value"/>
-        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;#&quot;"/>
+        <attribute href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//NormalSymbol/value"/>
+        <valueExp xsi:type="tgg:EnumExpression">
+          <eenum href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//NormalValue"/>
+          <literal href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//NormalValue/BOULDER"/>
+        </valueExp>
       </attributeAssignments>
     </sourcePatterns>
     <targetPatterns name="fig">
@@ -348,10 +357,13 @@
   <rules name="SokobanOnEndRule" supertypes="//@rules.16 //@rules.12" schema="//@schema">
     <sourcePatterns name="s">
       <op value="++"/>
-      <type href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Symbol"/>
+      <type href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//EndSymbol"/>
       <attributeAssignments op=":=">
-        <attribute href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Symbol/value"/>
-        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;+&quot;"/>
+        <attribute href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//EndSymbol/value"/>
+        <valueExp xsi:type="tgg:EnumExpression">
+          <eenum href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//EndValue"/>
+          <literal href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//EndValue/SOKOBAN_ON_END_FIELD"/>
+        </valueExp>
       </attributeAssignments>
     </sourcePatterns>
     <targetPatterns name="fig">
@@ -362,10 +374,13 @@
   <rules name="SokobanRule" supertypes="//@rules.16 //@rules.13" schema="//@schema">
     <sourcePatterns name="s">
       <op value="++"/>
-      <type href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Symbol"/>
+      <type href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//NormalSymbol"/>
       <attributeAssignments op=":=">
-        <attribute href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//Symbol/value"/>
-        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;@&quot;"/>
+        <attribute href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//NormalSymbol/value"/>
+        <valueExp xsi:type="tgg:EnumExpression">
+          <eenum href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//NormalValue"/>
+          <literal href="platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore#//NormalValue/SOKOBAN"/>
+        </valueExp>
       </attributeAssignments>
     </sourcePatterns>
     <targetPatterns name="fig">

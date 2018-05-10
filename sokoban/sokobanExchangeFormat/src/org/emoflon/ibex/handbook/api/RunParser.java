@@ -1,4 +1,4 @@
-package org.emoflon.ibex.handbook;
+package org.emoflon.ibex.handbook.api;
 
 import java.util.List;
 import java.util.Optional;
@@ -11,6 +11,7 @@ import org.eclipse.xtext.util.CancelIndicator;
 import org.eclipse.xtext.validation.CheckMode;
 import org.eclipse.xtext.validation.IResourceValidator;
 import org.eclipse.xtext.validation.Issue;
+import org.emoflon.ibex.handbook.SokobanExchangeFormatStandaloneSetup;
 import org.emoflon.ibex.handbook.sokobanExchangeFormat.Board;
 
 import com.google.inject.Injector;
@@ -42,10 +43,5 @@ public class RunParser {
 			return Optional.of((Board) resource.getContents().get(0));
 		
 		return Optional.empty();
-	}
-	
-	public static void main(String[] args) {
-		RunParser sokParser = new RunParser("/Users/tony/git/emoflon-ibex-examples/sokoban/SokobanGUI/boards/simplest.sok");
-		Optional<org.emoflon.ibex.handbook.sokobanExchangeFormat.Board> board = sokParser.parse();
 	}
 }

@@ -3,7 +3,7 @@ package org.emoflon.ibex.tgg.run.sokobanimportexport;
 import java.io.IOException;
 
 import org.apache.log4j.BasicConfigurator;
-
+import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.emoflon.ibex.tgg.operational.csp.constraints.factories.UserDefinedRuntimeTGGAttrConstraintFactory;
 import org.emoflon.ibex.tgg.operational.defaults.IbexOptions;
 import org.emoflon.ibex.tgg.operational.strategies.sync.SYNC;
@@ -42,8 +42,23 @@ public class SYNC_App extends SYNC {
 			IbexOptions options = new IbexOptions();
 			options.projectName("SokobanImportExport");
 			options.projectPath("SokobanImportExport");
-			options.debug(false);
+			options.debug(true);
 			options.userDefinedConstraints(new UserDefinedRuntimeTGGAttrConstraintFactory());
 			return options;
+	}
+	
+	@Override
+	public void loadModels() throws IOException {
+		s = createResource(projectPath + "/instances/src.xmi");
+		t = createResource(projectPath + "/instances/trg.xmi");
+		c = createResource(projectPath + "/instances/corr.xmi");
+		p = createResource(projectPath + "/instances/protocol.xmi");
+
+		EcoreUtil.resolveAll(rs);
+	}
+	
+	@Override
+	public void saveModels() throws IOException {
+		
 	}
 }

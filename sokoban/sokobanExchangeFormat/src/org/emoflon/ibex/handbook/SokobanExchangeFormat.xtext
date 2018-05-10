@@ -16,6 +16,11 @@ generate sokobanExchangeFormat "http://www.emoflon.org/ibex/handbook/SokobanExch
 // Field.................:   
 
 Board :
+	'Name::' name=STRING 
+	NEWLINE
+	'Author::' author=STRING 
+	NEWLINE
+	NEWLINE
 	firstRow=Row
 ;
 
@@ -36,28 +41,32 @@ Normal: {Normal}
 ;
 
 EndSymbol:
-	value=(
-		SOKOBAN_ON_END_FIELD |
-		BOX_ON_END_FIELD
-	)
+	value=EndValue
 ;
 
 NormalSymbol:
-	value=(
-		BOULDER | 
-		SOKOBAN | 
-		BOX
-	)
+	value=NormalValue
 ;
 
 Symbol : EndSymbol | NormalSymbol ;
 
-terminal BOULDER: '#';
-terminal SOKOBAN: '@';
-terminal SOKOBAN_ON_END_FIELD: '+'; 
-terminal BOX: '$';
-terminal BOX_ON_END_FIELD: '*';
+enum EndValue:
+	SOKOBAN_ON_END_FIELD = '+' |
+	BOX_ON_END_FIELD = '*'
+;
+
+enum NormalValue:
+	BOULDER = '#' |	
+	SOKOBAN = '@' |
+	BOX = '$'
+;
+
 terminal END_FIELD: '.';
 terminal FIELD: ' ';
 
 terminal NEWLINE: ('\r'? '\n');
+
+terminal STRING:
+			'"' ( '\\' . /* 'b'|'t'|'n'|'f'|'r'|'u'|'"'|"'"|'\\' */ | !('\\'|'"') )* '"' |
+			"'" ( '\\' . /* 'b'|'t'|'n'|'f'|'r'|'u'|'"'|"'"|'\\' */ | !('\\'|"'") )* "'"
+		;
