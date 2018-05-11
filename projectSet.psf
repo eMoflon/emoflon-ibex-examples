@@ -6,5 +6,6 @@
 <project reference="1.0,https://github.com/eMoflon/emoflon-ibex-examples.git,sokoban-final-solution,sokoban/SokobanGUI"/>
 <project reference="1.0,https://github.com/eMoflon/emoflon-ibex-examples.git,sokoban-final-solution,sokoban/SokobanLanguage"/>
 <project reference="1.0,https://github.com/eMoflon/emoflon-ibex-examples.git,sokoban-final-solution,sokoban/SokobanRules"/>
+<project reference="1.0,https://github.com/eMoflon/emoflon-ibex-examples.git,sokoban-final-solution,sokoban/SokobanImportExport"/>
 </provider>
 </psf>
