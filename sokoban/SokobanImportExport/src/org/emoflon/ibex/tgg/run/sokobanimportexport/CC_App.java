@@ -2,9 +2,9 @@ package org.emoflon.ibex.tgg.run.sokobanimportexport;
 
 import java.io.IOException;
 
-import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.Level;
+import org.apache.log4j.Logger;
 
-import org.emoflon.ibex.tgg.operational.csp.constraints.factories.UserDefinedRuntimeTGGAttrConstraintFactory;
 import org.emoflon.ibex.tgg.operational.defaults.IbexOptions;
 import org.emoflon.ibex.tgg.operational.strategies.cc.CC;
 import org.emoflon.ibex.tgg.runtime.engine.DemoclesTGGEngine;
@@ -17,7 +17,7 @@ public class CC_App extends CC {
 	}
 
 	public static void main(String[] args) throws IOException {
-		BasicConfigurator.configure();
+		Logger.getRootLogger().setLevel(Level.INFO);
 
 		CC_App cc = new CC_App();
 		
@@ -31,20 +31,16 @@ public class CC_App extends CC {
 		cc.terminate();
 		logger.info(cc.generateConsistencyReport());			
 	}
-
+	
+	
 	protected void registerUserMetamodels() throws IOException {
 		_RegistrationHelper.registerMetamodels(rs, this);
 			
 		// Register correspondence metamodel last
-		loadAndRegisterMetamodel(projectPath + "/model/" + projectPath + ".ecore");
+		loadAndRegisterMetamodel(options.projectPath() + "/model/" + options.projectName() + ".ecore");
 	}
 	
 	private static IbexOptions createIbexOptions() {
-			IbexOptions options = new IbexOptions();
-			options.projectName("SokobanImportExport");
-			options.projectPath("SokobanImportExport");
-			options.debug(false);
-			options.userDefinedConstraints(new UserDefinedRuntimeTGGAttrConstraintFactory());
-			return options;
+		return _RegistrationHelper.createIbexOptions();
 	}
 }

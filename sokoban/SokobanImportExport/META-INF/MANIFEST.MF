@@ -26,13 +26,12 @@ Require-Bundle: org.apache.log4j,
  org.gervarro.notification,
  org.gervarro.plan.dynprog,
  org.emoflon.ibex.tgg.runtime.democles,
- SokobanExchangeFormatPreprocessor;bundle-version="0.0.1",
- SokobanLanguage;bundle-version="0.0.1",
- sokobanExchangeFormat;bundle-version="1.0.0",
- org.emoflon.ibex.gt;bundle-version="1.0.0"
+ SokobanLanguage,
+ SokobanExchangeFormatPreprocessor,
+ sokobanExchangeFormat
 Bundle-ManifestVersion: 2
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-Vendor: eMoflon IBeX
-Automatic-Module-Name: SokobanImportExport
 Export-Package: org.emoflon.ibex.tgg.run.sokobanimportexport
+Automatic-Module-Name: SokobanImportExport

@@ -14,8 +14,8 @@ Require-Bundle: org.apache.log4j,
  SokobanRules;bundle-version="1.0.0",
  org.emoflon.ibex.gt.democles;bundle-version="1.0.0",
  SokobanExchangeFormatPreprocessor,
- SokobanImportExport,
- org.emoflon.ibex.tgg.core.runtime;bundle-version="1.0.0"
+ org.emoflon.ibex.tgg.core.runtime;bundle-version="1.0.0",
+ SokobanImportExport
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Automatic-Module-Name: SokobanGUI
 Bundle-Vendor: eMoflon::IBeX Developers

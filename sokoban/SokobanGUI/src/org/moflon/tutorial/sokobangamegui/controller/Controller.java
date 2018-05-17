@@ -15,7 +15,6 @@ import org.emoflon.ibex.handbook.api.RunParser;
 import org.emoflon.ibex.handbook.api.RunSerialiser;
 import org.emoflon.ibex.handbook.preprocessing.Preprocessor;
 import org.emoflon.ibex.tgg.operational.strategies.sync.SYNC;
-import org.emoflon.ibex.tgg.run.sokobanimportexport.INITIAL_BWD;
 import org.emoflon.ibex.tgg.run.sokobanimportexport.SYNC_App;
 import org.moflon.core.utilities.eMoflonEMFUtil;
 import org.moflon.tutorial.sokobangamegui.rules.Result;
@@ -37,12 +36,12 @@ import SokobanLanguage.SokobanLanguagePackage;
 public class Controller {
 
 	private static final Logger logger = Logger.getLogger(Controller.class);
-	
+
 	/* The controller class knows all objects, the view and the board */
 	private View view;
 	private Board board;
 	private SokobanRules sokobanRules;
-	
+
 	private SYNC sync;
 
 	/**
@@ -52,8 +51,8 @@ public class Controller {
 	 *            Specifies the program arguments (or rather parameters).
 	 */
 	public static void main(String[] args) {
-		Logger.getRootLogger().setLevel(Level.DEBUG);
-		
+		Logger.getRootLogger().setLevel(Level.INFO);
+
 		/* Create an instance of this class and create an empty board */
 		Controller controller = new Controller();
 		controller.switchBoard(BoardCreator.createEmptyBoard(8, 8));
@@ -126,63 +125,66 @@ public class Controller {
 
 		board.ifPresent(b -> {
 			try {
-				if(sync != null)
-					sync.terminate();
-				sync = new SYNC_App();
-				
-				long tic = System.currentTimeMillis();
-				logger.debug("Starting preprocessing");
+				initialiseFwdSynchroniser();
+
 				sync.getSourceResource().getContents().add(b);
 				preprocess(sync.getResourceSet());
-				long toc = System.currentTimeMillis();
-				logger.debug("Finished: " + (toc - tic)/1000.0 + "s");
-				
-				logger.debug("Starting sync");
+
+				logger.info("Starting sync");
+				long tic = System.currentTimeMillis();
 				sync.forward();
-				toc = System.currentTimeMillis();
-				logger.debug("Finished: " + (toc - tic)/1000.0 + "s");
-				
+				long toc = System.currentTimeMillis();
+				logger.info("Finished in " + (toc - tic) / 1000.0 + "s");
+
 				Board sokBoard = (Board) sync.getTargetResource().getContents().get(0);
 				postprocess(sokBoard);
+				
 				switchBoard(sokBoard);
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
 		});
 	}
-	
+
 	private void preprocess(ResourceSet rs) {
 		Preprocessor p = new Preprocessor(rs);
 		p.preprocess();
 	}
-	
+
 	private void postprocess(Board b) {
-		b.getFields().stream().max((f1,f2) -> f1.getRow() - f2.getRow())
-			.ifPresent(f -> b.setHeight(f.getRow() + 1));
-		
-		b.getFields().stream().max((f1,f2) -> f1.getCol() - f2.getCol())
-		.ifPresent(f -> b.setWidth(f.getCol() + 1));
+		b.getFields().stream().max((f1, f2) -> f1.getRow() - f2.getRow()).ifPresent(f -> b.setHeight(f.getRow() + 1));
+		b.getFields().stream().max((f1, f2) -> f1.getCol() - f2.getCol()).ifPresent(f -> b.setWidth(f.getCol() + 1));
+	}
+	
+	private void initialiseFwdSynchroniser() throws IOException {
+		if (sync != null)
+			sync.terminate();
+
+		sync = new SYNC_App();
+	}
+
+	private void initialiseBwdSynchroniser() throws IOException {
+		if(sync == null)
+			sync = new SYNC_App();
 	}
 
 	public void saveSOKFile(String filePath) {
 		try {
-			if(!(sync instanceof SYNC_App)) {
-				sync.terminate();
-				sync = new INITIAL_BWD();
-				sync.getTargetResource().getContents().add(board);
-			}
-						
+			initialiseBwdSynchroniser();
+
+			sync.getTargetResource().getContents().add(board);
+			
 			long tic = System.currentTimeMillis();
-			logger.debug("Starting sync");
+			logger.info("Starting sync");
 			sync.backward();
 			long toc = System.currentTimeMillis();
-			logger.debug("Finished: " + (toc - tic)/1000.0 + "s");
-			
+			logger.info("Finished: " + (toc - tic) / 1000.0 + "s");
+
 			switchBoard(board);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
+
 		RunSerialiser serialiser = new RunSerialiser();
 		ExtendedBoard extBoard = (ExtendedBoard) sync.getSourceResource().getContents().get(0);
 		serialiser.unparse(filePath, extBoard.getBoard());
