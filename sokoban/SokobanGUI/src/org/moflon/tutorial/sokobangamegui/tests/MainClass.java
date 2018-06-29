@@ -1,4 +1,4 @@
-package org.moflon.tutorial.sokobangui.tests;
+package org.moflon.tutorial.sokobangamegui.tests;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
@@ -7,7 +7,7 @@ import org.moflon.tutorial.sokobangamegui.controller.Controller;
 
 //import testCasesJavaRobot.TestProgram;
 
-public class Main {
+public class MainClass {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

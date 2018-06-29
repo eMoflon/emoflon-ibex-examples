@@ -1,4 +1,4 @@
-package org.moflon.tutorial.sokobangui.junitTests;
+package org.moflon.tutorial.sokobangamegui.junitTests;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -11,7 +11,7 @@ import org.apache.log4j.Logger;
 import org.junit.jupiter.api.Test;
 import org.moflon.tutorial.sokobangamegui.controller.BoardCreator;
 import org.moflon.tutorial.sokobangamegui.controller.Controller;
-import org.moflon.tutorial.sokobangui.tests.AutoClick;
+import org.moflon.tutorial.sokobangamegui.tests.AutoClick;
 
 class OpenBoard {
 	private Robot robot;

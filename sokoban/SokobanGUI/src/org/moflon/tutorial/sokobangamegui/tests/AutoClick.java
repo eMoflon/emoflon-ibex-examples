@@ -1,4 +1,4 @@
-package org.moflon.tutorial.sokobangui.tests;
+package org.moflon.tutorial.sokobangamegui.tests;
 
 import java.awt.Robot;
 import java.awt.event.InputEvent;
