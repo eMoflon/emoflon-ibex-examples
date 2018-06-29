@@ -41,7 +41,7 @@ public class Controller {
 	private View view;
 	private Board board;
 	private SokobanRules sokobanRules;
-
+	public String currentStatus = "";
 	private SYNC sync;
 
 	/**
@@ -76,6 +76,8 @@ public class Controller {
 			view = new View(this, board);
 
 			sokobanRules = new SokobanRules(board);
+			//System.out.println("Current status is:"+ view.getStatus());
+			currentStatus = view.getStatus();
 		}
 	}
 

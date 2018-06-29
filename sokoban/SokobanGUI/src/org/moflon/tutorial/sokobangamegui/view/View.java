@@ -64,7 +64,6 @@ public class View extends JFrame {
 	/* Icon list (implemented as hash-map to quick access via string) */
 	private Map<String, ImageIcon> icons;
 
-
 	/**
 	 * The view constructor
 	 * 
@@ -233,6 +232,9 @@ public class View extends JFrame {
 	public void updateStatus(String status) {
 		statusBar.append(status);	
 		statusBar.setCaretPosition(statusBar.getDocument().getLength());
+	}
+	public String getStatus() {
+		return statusBar.getText();
 	}
 	
 	/**

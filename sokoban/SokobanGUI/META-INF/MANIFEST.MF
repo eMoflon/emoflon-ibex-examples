@@ -15,7 +15,21 @@ Require-Bundle: org.apache.log4j,
  org.emoflon.ibex.gt.democles;bundle-version="1.0.0",
  SokobanExchangeFormatPreprocessor,
  org.emoflon.ibex.tgg.core.runtime;bundle-version="1.0.0",
- SokobanImportExport
+ SokobanImportExport,
+ org.junit,
+ org.junit.jupiter.api,
+ org.junit.jupiter.engine,
+ org.junit.jupiter.migrationsupport,
+ org.junit.jupiter.params,
+ org.junit.platform.commons,
+ org.junit.platform.engine,
+ org.junit.platform.launcher,
+ org.junit.platform.runner,
+ org.junit.platform.suite.api,
+ org.junit.vintage.engine,
+ org.hamcrest.core,
+ org.opentest4j,
+ org.apiguardian
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Automatic-Module-Name: SokobanGUI
 Bundle-Vendor: eMoflon::IBeX Developers
