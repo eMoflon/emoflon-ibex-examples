@@ -2,9 +2,9 @@ package org.moflon.tutorial.sokobangamegui.controller;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
+import java.util.function.BiFunction;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
@@ -38,6 +38,7 @@ public class Controller {
 	private static final Logger logger = Logger.getLogger(Controller.class);
 
 	/* The controller class knows all objects, the view and the board */
+	private BiFunction<Controller, Board, View> viewSupplier;
 	private View view;
 	private Board board;
 	private SokobanRules sokobanRules;
@@ -47,22 +48,25 @@ public class Controller {
 	/**
 	 * Main function or rather program entry point.
 	 * 
-	 * @param args
-	 *            Specifies the program arguments (or rather parameters).
+	 * @param args Specifies the program arguments (or rather parameters).
 	 */
 	public static void main(String[] args) {
 		Logger.getRootLogger().setLevel(Level.INFO);
 
 		/* Create an instance of this class and create an empty board */
-		Controller controller = new Controller();
-		controller.switchBoard(BoardCreator.createEmptyBoard(8, 8));
+		Controller controller = new Controller((c, b) -> new View(c, b));
+		Board board = BoardCreator.createEmptyBoard(8, 8);
+		controller.switchBoard(board);
+	}
+
+	public Controller(BiFunction<Controller, Board, View> viewSupplier) {
+		this.viewSupplier = viewSupplier;
 	}
 
 	/**
 	 * Store a reference to the new given board object and allocates a new view.
 	 * 
-	 * @param board
-	 *            Specifies the new board object.
+	 * @param board Specifies the new board object.
 	 */
 	public void switchBoard(Board board) {
 		if (board != null) {
@@ -73,10 +77,9 @@ public class Controller {
 
 			/* Store reference to the new board and allocate a new view */
 			this.board = board;
-			view = new View(this, board);
+			this.view = viewSupplier.apply(this, board);
 
 			sokobanRules = new SokobanRules(board);
-			//System.out.println("Current status is:"+ view.getStatus());
 			currentStatus = view.getStatus();
 		}
 	}
@@ -96,8 +99,7 @@ public class Controller {
 	/**
 	 * Saves the current eMoflon model.
 	 * 
-	 * @param filePath
-	 *            Specifies the full XMI filename.
+	 * @param filePath Specifies the full XMI filename.
 	 */
 	public void saveModel(String filePath) {
 		eMoflonEMFUtil.saveModel(board, filePath);
@@ -106,8 +108,7 @@ public class Controller {
 	/**
 	 * Loads the specified eModflon model.
 	 * 
-	 * @param filePath
-	 *            Specifies the full XMI filename.
+	 * @param filePath Specifies the full XMI filename.
 	 */
 	public void loadModel(String filePath) {
 		/* Load the specified model and switch to the new board */
@@ -140,7 +141,7 @@ public class Controller {
 
 				Board sokBoard = (Board) sync.getTargetResource().getContents().get(0);
 				postprocess(sokBoard);
-				
+
 				switchBoard(sokBoard);
 			} catch (IOException e) {
 				e.printStackTrace();
@@ -157,7 +158,7 @@ public class Controller {
 		b.getFields().stream().max((f1, f2) -> f1.getRow() - f2.getRow()).ifPresent(f -> b.setHeight(f.getRow() + 1));
 		b.getFields().stream().max((f1, f2) -> f1.getCol() - f2.getCol()).ifPresent(f -> b.setWidth(f.getCol() + 1));
 	}
-	
+
 	private void initialiseFwdSynchroniser() throws IOException {
 		if (sync != null)
 			sync.terminate();
@@ -166,7 +167,7 @@ public class Controller {
 	}
 
 	private void initialiseBwdSynchroniser() throws IOException {
-		if(sync == null)
+		if (sync == null)
 			sync = new SYNC_App();
 	}
 
@@ -175,7 +176,7 @@ public class Controller {
 			initialiseBwdSynchroniser();
 
 			sync.getTargetResource().getContents().add(board);
-			
+
 			long tic = System.currentTimeMillis();
 			logger.info("Starting sync");
 			sync.backward();
@@ -195,8 +196,7 @@ public class Controller {
 	/**
 	 * Selects the given field
 	 * 
-	 * @param field
-	 *            Specifies the field object which is to be selected.
+	 * @param field Specifies the field object which is to be selected.
 	 */
 	public void selectField(Field field) {
 		try {
@@ -250,64 +250,12 @@ public class Controller {
 	/**
 	 * Places the given figure to the given field and updates the view.
 	 * 
-	 * @param field
-	 *            Specifies the field object where the figure is to be placed on.
-	 * @param figure
-	 *            Specifies the figure object which is to be placed on the field.
+	 * @param field  Specifies the field object where the figure is to be placed on.
+	 * @param figure Specifies the figure object which is to be placed on the field.
 	 */
 	public void setFigure(Field field, Figure figure) {
 		field.setFigure(figure);
 		view.updateView();
-	}
-
-	/**
-	 * Prints the board as a kind of ASCII art to the console.
-	 * 
-	 * @param board
-	 *            Specifies the board object which is to be printed.
-	 */
-	public void printBoard(Board board) {
-		/* Check parameter validity */
-		if (board == null) {
-			return;
-		}
-
-		/* Print field array */
-		System.out.println(Arrays.toString(board.getFields().toArray()));
-
-		/* Allocate temporary field array */
-		int w = board.getWidth();
-		int h = board.getHeight();
-
-		Field[][] fields = new Field[h][w];
-
-		/* Fill temporary field array with the board fields */
-		for (Field f : board.getFields()) {
-			fields[f.getRow()][f.getCol()] = f;
-		}
-
-		/* Print each row */
-		for (int r = 0; r < h; r++) {
-			/* Print each column */
-			for (int c = 0; c < w; c++) {
-				printField(fields[r][c].getBottom());
-			}
-			System.out.println();
-		}
-	}
-
-	/**
-	 * Prints the given field object.
-	 * 
-	 * @param field
-	 *            Specifies the field object which is to be printed.
-	 */
-	private void printField(Field field) {
-		if (field == null) {
-			System.out.print("[-,-]");
-		} else {
-			System.out.print("[" + field.getRow() + "," + field.getCol() + "]");
-		}
 	}
 
 	public Board getBoard() {
