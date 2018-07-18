@@ -4,15 +4,19 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import org.junit.Before;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.moflon.tutorial.sokobangamegui.controller.BoardCreator;
 import org.moflon.tutorial.sokobangamegui.controller.Controller;
+import org.moflon.tutorial.sokobangamegui.view.actions.PlayAction;
 
 class TestBoardCreation {
 
 	private TestView view;
 	private Controller controller;
+	private PlayAction playAction;
 	
 	@BeforeEach
 	public void createView() {
@@ -22,6 +26,11 @@ class TestBoardCreation {
 		});
 		controller.switchBoard(BoardCreator.createEmptyBoard(8, 8));
 	}
+	
+	/*@AfterEach
+	public void deleteView() {
+		controller = null;
+	}*/
 	
 	@Test
 	public void testSingleSokoban() {
@@ -42,6 +51,38 @@ class TestBoardCreation {
 	public void testSingleBlock() {
 		view.createBlock(5,6);
 		assertEquals(ExpectedBoards.singleBlock(), view.printBoard());
+		assertFalse(controller.boardIsValid());
+	}
+	
+	@Test
+	public void testNoSokoban() {
+		view.createBlock(5,6);
+		view.createBoulder(3,2);
+		view.createEndPos(2,5);
+		assertFalse(controller.boardIsValid());
+	}
+	
+	@Test
+	public void testNoBlock() {
+		view.createSokoban(2,2);
+		view.createBoulder(3,2);
+		view.createEndPos(2,5);
+		assertFalse(controller.boardIsValid());
+	}
+	
+	@Test
+	public void testNoBoulder() {
+		view.createSokoban(2,2);
+		view.createBlock(5,6);
+		view.createEndPos(2,5);
+		assertTrue(controller.boardIsValid());
+	}
+	
+	@Test
+	public void testNoEndPos() {
+		view.createSokoban(2,2);
+		view.createBlock(5,6);
+		view.createBoulder(3,2);
 		assertFalse(controller.boardIsValid());
 	}
 	
@@ -68,4 +109,112 @@ class TestBoardCreation {
 		assertEquals(ExpectedBoards.validBoard(), view.printBoard());
 		assertTrue(controller.boardIsValid());
 	}
+	
+	@Test
+	public void testBoulderOnEndPos() {
+		view.createSokoban(2,2);
+		view.createBlock(5,6);
+		view.createBoulder(3,2);
+		view.createEndPos(3,2);
+		assertFalse(controller.boardIsValid());
+	}
+	
+	@Test
+	public void testBlockOnBoulder() {
+		view.createSokoban(2,2);
+		view.createBlock(5,6);
+		view.createBoulder(5,6);
+		view.createEndPos(2,5);
+		assertFalse(controller.boardIsValid());
+	}
+	
+	@Test
+	public void testSokobanOnBoulder() {
+		view.createSokoban(2,2);
+		view.createBlock(5,6);
+		view.createBoulder(2,2);
+		view.createEndPos(2,5);
+		assertFalse(controller.boardIsValid());
+	}
+	
+	@Test
+	public void testSokobanOnBlock() {
+		view.createSokoban(2,2);
+		view.createBlock(2,2);
+		view.createBoulder(3,2);
+		view.createEndPos(2,5);
+		assertFalse(controller.boardIsValid());
+	}
+	
+	@Test
+	public void testValidBoardMoreBlocksLessEndPos() {
+		view.createSokoban(2,2);
+		view.createBlock(5,6);
+		view.createBlock(6,6);
+		view.createBlock(7,6);
+		view.createBoulder(3,2);
+		view.createEndPos(2,5);
+		assertFalse(controller.boardIsValid());
+	}
+	
+	@Test
+	public void testValidBoardMoreEndPosLessBlocks() {
+		view.createSokoban(2,2);
+		view.createBlock(5,6);
+		view.createBoulder(3,2);
+		view.createEndPos(2,5);
+		view.createEndPos(4,5);
+		view.createEndPos(6,5);
+		assertFalse(controller.boardIsValid());
+	}
+	
+	@Test
+	public void testValidBoardEqualEndPosAndBlocks() {
+		view.createSokoban(2,2);
+		view.createBlock(5,6);
+		view.createBlock(6,6);
+		view.createBlock(7,6);
+		view.createBoulder(3,2);
+		view.createEndPos(2,5);
+		view.createEndPos(4,5);
+		view.createEndPos(6,5);
+		assertTrue(controller.boardIsValid());
+	}
+	
+	@Test
+	public void testValidBoardBlockIsInCorner() {
+		view.createSokoban(2,2);
+		view.createBlock(7,7);
+		view.createBlock(0,0);
+		view.createBlock(0,7);
+		view.createBoulder(3,2);
+		view.createEndPos(2,5);
+		view.createEndPos(4,5);
+		view.createEndPos(6,5);
+		assertFalse(controller.boardIsValid());
+	}
+	/*@Test
+	public void testValidBoardMoveSokoban() {
+		view.createSokoban(2,2);
+		view.createBlock(5,6);
+		view.createBoulder(3,2);
+		view.createEndPos(2,5);
+		assertEquals(ExpectedBoards.validBoard(), view.printBoard());
+		assertTrue(controller.boardIsValid());
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		playAction.setPlayModus(true);
+		view.updateView();
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		//view.selectField();
+	}*/
 }
