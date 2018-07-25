@@ -25,8 +25,24 @@
 	}
 }
 
+#abstract #rule NormalSymbolRule 
+#with SokobanImportExport
 
+#source {
+	e:Normal {
+		++ -symbol->s
+	}
+	 
+	++ s:NormalSymbol
+}
 
+#abstract #rule EndSymbolRule 
+#with SokobanImportExport
 
-
-
+#source {
+	e:End {
+		++ -symbol->s
+	}
+	 
+	++ s:EndSymbol
+}
