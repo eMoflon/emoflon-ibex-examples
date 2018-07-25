@@ -4,10 +4,6 @@
 #abstract #rule BoardToBoardRule #with SokobanImportExport
 
 #source { 
-	++ extBoard:SokobanExchangeFormatPreprocessor.ExtendedBoard {
-		++ -board->sokBoard
-	}
-	
 	++ sokBoard:sokobanExchangeFormat.Board {
 		++ -firstRow->row
 	}
@@ -40,3 +36,9 @@
 		#trg->board
 	}
 }
+
+#rule BoardNormalEntryRule #extends BoardToBoardRule, NormalRule 
+#with SokobanImportExport
+
+#rule BoardEndEntryRule #extends BoardToBoardRule, EndRule 
+#with SokobanImportExport

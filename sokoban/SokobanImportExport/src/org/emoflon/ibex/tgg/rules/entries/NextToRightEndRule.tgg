@@ -1,5 +1,0 @@
-#using SokobanImportExport.*
-#using AttrCondDefLibrary.*
-
-#rule NextToRightEndRule 
-#extends NextToRightRule, EndRule #with SokobanImportExport
