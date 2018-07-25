@@ -51,7 +51,7 @@ public class Controller {
 	 *            Specifies the program arguments (or rather parameters).
 	 */
 	public static void main(String[] args) {
-		Logger.getRootLogger().setLevel(Level.INFO);
+		Logger.getRootLogger().setLevel(Level.WARN);
 
 		/* Create an instance of this class and create an empty board */
 		Controller controller = new Controller();
