@@ -8,6 +8,7 @@ import SokobanLanguage.Field;
 import SokobanLanguage.SokobanLanguagePackage;
 
 public class TestView extends View {
+	protected final String IMAGES = "../SokobanGUI/images/";
 
 	private static final long serialVersionUID = 1L;
 
@@ -100,5 +101,23 @@ public class TestView extends View {
 				}
 			}
 		}
+	}
+
+	@Override
+	protected String imageFolder() {
+		return IMAGES;
+	}
+	
+	public void setPlayModus(boolean b) {
+		playAction.setPlayModus(b);
+	}
+
+	public Field getField(int i, int j) {
+		return buttons[i][j].getField();
+	}
+
+	public void moveFigure(Field from, Field to) {
+		selectField(from);
+		selectField(to);
 	}
 }
