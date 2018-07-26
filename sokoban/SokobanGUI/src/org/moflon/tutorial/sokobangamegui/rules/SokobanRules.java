@@ -45,7 +45,7 @@ public class SokobanRules {
 		api.pushBlockLeft().subscribeDisappearing(m -> possibleMoves.remove(m.getTo()));
 		api.pushBlockRight().subscribeDisappearing(m -> possibleMoves.remove(m.getTo()));
 	}
-
+	
 	// If the required field is indeed empty, add the potential rule application
 	private void register(Field targetField, Runnable applyRule) {
 		possibleMoves.put(targetField, () -> {

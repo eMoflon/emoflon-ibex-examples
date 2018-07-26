@@ -80,7 +80,6 @@ public class TestView extends View {
 				case "Block":
 					return "[*]";
 				default:
-					//TODO complete
 					return "[?]";
 				}
 			}
@@ -96,7 +95,6 @@ public class TestView extends View {
 				case "Boulder":
 					return "[#]";
 				default:
-					//TODO complete
 					return "[?]";
 				}
 			}

@@ -238,8 +238,32 @@ class TestBoardCreation {
 	}
 	
 	@Test
+	public void testValidBoardMoveBoulder() {
+		view.createSokoban(2,2);
+		view.createBlock(3,2);
+		view.createBoulder(2,3);
+		view.createEndPos(2,5);
+		assertEquals(ExpectedBoards.validBoardMoveBoulder(), view.printBoard());
+		assertTrue(controller.boardIsValid());
+		view.setPlayModus(true);
+		view.moveFigure(view.getField(2,2), view.getField(2,3));
+		//view.moveFigure(view.getField(2,3), view.getField(2,4));
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		assertEquals(ExpectedBoards.validBoardMoveBoulder(), view.printBoard());
+	}
+	
+	@Test
 	public void testValidBoardImportFile() {
 		controller.loadSOKFile("boards/chaos.sok");
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e){
+			e.printStackTrace();
+		}
 		assertEquals(ExpectedBoards.validBoardFileImport(), view.printBoard());
 		try {
 			Thread.sleep(2000);
@@ -254,8 +278,8 @@ class TestBoardCreation {
 		view.createBlock(5,6);
 		view.createBoulder(3,2);
 		view.createEndPos(2,5);
-		assertEquals(ExpectedBoards.validBoard(), view.printBoard());
-		assertTrue(controller.boardIsValid());
+		//assertEquals(ExpectedBoards.validBoard(), view.printBoard());
+		//assertTrue(controller.boardIsValid());
 		//view.setPlayModus(true);
 		//view.moveFigure(view.getField(2,2), view.getField(2,3));
 		try {
@@ -264,6 +288,6 @@ class TestBoardCreation {
 			e.printStackTrace();
 		}
 		
-		controller.saveSOKFile("E:\\source\\model2.sok");
+		controller.saveSOKFile("boards/gen_board.sok");
 	}
 }
