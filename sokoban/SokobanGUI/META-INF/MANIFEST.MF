@@ -3,7 +3,9 @@ Bundle-ManifestVersion: 2
 Bundle-Name: SokobanGUI
 Bundle-SymbolicName: SokobanGUI
 Bundle-Version: 1.0.0.qualifier
-Export-Package: org.moflon.tutorial.sokobangamegui.view.actions
+Export-Package: org.moflon.tutorial.sokobangamegui.controller,
+ org.moflon.tutorial.sokobangamegui.view,
+ org.moflon.tutorial.sokobangamegui.view.actions
 Require-Bundle: org.apache.log4j,
  org.eclipse.emf.ecore;bundle-version="2.13.0",
  sokobanExchangeFormat,
