@@ -77,12 +77,19 @@ public class SokobanRules {
 			return new Result(false, "You must have exactly as many end fields as blocks");
 
 		if (api.boulderOnEndField().hasMatches()) {
-			String occupiedFields = api.boulderOnEndField().findMatches().stream()
+			String occupiedFields = api.boulderOnEndField().matchStream()
 					.map(m -> "[" + m.getField().getRow() + "," + m.getField().getCol() + "]")
 					.collect(Collectors.joining(", "));
 			return new Result(false, "These end fields are blocked: " + occupiedFields);
 		}
 
+		if(api.bockNotOnEndFieldInCorner().hasMatches()) {
+			String problematicCorners = api.bockNotOnEndFieldInCorner().matchStream()
+					.map(m -> "[" + m.getField().getRow() + "," + m.getField().getCol() + "]")
+					.collect(Collectors.joining(", "));
+			return new Result(false, "These corners have blocks that are blocked: " + problematicCorners);
+		}
+		
 		return new Result(true, allsWell);
 	}
 }
