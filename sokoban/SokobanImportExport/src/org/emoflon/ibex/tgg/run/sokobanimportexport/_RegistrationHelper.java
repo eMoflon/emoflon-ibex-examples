@@ -10,16 +10,13 @@ import org.emoflon.ibex.tgg.operational.csp.constraints.factories.UserDefinedRun
 import org.emoflon.ibex.tgg.operational.defaults.IbexOptions;
 import org.emoflon.ibex.tgg.operational.strategies.OperationalStrategy;
 
-import SokobanExchangeFormatPreprocessor.impl.SokobanExchangeFormatPreprocessorPackageImpl;
 import SokobanLanguage.impl.SokobanLanguagePackageImpl;
 
 public class _RegistrationHelper {
 
 	/** Load and register source and target metamodels */
 	public static void registerMetamodels(ResourceSet rs, OperationalStrategy strategy)  throws IOException {
-		SokobanLanguagePackageImpl.init();
-		SokobanExchangeFormatPreprocessorPackageImpl.init();
-		
+		SokobanLanguagePackageImpl.init();		
 		SokobanExchangeFormatPackageImpl.init();
 		rs.getPackageRegistry().put("platform:/resource/sokobanExchangeFormat/model/generated/SokobanExchangeFormat.ecore", SokobanExchangeFormatPackage.eINSTANCE);
 	}
