@@ -1,3 +1,7 @@
 
 sokoban/SokobanImportExport/src/org/emoflon/ibex/tgg/operational/csp/constraints/factories/sokobanimportexport/UserDefinedRuntimeTGGAttrConstraintFactory.java
 sokoban/SokobanImportExport/src/org/emoflon/ibex/tgg/run/sokobanimportexport/_SchemaBasedAutoRegistration.java
+sokoban/SokobanImportExport/src/org/emoflon/ibex/tgg/run/sokobanimportexport/FWD_OPT_App.java
+sokoban/SokobanImportExport/src/org/emoflon/ibex/tgg/run/sokobanimportexport/CO_App.java
+sokoban/SokobanImportExport/src/org/emoflon/ibex/tgg/run/sokobanimportexport/CC_App.java
+sokoban/SokobanImportExport/src/org/emoflon/ibex/tgg/run/sokobanimportexport/BWD_OPT_App.java
