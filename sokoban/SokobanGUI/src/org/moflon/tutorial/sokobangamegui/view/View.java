@@ -51,12 +51,12 @@ public class View extends JFrame {
 	private static final long serialVersionUID = 1L;
 
 	/* Board and controller references */
-	private Board board;
+	protected Board board;
 	private Controller controller;
 
 	/* JFrame main window and field buttons */
-	private FieldButton[][] buttons;
-	private PlayAction playAction;
+	protected FieldButton[][] buttons;
+	protected PlayAction playAction;
 	private JPopupMenu figureMenu;
 	private JTextArea statusBar;
 	private JScrollPane statusPanel;
@@ -316,7 +316,7 @@ public class View extends JFrame {
 
 		try {
 			/* Read icon from file */
-			Image img = ImageIO.read(new File("images/" + name + ".png"));
+			Image img = ImageIO.read(new File(imageFolder() + name + ".png"));
 
 			/* Adjust icon size by scaling to button size */
 			int buttonSize = Math.min(buttons[0][0].getWidth(), buttons[0][0].getHeight());
@@ -347,5 +347,19 @@ public class View extends JFrame {
 
 	public void showMessage(String message) {
 		updateStatus("\n" + message);
+	}
+
+	protected String imageFolder() {
+		return "images/";
+	}
+	
+	protected void createFigure(EClass sokoban, FieldButton fieldButton) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	protected void createEndFigure(FieldButton fieldButton) {
+		// TODO Auto-generated method stub
+		
 	}
 }

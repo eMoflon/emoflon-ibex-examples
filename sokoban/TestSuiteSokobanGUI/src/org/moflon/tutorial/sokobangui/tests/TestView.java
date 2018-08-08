@@ -8,8 +8,6 @@ import SokobanLanguage.Field;
 import SokobanLanguage.SokobanLanguagePackage;
 
 public class TestView extends View {
-	protected final String IMAGES = "../SokobanGUI/images/";
-
 	private static final long serialVersionUID = 1L;
 
 	public TestView(Controller controller, Board board) {
@@ -19,18 +17,19 @@ public class TestView extends View {
 	public void createSokoban(int x, int y) {
 		createFigure(SokobanLanguagePackage.eINSTANCE.getSokoban(), buttons[x][y]);
 	}
-	
+
 	public void createBlock(int x, int y) {
 		createFigure(SokobanLanguagePackage.eINSTANCE.getBlock(), buttons[x][y]);
 	}
-	
+
 	public void createBoulder(int x, int y) {
 		createFigure(SokobanLanguagePackage.eINSTANCE.getBoulder(), buttons[x][y]);
 	}
-	
+
 	public void createEndPos(int x, int y) {
 		createEndFigure(buttons[x][y]);
 	}
+
 	/**
 	 * Prints the board as a kind of ASCII art to the console.
 	 */
@@ -103,9 +102,9 @@ public class TestView extends View {
 
 	@Override
 	protected String imageFolder() {
-		return IMAGES;
+		return "../SokobanGUI/images/";
 	}
-	
+
 	public void setPlayModus(boolean b) {
 		playAction.setPlayModus(b);
 	}

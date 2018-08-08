@@ -10,9 +10,9 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EClassifier;
-import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.emoflon.ibex.handbook.api.RunParser;
 import org.emoflon.ibex.handbook.api.RunSerialiser;
+import org.emoflon.ibex.handbook.sokobanExchangeFormat.Board;
 import org.emoflon.ibex.tgg.operational.strategies.sync.SYNC;
 import org.emoflon.ibex.tgg.run.sokobanimportexport.SYNC_App;
 import org.moflon.core.utilities.eMoflonEMFUtil;
@@ -20,7 +20,6 @@ import org.moflon.tutorial.sokobangamegui.rules.Result;
 import org.moflon.tutorial.sokobangamegui.rules.SokobanRules;
 import org.moflon.tutorial.sokobangamegui.view.View;
 
-import org.emoflon.ibex.handbook.sokobanExchangeFormat.Board;
 import SokobanLanguage.Field;
 import SokobanLanguage.Figure;
 import SokobanLanguage.SokobanLanguagePackage;
@@ -36,7 +35,7 @@ public class Controller {
 	private static final Logger logger = Logger.getLogger(Controller.class);
 
 	/* The controller class knows all objects, the view and the board */
-	private BiFunction<Controller, Board, View> viewSupplier;
+	private BiFunction<Controller, SokobanLanguage.Board, View> viewSupplier;
 	private View view;
 	private SokobanLanguage.Board board;
 	private SokobanRules sokobanRules;
@@ -53,7 +52,7 @@ public class Controller {
 
 		/* Create an instance of this class and create an empty board */
 		Controller controller = new Controller((c, b) -> new View(c, b));
-		Board board = BoardCreator.createEmptyBoard(8, 8);
+		SokobanLanguage.Board board = BoardCreator.createEmptyBoard(8, 8);
 		controller.switchBoard(board);
 	}
 
@@ -146,7 +145,7 @@ public class Controller {
 		});
 	}
 
-	private void postprocess(Board b) {
+	private void postprocess(SokobanLanguage.Board b) {
 		b.getFields().stream().max((f1, f2) -> f1.getRow() - f2.getRow()).ifPresent(f -> b.setHeight(f.getRow() + 1));
 		b.getFields().stream().max((f1, f2) -> f1.getCol() - f2.getCol()).ifPresent(f -> b.setWidth(f.getCol() + 1));
 	}
