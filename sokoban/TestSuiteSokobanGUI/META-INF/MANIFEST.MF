@@ -25,4 +25,6 @@ Require-Bundle: SokobanGUI,
  org.eclipse.xtext.xbase.lib,
  org.eclipse.xtend.lib,
  org.eclipse.xtend.lib.macro
+Automatic-Module-Name: TestSuiteSokobanGUI
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 
