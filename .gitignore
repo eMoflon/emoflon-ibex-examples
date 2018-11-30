@@ -7,3 +7,6 @@ sokoban/SokobanImportExport/src/org/emoflon/ibex/tgg/run/sokobanimportexport/CC_
 sokoban/SokobanImportExport/src/org/emoflon/ibex/tgg/run/sokobanimportexport/BWD_OPT_App.java
 sokoban/TestSuiteSokobanGUI/boards/gen_board.sok
 sokoban/TestSuiteSokobanGUI/boards/gen_board.sok
+.DS_Store
+SocialNetworkSynchronisation/Version 1/FacebookLanguage/model/FacebookLanguage.ecore
+SocialNetworkSynchronisation/Version 1/InstagramLanguage/model/InstagramLanguage.ecore
