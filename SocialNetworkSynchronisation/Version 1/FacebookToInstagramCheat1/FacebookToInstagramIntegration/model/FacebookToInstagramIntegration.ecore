@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="FacebookToInstagramIntegration" nsURI="platform:/resource/FacebookToInstagramIntegration/model/FacebookToInstagramIntegration.ecore"
+    nsPrefix="FacebookToInstagramIntegration">
+  <eClassifiers xsi:type="ecore:EClass" name="FbUserToInUser">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" eType="ecore:EClass platform:/resource/FacebookLanguage/model/FacebookLanguage.ecore#//User"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target" eType="ecore:EClass platform:/resource/InstagramLanguage/model/InstagramLanguage.ecore#//User"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NetworkToNetwork">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" eType="ecore:EClass platform:/resource/FacebookLanguage/model/FacebookLanguage.ecore#//Facebook"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target" eType="ecore:EClass platform:/resource/InstagramLanguage/model/InstagramLanguage.ecore#//Instagram"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bridge__Marker" eSuperTypes="platform:/plugin/org.emoflon.ibex.tgg.core.runtime/model/Runtime.ecore#//TGGRuleApplication">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__SRC__f" lowerBound="1"
+        eType="ecore:EClass platform:/resource/FacebookLanguage/model/FacebookLanguage.ecore#//Facebook"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__SRC__fu" lowerBound="1"
+        eType="ecore:EClass platform:/resource/FacebookLanguage/model/FacebookLanguage.ecore#//User"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__TRG__i" lowerBound="1"
+        eType="ecore:EClass platform:/resource/InstagramLanguage/model/InstagramLanguage.ecore#//Instagram"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__TRG__iu" lowerBound="1"
+        eType="ecore:EClass platform:/resource/InstagramLanguage/model/InstagramLanguage.ecore#//User"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__CORR__f2i" lowerBound="1"
+        eType="ecore:EClass platform:/resource/FacebookToInstagramIntegration/model/FacebookToInstagramIntegration.ecore#//NetworkToNetwork"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__CORR__fu2iu" lowerBound="1"
+        eType="ecore:EClass platform:/resource/FacebookToInstagramIntegration/model/FacebookToInstagramIntegration.ecore#//FbUserToInUser"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FacebookToInstagram__Marker" eSuperTypes="platform:/plugin/org.emoflon.ibex.tgg.core.runtime/model/Runtime.ecore#//TGGRuleApplication">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__SRC__fl" lowerBound="1"
+        eType="ecore:EClass platform:/resource/FacebookLanguage/model/FacebookLanguage.ecore#//Facebook"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__TRG__il" lowerBound="1"
+        eType="ecore:EClass platform:/resource/InstagramLanguage/model/InstagramLanguage.ecore#//Instagram"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__CORR__n2n" lowerBound="1"
+        eType="ecore:EClass platform:/resource/FacebookToInstagramIntegration/model/FacebookToInstagramIntegration.ecore#//NetworkToNetwork"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FbUserToInUser__Marker" eSuperTypes="platform:/plugin/org.emoflon.ibex.tgg.core.runtime/model/Runtime.ecore#//TGGRuleApplication">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__SRC__flu" lowerBound="1"
+        eType="ecore:EClass platform:/resource/FacebookLanguage/model/FacebookLanguage.ecore#//User"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__TRG__ilu" lowerBound="1"
+        eType="ecore:EClass platform:/resource/InstagramLanguage/model/InstagramLanguage.ecore#//User"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__CORR__f2i" lowerBound="1"
+        eType="ecore:EClass platform:/resource/FacebookToInstagramIntegration/model/FacebookToInstagramIntegration.ecore#//FbUserToInUser"/>
+  </eClassifiers>
+</ecore:EPackage>

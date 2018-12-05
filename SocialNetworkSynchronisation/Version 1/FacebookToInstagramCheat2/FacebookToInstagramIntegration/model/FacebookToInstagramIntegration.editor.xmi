@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="ASCII"?>
+<tgg:TripleGraphGrammarFile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tgg="http://www.moflon.org/ide/tgg/mosl/TGG">
+  <imports name="platform:/resource/FacebookLanguage/model/FacebookLanguage.ecore"/>
+  <imports name="platform:/resource/InstagramLanguage/model/InstagramLanguage.ecore"/>
+  <schema name="FacebookToInstagramIntegration">
+    <sourceTypes href="platform:/resource/FacebookToInstagramIntegration/src/org/emoflon/ibex/tgg/Schema.tgg#|0"/>
+    <targetTypes href="platform:/resource/FacebookToInstagramIntegration/src/org/emoflon/ibex/tgg/Schema.tgg#|1"/>
+    <correspondenceTypes name="FbUserToInUser">
+      <source href="platform:/resource/FacebookToInstagramIntegration/src/org/emoflon/ibex/tgg/Schema.tgg#|2"/>
+      <target href="platform:/resource/FacebookToInstagramIntegration/src/org/emoflon/ibex/tgg/Schema.tgg#|3"/>
+    </correspondenceTypes>
+    <correspondenceTypes name="NetworkToNetwork">
+      <source href="platform:/resource/FacebookToInstagramIntegration/src/org/emoflon/ibex/tgg/Schema.tgg#|4"/>
+      <target href="platform:/resource/FacebookToInstagramIntegration/src/org/emoflon/ibex/tgg/Schema.tgg#|5"/>
+    </correspondenceTypes>
+    <attributeCondDefs href="platform:/resource/FacebookToInstagramIntegration/src/org/emoflon/ibex/tgg/rules/NetworkToNetwork.tgg#|15"/>
+  </schema>
+  <rules name="Extension">
+    <schema href="platform:/resource/FacebookToInstagramIntegration/src/org/emoflon/ibex/tgg/rules/Extension.tgg#|0"/>
+    <sourcePatterns name="fl">
+      <type href="platform:/resource/FacebookToInstagramIntegration/src/org/emoflon/ibex/tgg/rules/Extension.tgg#|1"/>
+      <linkVariablePatterns>
+        <op value="++"/>
+        <type href="platform:/resource/FacebookToInstagramIntegration/src/org/emoflon/ibex/tgg/rules/Extension.tgg#|2"/>
+        <target href="platform:/resource/FacebookToInstagramIntegration/src/org/emoflon/ibex/tgg/rules/Extension.tgg#|3"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="flu">
+      <op value="++"/>
+      <type href="platform:/resource/FacebookToInstagramIntegration/src/org/emoflon/ibex/tgg/rules/Extension.tgg#|4"/>
+    </sourcePatterns>
+    <targetPatterns name="il">
+      <type href="platform:/resource/FacebookToInstagramIntegration/src/org/emoflon/ibex/tgg/rules/Extension.tgg#|5"/>
+      <linkVariablePatterns>
+        <op value="++"/>
+        <type href="platform:/resource/FacebookToInstagramIntegration/src/org/emoflon/ibex/tgg/rules/Extension.tgg#|6"/>
+        <target href="platform:/resource/FacebookToInstagramIntegration/src/org/emoflon/ibex/tgg/rules/Extension.tgg#|7"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="ilu">
+      <op value="++"/>
+      <type href="platform:/resource/FacebookToInstagramIntegration/src/org/emoflon/ibex/tgg/rules/Extension.tgg#|8"/>
+    </targetPatterns>
+    <correspondencePatterns name="n2n">
+      <type href="platform:/resource/FacebookToInstagramIntegration/src/org/emoflon/ibex/tgg/rules/Extension.tgg#|9"/>
+      <source href="platform:/resource/FacebookToInstagramIntegration/src/org/emoflon/ibex/tgg/rules/Extension.tgg#|10"/>
+      <target href="platform:/resource/FacebookToInstagramIntegration/src/org/emoflon/ibex/tgg/rules/Extension.tgg#|11"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="f2i">
+      <op value="++"/>
+      <type href="platform:/resource/FacebookToInstagramIntegration/src/org/emoflon/ibex/tgg/rules/Extension.tgg#|12"/>
+      <source href="platform:/resource/FacebookToInstagramIntegration/src/org/emoflon/ibex/tgg/rules/Extension.tgg#|13"/>
+      <target href="platform:/resource/FacebookToInstagramIntegration/src/org/emoflon/ibex/tgg/rules/Extension.tgg#|14"/>
+    </correspondencePatterns>
+  </rules>
+  <rules name="NetworkToNetwork">
+    <schema href="platform:/resource/FacebookToInstagramIntegration/src/org/emoflon/ibex/tgg/rules/NetworkToNetwork.tgg#|0"/>
+    <sourcePatterns name="fl">
+      <op value="++"/>
+      <type href="platform:/resource/FacebookToInstagramIntegration/src/org/emoflon/ibex/tgg/rules/NetworkToNetwork.tgg#|1"/>
+      <linkVariablePatterns>
+        <op value="++"/>
+        <type href="platform:/resource/FacebookToInstagramIntegration/src/org/emoflon/ibex/tgg/rules/NetworkToNetwork.tgg#|2"/>
+        <target href="platform:/resource/FacebookToInstagramIntegration/src/org/emoflon/ibex/tgg/rules/NetworkToNetwork.tgg#|3"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="flu">
+      <op value="++"/>
+      <type href="platform:/resource/FacebookToInstagramIntegration/src/org/emoflon/ibex/tgg/rules/NetworkToNetwork.tgg#|4"/>
+    </sourcePatterns>
+    <targetPatterns name="il">
+      <op value="++"/>
+      <type href="platform:/resource/FacebookToInstagramIntegration/src/org/emoflon/ibex/tgg/rules/NetworkToNetwork.tgg#|5"/>
+      <linkVariablePatterns>
+        <op value="++"/>
+        <type href="platform:/resource/FacebookToInstagramIntegration/src/org/emoflon/ibex/tgg/rules/NetworkToNetwork.tgg#|6"/>
+        <target href="platform:/resource/FacebookToInstagramIntegration/src/org/emoflon/ibex/tgg/rules/NetworkToNetwork.tgg#|7"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="ilu">
+      <op value="++"/>
+      <type href="platform:/resource/FacebookToInstagramIntegration/src/org/emoflon/ibex/tgg/rules/NetworkToNetwork.tgg#|8"/>
+    </targetPatterns>
+    <correspondencePatterns name="n2n">
+      <op value="++"/>
+      <type href="platform:/resource/FacebookToInstagramIntegration/src/org/emoflon/ibex/tgg/rules/NetworkToNetwork.tgg#|9"/>
+      <source href="platform:/resource/FacebookToInstagramIntegration/src/org/emoflon/ibex/tgg/rules/NetworkToNetwork.tgg#|10"/>
+      <target href="platform:/resource/FacebookToInstagramIntegration/src/org/emoflon/ibex/tgg/rules/NetworkToNetwork.tgg#|11"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="f2i">
+      <op value="++"/>
+      <type href="platform:/resource/FacebookToInstagramIntegration/src/org/emoflon/ibex/tgg/rules/NetworkToNetwork.tgg#|12"/>
+      <source href="platform:/resource/FacebookToInstagramIntegration/src/org/emoflon/ibex/tgg/rules/NetworkToNetwork.tgg#|13"/>
+      <target href="platform:/resource/FacebookToInstagramIntegration/src/org/emoflon/ibex/tgg/rules/NetworkToNetwork.tgg#|14"/>
+    </correspondencePatterns>
+    <attrConditions>
+      <name href="platform:/resource/FacebookToInstagramIntegration/src/org/emoflon/ibex/tgg/rules/NetworkToNetwork.tgg#|15"/>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.1/@sourcePatterns.1">
+        <attribute href="platform:/resource/FacebookToInstagramIntegration/src/org/emoflon/ibex/tgg/rules/NetworkToNetwork.tgg#|17"/>
+      </values>
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.1/@targetPatterns.1">
+        <attribute href="platform:/resource/FacebookToInstagramIntegration/src/org/emoflon/ibex/tgg/rules/NetworkToNetwork.tgg#|19"/>
+      </values>
+    </attrConditions>
+  </rules>
+</tgg:TripleGraphGrammarFile>
