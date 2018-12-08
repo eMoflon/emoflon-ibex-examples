@@ -1,0 +1,13 @@
+@GenModel(documentation="TODO: Add documentation for Blup")
+@namespace(uri="platform:/resource/InstagramLanguage/model/InstagramLanguage.ecore", prefix="InstagramLanguage")
+package InstagramLanguage;
+
+class Instagram{
+    val  User[*] users;
+    
+}
+ 
+class User{
+	
+	attr EString[*] name;
+}
