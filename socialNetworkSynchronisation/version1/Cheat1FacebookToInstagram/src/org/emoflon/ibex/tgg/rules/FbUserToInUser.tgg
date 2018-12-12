@@ -1,0 +1,25 @@
+#using FacebookToInstagramIntegration.*
+#using AttrCondDefLibrary.*
+
+#rule FbUserToInUser #with FacebookToInstagramIntegration
+
+#source { 
+	++ flu:FacebookLanguage.User
+		
+	
+}
+
+#target {
+	++ ilu:InstagramLanguage.User
+}
+
+#correspondence {
+	++ f2i:FbUserToInUser{
+		#src-> flu
+		#trg-> ilu
+	}
+}
+
+#attributeConditions {
+	eq_string(flu.name,ilu.name)
+}
