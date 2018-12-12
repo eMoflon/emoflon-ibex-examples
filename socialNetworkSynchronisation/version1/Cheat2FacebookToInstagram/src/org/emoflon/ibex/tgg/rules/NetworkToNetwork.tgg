@@ -1,0 +1,34 @@
+#using FacebookToInstagramIntegration.*
+#using AttrCondDefLibrary.*
+
+#rule NetworkToNetwork #with FacebookToInstagramIntegration
+
+#source { 
+	++fl:FacebookLanguage.Facebook{
+		++ -users->flu
+	}
+	++ flu:FacebookLanguage.User
+}
+
+#target {
+	++il:InstagramLanguage.Instagram{
+		++ -users->ilu
+	}
+	++ ilu:InstagramLanguage.User
+}
+
+#correspondence {
+	++n2n:NetworkToNetwork{
+		#src->fl
+		#trg->il
+	}
+	++ f2i:FbUserToInUser{
+		#src-> flu
+		#trg-> ilu
+	}
+	
+}
+
+#attributeConditions {
+	eq_string(flu.name,ilu.name)
+}
