@@ -4,17 +4,11 @@
 #rule NetworkToNetwork #with Cheat2FacebookToInstagram
 
 #source { 
-	++fl:Facebook {
-		++ -users->flu
-	}
-	++ flu:FacebookLanguage.User
+	++fl:Facebook
 }
 
 #target {
-	++il:Instagram {
-		++ -users->ilu
-	}
-	++ ilu:InstagramLanguage.User
+	++il:Instagram
 }
 
 #correspondence {
@@ -22,13 +16,8 @@
 		#src->fl
 		#trg->il
 	}
-	++ f2i:FbUserToInUser {
-		#src-> flu
-		#trg-> ilu
-	}
-	
 }
 
 #attributeConditions {
-	eq_string(flu.name,ilu.name)
+
 }

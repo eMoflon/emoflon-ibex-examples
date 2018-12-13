@@ -32,3 +32,4 @@ Require-Bundle: org.apache.log4j,
  org.gervarro.plan.dynprog,
  org.emoflon.ibex.tgg.runtime.democles
 Automatic-Module-Name: Cheat2FacebookToInstagram
+Export-Package: org.emoflon.ibex.tgg.run.cheat2facebooktoinstagram

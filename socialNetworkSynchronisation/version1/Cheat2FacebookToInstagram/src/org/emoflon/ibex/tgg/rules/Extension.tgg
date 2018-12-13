@@ -30,5 +30,5 @@
 }
 
 #attributeConditions {
-	
+	eq_string(flu.name,ilu.name)
 }

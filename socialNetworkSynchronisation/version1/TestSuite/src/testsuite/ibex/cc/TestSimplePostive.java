@@ -1,17 +1,21 @@
 package testsuite.ibex.cc;
 
 import java.io.IOException;
+import java.util.function.BiConsumer;
+import java.util.function.Supplier;
 
+import org.eclipse.emf.ecore.resource.ResourceSet;
+import org.emoflon.ibex.tgg.operational.defaults.IbexOptions;
+import org.emoflon.ibex.tgg.operational.strategies.OperationalStrategy;
 import org.junit.Assert;
 import org.junit.Test;
 
 import testsuite.ibex.util.CCTestCase;
-import testsuite.ibex.util.CC_App_ForTesting;
 
 public class TestSimplePostive extends CCTestCase {
-
-	public void createChecker(String srcInstance, String trgInstance) throws IOException {
-		checker = new CC_App_ForTesting(srcInstance, trgInstance);
+	public TestSimplePostive(Supplier<IbexOptions> createOptions,
+			BiConsumer<ResourceSet, OperationalStrategy> registerMetamodels, String name) {
+		super(createOptions, registerMetamodels, name);
 	}
 
 	@Test
