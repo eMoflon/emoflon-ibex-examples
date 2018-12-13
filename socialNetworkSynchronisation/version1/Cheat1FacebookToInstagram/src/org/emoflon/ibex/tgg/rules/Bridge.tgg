@@ -1,7 +1,7 @@
-#using FacebookToInstagramIntegration.*
+#using Cheat1FacebookToInstagram.*
 #using AttrCondDefLibrary.*
 
-#rule Bridge #with FacebookToInstagramIntegration
+#rule Bridge #with Cheat1FacebookToInstagram
 
 #source { 
 	f:FacebookLanguage.Facebook {
@@ -19,11 +19,11 @@
 }
 
 #correspondence {
-	f2i:NetworkToNetwork{
+	f2i:NetworkToNetwork {
     #src->f
     #trg->i
   }
-    fu2iu:FbUserToInUser{
+    fu2iu:FbUserToInUser {
     #src->fu
     #trg->iu
   }

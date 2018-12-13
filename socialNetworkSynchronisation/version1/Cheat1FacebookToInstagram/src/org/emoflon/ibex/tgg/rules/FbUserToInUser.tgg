@@ -1,4 +1,4 @@
-#using FacebookToInstagramIntegration.*
+#using Cheat1FacebookToInstagram.*
 #using AttrCondDefLibrary.*
 
 #rule FbUserToInUser #with Cheat1FacebookToInstagram
@@ -14,7 +14,7 @@
 }
 
 #correspondence {
-	++ f2i:FbUserToInUser{
+	++ f2i:FbUserToInUser {
 		#src-> flu
 		#trg-> ilu
 	}

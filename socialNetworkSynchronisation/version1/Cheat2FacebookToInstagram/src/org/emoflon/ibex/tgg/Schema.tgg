@@ -12,7 +12,15 @@
 } 
 
 #correspondence {
+	NetworkToNetwork {
+		#src->Facebook
+		#trg->Instagram
+	}
 	
+	FbUserToInUser {
+		#src->FacebookLanguage.User
+		#trg->InstagramLanguage.User
+	}
 }
 
 #attributeConditions {

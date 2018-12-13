@@ -57,3 +57,6 @@ SocialNetworkSynchronisation/Version 1/FacebookToInstagramCheat2/FacebookToInsta
 SocialNetworkSynchronisation/Version 1/FacebookToInstagramCheat2/FacebookToInstagramIntegration/src
 .DS_Store
 .DS_Store
+socialNetworkSynchronisation/version1/FacebookToInstagram/src/org/emoflon/ibex/tgg/run/facebooktoinstagram/_SchemaBasedAutoRegistration.java
+socialNetworkSynchronisation/version1/FacebookToInstagram/src/org/emoflon/ibex/tgg/csp/lib/AttrCondDefLibrary.tgg
+socialNetworkSynchronisation/version1/Cheat2FacebookToInstagram/src/org/emoflon/ibex/tgg/csp/lib/AttrCondDefLibrary.tgg

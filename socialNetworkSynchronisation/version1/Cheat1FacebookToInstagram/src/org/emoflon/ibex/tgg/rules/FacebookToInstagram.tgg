@@ -1,7 +1,7 @@
-#using FacebookToInstagramIntegration.*
+#using Cheat1FacebookToInstagram.*
 #using AttrCondDefLibrary.*
 
-#rule FacebookToInstagram #with FacebookToInstagramIntegration
+#rule FacebookToInstagram #with Cheat1FacebookToInstagram
 
 #source { 
 	++fl:FacebookLanguage.Facebook
@@ -12,7 +12,7 @@
 }
 
 #correspondence {
-	++n2n:NetworkToNetwork{
+	++n2n:NetworkToNetwork {
 		#src->fl
 		#trg->il
 	}

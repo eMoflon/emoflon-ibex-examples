@@ -1,28 +1,28 @@
-#using FacebookToInstagramIntegration.*
+#using Cheat2FacebookToInstagram.*
 #using AttrCondDefLibrary.*
 
-#rule Extension #with FacebookToInstagramIntegration
+#rule Extension #with Cheat2FacebookToInstagram
 
 #source { 
-	fl:FacebookLanguage.Facebook{
+	fl:Facebook {
 		++ -users->flu
 	}
 	++ flu:FacebookLanguage.User
 }
 
 #target {
-	il:InstagramLanguage.Instagram{
+	il:Instagram {
 		++ -users->ilu
 	}
 	++ ilu:InstagramLanguage.User
 }
 
 #correspondence {
-	n2n:NetworkToNetwork{
+	n2n:NetworkToNetwork {
 		#src->fl
 		#trg->il
 	}
-	++ f2i:FbUserToInUser{
+	++ f2i:FbUserToInUser {
 		#src-> flu
 		#trg-> ilu
 	}
