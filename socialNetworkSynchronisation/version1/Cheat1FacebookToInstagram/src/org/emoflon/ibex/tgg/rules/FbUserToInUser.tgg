@@ -1,7 +1,7 @@
 #using FacebookToInstagramIntegration.*
 #using AttrCondDefLibrary.*
 
-#rule FbUserToInUser #with FacebookToInstagramIntegration
+#rule FbUserToInUser #with Cheat1FacebookToInstagram
 
 #source { 
 	++ flu:FacebookLanguage.User

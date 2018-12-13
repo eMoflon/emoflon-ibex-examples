@@ -1,4 +1,4 @@
-package org.emoflon.ibex.tgg.operational.csp.constraints.factories.sokobanimportexport;
+package org.emoflon.ibex.tgg.operational.csp.constraints.factories.facebooktoinstagram;
 
 import java.util.HashMap;
 import java.util.HashSet;			

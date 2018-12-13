@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.function.BiFunction;
 
+import org.apache.commons.lang3.NotImplementedException;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.eclipse.emf.ecore.EClass;
@@ -154,14 +155,20 @@ public class Controller {
 		if (sync != null)
 			sync.terminate();
 
-		sync = new SYNC_App();
-	}
 
-	private void initialiseBwdSynchroniser() throws IOException {
-		if (sync == null)
-			sync = new SYNC_App();
-	}
+sync = null;
+  throw new NotImplementedException("You haven't implemented this yet!");
+  }
 
+
+private void initialiseBwdSynchroniser() throws IOException {
+  if (sync != null)
+    sync.terminate();
+    
+  // TODO: Create a backward synchroniser
+  sync = null;
+  throw new NotImplementedException("You haven't implemented this yet!");
+}   
 	public void saveSOKFile(String filePath) {
 		try {
 			initialiseBwdSynchroniser();
