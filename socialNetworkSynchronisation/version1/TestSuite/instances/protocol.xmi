@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="ASCII"?>
+<FacebookToInstagram:Foo__Marker xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:FacebookToInstagram="platform:/resource/FacebookToInstagram/model/FacebookToInstagram.ecore">
+  <CREATE__SRC__fb href="../resources/in/OneFacebookNetwork.xmi#/"/>
+  <CREATE__TRG__inst href="../resources/in/OneInstagramNetwork.xmi#/"/>
+</FacebookToInstagram:Foo__Marker>
