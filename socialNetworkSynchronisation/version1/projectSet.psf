@@ -4,6 +4,7 @@
 <project reference="1.0,https://github.com/eMoflon/emoflon-ibex-examples.git,tggs-by-example,socialNetworkSynchronisation/version1/Cheat1FacebookToInstagram"/>
 <project reference="1.0,https://github.com/eMoflon/emoflon-ibex-examples.git,tggs-by-example,socialNetworkSynchronisation/version1/Cheat2FacebookToInstagram"/>
 <project reference="1.0,https://github.com/eMoflon/emoflon-ibex-examples.git,tggs-by-example,socialNetworkSynchronisation/version1/FacebookLanguage"/>
+<project reference="1.0,https://github.com/eMoflon/emoflon-ibex-examples.git,tggs-by-example,socialNetworkSynchronisation/version1/FacebookToInstagram"/>
 <project reference="1.0,https://github.com/eMoflon/emoflon-ibex-examples.git,tggs-by-example,socialNetworkSynchronisation/version1/InstagramLanguage"/>
 <project reference="1.0,https://github.com/eMoflon/emoflon-ibex-examples.git,tggs-by-example,socialNetworkSynchronisation/version1/TestSuite"/>
 </provider>
@@ -11,24 +12,24 @@
 <item elementID="=Cheat2FacebookToInstagram" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=Cheat1FacebookToInstagram" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSets>
-<workingSets editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1543872094370_0" label="Java Main Sources" name="main">
-<item elementID="=Metamodell/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=Metamodell/gen" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=Metamodell/injection" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=STLImportExport/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=org.xtext.example.mydsl/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=org.xtext.example.mydsl/src-gen" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=org.xtext.example.mydsl/xtend-gen" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=org.xtext.example.mydsl.ide/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=org.xtext.example.mydsl.ide/src-gen" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=org.xtext.example.mydsl.ide/xtend-gen" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=org.xtext.example.mydsl.ui/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=org.xtext.example.mydsl.ui/src-gen" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=org.xtext.example.mydsl.ui/xtend-gen" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<workingSets editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" id="1544732497704_0" label="Java Main Sources" name="main">
+<item elementID="=Cheat1FacebookToInstagram/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=Cheat2FacebookToInstagram/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=FacebookLanguage/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=FacebookLanguage/gen" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=FacebookLanguage/injection" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=FacebookToInstagram/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=InstagramLanguage/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=InstagramLanguage/gen" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=InstagramLanguage/injection" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=TestSuite/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSets>
 <workingSets editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" id="1544268579350_4" label="metamodels" name="metamodels">
 <item elementID="=InstagramLanguage" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=FacebookLanguage" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSets>
+<workingSets editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" id="1544733314862_8" label="solution" name="solution">
+<item elementID="=FacebookToInstagram" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSets>
 <workingSets editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" id="1544268619120_6" label="tests" name="tests">
 <item elementID="=TestSuite" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
