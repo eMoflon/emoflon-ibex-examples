@@ -25,4 +25,25 @@ public class TestSimplePostive extends CCTestCase {
 		checker.saveModels();
 		Assert.assertTrue(checker.modelsAreConsistent());
 	}
+	
+	
+	
+	@Test
+	public void testForTwoNetwork() throws IOException
+	{ 
+		createChecker("in/TwoFacebookNetwork", "in/TwoInstagramNetwork");
+		runCC();
+		checker.saveModels();
+		Assert.assertTrue(checker.modelsAreConsistent());
+	}
+	@Test
+	public void testForThreeNetwork() throws IOException
+	{ 
+		createChecker("in/TwoFacebookNetwork", "in/ThreeInstagramNetwork");
+		runCC();
+		checker.saveModels();
+		Assert.assertTrue(checker.modelsAreConsistent());
+	}
+	
+	
 }
