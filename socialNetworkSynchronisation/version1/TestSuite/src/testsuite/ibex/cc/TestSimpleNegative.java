@@ -34,7 +34,15 @@ public class TestSimpleNegative  extends CCTestCase{
 	}
 	@Test
 	public void testForSingleUser() throws IOException {
-		createChecker("in/OneFacebookUser", "in/OneInstagramUser");
+		createChecker("in/OneFacebookUser", "in/TwoInstagramUser");
+		runCC();
+		checker.saveModels();
+		Assert.assertTrue(checker.modelsAreConsistent());
+	}
+	
+	@Test
+	public void testForMultipleUser() throws IOException {
+		createChecker("in/OneFacebookUser", "in/OneFacebookUser");
 		runCC();
 		checker.saveModels();
 		Assert.assertTrue(checker.modelsAreConsistent());

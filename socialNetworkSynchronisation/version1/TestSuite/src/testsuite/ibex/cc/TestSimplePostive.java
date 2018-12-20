@@ -45,5 +45,13 @@ public class TestSimplePostive extends CCTestCase {
 		Assert.assertTrue(checker.modelsAreConsistent());
 	}
 	
+	@Test
+	public void testForSingleUser() throws IOException {
+		createChecker("in/OneFacebookUser", "in/OneInstagramUser");
+		runCC();
+		checker.saveModels();
+		Assert.assertTrue(checker.modelsAreConsistent());
+	}
+	
 	
 }
