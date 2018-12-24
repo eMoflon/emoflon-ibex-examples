@@ -1,12 +1,10 @@
 #using Cheat1FacebookToInstagram.*
 #using AttrCondDefLibrary.*
 
-#rule FbUserToInUser #with Cheat1FacebookToInstagram
+#rule UserToUserIslandRule #with Cheat1FacebookToInstagram
 
 #source { 
 	++ flu:FacebookLanguage.User
-		
-	
 }
 
 #target {

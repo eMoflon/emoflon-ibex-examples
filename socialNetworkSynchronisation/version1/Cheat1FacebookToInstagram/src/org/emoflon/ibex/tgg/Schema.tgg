@@ -13,8 +13,8 @@
 
 #correspondence {
 	NetworkToNetwork {
-		#src->Facebook
-		#trg->Instagram
+		#src->FacebookLanguage.Network
+		#trg->InstagramLanguage.Network
 	}
 	
 	FbUserToInUser {

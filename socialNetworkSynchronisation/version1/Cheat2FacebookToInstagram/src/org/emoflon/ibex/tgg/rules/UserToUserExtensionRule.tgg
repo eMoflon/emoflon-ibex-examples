@@ -1,17 +1,17 @@
 #using Cheat2FacebookToInstagram.*
 #using AttrCondDefLibrary.*
 
-#rule Extension #with Cheat2FacebookToInstagram
+#rule UserToUserExtensionRule #with Cheat2FacebookToInstagram
 
 #source { 
-	fl:Facebook {
+	fl:FacebookLanguage.Network {
 		++ -users->flu
 	}
 	++ flu:FacebookLanguage.User
 }
 
 #target {
-	il:Instagram {
+	il:InstagramLanguage.Network {
 		++ -users->ilu
 	}
 	++ ilu:InstagramLanguage.User

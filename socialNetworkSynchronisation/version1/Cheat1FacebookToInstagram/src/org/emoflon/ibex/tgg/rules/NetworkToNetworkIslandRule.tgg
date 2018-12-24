@@ -1,14 +1,14 @@
 #using Cheat1FacebookToInstagram.*
 #using AttrCondDefLibrary.*
 
-#rule FacebookToInstagram #with Cheat1FacebookToInstagram
+#rule NetworkToNetworkIslandRule #with Cheat1FacebookToInstagram
 
 #source { 
-	++fl:FacebookLanguage.Facebook
+	++fl:FacebookLanguage.Network
 }
 
 #target {
-	++il:InstagramLanguage.Instagram
+	++il:InstagramLanguage.Network
 }
 
 #correspondence {

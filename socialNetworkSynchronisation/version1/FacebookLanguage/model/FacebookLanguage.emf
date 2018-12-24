@@ -1,11 +1,12 @@
-@GenModel(documentation="TODO: Add documentation for Blup")
+@GenModel(documentation="Language describing Facebook-like Social Networks")
 @namespace(uri="platform:/resource/FacebookLanguage/model/FacebookLanguage.ecore", prefix="FacebookLanguage")
 package FacebookLanguage;
 
-class Facebook{
+class Network {
+	attr EString description;
 	val User[*] users;	
 }
- 
-class User{
+
+class User {
 	attr EString name;
 }
