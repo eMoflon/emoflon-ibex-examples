@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <psf version="2.0">
 <provider id="org.eclipse.egit.core.GitProvider">
-<project reference="1.0,https://github.com/eMoflon/emoflon-ibex-examples.git,tggs-by-example,socialNetworkSynchronisation/version1/Cheat1FacebookToInstagram"/>
-<project reference="1.0,https://github.com/eMoflon/emoflon-ibex-examples.git,tggs-by-example,socialNetworkSynchronisation/version1/Cheat2FacebookToInstagram"/>
-<project reference="1.0,https://github.com/eMoflon/emoflon-ibex-examples.git,tggs-by-example,socialNetworkSynchronisation/version1/FacebookLanguage"/>
-<project reference="1.0,https://github.com/eMoflon/emoflon-ibex-examples.git,tggs-by-example,socialNetworkSynchronisation/version1/FacebookToInstagram"/>
-<project reference="1.0,https://github.com/eMoflon/emoflon-ibex-examples.git,tggs-by-example,socialNetworkSynchronisation/version1/InstagramLanguage"/>
-<project reference="1.0,https://github.com/eMoflon/emoflon-ibex-examples.git,tggs-by-example,socialNetworkSynchronisation/version1/TestSuite"/>
+<project reference="1.0,https://github.com/eMoflon/emoflon-ibex-examples.git,master,socialNetworkSynchronisation/version1/Cheat1FacebookToInstagram"/>
+<project reference="1.0,https://github.com/eMoflon/emoflon-ibex-examples.git,master,socialNetworkSynchronisation/version1/Cheat2FacebookToInstagram"/>
+<project reference="1.0,https://github.com/eMoflon/emoflon-ibex-examples.git,master,socialNetworkSynchronisation/version1/FacebookLanguage"/>
+<project reference="1.0,https://github.com/eMoflon/emoflon-ibex-examples.git,master,socialNetworkSynchronisation/version1/FacebookToInstagram"/>
+<project reference="1.0,https://github.com/eMoflon/emoflon-ibex-examples.git,master,socialNetworkSynchronisation/version1/InstagramLanguage"/>
+<project reference="1.0,https://github.com/eMoflon/emoflon-ibex-examples.git,master,socialNetworkSynchronisation/version1/TestSuite"/>
 </provider>
 <workingSets editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" id="1544268589204_5" label="cheat" name="cheat">
 <item elementID="=Cheat2FacebookToInstagram" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
