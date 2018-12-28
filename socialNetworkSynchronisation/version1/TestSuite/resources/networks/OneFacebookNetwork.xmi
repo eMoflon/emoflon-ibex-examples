@@ -1,3 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<FacebookLanguage:Network xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:FacebookLanguage="platform:/resource/FacebookLanguage/model/FacebookLanguage.ecore"
-    xmlns:emof="http://schema.omg.org/spec/MOF/2.0/emof.xml" xmi:id="_0"/>
+<FacebookLanguage:Network
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:FacebookLanguage="platform:/resource/FacebookLanguage/model/FacebookLanguage.ecore"
+    xmi:id="_0"
+    description="A Facebook-like social network"/>

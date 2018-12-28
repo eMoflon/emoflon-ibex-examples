@@ -1,3 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<InstagramLanguage:Network xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI"
-    xmlns:InstagramLanguage="platform:/resource/InstagramLanguage/model/InstagramLanguage.ecore"/>
+<InstagramLanguage:Network
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:InstagramLanguage="platform:/resource/InstagramLanguage/model/InstagramLanguage.ecore"
+    description="An Instagram-like social network"/>
