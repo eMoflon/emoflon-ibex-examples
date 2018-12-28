@@ -70,6 +70,5 @@ public abstract class CCTestCase extends TestCase {
 	protected void runCC() throws IOException {
 		checker.run();
 		checker.terminate();
-		checker.saveModels();
 	}
 }

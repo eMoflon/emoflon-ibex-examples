@@ -12,7 +12,7 @@ import org.junit.Test;
 
 import testsuite.ibex.util.CCTestCase;
 
-public class NegativeExamples  extends CCTestCase{
+public class NegativeExamples  extends CCTestCase {
 	public NegativeExamples(Supplier<IbexOptions> createOptions,
 			BiConsumer<ResourceSet, OperationalStrategy> registerMetamodels, String name) {
 		super(createOptions, registerMetamodels, name);
