@@ -43,6 +43,12 @@ public class NegativeExamples  extends CCTestCase {
 	public void testForSingleUser() throws IOException {
 		testForPairOfModels("users/OneFacebookUser", "users/TwoInstagramUsers");
 	}
+	
+	@Test
+	public void testForSingleUserWithWrongNames() throws IOException {
+		testForPairOfModels("users/OneFacebookUser", "users/OneInstagramOtherUser");
+	}
+	
 
 	@Test
 	public void testForTwoUsers() throws IOException {
