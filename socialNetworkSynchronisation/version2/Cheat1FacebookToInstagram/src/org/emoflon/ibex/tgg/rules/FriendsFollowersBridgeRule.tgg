@@ -1,0 +1,34 @@
+#using Cheat1FacebookToInstagram.*
+#using AttrCondDefLibrary.*
+
+#rule FriendsFollowersBridgeRule #with Cheat1FacebookToInstagram
+
+#source { 
+	fu:FacebookLanguage.User {
+    ++ -friends->fn
+  }
+   fn:FacebookLanguage.User
+}
+
+#target {
+	iu:InstagramLanguage.User
+   in:InstagramLanguage.User {
+    ++ -following->iu
+  }
+	
+}
+
+#correspondence {
+	fu2iu:FbUserToInUser {
+    #src->fu
+    #trg->iu
+  }
+    fn2in:FbUserToInUser {
+    #src->fn
+    #trg->in
+  }
+}
+
+#attributeConditions {
+	
+}

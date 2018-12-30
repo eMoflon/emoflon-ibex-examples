@@ -1,0 +1,23 @@
+#using Cheat1FacebookToInstagram.*
+#using AttrCondDefLibrary.*
+
+#rule UserToUserIslandRule #with Cheat1FacebookToInstagram
+
+#source { 
+	++ flu:FacebookLanguage.User
+}
+
+#target {
+	++ ilu:InstagramLanguage.User
+}
+
+#correspondence {
+	++ f2i:FbUserToInUser {
+		#src-> flu
+		#trg-> ilu
+	}
+}
+
+#attributeConditions {
+	eq_string(flu.name,ilu.name)
+}

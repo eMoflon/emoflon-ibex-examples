@@ -1,4 +1,4 @@
-package org.emoflon.ibex.tgg.run.cheat2facebooktoinstagram;
+package org.emoflon.ibex.tgg.run.facebooktoinstagram;
 
 import java.io.IOException;
 

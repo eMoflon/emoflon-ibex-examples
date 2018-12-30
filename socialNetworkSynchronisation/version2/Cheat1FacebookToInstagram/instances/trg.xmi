@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:InstagramLanguage="platform:/resource/InstagramLanguage/model/InstagramLanguage.ecore">
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network>
+    <users name="etiam"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network>
+    <users name="interdum"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network>
+    <users name="et"/>
+    <users name="turpis"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network>
+    <users name="himenaeos"/>
+    <users name="vel"/>
+    <users name="elementum"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network>
+    <users name="vestibulum"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network>
+    <users name="eleifend"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network>
+    <users name="nostra"/>
+    <users name="et"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network>
+    <users name="malesuada"/>
+    <users name="commodo"/>
+    <users name="rutrum"/>
+    <users name="ligula"/>
+    <users name="nam"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network>
+    <users name="ut"/>
+    <users name="venenatis"/>
+    <users name="velit"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network>
+    <users name="eros"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network>
+    <users name="ultricies"/>
+    <users name="ut"/>
+    <users name="lacinia"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network>
+    <users name="sociis"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network>
+    <users name="himenaeos"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network>
+    <users name="tempor"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network>
+    <users name="tempus"/>
+    <users name="hac"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network>
+    <users name="a"/>
+    <users name="varius"/>
+    <users name="purus"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network>
+    <users name="phasellus"/>
+    <users name="facilisis"/>
+    <users name="fringilla"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network>
+    <users name="iaculis"/>
+    <users name="montes"/>
+    <users name="class"/>
+    <users name="felis"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network>
+    <users name="vivamus"/>
+    <users name="litora"/>
+    <users name="blandit"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network>
+    <users name="platea"/>
+    <users name="himenaeos"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network>
+    <users name="sapien"/>
+    <users name="conubia"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network>
+    <users name="sagittis"/>
+    <users name="non"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network>
+    <users name="sollicitudin"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network>
+    <users name="fusce"/>
+    <users name="risus"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network>
+    <users name="bibendum"/>
+    <users name="a"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network>
+    <users name="vehicula"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network>
+    <users name="tellus"/>
+    <users name="laoreet"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network>
+    <users name="dictum"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network>
+    <users name="viverra"/>
+    <users name="iaculis"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network>
+    <users name="gravida"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network>
+    <users name="hac"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network>
+    <users name="vel"/>
+    <users name="cum"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network>
+    <users name="velit"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network>
+    <users name="tincidunt"/>
+    <users name="duis"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network>
+    <users name="iaculis"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network>
+    <users name="risus"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network>
+    <users name="augue"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network>
+    <users name="amet"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network>
+    <users name="etiam"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network>
+    <users name="scelerisque"/>
+    <users name="cubilia"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network>
+    <users name="vehicula"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network>
+    <users name="per"/>
+    <users name="a"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network>
+    <users name="tempor"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network>
+    <users name="adipiscing"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network>
+    <users name="cursus"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network>
+    <users name="at"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network>
+    <users name="sociosqu"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network>
+    <users name="sollicitudin"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network>
+    <users name="ultrices"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network>
+    <users name="mauris"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network>
+    <users name="aliquet"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network>
+    <users name="penatibus"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network>
+    <users name="blandit"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network>
+    <users name="proin"/>
+    <users name="potenti"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network>
+    <users name="metus"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network>
+    <users name="suscipit"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network>
+    <users name="mauris"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:User name="adipiscing">
+    <following name="orci">
+      <following name="egestas">
+        <following name="dapibus">
+          <following name="vivamus">
+            <following name="enim">
+              <following name="non">
+                <following name="massa">
+                  <following name="pulvinar">
+                    <following name="pellentesque">
+                      <following name="suscipit">
+                        <following name="penatibus">
+                          <following name="facilisi">
+                            <following name="metus">
+                              <following name="id">
+                                <following name="sit">
+                                  <following name="luctus">
+                                    <following name="magna">
+                                      <following name="inceptos">
+                                        <following name="netus"/>
+                                      </following>
+                                    </following>
+                                  </following>
+                                </following>
+                              </following>
+                            </following>
+                          </following>
+                        </following>
+                      </following>
+                    </following>
+                  </following>
+                </following>
+              </following>
+            </following>
+          </following>
+        </following>
+      </following>
+    </following>
+  </InstagramLanguage:User>
+  <InstagramLanguage:Network>
+    <users name="euismod"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network>
+    <users name="at"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network>
+    <users name="commodo"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network>
+    <users name="egestas"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:User name="parturient"/>
+</xmi:XMI>

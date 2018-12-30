@@ -1,4 +1,4 @@
-package org.emoflon.ibex.tgg.operational.csp.constraints.factories.facebooktoinstagram;
+package org.emoflon.ibex.tgg.operational.csp.constraints.factories.cheat1facebooktoinstagram;
 
 import java.util.HashMap;
 import java.util.HashSet;			

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:FacebookLanguage="platform:/resource/FacebookLanguage/model/FacebookLanguage.ecore">
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network>
+    <users name="etiam"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network>
+    <users name="interdum"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network>
+    <users name="et"/>
+    <users name="turpis"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network>
+    <users name="himenaeos"/>
+    <users name="vel"/>
+    <users name="elementum"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network>
+    <users name="vestibulum"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network>
+    <users name="eleifend"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network>
+    <users name="nostra"/>
+    <users name="et"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network>
+    <users name="malesuada"/>
+    <users name="commodo"/>
+    <users name="rutrum"/>
+    <users name="ligula"/>
+    <users name="nam"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network>
+    <users name="ut"/>
+    <users name="venenatis"/>
+    <users name="velit"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network>
+    <users name="eros"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network>
+    <users name="ultricies"/>
+    <users name="ut"/>
+    <users name="lacinia"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network>
+    <users name="sociis"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network>
+    <users name="himenaeos"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network>
+    <users name="tempor"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network>
+    <users name="tempus"/>
+    <users name="hac"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network>
+    <users name="a"/>
+    <users name="varius"/>
+    <users name="purus"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network>
+    <users name="phasellus"/>
+    <users name="facilisis"/>
+    <users name="fringilla"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network>
+    <users name="iaculis"/>
+    <users name="montes"/>
+    <users name="class"/>
+    <users name="felis"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network>
+    <users name="vivamus"/>
+    <users name="litora"/>
+    <users name="blandit"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network>
+    <users name="platea"/>
+    <users name="himenaeos"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network>
+    <users name="sapien"/>
+    <users name="conubia"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network>
+    <users name="sagittis"/>
+    <users name="non"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network>
+    <users name="sollicitudin"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network>
+    <users name="fusce"/>
+    <users name="risus"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network>
+    <users name="bibendum"/>
+    <users name="a"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network>
+    <users name="vehicula"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network>
+    <users name="tellus"/>
+    <users name="laoreet"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network>
+    <users name="dictum"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network>
+    <users name="viverra"/>
+    <users name="iaculis"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network>
+    <users name="gravida"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network>
+    <users name="hac"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network>
+    <users name="vel"/>
+    <users name="cum"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network>
+    <users name="velit"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network>
+    <users name="tincidunt"/>
+    <users name="duis"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network>
+    <users name="iaculis"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network>
+    <users name="risus"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network>
+    <users name="augue"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network>
+    <users name="amet"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network>
+    <users name="etiam"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network>
+    <users name="scelerisque"/>
+    <users name="cubilia"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network>
+    <users name="vehicula"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network>
+    <users name="per"/>
+    <users name="a"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network>
+    <users name="tempor"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network>
+    <users name="adipiscing"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network>
+    <users name="cursus"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network>
+    <users name="at"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network>
+    <users name="sociosqu"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network>
+    <users name="sollicitudin"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network>
+    <users name="ultrices"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network>
+    <users name="mauris"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network>
+    <users name="aliquet"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network>
+    <users name="penatibus"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network>
+    <users name="blandit"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network>
+    <users name="proin"/>
+    <users name="potenti"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network>
+    <users name="metus"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network>
+    <users name="suscipit"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network>
+    <users name="mauris"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network>
+    <users name="euismod"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:User name="netus">
+    <friends name="inceptos">
+      <friends name="magna">
+        <friends name="luctus">
+          <friends name="sit">
+            <friends name="id">
+              <friends name="metus">
+                <friends name="facilisi">
+                  <friends name="penatibus">
+                    <friends name="suscipit">
+                      <friends name="pellentesque">
+                        <friends name="pulvinar">
+                          <friends name="massa">
+                            <friends name="non">
+                              <friends name="enim">
+                                <friends name="vivamus">
+                                  <friends name="dapibus">
+                                    <friends name="egestas">
+                                      <friends name="orci">
+                                        <friends name="adipiscing"/>
+                                      </friends>
+                                    </friends>
+                                  </friends>
+                                </friends>
+                              </friends>
+                            </friends>
+                          </friends>
+                        </friends>
+                      </friends>
+                    </friends>
+                  </friends>
+                </friends>
+              </friends>
+            </friends>
+          </friends>
+        </friends>
+      </friends>
+    </friends>
+  </FacebookLanguage:User>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network>
+    <users name="at"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network>
+    <users name="commodo"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network>
+    <users name="egestas"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:User name="parturient"/>
+</xmi:XMI>

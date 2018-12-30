@@ -1,0 +1,34 @@
+#using Cheat1FacebookToInstagram.*
+#using AttrCondDefLibrary.*
+
+#rule UserNetworkBridgeRule #with Cheat1FacebookToInstagram
+
+#source { 
+	f:FacebookLanguage.Network {
+    ++ -users->fu
+  }
+   fu:FacebookLanguage.User
+}
+
+#target {
+	i:InstagramLanguage.Network {
+    ++ -users->iu
+  }
+   iu:InstagramLanguage.User
+	
+}
+
+#correspondence {
+	f2i:NetworkToNetwork {
+    #src->f
+    #trg->i
+  }
+    fu2iu:FbUserToInUser {
+    #src->fu
+    #trg->iu
+  }
+}
+
+#attributeConditions {
+	
+}
