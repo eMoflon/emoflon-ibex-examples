@@ -1,0 +1,37 @@
+#using Cheat1FacebookToInstagram.*
+#using AttrCondDefLibrary.*
+
+#rule FollowersIgnoreRule #with Cheat1FacebookToInstagram
+
+#source { 
+	nu:FacebookLanguage.Network{
+		-users->fu
+	}
+	fu:FacebookLanguage.User
+	nn:FacebookLanguage.Network{
+		-users->fn
+	}
+	fn:FacebookLanguage.User
+}
+
+#target {
+	iu:InstagramLanguage.User
+	in:InstagramLanguage.User{
+		++ -followers->iu
+	}
+}
+
+#correspondence {
+	fu2iu:FbUserToInUser{
+    #src->fu
+    #trg->iu
+  }
+  	fn2in:FbUserToInUser{
+  		#src->fn
+  		#trg->in
+  	}
+}
+
+#attributeConditions {
+	
+}

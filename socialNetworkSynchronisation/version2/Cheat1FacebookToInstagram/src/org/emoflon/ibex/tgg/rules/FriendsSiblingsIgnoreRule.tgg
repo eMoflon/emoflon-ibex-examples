@@ -1,0 +1,31 @@
+#using Cheat1FacebookToInstagram.*
+#using AttrCondDefLibrary.*
+
+#rule FriendsSiblingsIgnoreRule #with Cheat1FacebookToInstagram
+
+#source { 
+	fu:FacebookLanguage.User{
+		++ -siblings->fn
+	}
+	fn:FacebookLanguage.User
+}
+
+#target {
+	iu:InstagramLanguage.User
+	in:InstagramLanguage.User
+}
+
+#correspondence {
+	fu2iu:FbUserToInUser{
+    #src->fu
+    #trg->iu
+  }
+  	fn2in:FbUserToInUser{
+  		#src->fn
+  		#trg->in
+  	}
+}
+
+#attributeConditions {
+	
+}
