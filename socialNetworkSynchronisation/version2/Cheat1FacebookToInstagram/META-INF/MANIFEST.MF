@@ -31,3 +31,4 @@ Require-Bundle: org.apache.log4j,
  org.gervarro.notification,
  org.gervarro.plan.dynprog,
  org.emoflon.ibex.tgg.runtime.democles
+Automatic-Module-Name: Cheat1FacebookToInstagram
