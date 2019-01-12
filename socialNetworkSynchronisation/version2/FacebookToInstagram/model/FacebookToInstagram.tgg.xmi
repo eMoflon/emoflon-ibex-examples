@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="ASCII"?>
-<language:TGG xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:language="platform:/plugin/org.emoflon.ibex.tgg.core.language/model/Language.ecore" name="FacebookToInstagram">
-  <src href="platform:/resource/FacebookLanguage/model/FacebookLanguage.ecore#/"/>
-  <trg href="platform:/resource/InstagramLanguage/model/InstagramLanguage.ecore#/"/>
-  <corr href="platform:/resource/FacebookToInstagram/model/FacebookToInstagram.ecore#/"/>
-  <attributeConstraintDefinitionLibrary/>
-</language:TGG>
