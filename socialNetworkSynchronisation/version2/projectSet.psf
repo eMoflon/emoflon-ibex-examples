@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <psf version="2.0">
 <provider id="org.eclipse.egit.core.GitProvider">
-<project reference="1.0,https://github.com/eMoflon/emoflon-ibex-examples.git,version2,socialNetworkSynchronisation/version2/Cheat1FacebookToInstagram"/>
-<project reference="1.0,https://github.com/eMoflon/emoflon-ibex-examples.git,version2,socialNetworkSynchronisation/version2/FacebookLanguage"/>
-<project reference="1.0,https://github.com/eMoflon/emoflon-ibex-examples.git,version2,socialNetworkSynchronisation/version2/FacebookToInstagram"/>
-<project reference="1.0,https://github.com/eMoflon/emoflon-ibex-examples.git,version2,socialNetworkSynchronisation/version2/InstagramLanguage"/>
+<project reference="1.0,https://github.com/eMoflon/emoflon-ibex-examples.git,Version2,socialNetworkSynchronisation/version2/Cheat1FacebookToInstagram"/>
+<project reference="1.0,https://github.com/eMoflon/emoflon-ibex-examples.git,Version2,socialNetworkSynchronisation/version2/FacebookLanguage"/>
+<project reference="1.0,https://github.com/eMoflon/emoflon-ibex-examples.git,Version2,socialNetworkSynchronisation/version2/FacebookToInstagram"/>
+<project reference="1.0,https://github.com/eMoflon/emoflon-ibex-examples.git,Version2,socialNetworkSynchronisation/version2/InstagramLanguage"/>
 </provider>
+<workingSets editPageId="org.eclipse.ui.resourceWorkingSetPage" id="1547383468967_3" label="workingSet" name="workingSet">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Cheat1FacebookToInstagram" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/InstagramLanguage" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/FacebookLanguage" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/FacebookToInstagram" type="4"/>
+</workingSets>
 </psf>
