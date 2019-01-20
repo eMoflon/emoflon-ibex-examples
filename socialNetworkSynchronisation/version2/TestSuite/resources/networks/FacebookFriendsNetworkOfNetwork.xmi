@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:FacebookLanguage="platform:/resource/FacebookLanguage/model/FacebookLanguage.ecore">
+  <FacebookLanguage:Network>
+    <users name="Homer"
+        friends="/1/@users.0"/>
+    <users name="Lisa"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network>
+    <users name="Marge"
+        friends="/0/@users.1"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network>
+    <users name="Ned"
+        friends="/2/@users.1"/>
+    <users name="Homer"/>
+    <users name="Marge"/>
+  </FacebookLanguage:Network>
+</xmi:XMI>

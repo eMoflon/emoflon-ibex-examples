@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InstagramLanguage:Network
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:InstagramLanguage="platform:/resource/InstagramLanguage/model/InstagramLanguage.ecore"
+    xmi:id="_0">
+  <users xmi:id="_0.@users.0"
+      name="Marge"/>
+  <users xmi:id="_0.@users.0"
+      name="Homer"/>
+</InstagramLanguage:Network>
