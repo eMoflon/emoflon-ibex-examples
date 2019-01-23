@@ -1,4 +1,4 @@
-package version2;
+package testsuite.ibex.cc.version1;
 
 import java.io.IOException;
 import java.util.function.BiConsumer;
@@ -64,33 +64,6 @@ public class NegativeExamples  extends CCTestCase {
 	public void testForMultipleNetworksWithUsers() throws IOException {
 		testForPairOfModels("networks/FacebookNetworkOfNetwork", "networks/InstagramOtherNetworkOfNetworks");
 	}
-	@Test
-	public void testForIgnoreParentRelations() throws IOException {
-		testForPairOfModels("users/TwoFacebbookOtherUsers", "users/OneInstagramOtherUser");
-	}
-	@Test
-	public void testForIgnoreSiblingWithFriendsRelations() throws IOException {
-		testForPairOfModels("users/FacebookSiblingRelationOtherUsers", "users/ThreeInstagramUsers");
-	}
-	@Test
-	public void testForIgnoreSpouseRelations() throws IOException {
-		testForPairOfModels("users/FacebookSpouseRelationUsers", "users/ThreeInstagramUsers");
-	}
-	@Test
-	public void testForIgnoreSpouseBidirectionRelations() throws IOException {
-		testForPairOfModels("users/FacebookSpouseRelationBidirectionRelation", "users/ThreeInstagramUsers");
-	}
-	@Test
-	public void testForIgnoreInterNetworkFollowership() throws IOException {
-		testForPairOfModels("networks/FacebookFriendsNetworkOfNetwork", "networks/InstagramOtherNetworkOfNetworks");
-	}
-	@Test
-	public void testForWrongIgnoreRelations() throws IOException {
-		testForPairOfModels("users/FacebookWithParentRelation", "users/OneInstagramUser");
-	}
-	@Test
-	public void testForWrongInterNetworkFollowshipRelations() throws IOException {
-		testForPairOfModels("networks/OneFacebookMultipleNetwork", "networks/OneInstagramMultipleUserNetwork");
-	}
+	
 	
 }

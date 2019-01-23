@@ -1,7 +1,7 @@
-#using Cheat1FacebookToInstagram.*
+#using FacebookToInstagram.*
 #using AttrCondDefLibrary.*
 
-#rule UserNetworkBridgeRule #with Cheat1FacebookToInstagram
+#rule UserNetworkBridgeRule #with FacebookToInstagram
 
 #source { 
 	f:FacebookLanguage.Network {

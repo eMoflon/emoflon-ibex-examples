@@ -1,4 +1,4 @@
-package testsuite.ibex.cc;
+package testsuite.ibex.cc.version2;
 
 import java.io.IOException;
 import java.util.function.BiConsumer;
@@ -56,6 +56,26 @@ public class PositiveExamples extends CCTestCase {
 	
 	@Test
 	public void testForMultipleNetworksWithUsers() throws IOException {
+		testForPairOfModels("networks/FacebookNetworkOfNetwork", "networks/InstagramNetworkOfNetworks");
+	}
+	@Test
+	public void testForIgnoreParentRelations() throws IOException {
+		testForPairOfModels("users/TwoFacebbookOtherUsers", "users/TwoInstagramOtherUsers");
+	}
+	@Test
+	public void testForIgnoreSiblingRelations() throws IOException {
+		testForPairOfModels("users/FacebookSiblingRelationUsers", "users/TwoInstagramOtherUsers");
+	}
+	@Test
+	public void testForIgnoreSpouseRelations() throws IOException {
+		testForPairOfModels("users/FacebookSpouseRelationUsers", "users/TwoInstagramOtherUsers");
+	}
+	@Test
+	public void testForIgnoreSpouseBidirectionRelations() throws IOException {
+		testForPairOfModels("users/FacebookSpouseRelationBidirectionRelation", "users/TwoInstagramUsers");
+	}
+	@Test
+	public void testForIgnoreInterNetworkFollowership() throws IOException {
 		testForPairOfModels("networks/FacebookNetworkOfNetwork", "networks/InstagramNetworkOfNetworks");
 	}
 	
