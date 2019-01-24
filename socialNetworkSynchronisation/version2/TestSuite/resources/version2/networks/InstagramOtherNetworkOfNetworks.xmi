@@ -3,15 +3,14 @@
     xmlns:xmi="http://www.omg.org/XMI"
     xmlns:InstagramLanguage="platform:/resource/InstagramLanguage/model/InstagramLanguage.ecore">
   <InstagramLanguage:Network>
+    <users name="Homer"/>
+    <users name="Lisa"/>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network>
     <users name="Marge"/>
   </InstagramLanguage:Network>
   <InstagramLanguage:Network>
     <users name="Ned"/>
-    <users name="Homer"/>
     <users name="Marge"/>
-  </InstagramLanguage:Network>
-  <InstagramLanguage:Network>
-    <users name="Homer"/>
-    <users name="Lisa"/>
   </InstagramLanguage:Network>
 </xmi:XMI>
