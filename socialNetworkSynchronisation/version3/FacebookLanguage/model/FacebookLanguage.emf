@@ -1,0 +1,21 @@
+@GenModel(documentation="Language describing Facebook-like Social Networks")
+@namespace(uri="platform:/resource/FacebookLanguage/model/FacebookLanguage.ecore", prefix="FacebookLanguage")
+package FacebookLanguage;
+
+class Network{
+	attr EString description;
+	val User[*] users;
+	val Friendship[*] friendships;
+}
+ 
+class User{
+	attr EString name;
+	ref User[0..1] spouse;
+	ref User[*] parents;
+	ref User[*] siblings;
+}
+
+class Friendship{
+	ref User[*] friends;
+	attr EDate startingFrom;
+}
