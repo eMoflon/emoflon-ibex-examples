@@ -62,3 +62,4 @@ socialNetworkSynchronisation/version1/FacebookToInstagram/src/org/emoflon/ibex/t
 socialNetworkSynchronisation/version1/Cheat2FacebookToInstagram/src/org/emoflon/ibex/tgg/csp/lib/AttrCondDefLibrary.tgg
 socialNetworkSynchronisation/version1/TestSuite/instances/protocol.xmi
 socialNetworkSynchronisation/version1/TestSuite/instances/corr.xmi
+*.class
