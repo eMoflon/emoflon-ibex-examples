@@ -26,43 +26,36 @@ public class NegativeExamples  extends CCTestCase {
 
 	@Test
 	public void testForSingleNetwork() throws IOException {
-		testForPairOfModels("networks/OneFacebookNetwork", "networks/TwoInstagramNetwork");
+		testForPairOfModels("version1/networks/OneFacebookNetwork", "version1/networks/TwoInstagramNetwork");
 	}
 
 	@Test
 	public void testForTwoNetworks() throws IOException {
-		testForPairOfModels("networks/TwoFacebookNetwork", "networks/ThreeInstagramNetworks");
+		testForPairOfModels("version1/networks/TwoFacebookNetwork", "version1/networks/ThreeInstagramNetworks");
 	}
 
 	@Test
 	public void testForThreeNetwork() throws IOException {
-		testForPairOfModels("networks/ThreeFacebookNetworks", "networks/InstagramNetworkOfNetworks");
+		testForPairOfModels("version1/networks/ThreeFacebookNetworks", "version1/networks/InstagramNetworkOfNetworks");
 	}
 
 	@Test
 	public void testForSingleUser() throws IOException {
-		testForPairOfModels("users/OneFacebookUser", "users/TwoInstagramUsers");
+		testForPairOfModels("version1/users/OneFacebookUser", "version1/users/TwoInstagramUsers");
 	}
-	
-	@Test
-	public void testForSingleUserWithWrongNames() throws IOException {
-		testForPairOfModels("users/OneFacebookUser", "users/OneInstagramOtherUser");
-	}
-	
-
 	@Test
 	public void testForTwoUsers() throws IOException {
-		testForPairOfModels("users/TwoFacebookUsers", "users/ThreeInstagramUsers");
+		testForPairOfModels("version1/users/TwoFacebookUsers", "version1/users/ThreeInstagramUsers");
 	}
 	
 	@Test
 	public void testForThreeUsers() throws IOException {
-		testForPairOfModels("users/ThreeFacebookUsers", "users/OneInstagramUser");
+		testForPairOfModels("version1/users/ThreeFacebookUsers", "version1/users/OneInstagramUser");
 	}
 	
 	@Test
 	public void testForMultipleNetworksWithUsers() throws IOException {
-		testForPairOfModels("networks/FacebookNetworkOfNetwork", "networks/InstagramOtherNetworkOfNetworks");
+		testForPairOfModels("version1/networks/FacebookNetworkOfNetwork", "version1/networks/InstagramOtherNetworkOfNetworks");
 	}
 	
 	

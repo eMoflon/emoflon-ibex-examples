@@ -23,74 +23,33 @@ public class NegativeExamples  extends CCTestCase {
 		runCC();
 		Assert.assertFalse(checker.modelsAreConsistent());
 	}
-
-	@Test
-	public void testForSingleNetwork() throws IOException {
-		testForPairOfModels("networks/OneFacebookNetwork", "networks/TwoInstagramNetwork");
-	}
-
-	@Test
-	public void testForTwoNetworks() throws IOException {
-		testForPairOfModels("networks/TwoFacebookNetwork", "networks/ThreeInstagramNetworks");
-	}
-
-	@Test
-	public void testForThreeNetwork() throws IOException {
-		testForPairOfModels("networks/ThreeFacebookNetworks", "networks/InstagramNetworkOfNetworks");
-	}
-
-	@Test
-	public void testForSingleUser() throws IOException {
-		testForPairOfModels("users/OneFacebookUser", "users/TwoInstagramUsers");
-	}
-	
-	@Test
-	public void testForSingleUserWithWrongNames() throws IOException {
-		testForPairOfModels("users/OneFacebookUser", "users/OneInstagramOtherUser");
-	}
-	
-
-	@Test
-	public void testForTwoUsers() throws IOException {
-		testForPairOfModels("users/TwoFacebookUsers", "users/ThreeInstagramUsers");
-	}
-	
-	@Test
-	public void testForThreeUsers() throws IOException {
-		testForPairOfModels("users/ThreeFacebookUsers", "users/OneInstagramUser");
-	}
-	
-	@Test
-	public void testForMultipleNetworksWithUsers() throws IOException {
-		testForPairOfModels("networks/FacebookNetworkOfNetwork", "networks/InstagramOtherNetworkOfNetworks");
-	}
 	@Test
 	public void testForIgnoreParentRelations() throws IOException {
-		testForPairOfModels("users/TwoFacebbookOtherUsers", "users/OneInstagramOtherUser");
+		testForPairOfModels("version2/users/TwoFacebbookOtherUsers", "version2/users/OneInstagramOtherUser");
 	}
 	@Test
 	public void testForIgnoreSiblingWithFriendsRelations() throws IOException {
-		testForPairOfModels("users/FacebookSiblingRelationOtherUsers", "users/ThreeInstagramUsers");
+		testForPairOfModels("version2/users/FacebookSiblingRelationOtherUsers", "version2/users/ThreeInstagramUsers");
 	}
 	@Test
 	public void testForIgnoreSpouseRelations() throws IOException {
-		testForPairOfModels("users/FacebookSpouseRelationUsers", "users/ThreeInstagramUsers");
+		testForPairOfModels("version2/users/FacebookSpouseRelationUsers", "version2/users/ThreeInstagramUsers");
 	}
 	@Test
 	public void testForIgnoreSpouseBidirectionRelations() throws IOException {
-		testForPairOfModels("users/FacebookSpouseRelationBidirectionRelation", "users/ThreeInstagramUsers");
+		testForPairOfModels("version2/users/FacebookSpouseRelationBidirectionRelation", "version2/users/ThreeInstagramUsers");
 	}
 	@Test
 	public void testForIgnoreInterNetworkFollowership() throws IOException {
-		testForPairOfModels("networks/FacebookFriendsNetworkOfNetwork", "networks/InstagramOtherNetworkOfNetworks");
+		testForPairOfModels("version2/networks/FacebookFriendsNetworkOfNetwork", "version2/networks/InstagramOtherNetworkOfNetworks");
 	}
 	@Test
 	public void testForWrongIgnoreRelations() throws IOException {
-		testForPairOfModels("users/FacebookWithParentRelation", "users/OneInstagramUser");
+		testForPairOfModels("version2/users/FacebookWithParentRelation", "version2/users/OneInstagramUser");
 	}
 	@Test
 	public void testForWrongInterNetworkFollowshipRelations() throws IOException {
-		testForPairOfModels("networks/OneFacebookMultipleNetwork", "networks/OneInstagramMultipleUserNetwork");
+		testForPairOfModels("version2/networks/OneFacebookMultipleNetwork", "version2/networks/OneInstagramMultipleUserNetwork");
 	}
 	
 }
