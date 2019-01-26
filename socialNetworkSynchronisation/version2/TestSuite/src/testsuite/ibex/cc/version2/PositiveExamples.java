@@ -23,7 +23,6 @@ public class PositiveExamples extends CCTestCase {
 		runCC();
 		Assert.assertTrue(checker.modelsAreConsistent());
 	}
-
 	@Test
 	public void testForIgnoreParentRelations() throws IOException {
 		testForPairOfModels("version2/users/TwoFacebbookOtherUsers", "version2/users/TwoInstagramOtherUsers");
