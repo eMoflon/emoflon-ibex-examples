@@ -44,5 +44,14 @@ public class PositiveExamples extends CCTestCase {
 	public void testForIgnoreInterNetworkFollowership() throws IOException {
 		testForPairOfModels("version2/networks/FacebookNetworkOfNetwork", "version2/networks/InstagramNetworkOfNetworks");
 	}
+	@Test
+	public void testForHandleIntraNetworkFollowers() throws IOException {
+		
+		testForPairOfModels("version2/users/TwoFacebookUsers", "version2/users/TwoInstagramUsers1");
+	}
+	@Test
+	public void testForHandleIntraNetworkFollowers1() throws IOException {
+		testForPairOfModels("version2/networks/OneFacebookNetwork", "version2/networks/OneInstagramNetwork");
+	}
 	
 }
