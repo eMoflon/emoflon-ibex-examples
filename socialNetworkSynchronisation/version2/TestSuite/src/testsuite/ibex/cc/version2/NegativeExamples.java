@@ -22,7 +22,7 @@ public class NegativeExamples extends CCTestCase {
 		runCC();
 		Assert.assertFalse(checker.modelsAreConsistent());
 	}
-	//mutation in target model for number of users.
+  //mutation in target model for number of users.
 	@Test
 	public void testForIgnoreParentRelations() throws IOException {
 		testForPairOfModels("version2/users/TwoFacebbookOtherUsers", "version2/users/OneInstagramOtherUser");
@@ -52,5 +52,4 @@ public class NegativeExamples extends CCTestCase {
 	public void testForWrongInterNetworkFollowshipRelations() throws IOException {
 		testForPairOfModels("version2/networks/OneFacebookMultipleNetwork","version2/networks/OneInstagramMultipleUserNetwork");
 	}
-
 }

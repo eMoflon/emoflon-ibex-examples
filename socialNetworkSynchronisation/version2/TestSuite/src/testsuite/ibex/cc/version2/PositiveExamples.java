@@ -23,30 +23,37 @@ public class PositiveExamples extends CCTestCase {
 		runCC();
 		Assert.assertTrue(checker.modelsAreConsistent());
 	}
+
 	@Test
 	public void testForIgnoreParentRelations() throws IOException {
 		testForPairOfModels("version2/users/TwoFacebbookOtherUsers", "version2/users/TwoInstagramOtherUsers");
 	}
+
 	@Test
 	public void testForIgnoreSiblingRelations() throws IOException {
 		testForPairOfModels("version2/users/FacebookSiblingRelationUsers", "version2/users/TwoInstagramOtherUsers");
 	}
+
 	@Test
 	public void testForIgnoreSpouseRelations() throws IOException {
 		testForPairOfModels("version2/users/FacebookSpouseRelationUsers", "version2/users/TwoInstagramOtherUsers");
 	}
+
 	@Test
 	public void testForIgnoreSpouseBidirectionRelations() throws IOException {
-		testForPairOfModels("version2/users/FacebookSpouseRelationBidirectionRelation", "version2/users/TwoInstagramUsers");
+		testForPairOfModels("version2/users/FacebookSpouseRelationBidirectionRelation",
+				"version2/users/TwoInstagramUsers");
 	}
+
 	@Test
 	public void testForIgnoreInterNetworkFollowership() throws IOException {
-		testForPairOfModels("version2/networks/FacebookNetworkOfNetwork", "version2/networks/InstagramNetworkOfNetworks");
+		testForPairOfModels("version2/networks/FacebookNetworkOfNetwork",
+				"version2/networks/InstagramNetworkOfNetworks");
 	}
+
 	@Test
 	public void testForHandleIntraNetworkFollowers() throws IOException {
-		
 		testForPairOfModels("version2/users/TwoFacebookUsers", "version2/users/TwoInstagramUsers1");
 	}
-	
+
 }
