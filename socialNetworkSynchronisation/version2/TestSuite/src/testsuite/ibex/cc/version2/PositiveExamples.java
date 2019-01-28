@@ -55,4 +55,5 @@ public class PositiveExamples extends CCTestCase {
 	public void testForHandleIntraNetworkFollowers() throws IOException {
 		testForPairOfModels("version2/users/TwoFacebookUsers", "version2/users/TwoInstagramUsers1");
 	}
+
 }
