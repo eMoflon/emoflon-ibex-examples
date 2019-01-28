@@ -22,34 +22,36 @@ public class NegativeExamples extends CCTestCase {
 		runCC();
 		Assert.assertFalse(checker.modelsAreConsistent());
 	}
-  //mutation in target model for number of users.
+
 	@Test
 	public void testForIgnoreParentRelations() throws IOException {
 		testForPairOfModels("version2/users/TwoFacebbookOtherUsers", "version2/users/OneInstagramOtherUser");
 	}
-	//adding friends relation with parents
+
 	@Test
 	public void testForIgnoreSiblingWithFriendsRelations() throws IOException {
 		testForPairOfModels("version2/users/FacebookSiblingRelationOtherUsers", "version2/users/ThreeInstagramUsers");
 	}
-	//Mapping for Facebook user to instagram user with no relation
+
 	@Test
 	public void testForIgnoreSpouseRelations() throws IOException {
 		testForPairOfModels("version2/users/FacebookSpouseRelationUsers", "version2/users/ThreeInstagramUsers");
 	}
-	//adding friends relation in source model
+
 	@Test
 	public void testForIgnoreInterNetworkFollowership() throws IOException {
-		testForPairOfModels("version2/networks/FacebookFriendsNetworkOfNetwork","version2/networks/InstagramOtherNetworkOfNetworks");
+		testForPairOfModels("version2/networks/FacebookFriendsNetworkOfNetwork",
+				"version2/networks/InstagramOtherNetworkOfNetworks");
 	}
-	//adding followership in target model.
-  @Test
+
+	@Test
 	public void testForWrongIgnoreRelations() throws IOException {
 		testForPairOfModels("version2/users/FacebookWithParentRelation", "version2/users/OneInstagramUser");
-  }
-	// adding intranetwork followership
-  @Test
+	}
+
+	@Test
 	public void testForWrongInterNetworkFollowshipRelations() throws IOException {
-		testForPairOfModels("version2/networks/OneFacebookMultipleNetwork","version2/networks/OneInstagramMultipleUserNetwork");
+		testForPairOfModels("version2/networks/OneFacebookMultipleNetwork",
+				"version2/networks/OneInstagramMultipleUserNetwork");
 	}
 }
