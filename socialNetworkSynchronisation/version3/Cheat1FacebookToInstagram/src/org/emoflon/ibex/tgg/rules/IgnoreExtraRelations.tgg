@@ -1,0 +1,34 @@
+#using Cheat1FacebookToInstagram.*
+#using AttrCondDefLibrary.*
+
+#rule FriendsParentsIgnoreRule #with Cheat1FacebookToInstagram
+
+#source {
+	fu:FacebookLanguage.User {
+		++ -parents-> fn
+	}
+
+	fn:FacebookLanguage.User
+}
+
+#rule FriendsSpouseIgnoreRule #with Cheat1FacebookToInstagram
+
+#source {
+	fu:FacebookLanguage.User {
+		++ -spouse-> fn
+	}
+
+	fn:FacebookLanguage.User
+}
+
+#rule FriendsSiblingsIgnoreRule #with Cheat1FacebookToInstagram
+
+#source {
+	fu:FacebookLanguage.User {
+		++ -siblings-> fn
+	}
+
+	fn:FacebookLanguage.User
+}
+
+

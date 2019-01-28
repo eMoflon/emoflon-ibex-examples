@@ -1,0 +1,33 @@
+#using FacebookToInstagram.*
+#using AttrCondDefLibrary.*
+
+#rule FriendsParentsIgnoreRule #with FacebookToInstagram
+
+#source {
+	fu:FacebookLanguage.User {
+		++ -parents-> fn
+	}
+
+	fn:FacebookLanguage.User
+}
+
+#rule FriendsSpouseIgnoreRule #with FacebookToInstagram
+
+#source {
+	fu:FacebookLanguage.User {
+		++ -spouse-> fn
+	}
+
+	fn:FacebookLanguage.User
+}
+
+#rule FriendsSiblingsIgnoreRule #with FacebookToInstagram
+
+#source {
+	fu:FacebookLanguage.User {
+		++ -siblings-> fn
+	}
+
+	fn:FacebookLanguage.User
+}
+
