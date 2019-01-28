@@ -3,7 +3,6 @@ package testsuite.ibex.cc.version2;
 import java.io.IOException;
 import java.util.function.BiConsumer;
 import java.util.function.Supplier;
-
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.emoflon.ibex.tgg.operational.defaults.IbexOptions;
 import org.emoflon.ibex.tgg.operational.strategies.OperationalStrategy;
@@ -40,12 +39,6 @@ public class NegativeExamples extends CCTestCase {
 	}
 
 	@Test
-	public void testForIgnoreSpouseBidirectionRelations() throws IOException {
-		testForPairOfModels("version2/users/FacebookSpouseRelationBidirectionRelation",
-				"version2/users/ThreeInstagramUsers");
-	}
-
-	@Test
 	public void testForIgnoreInterNetworkFollowership() throws IOException {
 		testForPairOfModels("version2/networks/FacebookFriendsNetworkOfNetwork",
 				"version2/networks/InstagramOtherNetworkOfNetworks");
@@ -61,5 +54,4 @@ public class NegativeExamples extends CCTestCase {
 		testForPairOfModels("version2/networks/OneFacebookMultipleNetwork",
 				"version2/networks/OneInstagramMultipleUserNetwork");
 	}
-
 }

@@ -3,9 +3,8 @@
     xmi:version="2.0"
     xmlns:xmi="http://www.omg.org/XMI"
     xmlns:InstagramLanguage="platform:/resource/InstagramLanguage/model/InstagramLanguage.ecore"
-    xmi:id="_0">
-  <users xmi:id="_0.@users.0"
-      name="Homer"/>
-  <users xmi:id="_0.@users.1"
-      name="Marge"/>
+    description="An Instagram-like social network">
+  <users name="Homer"
+      followers="//@users.1"/>
+  <users name="Marge"/>
 </InstagramLanguage:Network>
