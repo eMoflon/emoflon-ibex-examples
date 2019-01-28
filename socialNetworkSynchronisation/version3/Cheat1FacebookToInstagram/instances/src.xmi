@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:FacebookLanguage="platform:/resource/FacebookLanguage/model/FacebookLanguage.ecore">
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network>
+    <users name="torquent" spouse="/2/@users.1" parents="/14/@users.1 /7/@users.1" siblings="/18/@users.1 /22/@users.2"/>
+    <users name="lacus" spouse="/3/@users.0" siblings="/25/@users.1 /21/@users.0 /9/@users.0"/>
+    <users name="diam" spouse="/10/@users.0" parents="/14/@users.1 /17" siblings="/22/@users.2 /21/@users.0 /7/@users.1 /2/@users.1"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network>
+    <users name="magnis" spouse="/17" parents="/16/@users.0 /10/@users.1 /2/@users.2 /20/@users.0" siblings="/20/@users.0 /2/@users.2"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network>
+    <users name="proin" spouse="/2/@users.1" parents="/14/@users.1 /10/@users.0" siblings="/2/@users.1 /25/@users.0 /16/@users.0"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network>
+    <users name="nullam" spouse="/2/@users.2" parents="/18/@users.0 /16/@users.0" siblings="/22/@users.1 /7/@users.1 /8/@users.0"/>
+    <users name="per" spouse="/12/@users.0" parents="/9/@users.0 /8/@users.0 /3/@users.0" siblings="/15/@users.0 /14/@users.1 /16/@users.0"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network>
+    <users name="non" spouse="/22/@users.2" parents="/17 /15/@users.0 /10/@users.0 /22/@users.1 /7/@users.0" siblings="/20/@users.0 /3/@users.0 /14/@users.1"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network>
+    <users name="suscipit" spouse="/20/@users.0" parents="/8/@users.0" siblings="/25/@users.1 /14/@users.0"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network>
+    <users name="praesent" spouse="/15/@users.0" parents="/14/@users.0 /6/@users.0 /12/@users.0 /16/@users.0" siblings="/9/@users.0 /10/@users.1"/>
+    <users name="erat" parents="/12/@users.0" siblings="/22/@users.2 /12/@users.0 /2/@users.2"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network>
+    <users name="diam" spouse="/2/@users.2" parents="/22/@users.1 /18/@users.0 /8/@users.0 /25/@users.1" siblings="/25/@users.0 /8/@users.0 /7/@users.1"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network>
+    <users name="posuere" spouse="/18/@users.1" parents="/2/@users.1 /2/@users.2 /17 /6/@users.0" siblings="/20/@users.0 /17 /10/@users.0"/>
+    <users name="eros" spouse="/3/@users.0" parents="/16/@users.0 /22/@users.1" siblings="/22/@users.1 /14/@users.0 /2/@users.2"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network>
+    <users name="amet" spouse="/22/@users.2" parents="/25/@users.1 /18/@users.0" siblings="/14/@users.0"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network>
+    <users name="purus" spouse="/22/@users.2" parents="/9/@users.0 /12/@users.0 /2/@users.2 /10/@users.0" siblings="/7/@users.0"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:User name="sollicitudin" spouse="/8/@users.0" parents="/25/@users.0 /8/@users.0 /16/@users.0 /7/@users.0 /25/@users.1" siblings="/12/@users.0 /22/@users.1 /18/@users.1 /14/@users.0"/>
+  <FacebookLanguage:Network>
+    <users name="congue" spouse="/18/@users.1" parents="/20/@users.0 /10/@users.1 /22/@users.1 /25/@users.0" siblings="/22/@users.2 /2/@users.2 /16/@users.0 /20/@users.0 /9/@users.0 /14/@users.0 /2/@users.1"/>
+    <users name="morbi" spouse="/17" parents="/9/@users.0 /7/@users.1 /10/@users.0 /15/@users.0 /16/@users.0" siblings="/22/@users.0 /7/@users.1 /21/@users.0 /2/@users.2"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network>
+    <users name="mauris" spouse="/2/@users.0" parents="/14/@users.0 /7/@users.0" siblings="/6/@users.0 /22/@users.1"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network>
+    <users name="lectus" spouse="/2/@users.2" parents="/10/@users.0 /15/@users.0" siblings="/25/@users.1"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network>
+    <users name="dignissim" spouse="/3/@users.0" parents="/18/@users.0 /10/@users.1" siblings="/10/@users.1 /18/@users.0"/>
+    <users name="sociis" spouse="/14/@users.0" parents="/18/@users.0 /21/@users.0" siblings="/14/@users.1 /2/@users.0"/>
+    <users name="lacinia" spouse="/7/@users.1" parents="/14/@users.0 /10/@users.1" siblings="/14/@users.0 /2/@users.0 /18/@users.0"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network/>
+  <FacebookLanguage:Network>
+    <users name="litora" spouse="/17" parents="/2/@users.2 /16/@users.0 /10/@users.1" siblings="/8/@users.0 /10/@users.0 /3/@users.0"/>
+    <users name="nulla" spouse="/14/@users.0" parents="/18/@users.1" siblings="/17 /21/@users.0 /22/@users.2 /15/@users.0"/>
+  </FacebookLanguage:Network>
+</xmi:XMI>

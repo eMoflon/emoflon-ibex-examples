@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FacebookLanguage:Network
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:FacebookLanguage="platform:/resource/FacebookLanguage/model/FacebookLanguage.ecore"
+    xmi:id="_0">
+  <users xmi:id="_0.@users.0"
+      name="Homer"/>
+  <users xmi:id="_0.@users.1"
+      name="Marge"
+      siblings="_0.@users.0"/>
+</FacebookLanguage:Network>

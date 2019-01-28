@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InstagramLanguage:Network
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:InstagramLanguage="platform:/resource/InstagramLanguage/model/InstagramLanguage.ecore">
+  <users name="Homer">
+    <followerships>
+      <to follows="//@users.1/@followerships/@from"/>
+      <from/>
+    </followerships>
+  </users>
+  <users name="Marge">
+    <followerships>
+      <to/>
+      <from/>
+    </followerships>
+  </users>
+</InstagramLanguage:Network>
