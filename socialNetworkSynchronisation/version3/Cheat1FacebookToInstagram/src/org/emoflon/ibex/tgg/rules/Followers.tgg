@@ -20,6 +20,7 @@
 		-from->fr
 	}
 	fr:InstagramLanguage.From
+		
 	
 	in:InstagramLanguage.User {
 		-followerships->fon
@@ -27,6 +28,7 @@
 	fon:InstagramLanguage.Followership{
 		-to->to
 	}
+	
 	to:InstagramLanguage.To{
 		++ -follows->fr
 	}

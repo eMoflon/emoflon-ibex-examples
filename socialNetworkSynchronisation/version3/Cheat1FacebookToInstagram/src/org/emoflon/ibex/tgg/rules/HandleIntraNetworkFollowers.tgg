@@ -6,11 +6,14 @@
 #source { 
 	n:FacebookLanguage.Network {
 		-users->fu
+	 ++- friendships->fri
+
+
 	}
 	
-	++ fri:FacebookLanguage.Friendship{
-		++ -friends->fu
-		++ -friends->fn
+	++fri:FacebookLanguage.Friendship{
+		 ++-friends->fu
+		 ++-friends->fn
 	}
 	fu:FacebookLanguage.User
 	fn:FacebookLanguage.User 
