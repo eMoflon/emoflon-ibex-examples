@@ -13,7 +13,4 @@
 		++ -friends->fu
 		++ -friends->fn
 	}
-	fu:FacebookLanguage.User
-	fn:FacebookLanguage.User 
-	
 }
