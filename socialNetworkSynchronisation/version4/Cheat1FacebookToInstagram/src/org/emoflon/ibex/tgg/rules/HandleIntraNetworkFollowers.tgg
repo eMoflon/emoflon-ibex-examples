@@ -1,0 +1,53 @@
+#using Cheat1FacebookToInstagram.*
+#using AttrCondDefLibrary.*
+
+#rule HandleIntraNetworkFollowers #extends Followers #with Cheat1FacebookToInstagram
+
+#source { 
+	n:FacebookLanguage.Network {
+		-users->fu
+	    ++ -friendships->fri
+	}
+	
+	++fri:FacebookLanguage.Friendship{
+		 ++-friends->fu
+		 ++-friends->fn
+	}
+		
+}
+
+#target {
+	fou:InstagramLanguage.Followership{
+		-to->tou
+	}
+	tou:InstagramLanguage.To
+	
+	fon:InstagramLanguage.Followership{
+		-from->frn
+	}
+	frn:InstagramLanguage.From
+}
+
+#nac NoDoubleFriendship #for HandleIntraNetworkFollowers
+
+#source {
+    fn:User
+    
+    fu:User
+    
+    other:Friendship {
+        -friends->fn
+        -friends->fu
+    }
+}
+
+#nac NoDoubleFollowership #for HandleIntraNetworkFollowers
+
+#target {
+	tou:InstagramLanguage.To{
+		-follows->frn
+	}
+	
+	frn:InstagramLanguage.From
+	 
+}
