@@ -17,5 +17,5 @@ class User{
 
 class Friendship{
 	ref User[*] friends;
-	attr EDate startingFrom;
+	attr EDate startFrom;
 }

@@ -28,6 +28,11 @@
 	frn:InstagramLanguage.From
 }
 
+#attributeConditions{
+	date(fri.startFrom)
+}
+
+
 #nac NoDoubleFriendship #for HandleIntraNetworkFollowers
 
 #source {
@@ -51,3 +56,14 @@
 	frn:InstagramLanguage.From
 	 
 }
+
+
+
+
+
+
+
+
+
+
+
