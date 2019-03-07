@@ -24,5 +24,10 @@
 }
 
 #attributeConditions {
+	#userDefined
+	FriendshipDate(date:EDate){
+		#sync: [B]
+		#gen: [B]
+	}
 	
 }

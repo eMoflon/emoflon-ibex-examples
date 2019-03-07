@@ -51,3 +51,6 @@
 	frn:InstagramLanguage.From
 	 
 }
+#attributeConditions{
+ FriendshipDate(FriendshipDate)
+}
