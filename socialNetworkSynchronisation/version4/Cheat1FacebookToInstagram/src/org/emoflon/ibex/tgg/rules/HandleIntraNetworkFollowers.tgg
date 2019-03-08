@@ -28,8 +28,9 @@
 	frn:InstagramLanguage.From
 }
 
-#attributeConditions{
+ #attributeConditions{
 	date(fri.startFrom)
+	
 }
 
 

@@ -1,5 +1,6 @@
 package org.emoflon.ibex.tgg.operational.csp.constraints.custom.cheat1facebooktoinstagram;
 
+import java.text.DateFormat;
 import java.util.Date;
 
 import org.emoflon.ibex.tgg.operational.csp.RuntimeTGGAttributeConstraint;
@@ -27,9 +28,9 @@ public class UserDefined_date extends RuntimeTGGAttributeConstraint
 	  		v0.bindToValue(value);
 	  		setSatisfied(true);
 	  		return;
-	  	} 
+	  	}
 		else{
-			throw new UnsupportedOperationException("This case in the constraint has not been implemented yet: " + bindingStates);
+			setSatisfied(true);
 		}
 	}
 }

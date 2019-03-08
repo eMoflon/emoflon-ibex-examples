@@ -16,6 +16,7 @@ class Followership
 {
 	val To[0..1] to;
 	val From[0..1] from;
+
 }
 
 class To {

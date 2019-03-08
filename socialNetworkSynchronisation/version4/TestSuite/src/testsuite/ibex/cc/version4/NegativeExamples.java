@@ -41,7 +41,7 @@ public class NegativeExamples extends CCTestCase {
 	//mapping from one to many networks.
 	@Test
 	public void testForHandleIntraNetworkFollowers1() throws IOException {
-		testForPairOfModels("version4/networks/TwoFacebookNetwork", "version4/networks/OneInstagramNetwork");
+		testForPairOfModels("version4/networks/TwoFacebookNetworks", "version4/networks/OneInstagramNetwork");
 	}
 	//mutation in source model (adding friendship)
 	@Test
@@ -51,7 +51,7 @@ public class NegativeExamples extends CCTestCase {
 	//mutation in target model (no followers relation in one network). 
 	@Test
 	public void testForHandleIntraNetworkFollowers11() throws IOException {
-		testForPairOfModels("version4/networks/TwoFacebookNetwork2", "version4/networks/TwoInstagramNetwork2");
+		testForPairOfModels("version4/networks/OneFacebookNetwork", "version4/networks/TwoInstagramNetwork2");
 	}
 	//Extra friendship node in source but no followership for the same in target
 	@Test
@@ -63,9 +63,10 @@ public class NegativeExamples extends CCTestCase {
 	public void testForHandleIntraNetworkFollowersNAC1() throws IOException {
 		testForPairOfModels("version4/users/TwoFacebookUsers", "version4/users/OneInstagramUser2");
 	}
+	//adding extra friendship node to the source for bidirectional followership
 	@Test
 	public void testForIgnoreIntraNetworkFollowership() throws IOException {
-		testForPairOfModels("version4/users/TwoFacebookUsers", "version4/users/OneInstagramUser2");
+		testForPairOfModels("version4/users/FacebookNACFriendship", "version4/users/TwoInstagramUsers2");
 	}
 	/*--------------------------------Test case for extra relation----------------------------------*/
 	//mapping from many to one user 
