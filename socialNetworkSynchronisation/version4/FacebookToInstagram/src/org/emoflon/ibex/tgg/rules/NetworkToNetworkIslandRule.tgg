@@ -1,0 +1,23 @@
+#using FacebookToInstagram.*
+#using AttrCondDefLibrary.*
+
+#rule NetworkToNetworkIslandRule #with FacebookToInstagram
+
+#source { 
+	++fl:FacebookLanguage.Network
+}
+
+#target {
+	++il:InstagramLanguage.Network
+}
+
+#correspondence {
+	++n2n:NetworkToNetwork {
+		#src->fl
+		#trg->il
+	}
+}
+
+#attributeConditions {
+	
+}

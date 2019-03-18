@@ -1,0 +1,31 @@
+#using Cheat1FacebookToInstagram.*
+#using AttrCondDefLibrary.*
+
+#rule IgnoreIntraNetworkFollowers #with Cheat1FacebookToInstagram
+
+#target {
+	iu:InstagramLanguage.User {
+		-followerships->fou
+	}
+	fou:InstagramLanguage.Followership{
+		-to->tou
+		-from->fru
+	}
+	tou:InstagramLanguage.To{
+		++ -follows->frn
+	}
+	fru:InstagramLanguage.From
+	
+	in:InstagramLanguage.User {
+		-followerships->fon
+	}
+	fon:InstagramLanguage.Followership{
+		-to->ton
+		-from->frn
+	}
+		frn:InstagramLanguage.From
+		ton:InstagramLanguage.To{
+			-follows->fru
+		}
+}
+

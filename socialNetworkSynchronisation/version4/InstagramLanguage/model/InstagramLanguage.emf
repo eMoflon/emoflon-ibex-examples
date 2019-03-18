@@ -1,0 +1,28 @@
+@GenModel(documentation="Language describing Instagram-like Social Networks")
+@namespace(uri="platform:/resource/InstagramLanguage/model/InstagramLanguage.ecore", prefix="InstagramLanguage")
+package InstagramLanguage;
+
+class Network {
+	attr EString description;
+	val User[*] users;
+}
+ 
+class User {
+	attr EString name;
+	val Followership[0..1] followerships;
+}
+
+class Followership
+{
+	val To[0..1] to;
+	val From[0..1] from;
+
+}
+
+class To {
+	ref From[*] follows;
+}
+
+class From {
+	
+}
