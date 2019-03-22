@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:InstagramLanguage="platform:/resource/InstagramLanguage/model/InstagramLanguage.ecore">
+  <InstagramLanguage:Network>
+    <users name="Homer">
+      <followerships>
+        <to
+            follows="/0/@users.1/@followerships/@from"/>
+        <from/>
+      </followerships>
+    </users>
+    <users name="Marge">
+      <followerships>
+        <to/>
+        <from/>
+      </followerships>
+    </users>
+  </InstagramLanguage:Network>
+  <InstagramLanguage:Network>
+    <users name="Lisa">
+      <followerships>
+        <to
+            follows="/1/@users.1/@followerships/@from"/>
+        <from/>
+      </followerships>
+    </users>
+    <users name="Ned">
+      <followerships>
+        <to/>
+        <from/>
+      </followerships>
+    </users>
+  </InstagramLanguage:Network>
+</xmi:XMI>
