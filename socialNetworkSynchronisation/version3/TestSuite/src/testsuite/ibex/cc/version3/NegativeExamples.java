@@ -36,7 +36,8 @@ public class NegativeExamples extends CCTestCase {
 	@Test
 	public void testForHandleIntraNetworkFollowersWithMultipleUser() throws IOException {
 		testForPairOfModels("version3/users/FacebookThreeUsers", "version3/users/InstagramThreeUsers");
-	}//mutation in followers(i.e target model) relation.
+	}
+	//mutation in followers(i.e target model) relation.
 	@Test
 	public void testForHandleIntraNetworkFollowers() throws IOException {
 		testForPairOfModels("version3/users/OneFacebookUser2", "version3/users/OneInstagramUser2");

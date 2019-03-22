@@ -29,7 +29,7 @@ public class PositiveExamples extends CCTestCase {
 	}
 	@Test
 	public void testForUserToUserIslandRuleTwoUser() throws IOException {
-		testForPairOfModels("version3/users/OneFacebookUser", "version3/users/OneInstagramUser");
+		testForPairOfModels("version3/users/TwoFacebookUsers", "version3/users/TwoInstagramUsers");
 	}
 	@Test
 	public void testForMultipleNetworksWithUsersBridgeRule() throws IOException {
@@ -54,11 +54,11 @@ public class PositiveExamples extends CCTestCase {
 	}
 	@Test
 	public void testForIgnoreSiblingRelations() throws IOException {
-		testForPairOfModels("version3/users/FacebookSiblingRelationUsers", "version3/users/TwoInstagramOtherUsers");
+		testForPairOfModels("version3/users/FacebookSiblingRelationUsers", "version3/users/TwoInstagramOtherUsers2");
 	}
 	@Test
 	public void testForIgnoreSpouseRelations() throws IOException {
-		testForPairOfModels("version3/users/FacebookSpouseRelationUsers", "version3/users/TwoInstagramOtherUsers");
+		testForPairOfModels("version3/users/FacebookSpouseRelationUsers", "version3/users/TwoInstagramOtherUsers1");
 	}
 	@Test
 	public void testForIgnoreSpouseBidirectionRelations() throws IOException {
