@@ -6,7 +6,7 @@
     xmi:id="_0">
   <users xmi:id="_0.@users.0"
       name="Homer"/>
-  <users name="Marge"/>
+  <users name="Carl"/>
   <friendships
       friends="_0.@users.0 //@users.1"/>
   <friendships

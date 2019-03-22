@@ -8,12 +8,12 @@
         friends="/0/@users.0 /1/@users.0 /2/@users.1"/>
   </FacebookLanguage:Network>
   <FacebookLanguage:Network>
-    <users name="Lisa"/>
+    <users name="Dorothy"/>
     <friendships
         friends="/0/@users.0 /2/@users.0"/>
   </FacebookLanguage:Network>
   <FacebookLanguage:Network>
-    <users name="Marge"/>
+    <users name="Carl"/>
     <users name="Ned"/>
     <friendships
         friends="/1/@users.0 /2/@users.1"/>

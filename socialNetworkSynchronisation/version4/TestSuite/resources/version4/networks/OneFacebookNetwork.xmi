@@ -5,7 +5,7 @@
     xmlns:FacebookLanguage="platform:/resource/FacebookLanguage/model/FacebookLanguage.ecore"
     xmi:id="_0">
   <users name="Homer"/>
-  <users name="Marge"/>
+  <users name="Carl"/>
   <friendships
       friends="//@users.0 //@users.1"/>
 </FacebookLanguage:Network>

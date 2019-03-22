@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:InstagramLanguage="platform:/resource/InstagramLanguage/model/InstagramLanguage.ecore">
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:User name="eget">
+    <followerships>
+      <to/>
+      <from/>
+    </followerships>
+  </InstagramLanguage:User>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:User name="vestibulum">
+    <followerships>
+      <to/>
+      <from/>
+    </followerships>
+  </InstagramLanguage:User>
+  <InstagramLanguage:User name="justo">
+    <followerships>
+      <to/>
+      <from/>
+    </followerships>
+  </InstagramLanguage:User>
+  <InstagramLanguage:User name="sit">
+    <followerships>
+      <to/>
+      <from/>
+    </followerships>
+  </InstagramLanguage:User>
+  <InstagramLanguage:User name="iaculis">
+    <followerships>
+      <to/>
+      <from/>
+    </followerships>
+  </InstagramLanguage:User>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:User name="justo">
+    <followerships>
+      <to/>
+      <from/>
+    </followerships>
+  </InstagramLanguage:User>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:User name="nulla">
+    <followerships>
+      <to/>
+      <from/>
+    </followerships>
+  </InstagramLanguage:User>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:User name="neque">
+    <followerships>
+      <to/>
+      <from/>
+    </followerships>
+  </InstagramLanguage:User>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:User name="consectetur">
+    <followerships>
+      <to/>
+      <from/>
+    </followerships>
+  </InstagramLanguage:User>
+  <InstagramLanguage:User name="nam">
+    <followerships>
+      <to/>
+      <from/>
+    </followerships>
+  </InstagramLanguage:User>
+  <InstagramLanguage:User name="mus">
+    <followerships>
+      <to/>
+      <from/>
+    </followerships>
+  </InstagramLanguage:User>
+  <InstagramLanguage:User name="mattis">
+    <followerships>
+      <to/>
+      <from/>
+    </followerships>
+  </InstagramLanguage:User>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:User name="primis">
+    <followerships>
+      <to/>
+      <from/>
+    </followerships>
+  </InstagramLanguage:User>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:User name="placerat">
+    <followerships>
+      <to/>
+      <from/>
+    </followerships>
+  </InstagramLanguage:User>
+  <InstagramLanguage:User name="cursus">
+    <followerships>
+      <to/>
+      <from/>
+    </followerships>
+  </InstagramLanguage:User>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:User name="suscipit">
+    <followerships>
+      <to/>
+      <from/>
+    </followerships>
+  </InstagramLanguage:User>
+  <InstagramLanguage:User name="primis">
+    <followerships>
+      <to/>
+      <from/>
+    </followerships>
+  </InstagramLanguage:User>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:Network/>
+  <InstagramLanguage:User name="suspendisse">
+    <followerships>
+      <to/>
+      <from/>
+    </followerships>
+  </InstagramLanguage:User>
+</xmi:XMI>

@@ -6,6 +6,5 @@
     xmi:id="_0">
   <users xmi:id="_0.@users.0"
       name="Homer"/>
-  <users name="Marge"/>
-  <friendships/>
+  <users name="Carl"/>
 </FacebookLanguage:Network>
