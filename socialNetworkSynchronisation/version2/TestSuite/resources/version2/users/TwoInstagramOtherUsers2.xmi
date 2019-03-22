@@ -6,4 +6,6 @@
     xmi:id="_0">
   <users xmi:id="_0.@users.0"
       name="Homer"/>
+  <users xmi:id="_0.@users.0"
+      name="Marge"/>
 </InstagramLanguage:Network>

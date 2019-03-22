@@ -31,12 +31,12 @@ public class PositiveExamples extends CCTestCase {
 
 	@Test
 	public void testForIgnoreSiblingRelations() throws IOException {
-		testForPairOfModels("version2/users/FacebookSiblingRelationUsers", "version2/users/TwoInstagramOtherUsers");
+		testForPairOfModels("version2/users/FacebookSiblingRelationUsers", "version2/users/TwoInstagramOtherUsers1");
 	}
 
 	@Test
 	public void testForIgnoreSpouseRelations() throws IOException {
-		testForPairOfModels("version2/users/FacebookSpouseRelationUsers", "version2/users/TwoInstagramOtherUsers");
+		testForPairOfModels("version2/users/FacebookSpouseRelationUsers", "version2/users/TwoInstagramOtherUsers2");
 	}
 
 	@Test

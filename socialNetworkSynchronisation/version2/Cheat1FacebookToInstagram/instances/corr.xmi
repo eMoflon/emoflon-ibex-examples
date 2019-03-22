@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Cheat1FacebookToInstagram="platform:/resource/Cheat1FacebookToInstagram/model/Cheat1FacebookToInstagram.ecore">
+  <Cheat1FacebookToInstagram:FbUserToInUser>
+    <source href="src.xmi#/0"/>
+    <target href="trg.xmi#/0"/>
+  </Cheat1FacebookToInstagram:FbUserToInUser>
+  <Cheat1FacebookToInstagram:NetworkToNetwork>
+    <source href="src.xmi#/1"/>
+    <target href="trg.xmi#/1"/>
+  </Cheat1FacebookToInstagram:NetworkToNetwork>
+  <Cheat1FacebookToInstagram:FbUserToInUser>
+    <source href="src.xmi#/2"/>
+    <target href="trg.xmi#/2"/>
+  </Cheat1FacebookToInstagram:FbUserToInUser>
+  <Cheat1FacebookToInstagram:FbUserToInUser>
+    <source href="src.xmi#/3"/>
+    <target href="trg.xmi#/3"/>
+  </Cheat1FacebookToInstagram:FbUserToInUser>
+  <Cheat1FacebookToInstagram:FbUserToInUser>
+    <source href="src.xmi#/4"/>
+    <target href="trg.xmi#/4"/>
+  </Cheat1FacebookToInstagram:FbUserToInUser>
+  <Cheat1FacebookToInstagram:FbUserToInUser>
+    <source href="src.xmi#/5"/>
+    <target href="trg.xmi#/5"/>
+  </Cheat1FacebookToInstagram:FbUserToInUser>
+  <Cheat1FacebookToInstagram:FbUserToInUser>
+    <source href="src.xmi#/6"/>
+    <target href="trg.xmi#/6"/>
+  </Cheat1FacebookToInstagram:FbUserToInUser>
+  <Cheat1FacebookToInstagram:NetworkToNetwork>
+    <source href="src.xmi#/7"/>
+    <target href="trg.xmi#/7"/>
+  </Cheat1FacebookToInstagram:NetworkToNetwork>
+  <Cheat1FacebookToInstagram:FbUserToInUser>
+    <source href="src.xmi#/8"/>
+    <target href="trg.xmi#/8"/>
+  </Cheat1FacebookToInstagram:FbUserToInUser>
+  <Cheat1FacebookToInstagram:FbUserToInUser>
+    <source href="src.xmi#/9"/>
+    <target href="trg.xmi#/9"/>
+  </Cheat1FacebookToInstagram:FbUserToInUser>
+  <Cheat1FacebookToInstagram:NetworkToNetwork>
+    <source href="src.xmi#/10"/>
+    <target href="trg.xmi#/10"/>
+  </Cheat1FacebookToInstagram:NetworkToNetwork>
+  <Cheat1FacebookToInstagram:NetworkToNetwork>
+    <source href="src.xmi#/11"/>
+    <target href="trg.xmi#/11"/>
+  </Cheat1FacebookToInstagram:NetworkToNetwork>
+  <Cheat1FacebookToInstagram:FbUserToInUser>
+    <source href="src.xmi#/12"/>
+    <target href="trg.xmi#/12"/>
+  </Cheat1FacebookToInstagram:FbUserToInUser>
+  <Cheat1FacebookToInstagram:NetworkToNetwork>
+    <source href="src.xmi#/13"/>
+    <target href="trg.xmi#/13"/>
+  </Cheat1FacebookToInstagram:NetworkToNetwork>
+  <Cheat1FacebookToInstagram:FbUserToInUser>
+    <source href="src.xmi#/14"/>
+    <target href="trg.xmi#/14"/>
+  </Cheat1FacebookToInstagram:FbUserToInUser>
+  <Cheat1FacebookToInstagram:FbUserToInUser>
+    <source href="src.xmi#/15"/>
+    <target href="trg.xmi#/15"/>
+  </Cheat1FacebookToInstagram:FbUserToInUser>
+  <Cheat1FacebookToInstagram:FbUserToInUser>
+    <source href="src.xmi#/16"/>
+    <target href="trg.xmi#/16"/>
+  </Cheat1FacebookToInstagram:FbUserToInUser>
+  <Cheat1FacebookToInstagram:FbUserToInUser>
+    <source href="src.xmi#/17"/>
+    <target href="trg.xmi#/17"/>
+  </Cheat1FacebookToInstagram:FbUserToInUser>
+  <Cheat1FacebookToInstagram:NetworkToNetwork>
+    <source href="src.xmi#/18"/>
+    <target href="trg.xmi#/18"/>
+  </Cheat1FacebookToInstagram:NetworkToNetwork>
+  <Cheat1FacebookToInstagram:FbUserToInUser>
+    <source href="src.xmi#/19"/>
+    <target href="trg.xmi#/19"/>
+  </Cheat1FacebookToInstagram:FbUserToInUser>
+  <Cheat1FacebookToInstagram:NetworkToNetwork>
+    <source href="src.xmi#/20"/>
+    <target href="trg.xmi#/20"/>
+  </Cheat1FacebookToInstagram:NetworkToNetwork>
+  <Cheat1FacebookToInstagram:NetworkToNetwork>
+    <source href="src.xmi#/21"/>
+    <target href="trg.xmi#/21"/>
+  </Cheat1FacebookToInstagram:NetworkToNetwork>
+  <Cheat1FacebookToInstagram:NetworkToNetwork>
+    <source href="src.xmi#/22"/>
+    <target href="trg.xmi#/22"/>
+  </Cheat1FacebookToInstagram:NetworkToNetwork>
+  <Cheat1FacebookToInstagram:NetworkToNetwork>
+    <source href="src.xmi#/23"/>
+    <target href="trg.xmi#/23"/>
+  </Cheat1FacebookToInstagram:NetworkToNetwork>
+  <Cheat1FacebookToInstagram:FbUserToInUser>
+    <source href="src.xmi#/24"/>
+    <target href="trg.xmi#/24"/>
+  </Cheat1FacebookToInstagram:FbUserToInUser>
+  <Cheat1FacebookToInstagram:NetworkToNetwork>
+    <source href="src.xmi#/25"/>
+    <target href="trg.xmi#/25"/>
+  </Cheat1FacebookToInstagram:NetworkToNetwork>
+  <Cheat1FacebookToInstagram:FbUserToInUser>
+    <source href="src.xmi#/26"/>
+    <target href="trg.xmi#/26"/>
+  </Cheat1FacebookToInstagram:FbUserToInUser>
+  <Cheat1FacebookToInstagram:NetworkToNetwork>
+    <source href="src.xmi#/27"/>
+    <target href="trg.xmi#/27"/>
+  </Cheat1FacebookToInstagram:NetworkToNetwork>
+  <Cheat1FacebookToInstagram:NetworkToNetwork>
+    <source href="src.xmi#/28"/>
+    <target href="trg.xmi#/28"/>
+  </Cheat1FacebookToInstagram:NetworkToNetwork>
+  <Cheat1FacebookToInstagram:NetworkToNetwork>
+    <source href="src.xmi#/29"/>
+    <target href="trg.xmi#/29"/>
+  </Cheat1FacebookToInstagram:NetworkToNetwork>
+  <Cheat1FacebookToInstagram:NetworkToNetwork>
+    <source href="src.xmi#/30"/>
+    <target href="trg.xmi#/30"/>
+  </Cheat1FacebookToInstagram:NetworkToNetwork>
+  <Cheat1FacebookToInstagram:FbUserToInUser>
+    <source href="src.xmi#/31"/>
+    <target href="trg.xmi#/31"/>
+  </Cheat1FacebookToInstagram:FbUserToInUser>
+  <Cheat1FacebookToInstagram:FbUserToInUser>
+    <source href="src.xmi#/32"/>
+    <target href="trg.xmi#/32"/>
+  </Cheat1FacebookToInstagram:FbUserToInUser>
+  <Cheat1FacebookToInstagram:NetworkToNetwork>
+    <source href="src.xmi#/33"/>
+    <target href="trg.xmi#/33"/>
+  </Cheat1FacebookToInstagram:NetworkToNetwork>
+  <Cheat1FacebookToInstagram:FbUserToInUser>
+    <source href="src.xmi#/34"/>
+    <target href="trg.xmi#/34"/>
+  </Cheat1FacebookToInstagram:FbUserToInUser>
+  <Cheat1FacebookToInstagram:FbUserToInUser>
+    <source href="src.xmi#/35"/>
+    <target href="trg.xmi#/35"/>
+  </Cheat1FacebookToInstagram:FbUserToInUser>
+  <Cheat1FacebookToInstagram:FbUserToInUser>
+    <source href="src.xmi#/36"/>
+    <target href="trg.xmi#/36"/>
+  </Cheat1FacebookToInstagram:FbUserToInUser>
+  <Cheat1FacebookToInstagram:FbUserToInUser>
+    <source href="src.xmi#/37"/>
+    <target href="trg.xmi#/37"/>
+  </Cheat1FacebookToInstagram:FbUserToInUser>
+  <Cheat1FacebookToInstagram:FbUserToInUser>
+    <source href="src.xmi#/38"/>
+    <target href="trg.xmi#/38"/>
+  </Cheat1FacebookToInstagram:FbUserToInUser>
+  <Cheat1FacebookToInstagram:NetworkToNetwork>
+    <source href="src.xmi#/39"/>
+    <target href="trg.xmi#/39"/>
+  </Cheat1FacebookToInstagram:NetworkToNetwork>
+  <Cheat1FacebookToInstagram:FbUserToInUser>
+    <source href="src.xmi#/40"/>
+    <target href="trg.xmi#/40"/>
+  </Cheat1FacebookToInstagram:FbUserToInUser>
+  <Cheat1FacebookToInstagram:FbUserToInUser>
+    <source href="src.xmi#/41"/>
+    <target href="trg.xmi#/41"/>
+  </Cheat1FacebookToInstagram:FbUserToInUser>
+  <Cheat1FacebookToInstagram:FbUserToInUser>
+    <source href="src.xmi#/42"/>
+    <target href="trg.xmi#/42"/>
+  </Cheat1FacebookToInstagram:FbUserToInUser>
+  <Cheat1FacebookToInstagram:NetworkToNetwork>
+    <source href="src.xmi#/43"/>
+    <target href="trg.xmi#/43"/>
+  </Cheat1FacebookToInstagram:NetworkToNetwork>
+  <Cheat1FacebookToInstagram:FbUserToInUser>
+    <source href="src.xmi#/44"/>
+    <target href="trg.xmi#/44"/>
+  </Cheat1FacebookToInstagram:FbUserToInUser>
+</xmi:XMI>

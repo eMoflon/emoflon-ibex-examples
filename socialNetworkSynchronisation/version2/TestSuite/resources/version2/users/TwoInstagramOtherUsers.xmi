@@ -5,7 +5,7 @@
     xmlns:InstagramLanguage="platform:/resource/InstagramLanguage/model/InstagramLanguage.ecore"
     xmi:id="_0">
   <users xmi:id="_0.@users.0"
-      name="Marge"/>
+      name="Lisa"/>
   <users xmi:id="_0.@users.0"
       name="Homer"/>
 </InstagramLanguage:Network>
