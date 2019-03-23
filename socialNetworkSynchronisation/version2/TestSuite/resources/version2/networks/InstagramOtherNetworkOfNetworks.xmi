@@ -4,10 +4,10 @@
     xmlns:InstagramLanguage="platform:/resource/InstagramLanguage/model/InstagramLanguage.ecore">
   <InstagramLanguage:Network>
     <users name="Homer"/>
-    <users name="Lisa"/>
+    <users name="Dorothy"/>
   </InstagramLanguage:Network>
   <InstagramLanguage:Network>
-    <users name="Marge"/>
+    <users name="Carl"/>
   </InstagramLanguage:Network>
   <InstagramLanguage:Network>
     <users name="Ned"/>

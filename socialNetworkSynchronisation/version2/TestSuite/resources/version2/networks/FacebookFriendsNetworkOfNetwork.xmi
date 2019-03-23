@@ -5,16 +5,16 @@
   <FacebookLanguage:Network>
     <users name="Homer"
         friends="/1/@users.0"/>
-    <users name="Lisa"/>
+    <users name="Jane"/>
   </FacebookLanguage:Network>
   <FacebookLanguage:Network>
-    <users name="Marge"
+    <users name="Dorothy"
         friends="/0/@users.1"/>
   </FacebookLanguage:Network>
   <FacebookLanguage:Network>
     <users name="Ned"
         friends="/2/@users.1"/>
     <users name="Homer"/>
-    <users name="Marge"/>
+    <users name="Carl"/>
   </FacebookLanguage:Network>
 </xmi:XMI>
