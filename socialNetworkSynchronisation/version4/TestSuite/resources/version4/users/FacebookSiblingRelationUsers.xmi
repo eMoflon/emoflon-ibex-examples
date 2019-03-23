@@ -5,8 +5,8 @@
     xmlns:FacebookLanguage="platform:/resource/FacebookLanguage/model/FacebookLanguage.ecore"
     xmi:id="_0">
   <users xmi:id="_0.@users.0"
-      name="Homer"/>
+      name="Bart"/>
   <users xmi:id="_0.@users.1"
-      name="Marge"
+      name="Lisa"
       siblings="_0.@users.0"/>
 </FacebookLanguage:Network>

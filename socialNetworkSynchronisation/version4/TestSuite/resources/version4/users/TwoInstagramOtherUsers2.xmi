@@ -5,14 +5,14 @@
     xmlns:InstagramLanguage="platform:/resource/InstagramLanguage/model/InstagramLanguage.ecore"
     xmi:id="_0">
   <users xmi:id="_0.@users.0"
-      name="Lisa">
+      name="Bart">
     <followerships>
       <to/>
       <from/>
     </followerships>
   </users>
   <users xmi:id="_0.@users.0"
-      name="Homer">
+      name="Lisa">
     <followerships>
       <to/>
       <from/>

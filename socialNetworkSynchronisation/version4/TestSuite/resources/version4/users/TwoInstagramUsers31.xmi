@@ -7,19 +7,13 @@
   <users xmi:id="_0.@users.0"
       name="Homer">
     <followerships>
-      <to follows="//@users.1/@followerships/@from"/>
+      <to/>
       <from/>
     </followerships>
   </users>
-  <users name="Carl">
+  <users name="Marge">
     <followerships>
-      <to follows="//@users.2/@followerships/@from"/>
-      <from/>
-    </followerships>
-  </users>
-  <users name="Ned">
-    <followerships>
-      <to follows="//@users.0/@followerships/@from"/>
+      <to/>
       <from/>
     </followerships>
   </users>
