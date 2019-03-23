@@ -29,7 +29,7 @@ public class PositiveExamples extends CCTestCase {
 	}
 	@Test
 	public void testForUserToUserIslandRuleTwoUser() throws IOException {
-		testForPairOfModels("version4/users/OneFacebookUser", "version4/users/OneInstagramUser");
+		testForPairOfModels("version4/users/TwoFacebookUsers", "version4/users/TwoInstagramUsers");
 	}
 	@Test
 	public void testForMultipleNetworksWithUsersBridgeRule() throws IOException {
