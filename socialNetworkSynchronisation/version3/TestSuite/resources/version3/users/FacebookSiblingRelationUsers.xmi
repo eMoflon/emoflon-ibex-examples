@@ -7,6 +7,6 @@
   <users xmi:id="_0.@users.0"
       name="Homer"/>
   <users xmi:id="_0.@users.1"
-      name="Marge"
+      name="Lisa"
       siblings="_0.@users.0"/>
 </FacebookLanguage:Network>

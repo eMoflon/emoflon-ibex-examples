@@ -11,13 +11,13 @@
       <from/>
     </followerships>
   </users>
-  <users name="Marge">
+  <users name="Carl">
     <followerships>
       <to follows="//@users.2/@followerships/@from"/>
       <from/>
     </followerships>
   </users>
-  <users name="Lisa">
+  <users name="Ned">
     <followerships>
       <to follows="//@users.0/@followerships/@from"/>
       <from/>
