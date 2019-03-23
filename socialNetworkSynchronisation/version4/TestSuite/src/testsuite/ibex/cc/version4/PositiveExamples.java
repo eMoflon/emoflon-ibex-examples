@@ -29,7 +29,7 @@ public class PositiveExamples extends CCTestCase {
 	}
 	@Test
 	public void testForUserToUserIslandRuleTwoUser() throws IOException {
-		testForPairOfModels("version4/users/OneFacebookUser", "version4/users/OneInstagramUser");
+		testForPairOfModels("version4/users/TwoFacebookUsers", "version4/users/TwoInstagramUsers");
 	}
 	@Test
 	public void testForMultipleNetworksWithUsersBridgeRule() throws IOException {
@@ -41,7 +41,7 @@ public class PositiveExamples extends CCTestCase {
 	}
 	@Test
 	public void testForIgnoreIntraNetworkFollowers1() throws IOException {
-		testForPairOfModels("version4/users/FacebookIntraUsers", "version4/users/OneInstagramUser2");
+		testForPairOfModels("version4/users/FacebookIntraUser", "version4/users/OneInstagramUser2");
 	}
 	@Test
 	public void testForHandleIntraNetworkFollowers() throws IOException {
@@ -49,15 +49,15 @@ public class PositiveExamples extends CCTestCase {
 	}
 	@Test
 	public void testForHandleIntraNetworkFollowers1() throws IOException {
-		testForPairOfModels("version4/networks/TwoFacebookNetworks", "version4/networks/TwoInstagramNetwork");
+		testForPairOfModels("version4/networks/TwoFacebookNetwork", "version4/networks/TwoInstagramNetwork");
 	}
 	@Test
 	public void testForHandleIntraNetworkFollowersNAC() throws IOException {
-		testForPairOfModels("version4/users/FacebookNACFriendship", "version4/users/OneInstagramUser2");
+		testForPairOfModels("version4/users/FacebookNACFriendship", "version4/users/OneInstagramUser4");
 	}
 	@Test
 	public void testForHandleIntraNetworkFollowersNAC1() throws IOException {
-		testForPairOfModels("version4/users/FacebookIntraUsers", "version4/users/OneInstagramUser2");
+		testForPairOfModels("version4/users/FacebookIntraUser", "version4/users/OneInstagramUser2");
 	}
 	/*-----------------------------------------Test cases for Ignore Extra Relation-------------------------------*/
 	@Test
@@ -66,15 +66,15 @@ public class PositiveExamples extends CCTestCase {
 	}
 	@Test
 	public void testForIgnoreSiblingRelations() throws IOException {
-		testForPairOfModels("version4/users/FacebookSiblingRelationUsers", "version4/users/TwoInstagramOtherUsers");
+		testForPairOfModels("version4/users/FacebookSiblingRelationUsers", "version4/users/TwoInstagramOtherUsers2");
 	}
 	@Test
 	public void testForIgnoreSpouseRelations() throws IOException {
-		testForPairOfModels("version4/users/FacebookSpouseRelationUsers", "version4/users/TwoInstagramOtherUsers");
+		testForPairOfModels("version4/users/FacebookSpouseRelationUsers", "version4/users/TwoInstagramOtherUsers3");
 	}
 	@Test
 	public void testForIgnoreSpouseBidirectionRelations() throws IOException {
-		testForPairOfModels("version4/users/FacebookSpouseRelationBidirectionRelation", "version4/users/TwoInstagramUsers");
+		testForPairOfModels("version4/users/FacebookSpouseRelationBidirectionRelation", "version4/users/TwoInstagramUsers31");
 	}
 
 }

@@ -7,11 +7,11 @@
   <users xmi:id="_0.@users.0"
       name="Homer">
     <followerships>
-      <to follows="//@users.1/@followerships/@from"/>
+      <to/>
       <from/>
     </followerships>
   </users>
-  <users name="Marge">
+  <users name="Carl">
     <followerships>
       <to/>
       <from/>

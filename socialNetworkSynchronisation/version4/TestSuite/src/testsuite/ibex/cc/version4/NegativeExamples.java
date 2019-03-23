@@ -41,7 +41,7 @@ public class NegativeExamples extends CCTestCase {
 	//mapping from one to many networks.
 	@Test
 	public void testForHandleIntraNetworkFollowers1() throws IOException {
-		testForPairOfModels("version4/networks/TwoFacebookNetworks", "version4/networks/OneInstagramNetwork");
+		testForPairOfModels("version4/networks/TwoFacebookNetwork", "version4/networks/OneInstagramNetwork");
 	}
 	//mutation in source model (adding friendship)
 	@Test

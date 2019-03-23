@@ -4,18 +4,16 @@
     xmlns:FacebookLanguage="platform:/resource/FacebookLanguage/model/FacebookLanguage.ecore">
   <FacebookLanguage:Network>
     <users name="Homer"/>
-    <friendships
-        friends="/0/@users.0 /1/@users.0 /2/@users.1"/>
-  </FacebookLanguage:Network>
-  <FacebookLanguage:Network>
-    <users name="Dorothy"/>
-    <friendships
-        friends="/0/@users.0 /2/@users.0"/>
-  </FacebookLanguage:Network>
-  <FacebookLanguage:Network>
     <users name="Carl"/>
+    <friendships
+        friends="/0/@users.0 /0/@users.1"
+        startFrom="0028-09-08T00:00:00.000+0100"/>
+  </FacebookLanguage:Network>
+  <FacebookLanguage:Network>
+    <users name="Lisa"/>
     <users name="Ned"/>
     <friendships
-        friends="/1/@users.0 /2/@users.1"/>
+        friends="/1/@users.0 /1/@users.1"
+        startFrom="0028-09-08T00:00:00.000+0100"/>
   </FacebookLanguage:Network>
 </xmi:XMI>

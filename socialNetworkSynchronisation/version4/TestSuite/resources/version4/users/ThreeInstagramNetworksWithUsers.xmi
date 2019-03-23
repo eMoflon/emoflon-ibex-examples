@@ -12,7 +12,7 @@
     </users>
   </InstagramLanguage:Network>
   <InstagramLanguage:Network>
-    <users name="Lisa">
+    <users name="Dorothy">
       <followerships>
         <to
             follows="/2/@users.0/@followerships/@from"/>
@@ -21,7 +21,7 @@
     </users>
   </InstagramLanguage:Network>
   <InstagramLanguage:Network>
-    <users name="Marge">
+    <users name="Carl">
       <followerships>
         <to/>
         <from/>
