@@ -1,0 +1,11 @@
+#using Cheat1FacebookToInstagram.*
+#using AttrCondDefLibrary.*
+
+#rule IgnoreInterNetworkFollowers #extends Followers #with FacebookToInstagram
+
+#source { 
+	nu:FacebookLanguage.Network {
+		-users->fu
+	}
+}
+

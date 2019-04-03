@@ -41,7 +41,7 @@ public class PositiveExamples extends CCTestCase {
 	}
 	@Test
 	public void testForIgnoreIntraNetworkFollowers1() throws IOException {
-		testForPairOfModels("version4/users/FacebookIntraUser", "version4/users/OneInstagramUser2");
+		testForPairOfModels("version4/users/FacebookIntraUser", "version4/users/OneInstagramUser5");
 	}
 	@Test
 	public void testForHandleIntraNetworkFollowers() throws IOException {
@@ -53,11 +53,15 @@ public class PositiveExamples extends CCTestCase {
 	}
 	@Test
 	public void testForHandleIntraNetworkFollowersNAC() throws IOException {
-		testForPairOfModels("version4/users/FacebookNACFriendship", "version4/users/OneInstagramUser4");
+		testForPairOfModels("version4/users/FacebookNACFriendship2", "version4/users/OneInstagramUser4");
 	}
 	@Test
 	public void testForHandleIntraNetworkFollowersNAC1() throws IOException {
-		testForPairOfModels("version4/users/FacebookIntraUser", "version4/users/OneInstagramUser2");
+		testForPairOfModels("version4/users/FacebookIntraUser1", "version4/users/OneInstagramUser2");
+	}
+	@Test
+	public void testForHandleIntraNetworkFollowersNAC11() throws IOException {
+		testForPairOfModels("version4/users/FacebookNACFriendship", "version4/users/InstgramFollowershipUsers");
 	}
 	/*-----------------------------------------Test cases for Ignore Extra Relation-------------------------------*/
 	@Test
