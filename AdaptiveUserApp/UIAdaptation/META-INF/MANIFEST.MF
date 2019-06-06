@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: UIAdaptation
+Bundle-SymbolicName: UIAdaptation;singleton:=true
+Bundle-Version: 0.0.1.qualifier
+Bundle-Vendor: 
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Automatic-Module-Name: UIAdaptation
+Require-Bundle: org.eclipse.emf.ecore,
+ org.eclipse.emf.ecore.xmi,
+ org.emoflon.ibex.tgg.ui.debug;bundle-version="1.0.0"
+Export-Package: UIAdaptation,
+ UIAdaptation.util,
+ UIAdaptation.impl

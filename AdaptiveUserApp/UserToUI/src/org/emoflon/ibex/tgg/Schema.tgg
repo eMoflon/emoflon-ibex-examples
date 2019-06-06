@@ -1,0 +1,93 @@
+#import "platform:/resource/UserEnviro/model/UserEnviro.ecore"
+#import "platform:/resource/UIAdaptation/model/UIAdaptation.ecore"
+
+#schema UserToUI
+	
+#source {
+	UserEnviro
+}
+
+#target { 
+	UIAdaptation
+} 
+
+#correspondence {
+	ContextToApp {
+		#src->UserEnviro.Context
+		#trg->UIAdaptation.App
+	}
+	
+	UserToNavigation{
+		#src->UserEnviro.User
+		#trg->UIAdaptation.Navigation
+	}
+	
+	UserToMinNav{
+		#src->User
+		#trg->MinimumNavigation
+	}
+	
+	UserToLessNav{
+		#src->User
+		#trg->LessInformedNav
+	}
+	
+	UserToMoreNav{
+		#src->User
+		#trg->MoreInformedNav
+	}
+	
+	EnviroToLay{
+		#src->Environment
+		#trg->Layout
+	}
+	
+	EnviroToFeature{
+		#src->Environment
+		#trg->TaskFeature
+	}
+	
+	MUserToLayout{
+		#src->MiddleAgeUser
+		#trg->Layout
+	}
+	
+	OUserToLayout{
+		#src->OldAgeUser
+		#trg->Layout
+	}
+	
+	YUserToLayout{
+		#src->YoungerUser
+		#trg->Layout
+	}
+	
+	UserToLayout{
+		#src->User
+		#trg->Layout
+	}
+	
+	PlatformToNavigation{
+		#src->Platform
+		#trg->Navigation
+	}
+	
+	EnviroToNavigation{
+		#src->Environment
+		#trg->Navigation
+	}
+	
+	PlatformToLayout{
+		#src->Platform
+		#trg->Layout
+	}
+	
+	PlatformToTaskFeature{
+		#src->Platform
+		#trg->TaskFeature
+	}
+}
+
+#attributeConditions {
+	
+}

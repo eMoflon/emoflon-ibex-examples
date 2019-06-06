@@ -1,0 +1,43 @@
+#using UserToUI.*
+#using AttrCondDefLibrary.*
+
+#rule R22DeactivateDrivingMode #with UserToUI
+
+#source { 
+	c:Context{
+		-envirocontext->e
+	}
+	e:Environment{
+		++ -activity->ac
+	}
+	++ac:Activity{
+		activityEnum := "Standing"
+	}
+}
+
+#target {
+	a:App{
+		-navigation->nav
+	}
+	nav:Navigation{
+		DrivingMode == false
+		-menu->m
+	}
+	m:DefaultNav
+}
+
+#correspondence {
+	c2a:ContextToApp{
+		#src->c
+		#trg->a
+	}
+	e2nav:EnviroToNavigation{
+		#src->e
+		#trg->nav
+	}
+}
+
+#attributeConditions {
+	
+}
+

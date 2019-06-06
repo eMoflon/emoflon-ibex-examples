@@ -1,0 +1,75 @@
+#using UserToUI.*
+#using AttrCondDefLibrary.*
+
+#rule R17InexperiencedUser #with UserToUI
+
+#source { 
+	c:Context{
+		 -usercontext->u
+	}
+	u:User{
+	 	++ -exp->ex
+	 }
+	 ++ex:Inexperienced
+}
+
+#target {
+	a:App{
+	-navigation->nav
+	}
+	
+	nav:MoreInformedNav{
+		++ -menu->m
+	}
+	++ m:GridNav
+}
+
+#correspondence {
+	c2a:ContextToApp{
+		#src->c
+		#trg->a
+	}
+	u2nav:UserToMoreNav{
+		#src->u
+		#trg->nav
+	}
+}
+
+
+#rule R18ExperiencedUser #with UserToUI
+
+#source { 
+	c:Context{
+		-usercontext->u
+	}
+	u:User{
+	 	++ -exp->ex
+	 }
+	 ++ex:Experienced
+}
+
+#target {
+	a:App{
+		-navigation->nav
+	}
+	nav:Navigation{
+		++ -menu->m
+	}
+	++ m:DefaultNav
+}
+
+#correspondence {
+	c2a:ContextToApp{
+		#src->c
+		#trg->a
+	}
+	u2nav:UserToNavigation{
+		#src->u
+		#trg->nav
+	}
+}
+
+
+
+
+

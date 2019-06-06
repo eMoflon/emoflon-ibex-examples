@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ASCII"?>
+<UserToUI:BadMood__Marker xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:UserToUI="platform:/resource/UserToUI/model/UserToUI.ecore">
+  <CREATE__SRC__bm href="src.xmi#//@usercontext.0/@mood"/>
+  <CREATE__SRC__c href="src.xmi#/"/>
+  <CREATE__SRC__u href="src.xmi#//@usercontext.0"/>
+  <CREATE__TRG__a href="trg.xmi#/0"/>
+  <CREATE__TRG__b href="trg.xmi#/0/@navigation/@button"/>
+  <CREATE__TRG__ce href="trg.xmi#/1"/>
+  <CREATE__TRG__nav href="trg.xmi#/0/@navigation"/>
+  <CREATE__TRG__v href="trg.xmi#/2"/>
+  <CREATE__CORR__c2a href="corr.xmi#/0"/>
+  <CREATE__CORR__u2nav href="corr.xmi#/1"/>
+</UserToUI:BadMood__Marker>

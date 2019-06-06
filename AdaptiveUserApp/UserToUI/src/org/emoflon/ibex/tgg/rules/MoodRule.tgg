@@ -1,0 +1,124 @@
+#using UserToUI.*
+#using AttrCondDefLibrary.*
+
+#rule R1BadMood #with UserToUI 
+
+#source { 
+	c:UserEnviro.Context{
+		 -usercontext->u
+	}
+	
+	u:User{
+		++ -mood->bm
+	}
+	++ bm:Badmood
+   
+}
+
+#target {
+	 a:UIAdaptation.App{
+		 -navigation->nav
+	}
+	
+	 nav:UIAdaptation.Navigation{
+		++ -button->b
+	}
+	++ b:FeedbackBar{
+		++ -clickevent->ce
+	}
+	++ ce:ClickEvent{
+	 	++ -view->v
+	 }
+	 ++ v:Feedback
+	 
+}
+
+#correspondence {
+	 c2a:ContextToApp{
+		#src->c
+		#trg->a
+	}
+	u2nav:UserToNavigation{
+		#src->u
+		#trg->nav
+	}
+}
+
+#rule R2NeutralMood #with UserToUI
+
+#source { 
+	 c:UserEnviro.Context{
+		 -usercontext->u
+	}
+	
+	 u:UserEnviro.User{
+		++ -mood->nm
+	}
+	
+	++ nm:UserEnviro.Neutralmood
+}
+
+#target {
+	 a:UIAdaptation.App{
+		 -navigation->nav
+	}
+	
+	 nav:UIAdaptation.Navigation{
+		
+	}
+	
+}
+
+#correspondence {
+	 c2a:ContextToApp{
+		#src->c
+		#trg->a
+	}
+	u2nav:UserToNavigation{
+		#src->u
+		#trg->nav
+	}
+}
+
+#rule R3GoodMood #with UserToUI
+
+#source { 
+	c:UserEnviro.Context{
+		 -usercontext->u
+	}
+	u:User{
+		++ -mood->gm
+	}
+	++ gm:Goodmood
+}
+
+#target {
+	 a:UIAdaptation.App{
+		 -navigation->nav
+	}
+	
+	 nav:UIAdaptation.Navigation{
+		 -button->b
+	}
+	b:FeedbackBar{
+		-clickevent->ce
+	}
+	ce:ClickEvent{
+	 	++ -view->v
+	 }
+	 ++ v:Inspiration
+}
+
+#correspondence {
+	 c2a:ContextToApp{
+		#src->c
+		#trg->a
+	}
+	u2nav:UserToNavigation{
+		#src->u
+		#trg->nav
+	}
+}
+
+
+

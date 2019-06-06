@@ -1,0 +1,38 @@
+#using UserToUI.*
+#using AttrCondDefLibrary.*
+
+#rule R6DisplayExtraInfo #with UserToUI
+
+#source { 
+	c:Context{
+		-usercontext->u
+	}
+	
+	u:User{
+		++ -exp->iex
+	}
+	++iex:Inexperienced
+}
+
+#target {
+	a:App{
+		++ -navigation->mornav
+	}
+	++ mornav:MoreInformedNav
+}
+
+#correspondence {
+	c2a:ContextToApp{
+		#src->c
+		#trg->a
+	}
+	
+	++u2nav:UserToMoreNav{
+		#src->u
+		#trg->mornav
+	}
+}
+
+#attributeConditions {
+	
+}

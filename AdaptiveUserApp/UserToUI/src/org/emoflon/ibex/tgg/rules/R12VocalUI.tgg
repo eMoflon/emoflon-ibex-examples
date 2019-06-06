@@ -1,0 +1,41 @@
+#using UserToUI.*
+#using AttrCondDefLibrary.*
+
+#rule R12VocalUI #with UserToUI
+
+#source { 
+	c:Context{
+		-envirocontext->e
+	}
+	e:Environment{
+		++ -activity->ac
+	}
+	++ ac:Activity{
+		activityEnum := "Moving" 
+}
+
+}
+
+#target {
+	a:App{
+		-taskset->t
+	}
+	t:TaskFeature{
+		VocalUI == true
+	++ -readEmail->re
+	}
+	++ re:ReadEmail
+}
+
+#correspondence {
+	c2a:ContextToApp{
+		#src->c 
+		#trg->a
+	}
+	e2t:EnviroToFeature{
+		#src->e
+		#trg->t
+	}
+}
+
+

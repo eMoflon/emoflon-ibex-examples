@@ -1,0 +1,1504 @@
+<?xml version="1.0" encoding="ASCII"?>
+<tgg:TripleGraphGrammarFile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tgg="http://www.moflon.org/ide/tgg/mosl/TGG">
+  <imports name="platform:/resource/UserEnviro/model/UserEnviro.ecore"/>
+  <imports name="platform:/resource/UIAdaptation/model/UIAdaptation.ecore"/>
+  <schema name="UserToUI">
+    <sourceTypes href="platform:/resource/UserEnviro/model/UserEnviro.ecore#/"/>
+    <targetTypes href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#/"/>
+    <correspondenceTypes name="ContextToApp">
+      <source href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context"/>
+      <target href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App"/>
+    </correspondenceTypes>
+    <correspondenceTypes name="UserToNavigation">
+      <source href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//User"/>
+      <target href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Navigation"/>
+    </correspondenceTypes>
+    <correspondenceTypes name="UserToMinNav">
+      <source href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//User"/>
+      <target href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//MinimumNavigation"/>
+    </correspondenceTypes>
+    <correspondenceTypes name="UserToLessNav">
+      <source href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//User"/>
+      <target href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//LessInformedNav"/>
+    </correspondenceTypes>
+    <correspondenceTypes name="UserToMoreNav">
+      <source href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//User"/>
+      <target href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//MoreInformedNav"/>
+    </correspondenceTypes>
+    <correspondenceTypes name="EnviroToLay">
+      <source href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Environment"/>
+      <target href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Layout"/>
+    </correspondenceTypes>
+    <correspondenceTypes name="EnviroToFeature">
+      <source href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Environment"/>
+      <target href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//TaskFeature"/>
+    </correspondenceTypes>
+    <correspondenceTypes name="MUserToLayout">
+      <source href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//MiddleAgeUser"/>
+      <target href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Layout"/>
+    </correspondenceTypes>
+    <correspondenceTypes name="OUserToLayout">
+      <source href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//OldAgeUser"/>
+      <target href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Layout"/>
+    </correspondenceTypes>
+    <correspondenceTypes name="YUserToLayout">
+      <source href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//YoungerUser"/>
+      <target href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Layout"/>
+    </correspondenceTypes>
+    <correspondenceTypes name="UserToLayout">
+      <source href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//User"/>
+      <target href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Layout"/>
+    </correspondenceTypes>
+    <correspondenceTypes name="PlatformToNavigation">
+      <source href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Platform"/>
+      <target href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Navigation"/>
+    </correspondenceTypes>
+    <correspondenceTypes name="EnviroToNavigation">
+      <source href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Environment"/>
+      <target href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Navigation"/>
+    </correspondenceTypes>
+    <correspondenceTypes name="PlatformToLayout">
+      <source href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Platform"/>
+      <target href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Layout"/>
+    </correspondenceTypes>
+    <correspondenceTypes name="PlatformToTaskFeature">
+      <source href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Platform"/>
+      <target href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//TaskFeature"/>
+    </correspondenceTypes>
+    <attributeCondDefs name="eq_boolean">
+      <params paramName="a">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+      </params>
+      <params paramName="b">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+      </params>
+      <allowedSyncAdornments>
+        <value>B</value>
+        <value>B</value>
+      </allowedSyncAdornments>
+      <allowedSyncAdornments>
+        <value>B</value>
+        <value>F</value>
+      </allowedSyncAdornments>
+      <allowedSyncAdornments>
+        <value>F</value>
+        <value>B</value>
+      </allowedSyncAdornments>
+      <allowedGenAdornments>
+        <value>B</value>
+        <value>B</value>
+      </allowedGenAdornments>
+      <allowedGenAdornments>
+        <value>B</value>
+        <value>F</value>
+      </allowedGenAdornments>
+      <allowedGenAdornments>
+        <value>F</value>
+        <value>B</value>
+      </allowedGenAdornments>
+      <allowedGenAdornments>
+        <value>F</value>
+        <value>F</value>
+      </allowedGenAdornments>
+    </attributeCondDefs>
+  </schema>
+  <rules name="AmbientLight" abstractRule="true" schema="//@schema">
+    <sourcePatterns name="c">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context"/>
+      <linkVariablePatterns target="//@rules.0/@sourcePatterns.1">
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context/envirocontext"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="e">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Environment"/>
+    </sourcePatterns>
+    <targetPatterns name="a">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App"/>
+      <linkVariablePatterns target="//@rules.0/@targetPatterns.1">
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App/layout"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="l">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Layout"/>
+    </targetPatterns>
+    <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.0/@sourcePatterns.0" target="//@rules.0/@targetPatterns.0"/>
+    <correspondencePatterns name="e2l" type="//@schema/@correspondenceTypes.5" source="//@rules.0/@sourcePatterns.1" target="//@rules.0/@targetPatterns.1"/>
+  </rules>
+  <rules name="BasicRule" schema="//@schema">
+    <sourcePatterns name="c">
+      <op value="++"/>
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context"/>
+      <linkVariablePatterns target="//@rules.1/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context/envirocontext"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.1/@sourcePatterns.2">
+        <op value="++"/>
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context/platcontext"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.1/@sourcePatterns.3">
+        <op value="++"/>
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context/usercontext"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="e">
+      <op value="++"/>
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Environment"/>
+    </sourcePatterns>
+    <sourcePatterns name="p">
+      <op value="++"/>
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Platform"/>
+    </sourcePatterns>
+    <sourcePatterns name="u">
+      <op value="++"/>
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//User"/>
+    </sourcePatterns>
+    <targetPatterns name="a">
+      <op value="++"/>
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App"/>
+      <linkVariablePatterns target="//@rules.1/@targetPatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App/layout"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.1/@targetPatterns.2">
+        <op value="++"/>
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App/navigation"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.1/@targetPatterns.3">
+        <op value="++"/>
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App/taskset"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="l">
+      <op value="++"/>
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Layout"/>
+    </targetPatterns>
+    <targetPatterns name="nav">
+      <op value="++"/>
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Navigation"/>
+    </targetPatterns>
+    <targetPatterns name="t">
+      <op value="++"/>
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//TaskFeature"/>
+    </targetPatterns>
+    <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.1/@sourcePatterns.0" target="//@rules.1/@targetPatterns.0">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="e2l" type="//@schema/@correspondenceTypes.5" source="//@rules.1/@sourcePatterns.1" target="//@rules.1/@targetPatterns.1">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="e2nav" type="//@schema/@correspondenceTypes.12" source="//@rules.1/@sourcePatterns.1" target="//@rules.1/@targetPatterns.2">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="e2t" type="//@schema/@correspondenceTypes.6" source="//@rules.1/@sourcePatterns.1" target="//@rules.1/@targetPatterns.3">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="p2l" type="//@schema/@correspondenceTypes.13" source="//@rules.1/@sourcePatterns.2" target="//@rules.1/@targetPatterns.1">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="p2nav" type="//@schema/@correspondenceTypes.11" source="//@rules.1/@sourcePatterns.2" target="//@rules.1/@targetPatterns.2">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="p2t" type="//@schema/@correspondenceTypes.14" source="//@rules.1/@sourcePatterns.2" target="//@rules.1/@targetPatterns.3">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="u2l" type="//@schema/@correspondenceTypes.10" source="//@rules.1/@sourcePatterns.3" target="//@rules.1/@targetPatterns.1">
+      <op value="++"/>
+    </correspondencePatterns>
+    <correspondencePatterns name="u2nav" type="//@schema/@correspondenceTypes.1" source="//@rules.1/@sourcePatterns.3" target="//@rules.1/@targetPatterns.2">
+      <op value="++"/>
+    </correspondencePatterns>
+  </rules>
+  <rules name="DeviceTypeRule" abstractRule="true" schema="//@schema">
+    <sourcePatterns name="c">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context"/>
+      <linkVariablePatterns target="//@rules.2/@sourcePatterns.1">
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context/platcontext"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="p">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Platform"/>
+    </sourcePatterns>
+    <targetPatterns name="a">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App"/>
+      <linkVariablePatterns target="//@rules.2/@targetPatterns.1">
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App/navigation"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="nav">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Navigation"/>
+    </targetPatterns>
+    <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.2/@sourcePatterns.0" target="//@rules.2/@targetPatterns.0"/>
+    <correspondencePatterns name="p2nav" type="//@schema/@correspondenceTypes.11" source="//@rules.2/@sourcePatterns.1" target="//@rules.2/@targetPatterns.1"/>
+  </rules>
+  <rules name="R10DayRule" schema="//@schema">
+    <sourcePatterns name="c">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context"/>
+      <linkVariablePatterns target="//@rules.3/@sourcePatterns.1">
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context/envirocontext"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="e">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Environment"/>
+      <linkVariablePatterns target="//@rules.3/@sourcePatterns.3">
+        <op value="++"/>
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Environment/time"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="sr">
+      <op value="++"/>
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//SunRise"/>
+    </sourcePatterns>
+    <sourcePatterns name="t">
+      <op value="++"/>
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Time"/>
+      <linkVariablePatterns target="//@rules.3/@sourcePatterns.2">
+        <op value="++"/>
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Time/sunRise"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <targetPatterns name="a">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App"/>
+      <linkVariablePatterns target="//@rules.3/@targetPatterns.2">
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App/layout"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="cs">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//CustomColor"/>
+      <attributeConstraints op="==">
+        <attribute href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//ColorScheme/NightMode"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="false"/>
+      </attributeConstraints>
+    </targetPatterns>
+    <targetPatterns name="l">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Layout"/>
+      <linkVariablePatterns target="//@rules.3/@targetPatterns.1">
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Layout/colorScheme"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.3/@sourcePatterns.0" target="//@rules.3/@targetPatterns.0"/>
+    <correspondencePatterns name="e2l" type="//@schema/@correspondenceTypes.5" source="//@rules.3/@sourcePatterns.1" target="//@rules.3/@targetPatterns.2"/>
+  </rules>
+  <rules name="R11NightModeRule" schema="//@schema">
+    <sourcePatterns name="c">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context"/>
+      <linkVariablePatterns target="//@rules.4/@sourcePatterns.1">
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context/envirocontext"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="e">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Environment"/>
+      <linkVariablePatterns target="//@rules.4/@sourcePatterns.3">
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Environment/time"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="sd">
+      <op value="++"/>
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//SunDawn"/>
+    </sourcePatterns>
+    <sourcePatterns name="t">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Time"/>
+      <linkVariablePatterns target="//@rules.4/@sourcePatterns.2">
+        <op value="++"/>
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Time/sunDawn"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <targetPatterns name="a">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App"/>
+      <linkVariablePatterns target="//@rules.4/@targetPatterns.2">
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App/layout"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="cs">
+      <op value="++"/>
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//NightModeScheme"/>
+    </targetPatterns>
+    <targetPatterns name="l">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Layout"/>
+      <linkVariablePatterns target="//@rules.4/@targetPatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Layout/colorScheme"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.4/@sourcePatterns.0" target="//@rules.4/@targetPatterns.0"/>
+    <correspondencePatterns name="e2l" type="//@schema/@correspondenceTypes.5" source="//@rules.4/@sourcePatterns.1" target="//@rules.4/@targetPatterns.2"/>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.4/@targetPatterns.1">
+        <attribute href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//ColorScheme/NightMode"/>
+      </values>
+      <values xsi:type="tgg:LiteralExpression" value="true"/>
+    </attrConditions>
+  </rules>
+  <rules name="R12VocalUI" schema="//@schema">
+    <sourcePatterns name="ac">
+      <op value="++"/>
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Activity"/>
+      <attributeAssignments op=":=">
+        <attribute href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Activity/activityEnum"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;Moving&quot;"/>
+      </attributeAssignments>
+    </sourcePatterns>
+    <sourcePatterns name="c">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context"/>
+      <linkVariablePatterns target="//@rules.5/@sourcePatterns.2">
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context/envirocontext"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="e">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Environment"/>
+      <linkVariablePatterns target="//@rules.5/@sourcePatterns.0">
+        <op value="++"/>
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Environment/activity"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <targetPatterns name="a">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App"/>
+      <linkVariablePatterns target="//@rules.5/@targetPatterns.2">
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App/taskset"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="re">
+      <op value="++"/>
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//ReadEmail"/>
+    </targetPatterns>
+    <targetPatterns name="t">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//TaskFeature"/>
+      <attributeConstraints op="==">
+        <attribute href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//TaskFeature/VocalUI"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="true"/>
+      </attributeConstraints>
+      <linkVariablePatterns target="//@rules.5/@targetPatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//TaskFeature/readEmail"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.5/@sourcePatterns.1" target="//@rules.5/@targetPatterns.0"/>
+    <correspondencePatterns name="e2t" type="//@schema/@correspondenceTypes.6" source="//@rules.5/@sourcePatterns.2" target="//@rules.5/@targetPatterns.2"/>
+  </rules>
+  <rules name="R13ImpairedVision" schema="//@schema">
+    <sourcePatterns name="c">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context"/>
+      <linkVariablePatterns target="//@rules.6/@sourcePatterns.1">
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context/usercontext"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="u">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//User"/>
+      <linkVariablePatterns target="//@rules.6/@sourcePatterns.2">
+        <op value="++"/>
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//User/vision"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="vi">
+      <op value="++"/>
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Reducedvision"/>
+    </sourcePatterns>
+    <targetPatterns name="a">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App"/>
+      <linkVariablePatterns target="//@rules.6/@targetPatterns.2">
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App/layout"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="fs">
+      <op value="++"/>
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//LargeSize"/>
+    </targetPatterns>
+    <targetPatterns name="l">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Layout"/>
+      <linkVariablePatterns target="//@rules.6/@targetPatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Layout/fontSize"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.6/@sourcePatterns.0" target="//@rules.6/@targetPatterns.0"/>
+    <correspondencePatterns name="u2l" type="//@schema/@correspondenceTypes.10" source="//@rules.6/@sourcePatterns.1" target="//@rules.6/@targetPatterns.2"/>
+  </rules>
+  <rules name="R14MiddleAgedUser" schema="//@schema">
+    <sourcePatterns name="c">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context"/>
+      <linkVariablePatterns target="//@rules.7/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context/usercontext"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="u">
+      <op value="++"/>
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//MiddleAgeUser"/>
+      <attributeConstraints op=">=">
+        <attribute href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//User/Age"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="45"/>
+      </attributeConstraints>
+      <attributeConstraints op="&lt;=">
+        <attribute href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//User/Age"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="60"/>
+      </attributeConstraints>
+    </sourcePatterns>
+    <targetPatterns name="a">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App"/>
+      <linkVariablePatterns target="//@rules.7/@targetPatterns.2">
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App/layout"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="fs">
+      <op value="++"/>
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//MiddleSize"/>
+    </targetPatterns>
+    <targetPatterns name="l">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Layout"/>
+      <linkVariablePatterns target="//@rules.7/@targetPatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Layout/fontSize"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.7/@sourcePatterns.0" target="//@rules.7/@targetPatterns.0"/>
+    <correspondencePatterns name="u2l" type="//@schema/@correspondenceTypes.7" source="//@rules.7/@sourcePatterns.1" target="//@rules.7/@targetPatterns.2">
+      <op value="++"/>
+    </correspondencePatterns>
+  </rules>
+  <rules name="R15OlderUser" schema="//@schema">
+    <sourcePatterns name="c">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context"/>
+      <linkVariablePatterns target="//@rules.8/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context/usercontext"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="u">
+      <op value="++"/>
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//OldAgeUser"/>
+      <attributeConstraints op=">=">
+        <attribute href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//User/Age"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="60"/>
+      </attributeConstraints>
+    </sourcePatterns>
+    <targetPatterns name="a">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App"/>
+      <linkVariablePatterns target="//@rules.8/@targetPatterns.2">
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App/layout"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="fs">
+      <op value="++"/>
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//LargeSize"/>
+    </targetPatterns>
+    <targetPatterns name="l">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Layout"/>
+      <linkVariablePatterns target="//@rules.8/@targetPatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Layout/fontSize"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.8/@sourcePatterns.0" target="//@rules.8/@targetPatterns.0"/>
+    <correspondencePatterns name="u2l" type="//@schema/@correspondenceTypes.8" source="//@rules.8/@sourcePatterns.1" target="//@rules.8/@targetPatterns.2">
+      <op value="++"/>
+    </correspondencePatterns>
+  </rules>
+  <rules name="R16YoungerUser" schema="//@schema">
+    <sourcePatterns name="c">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context"/>
+      <linkVariablePatterns target="//@rules.9/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context/usercontext"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="u">
+      <op value="++"/>
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//YoungerUser"/>
+      <attributeConstraints op="&lt;=">
+        <attribute href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//User/Age"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="45"/>
+      </attributeConstraints>
+    </sourcePatterns>
+    <targetPatterns name="a">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App"/>
+      <linkVariablePatterns target="//@rules.9/@targetPatterns.2">
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App/layout"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="fs">
+      <op value="++"/>
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//DefaultSize"/>
+    </targetPatterns>
+    <targetPatterns name="l">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Layout"/>
+      <linkVariablePatterns target="//@rules.9/@targetPatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Layout/fontSize"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.9/@sourcePatterns.0" target="//@rules.9/@targetPatterns.0"/>
+    <correspondencePatterns name="u2l" type="//@schema/@correspondenceTypes.9" source="//@rules.9/@sourcePatterns.1" target="//@rules.9/@targetPatterns.2">
+      <op value="++"/>
+    </correspondencePatterns>
+  </rules>
+  <rules name="R17InexperiencedUser" schema="//@schema">
+    <sourcePatterns name="c">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context"/>
+      <linkVariablePatterns target="//@rules.10/@sourcePatterns.2">
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context/usercontext"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="ex">
+      <op value="++"/>
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Inexperienced"/>
+    </sourcePatterns>
+    <sourcePatterns name="u">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//User"/>
+      <linkVariablePatterns target="//@rules.10/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//User/exp"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <targetPatterns name="a">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App"/>
+      <linkVariablePatterns target="//@rules.10/@targetPatterns.2">
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App/navigation"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="m">
+      <op value="++"/>
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//GridNav"/>
+    </targetPatterns>
+    <targetPatterns name="nav">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//MoreInformedNav"/>
+      <linkVariablePatterns target="//@rules.10/@targetPatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Navigation/menu"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.10/@sourcePatterns.0" target="//@rules.10/@targetPatterns.0"/>
+    <correspondencePatterns name="u2nav" type="//@schema/@correspondenceTypes.4" source="//@rules.10/@sourcePatterns.2" target="//@rules.10/@targetPatterns.2"/>
+  </rules>
+  <rules name="R18ExperiencedUser" schema="//@schema">
+    <sourcePatterns name="c">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context"/>
+      <linkVariablePatterns target="//@rules.11/@sourcePatterns.2">
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context/usercontext"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="ex">
+      <op value="++"/>
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Experienced"/>
+    </sourcePatterns>
+    <sourcePatterns name="u">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//User"/>
+      <linkVariablePatterns target="//@rules.11/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//User/exp"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <targetPatterns name="a">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App"/>
+      <linkVariablePatterns target="//@rules.11/@targetPatterns.2">
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App/navigation"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="m">
+      <op value="++"/>
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//DefaultNav"/>
+    </targetPatterns>
+    <targetPatterns name="nav">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Navigation"/>
+      <linkVariablePatterns target="//@rules.11/@targetPatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Navigation/menu"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.11/@sourcePatterns.0" target="//@rules.11/@targetPatterns.0"/>
+    <correspondencePatterns name="u2nav" type="//@schema/@correspondenceTypes.1" source="//@rules.11/@sourcePatterns.2" target="//@rules.11/@targetPatterns.2"/>
+  </rules>
+  <rules name="R19Smartphone" schema="//@schema">
+    <sourcePatterns name="c">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context"/>
+      <linkVariablePatterns target="//@rules.12/@sourcePatterns.2">
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context/platcontext"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="dt">
+      <op value="++"/>
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Smartphone"/>
+    </sourcePatterns>
+    <sourcePatterns name="p">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Platform"/>
+      <linkVariablePatterns target="//@rules.12/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Platform/devicetype"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <targetPatterns name="a">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App"/>
+      <linkVariablePatterns target="//@rules.12/@targetPatterns.2">
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App/navigation"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="m">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//DefaultNav"/>
+    </targetPatterns>
+    <targetPatterns name="nav">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Navigation"/>
+      <linkVariablePatterns target="//@rules.12/@targetPatterns.1">
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Navigation/menu"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.12/@sourcePatterns.0" target="//@rules.12/@targetPatterns.0"/>
+    <correspondencePatterns name="p2nav" type="//@schema/@correspondenceTypes.11" source="//@rules.12/@sourcePatterns.2" target="//@rules.12/@targetPatterns.2"/>
+  </rules>
+  <rules name="R1BadMood" schema="//@schema">
+    <sourcePatterns name="bm">
+      <op value="++"/>
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Badmood"/>
+    </sourcePatterns>
+    <sourcePatterns name="c">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context"/>
+      <linkVariablePatterns target="//@rules.13/@sourcePatterns.2">
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context/usercontext"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="u">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//User"/>
+      <linkVariablePatterns target="//@rules.13/@sourcePatterns.0">
+        <op value="++"/>
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//User/mood"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <targetPatterns name="a">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App"/>
+      <linkVariablePatterns target="//@rules.13/@targetPatterns.3">
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App/navigation"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="b">
+      <op value="++"/>
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//FeedbackBar"/>
+      <linkVariablePatterns target="//@rules.13/@targetPatterns.2">
+        <op value="++"/>
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//FeedbackBar/clickevent"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="ce">
+      <op value="++"/>
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//ClickEvent"/>
+      <linkVariablePatterns target="//@rules.13/@targetPatterns.4">
+        <op value="++"/>
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//ClickEvent/view"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="nav">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Navigation"/>
+      <linkVariablePatterns target="//@rules.13/@targetPatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Navigation/button"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="v">
+      <op value="++"/>
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Feedback"/>
+    </targetPatterns>
+    <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.13/@sourcePatterns.1" target="//@rules.13/@targetPatterns.0"/>
+    <correspondencePatterns name="u2nav" type="//@schema/@correspondenceTypes.1" source="//@rules.13/@sourcePatterns.2" target="//@rules.13/@targetPatterns.3"/>
+  </rules>
+  <rules name="R20Tablet" schema="//@schema">
+    <sourcePatterns name="c">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context"/>
+      <linkVariablePatterns target="//@rules.14/@sourcePatterns.2">
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context/platcontext"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="dt">
+      <op value="++"/>
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Tablet"/>
+    </sourcePatterns>
+    <sourcePatterns name="p">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Platform"/>
+      <linkVariablePatterns target="//@rules.14/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Platform/devicetype"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <targetPatterns name="a">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App"/>
+      <linkVariablePatterns target="//@rules.14/@targetPatterns.2">
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App/navigation"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="m">
+      <op value="++"/>
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//TabletNav"/>
+    </targetPatterns>
+    <targetPatterns name="nav">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Navigation"/>
+      <linkVariablePatterns target="//@rules.14/@targetPatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Navigation/menu"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.14/@sourcePatterns.0" target="//@rules.14/@targetPatterns.0"/>
+    <correspondencePatterns name="p2nav" type="//@schema/@correspondenceTypes.11" source="//@rules.14/@sourcePatterns.2" target="//@rules.14/@targetPatterns.2"/>
+  </rules>
+  <rules name="R21DrivingMode" schema="//@schema">
+    <sourcePatterns name="ac">
+      <op value="++"/>
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Activity"/>
+      <attributeAssignments op=":=">
+        <attribute href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Activity/activityEnum"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;Driving&quot;"/>
+      </attributeAssignments>
+    </sourcePatterns>
+    <sourcePatterns name="c">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context"/>
+      <linkVariablePatterns target="//@rules.15/@sourcePatterns.2">
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context/envirocontext"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="e">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Environment"/>
+      <linkVariablePatterns target="//@rules.15/@sourcePatterns.0">
+        <op value="++"/>
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Environment/activity"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <targetPatterns name="a">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App"/>
+      <linkVariablePatterns target="//@rules.15/@targetPatterns.2">
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App/navigation"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="m">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//GridNav"/>
+    </targetPatterns>
+    <targetPatterns name="nav">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Navigation"/>
+      <attributeConstraints op="==">
+        <attribute href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Navigation/DrivingMode"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="true"/>
+      </attributeConstraints>
+      <linkVariablePatterns target="//@rules.15/@targetPatterns.1">
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Navigation/menu"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.15/@sourcePatterns.1" target="//@rules.15/@targetPatterns.0"/>
+    <correspondencePatterns name="e2nav" type="//@schema/@correspondenceTypes.12" source="//@rules.15/@sourcePatterns.2" target="//@rules.15/@targetPatterns.2"/>
+  </rules>
+  <rules name="R22DeactivateDrivingMode" schema="//@schema">
+    <sourcePatterns name="ac">
+      <op value="++"/>
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Activity"/>
+      <attributeAssignments op=":=">
+        <attribute href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Activity/activityEnum"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;Standing&quot;"/>
+      </attributeAssignments>
+    </sourcePatterns>
+    <sourcePatterns name="c">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context"/>
+      <linkVariablePatterns target="//@rules.16/@sourcePatterns.2">
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context/envirocontext"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="e">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Environment"/>
+      <linkVariablePatterns target="//@rules.16/@sourcePatterns.0">
+        <op value="++"/>
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Environment/activity"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <targetPatterns name="a">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App"/>
+      <linkVariablePatterns target="//@rules.16/@targetPatterns.2">
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App/navigation"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="m">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//DefaultNav"/>
+    </targetPatterns>
+    <targetPatterns name="nav">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Navigation"/>
+      <attributeConstraints op="==">
+        <attribute href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Navigation/DrivingMode"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="false"/>
+      </attributeConstraints>
+      <linkVariablePatterns target="//@rules.16/@targetPatterns.1">
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Navigation/menu"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.16/@sourcePatterns.1" target="//@rules.16/@targetPatterns.0"/>
+    <correspondencePatterns name="e2nav" type="//@schema/@correspondenceTypes.12" source="//@rules.16/@sourcePatterns.2" target="//@rules.16/@targetPatterns.2"/>
+  </rules>
+  <rules name="R23LowBattery" schema="//@schema">
+    <sourcePatterns name="bm">
+      <op value="++"/>
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//LowBatterymode"/>
+      <attributeConstraints op="&lt;=">
+        <attribute href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Batterymode/BatteryLevel"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="15"/>
+      </attributeConstraints>
+    </sourcePatterns>
+    <sourcePatterns name="c">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context"/>
+      <linkVariablePatterns target="//@rules.17/@sourcePatterns.2">
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context/platcontext"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="p">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Platform"/>
+      <linkVariablePatterns target="//@rules.17/@sourcePatterns.0">
+        <op value="++"/>
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Platform/batterymode"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <targetPatterns name="a">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App"/>
+      <linkVariablePatterns target="//@rules.17/@targetPatterns.2">
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App/layout"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="cs">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//BlacknWhite"/>
+      <attributeConstraints op="==">
+        <attribute href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//ColorScheme/BlacknWhiteMode"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="true"/>
+      </attributeConstraints>
+    </targetPatterns>
+    <targetPatterns name="l">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Layout"/>
+      <linkVariablePatterns target="//@rules.17/@targetPatterns.1">
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Layout/colorScheme"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.17/@sourcePatterns.1" target="//@rules.17/@targetPatterns.0"/>
+    <correspondencePatterns name="p2l" type="//@schema/@correspondenceTypes.13" source="//@rules.17/@sourcePatterns.2" target="//@rules.17/@targetPatterns.2"/>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.17/@sourcePatterns.0">
+        <attribute href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Batterymode/Charging"/>
+      </values>
+      <values xsi:type="tgg:LiteralExpression" value="false"/>
+    </attrConditions>
+  </rules>
+  <rules name="R24Charging" schema="//@schema">
+    <sourcePatterns name="bm">
+      <op value="++"/>
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//NormalBatterymode"/>
+      <attributeConstraints op=">">
+        <attribute href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Batterymode/BatteryLevel"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="15"/>
+      </attributeConstraints>
+    </sourcePatterns>
+    <sourcePatterns name="c">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context"/>
+      <linkVariablePatterns target="//@rules.18/@sourcePatterns.2">
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context/platcontext"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="p">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Platform"/>
+      <linkVariablePatterns target="//@rules.18/@sourcePatterns.0">
+        <op value="++"/>
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Platform/batterymode"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <targetPatterns name="a">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App"/>
+      <linkVariablePatterns target="//@rules.18/@targetPatterns.2">
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App/layout"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="cs">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//CustomColor"/>
+      <attributeConstraints op="==">
+        <attribute href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//ColorScheme/BlacknWhiteMode"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="false"/>
+      </attributeConstraints>
+    </targetPatterns>
+    <targetPatterns name="l">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Layout"/>
+      <linkVariablePatterns target="//@rules.18/@targetPatterns.1">
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Layout/colorScheme"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.18/@sourcePatterns.1" target="//@rules.18/@targetPatterns.0"/>
+    <correspondencePatterns name="p2l" type="//@schema/@correspondenceTypes.13" source="//@rules.18/@sourcePatterns.2" target="//@rules.18/@targetPatterns.2"/>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.18/@sourcePatterns.0">
+        <attribute href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Batterymode/Charging"/>
+      </values>
+      <values xsi:type="tgg:LiteralExpression" value="true"/>
+    </attrConditions>
+  </rules>
+  <rules name="R25WiFi" schema="//@schema">
+    <sourcePatterns name="c">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context"/>
+      <linkVariablePatterns target="//@rules.19/@sourcePatterns.2">
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context/platcontext"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="ct">
+      <op value="++"/>
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//ConnectionType"/>
+      <linkVariablePatterns target="//@rules.19/@sourcePatterns.3">
+        <op value="++"/>
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//ConnectionType/wifi"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="p">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Platform"/>
+      <linkVariablePatterns target="//@rules.19/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Platform/connectionType"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="w">
+      <op value="++"/>
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Wifi"/>
+    </sourcePatterns>
+    <targetPatterns name="a">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App"/>
+      <linkVariablePatterns target="//@rules.19/@targetPatterns.7">
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App/taskset"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="ad">
+      <op value="++"/>
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//AutoDownload"/>
+    </targetPatterns>
+    <targetPatterns name="at">
+      <op value="++"/>
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Attachments"/>
+      <linkVariablePatterns target="//@rules.19/@targetPatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Attachments/autoDownload"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="ef">
+      <op value="++"/>
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//EmailForm"/>
+      <linkVariablePatterns target="//@rules.19/@targetPatterns.4">
+        <op value="++"/>
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//EmailForm/html"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="h">
+      <op value="++"/>
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//HTML"/>
+    </targetPatterns>
+    <targetPatterns name="re">
+      <op value="++"/>
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//ReadEmail"/>
+      <linkVariablePatterns target="//@rules.19/@targetPatterns.2">
+        <op value="++"/>
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//ReadEmail/attachments"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="se">
+      <op value="++"/>
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//ShowEmail"/>
+      <linkVariablePatterns target="//@rules.19/@targetPatterns.3">
+        <op value="++"/>
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//ShowEmail/emailForm"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="ts">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//TaskFeature"/>
+      <linkVariablePatterns target="//@rules.19/@targetPatterns.6">
+        <op value="++"/>
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//TaskFeature/showEmail"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.19/@targetPatterns.5">
+        <op value="++"/>
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//TaskFeature/readEmail"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.19/@sourcePatterns.0" target="//@rules.19/@targetPatterns.0"/>
+    <correspondencePatterns name="p2ts" type="//@schema/@correspondenceTypes.14" source="//@rules.19/@sourcePatterns.2" target="//@rules.19/@targetPatterns.7"/>
+    <attrConditions name="//@schema/@attributeCondDefs.0">
+      <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.19/@targetPatterns.1">
+        <attribute href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//AutoDownload/enable"/>
+      </values>
+      <values xsi:type="tgg:LiteralExpression" value="true"/>
+    </attrConditions>
+  </rules>
+  <rules name="R26FastMobileNetConnectionRule" schema="//@schema">
+    <sourcePatterns name="c">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context"/>
+      <linkVariablePatterns target="//@rules.20/@sourcePatterns.5">
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context/platcontext"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="ce">
+      <op value="++"/>
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Cellular"/>
+      <linkVariablePatterns target="//@rules.20/@sourcePatterns.2">
+        <op value="++"/>
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Cellular/ConnectionSpeed"/>
+      </linkVariablePatterns>
+      <linkVariablePatterns target="//@rules.20/@sourcePatterns.3">
+        <op value="++"/>
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Cellular/ConnectionSpeed"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="cs3">
+      <op value="++"/>
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//ThreeG"/>
+    </sourcePatterns>
+    <sourcePatterns name="cs4">
+      <op value="++"/>
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//FourG"/>
+    </sourcePatterns>
+    <sourcePatterns name="ct">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//ConnectionType"/>
+      <linkVariablePatterns target="//@rules.20/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//ConnectionType/cellular"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="p">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Platform"/>
+      <linkVariablePatterns target="//@rules.20/@sourcePatterns.4">
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Platform/connectionType"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <targetPatterns name="a">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App"/>
+      <linkVariablePatterns target="//@rules.20/@targetPatterns.4">
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App/taskset"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="ef">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//EmailForm"/>
+      <linkVariablePatterns target="//@rules.20/@targetPatterns.2">
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//EmailForm/html"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="h">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//HTML"/>
+    </targetPatterns>
+    <targetPatterns name="se">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//ShowEmail"/>
+      <linkVariablePatterns target="//@rules.20/@targetPatterns.1">
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//ShowEmail/emailForm"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="ts">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//TaskFeature"/>
+      <linkVariablePatterns target="//@rules.20/@targetPatterns.3">
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//TaskFeature/showEmail"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.20/@sourcePatterns.0" target="//@rules.20/@targetPatterns.0"/>
+    <correspondencePatterns name="p2ts" type="//@schema/@correspondenceTypes.14" source="//@rules.20/@sourcePatterns.5" target="//@rules.20/@targetPatterns.4"/>
+  </rules>
+  <rules name="R27SlowMobileNetConnectionRule" schema="//@schema">
+    <sourcePatterns name="c">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context"/>
+      <linkVariablePatterns target="//@rules.21/@sourcePatterns.4">
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context/platcontext"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="ce">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Cellular"/>
+      <linkVariablePatterns target="//@rules.21/@sourcePatterns.2">
+        <op value="++"/>
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Cellular/ConnectionSpeed"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="cs">
+      <op value="++"/>
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//TwoG"/>
+    </sourcePatterns>
+    <sourcePatterns name="ct">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//ConnectionType"/>
+      <linkVariablePatterns target="//@rules.21/@sourcePatterns.1">
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//ConnectionType/cellular"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="p">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Platform"/>
+      <linkVariablePatterns target="//@rules.21/@sourcePatterns.3">
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Platform/connectionType"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <targetPatterns name="a">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App"/>
+      <linkVariablePatterns target="//@rules.21/@targetPatterns.4">
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App/taskset"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="ef">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//EmailForm"/>
+      <linkVariablePatterns target="//@rules.21/@targetPatterns.3">
+        <op value="++"/>
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//EmailForm/textForm"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="se">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//ShowEmail"/>
+      <linkVariablePatterns target="//@rules.21/@targetPatterns.1">
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//ShowEmail/emailForm"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="tf">
+      <op value="++"/>
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//TextForm"/>
+    </targetPatterns>
+    <targetPatterns name="ts">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//TaskFeature"/>
+      <linkVariablePatterns target="//@rules.21/@targetPatterns.2">
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//TaskFeature/showEmail"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.21/@sourcePatterns.0" target="//@rules.21/@targetPatterns.0"/>
+    <correspondencePatterns name="p2ts" type="//@schema/@correspondenceTypes.14" source="//@rules.21/@sourcePatterns.4" target="//@rules.21/@targetPatterns.4"/>
+  </rules>
+  <rules name="R28DisableVocalUI" schema="//@schema">
+    <sourcePatterns name="ac">
+      <op value="++"/>
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Activity"/>
+      <attributeAssignments op=":=">
+        <attribute href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Activity/activityEnum"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;Standing&quot;"/>
+      </attributeAssignments>
+    </sourcePatterns>
+    <sourcePatterns name="c">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context"/>
+      <linkVariablePatterns target="//@rules.22/@sourcePatterns.2">
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context/envirocontext"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="e">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Environment"/>
+      <linkVariablePatterns target="//@rules.22/@sourcePatterns.0">
+        <op value="++"/>
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Environment/activity"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <targetPatterns name="a">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App"/>
+      <linkVariablePatterns target="//@rules.22/@targetPatterns.1">
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App/taskset"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="ts">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//TaskFeature"/>
+      <attributeConstraints op="==">
+        <attribute href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//TaskFeature/VocalUI"/>
+        <valueExp xsi:type="tgg:LiteralExpression" value="false"/>
+      </attributeConstraints>
+    </targetPatterns>
+    <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.22/@sourcePatterns.1" target="//@rules.22/@targetPatterns.0"/>
+    <correspondencePatterns name="e2ts" type="//@schema/@correspondenceTypes.6" source="//@rules.22/@sourcePatterns.2" target="//@rules.22/@targetPatterns.1"/>
+  </rules>
+  <rules name="R2NeutralMood" schema="//@schema">
+    <sourcePatterns name="c">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context"/>
+      <linkVariablePatterns target="//@rules.23/@sourcePatterns.2">
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context/usercontext"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="nm">
+      <op value="++"/>
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Neutralmood"/>
+    </sourcePatterns>
+    <sourcePatterns name="u">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//User"/>
+      <linkVariablePatterns target="//@rules.23/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//User/mood"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <targetPatterns name="a">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App"/>
+      <linkVariablePatterns target="//@rules.23/@targetPatterns.1">
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App/navigation"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="nav">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Navigation"/>
+    </targetPatterns>
+    <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.23/@sourcePatterns.0" target="//@rules.23/@targetPatterns.0"/>
+    <correspondencePatterns name="u2nav" type="//@schema/@correspondenceTypes.1" source="//@rules.23/@sourcePatterns.2" target="//@rules.23/@targetPatterns.1"/>
+  </rules>
+  <rules name="R3GoodMood" schema="//@schema">
+    <sourcePatterns name="c">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context"/>
+      <linkVariablePatterns target="//@rules.24/@sourcePatterns.2">
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context/usercontext"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="gm">
+      <op value="++"/>
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Goodmood"/>
+    </sourcePatterns>
+    <sourcePatterns name="u">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//User"/>
+      <linkVariablePatterns target="//@rules.24/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//User/mood"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <targetPatterns name="a">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App"/>
+      <linkVariablePatterns target="//@rules.24/@targetPatterns.3">
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App/navigation"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="b">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//FeedbackBar"/>
+      <linkVariablePatterns target="//@rules.24/@targetPatterns.2">
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//FeedbackBar/clickevent"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="ce">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//ClickEvent"/>
+      <linkVariablePatterns target="//@rules.24/@targetPatterns.4">
+        <op value="++"/>
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//ClickEvent/view"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="nav">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Navigation"/>
+      <linkVariablePatterns target="//@rules.24/@targetPatterns.1">
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Navigation/button"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="v">
+      <op value="++"/>
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Inspiration"/>
+    </targetPatterns>
+    <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.24/@sourcePatterns.0" target="//@rules.24/@targetPatterns.0"/>
+    <correspondencePatterns name="u2nav" type="//@schema/@correspondenceTypes.1" source="//@rules.24/@sourcePatterns.2" target="//@rules.24/@targetPatterns.3"/>
+  </rules>
+  <rules name="R4MinimalisticUserInterface" schema="//@schema">
+    <sourcePatterns name="c">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context"/>
+      <linkVariablePatterns target="//@rules.25/@sourcePatterns.2">
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context/usercontext"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="e">
+      <op value="++"/>
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Experienced"/>
+    </sourcePatterns>
+    <sourcePatterns name="u">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//User"/>
+      <linkVariablePatterns target="//@rules.25/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//User/exp"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <targetPatterns name="a">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App"/>
+      <linkVariablePatterns target="//@rules.25/@targetPatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App/navigation"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="minav">
+      <op value="++"/>
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//MinimumNavigation"/>
+    </targetPatterns>
+    <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.25/@sourcePatterns.0" target="//@rules.25/@targetPatterns.0"/>
+    <correspondencePatterns name="u2minav" type="//@schema/@correspondenceTypes.2" source="//@rules.25/@sourcePatterns.2" target="//@rules.25/@targetPatterns.1">
+      <op value="++"/>
+    </correspondencePatterns>
+  </rules>
+  <rules name="R5MinimizedNavigationInformation" schema="//@schema">
+    <sourcePatterns name="c">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context"/>
+      <linkVariablePatterns target="//@rules.26/@sourcePatterns.2">
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context/usercontext"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="ex">
+      <op value="++"/>
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Intermediate"/>
+    </sourcePatterns>
+    <sourcePatterns name="u">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//User"/>
+      <linkVariablePatterns target="//@rules.26/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//User/exp"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <targetPatterns name="a">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App"/>
+      <linkVariablePatterns target="//@rules.26/@targetPatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App/navigation"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="lesnav">
+      <op value="++"/>
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//LessInformedNav"/>
+    </targetPatterns>
+    <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.26/@sourcePatterns.0" target="//@rules.26/@targetPatterns.0"/>
+    <correspondencePatterns name="u2nav" type="//@schema/@correspondenceTypes.3" source="//@rules.26/@sourcePatterns.2" target="//@rules.26/@targetPatterns.1">
+      <op value="++"/>
+    </correspondencePatterns>
+  </rules>
+  <rules name="R6DisplayExtraInfo" schema="//@schema">
+    <sourcePatterns name="c">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context"/>
+      <linkVariablePatterns target="//@rules.27/@sourcePatterns.2">
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context/usercontext"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="iex">
+      <op value="++"/>
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Inexperienced"/>
+    </sourcePatterns>
+    <sourcePatterns name="u">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//User"/>
+      <linkVariablePatterns target="//@rules.27/@sourcePatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//User/exp"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <targetPatterns name="a">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App"/>
+      <linkVariablePatterns target="//@rules.27/@targetPatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App/navigation"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="mornav">
+      <op value="++"/>
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//MoreInformedNav"/>
+    </targetPatterns>
+    <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.27/@sourcePatterns.0" target="//@rules.27/@targetPatterns.0"/>
+    <correspondencePatterns name="u2nav" type="//@schema/@correspondenceTypes.4" source="//@rules.27/@sourcePatterns.2" target="//@rules.27/@targetPatterns.1">
+      <op value="++"/>
+    </correspondencePatterns>
+  </rules>
+  <rules name="R7LowLight" schema="//@schema">
+    <sourcePatterns name="c">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context"/>
+      <linkVariablePatterns target="//@rules.28/@sourcePatterns.1">
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context/envirocontext"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="e">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Environment"/>
+      <linkVariablePatterns target="//@rules.28/@sourcePatterns.2">
+        <op value="++"/>
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Environment/light"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="lig">
+      <op value="++"/>
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Ambientlight"/>
+      <linkVariablePatterns target="//@rules.28/@sourcePatterns.3">
+        <op value="++"/>
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Ambientlight/lowLight"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="low">
+      <op value="++"/>
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//LowLight"/>
+    </sourcePatterns>
+    <targetPatterns name="a">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App"/>
+      <linkVariablePatterns target="//@rules.28/@targetPatterns.2">
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App/layout"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="cs">
+      <op value="++"/>
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//BlacknWhite"/>
+    </targetPatterns>
+    <targetPatterns name="l">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Layout"/>
+      <linkVariablePatterns target="//@rules.28/@targetPatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Layout/colorScheme"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.28/@sourcePatterns.0" target="//@rules.28/@targetPatterns.0"/>
+    <correspondencePatterns name="e2l" type="//@schema/@correspondenceTypes.5" source="//@rules.28/@sourcePatterns.1" target="//@rules.28/@targetPatterns.2"/>
+  </rules>
+  <rules name="R8NormalLight" schema="//@schema">
+    <sourcePatterns name="c">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context"/>
+      <linkVariablePatterns target="//@rules.29/@sourcePatterns.1">
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context/envirocontext"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="e">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Environment"/>
+      <linkVariablePatterns target="//@rules.29/@sourcePatterns.2">
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Environment/light"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="lig">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Ambientlight"/>
+      <linkVariablePatterns target="//@rules.29/@sourcePatterns.3">
+        <op value="++"/>
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Ambientlight/normalLight"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="nor">
+      <op value="++"/>
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//NormalLight"/>
+    </sourcePatterns>
+    <targetPatterns name="a">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App"/>
+      <linkVariablePatterns target="//@rules.29/@targetPatterns.2">
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App/layout"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="cs">
+      <op value="++"/>
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//CustomColor"/>
+    </targetPatterns>
+    <targetPatterns name="l">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Layout"/>
+      <linkVariablePatterns target="//@rules.29/@targetPatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Layout/colorScheme"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.29/@sourcePatterns.0" target="//@rules.29/@targetPatterns.0"/>
+    <correspondencePatterns name="e2l" type="//@schema/@correspondenceTypes.5" source="//@rules.29/@sourcePatterns.1" target="//@rules.29/@targetPatterns.2"/>
+  </rules>
+  <rules name="R9HighLight" schema="//@schema">
+    <sourcePatterns name="c">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context"/>
+      <linkVariablePatterns target="//@rules.30/@sourcePatterns.1">
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context/envirocontext"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="e">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Environment"/>
+      <linkVariablePatterns target="//@rules.30/@sourcePatterns.3">
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Environment/light"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <sourcePatterns name="high">
+      <op value="++"/>
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//HighLight"/>
+    </sourcePatterns>
+    <sourcePatterns name="lig">
+      <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Ambientlight"/>
+      <linkVariablePatterns target="//@rules.30/@sourcePatterns.2">
+        <op value="++"/>
+        <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Ambientlight/highLight"/>
+      </linkVariablePatterns>
+    </sourcePatterns>
+    <targetPatterns name="a">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App"/>
+      <linkVariablePatterns target="//@rules.30/@targetPatterns.2">
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//App/layout"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <targetPatterns name="cs">
+      <op value="++"/>
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//MonoChromatic"/>
+    </targetPatterns>
+    <targetPatterns name="l">
+      <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Layout"/>
+      <linkVariablePatterns target="//@rules.30/@targetPatterns.1">
+        <op value="++"/>
+        <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Layout/colorScheme"/>
+      </linkVariablePatterns>
+    </targetPatterns>
+    <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.30/@sourcePatterns.0" target="//@rules.30/@targetPatterns.0"/>
+    <correspondencePatterns name="e2l" type="//@schema/@correspondenceTypes.5" source="//@rules.30/@sourcePatterns.1" target="//@rules.30/@targetPatterns.2"/>
+  </rules>
+</tgg:TripleGraphGrammarFile>

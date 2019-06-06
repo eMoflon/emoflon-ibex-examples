@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:UserToUI="platform:/resource/UserToUI/model/UserToUI.ecore">
+  <UserToUI:ContextToApp>
+    <source href="src.xmi#/"/>
+    <target href="trg.xmi#/0"/>
+  </UserToUI:ContextToApp>
+  <UserToUI:UserToNavigation>
+    <source href="src.xmi#//@usercontext.0"/>
+    <target href="trg.xmi#/0/@navigation"/>
+  </UserToUI:UserToNavigation>
+</xmi:XMI>

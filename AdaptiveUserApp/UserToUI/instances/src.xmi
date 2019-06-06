@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ASCII"?>
+<UserEnviro:Context xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UserEnviro="platform:/resource/UserEnviro/model/UserEnviro.ecore">
+  <usercontext>
+    <mood xsi:type="UserEnviro:Badmood"/>
+  </usercontext>
+</UserEnviro:Context>

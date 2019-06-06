@@ -1,0 +1,43 @@
+#using UserToUI.*
+#using AttrCondDefLibrary.*
+
+#rule R4MinimalisticUserInterface #with UserToUI
+
+#source { 
+	c:Context{
+		-usercontext->u
+	}
+	
+	u:User{
+		++ -exp->e
+	}
+	
+	++ e:Experienced
+}
+
+#target {
+	a:UIAdaptation.App{
+		++ -navigation->minav
+	}
+	
+	++ minav:UIAdaptation.MinimumNavigation{
+		
+	}
+	
+}
+
+#correspondence {
+	c2a:ContextToApp{
+		#src->c
+		#trg->a
+	}
+	
+	++u2minav:UserToMinNav{
+		#src->u
+		#trg->minav
+	}
+}
+
+#attributeConditions {
+	
+}

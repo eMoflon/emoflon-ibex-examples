@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:UIAdaptation="platform:/resource/UIAdaptation/model/UIAdaptation.ecore">
+  <UIAdaptation:App>
+    <navigation>
+      <button clickevent="/1"/>
+    </navigation>
+  </UIAdaptation:App>
+  <UIAdaptation:ClickEvent view="/2"/>
+  <UIAdaptation:Feedback/>
+</xmi:XMI>

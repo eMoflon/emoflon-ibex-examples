@@ -1,0 +1,97 @@
+#using UserToUI.*
+#using AttrCondDefLibrary.*
+
+#rule R26FastMobileNetConnectionRule #with UserToUI
+
+#source { 
+	c:Context{
+		-platcontext->p
+	}
+	p:Platform{
+		-connectionType->ct
+	}
+	ct:ConnectionType{
+		++ -cellular->ce
+	}
+	++ ce:Cellular{
+		++ -ConnectionSpeed->cs3
+		++ -ConnectionSpeed->cs4
+	}
+	
+	++cs3:ThreeG
+	++cs4:FourG
+}
+
+#target {
+	a:App{
+		-taskset->ts
+	}
+	ts:TaskFeature{
+		 -showEmail->se
+	}
+	se:ShowEmail{
+		-emailForm->ef
+	}
+	ef:EmailForm{
+		-html->h
+	}
+	h:HTML
+}
+
+#correspondence {
+	c2a:ContextToApp{
+		#src->c
+		#trg->a
+	}
+	p2ts:PlatformToTaskFeature{
+		#src->p
+		#trg->ts
+	}
+}
+
+
+
+#rule R27SlowMobileNetConnectionRule #with UserToUI
+
+#source { 
+	c:Context{
+		-platcontext->p
+	}
+	p:Platform{
+		-connectionType->ct
+	}
+	ct:ConnectionType{
+		-cellular->ce
+	}
+	ce:Cellular{
+		++ -ConnectionSpeed->cs
+	}	
+	++cs:TwoG
+}
+
+#target {
+	a:App{
+		-taskset->ts
+	}
+	ts:TaskFeature{
+		 -showEmail->se
+	}
+	se:ShowEmail{
+		-emailForm->ef
+	}
+	ef:EmailForm{
+		++ -textForm->tf
+	}
+	++ tf:TextForm
+}
+
+#correspondence {
+	c2a:ContextToApp{
+		#src->c
+		#trg->a
+	}
+	p2ts:PlatformToTaskFeature{
+		#src->p
+		#trg->ts
+	}
+}
