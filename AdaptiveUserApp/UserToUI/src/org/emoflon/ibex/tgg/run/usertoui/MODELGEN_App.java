@@ -29,7 +29,7 @@ public class MODELGEN_App extends MODELGEN {
 		logger.info("Completed init for MODELGEN in: " + (toc - tic) + " ms");
 		
 		MODELGENStopCriterion stop = new MODELGENStopCriterion(generator.getTGG());
-		//stop.setTimeOutInMS(2000);
+		stop.setTimeOutInMS(1000);
 //		stop.setMaxRuleCount("R4MinimalisticUserInterface", 1);
 //		stop.setMaxRuleCount("R5MinimizedNavigationInformation", 1);
 //		stop.setMaxRuleCount("R6DisplayExtraInfo", 1);

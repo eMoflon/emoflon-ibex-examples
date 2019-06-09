@@ -11,7 +11,7 @@
 		++ -activity->ac
 	}
 	++ac:Activity{
-		activityEnum := "Standing"
+		activityEnum := enum::ActivityEnum::Standing
 	}
 }
 

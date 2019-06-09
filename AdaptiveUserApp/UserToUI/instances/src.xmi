@@ -1,6 +1,1136 @@
 <?xml version="1.0" encoding="ASCII"?>
-<UserEnviro:Context xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UserEnviro="platform:/resource/UserEnviro/model/UserEnviro.ecore">
-  <usercontext>
-    <mood xsi:type="UserEnviro:Badmood"/>
-  </usercontext>
-</UserEnviro:Context>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UserEnviro="platform:/resource/UserEnviro/model/UserEnviro.ecore">
+  <UserEnviro:Context>
+    <usercontext>
+      <mood xsi:type="UserEnviro:Badmood"/>
+      <exp xsi:type="UserEnviro:Experienced"/>
+    </usercontext>
+    <usercontext xsi:type="UserEnviro:OldAgeUser"/>
+    <envirocontext light="/129" activity="/80"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Smartphone"/>
+      <connectionType wifi="/253" cellular="/264"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Context>
+    <usercontext>
+      <mood xsi:type="UserEnviro:Badmood"/>
+      <exp xsi:type="UserEnviro:Experienced"/>
+    </usercontext>
+    <usercontext xsi:type="UserEnviro:YoungerUser"/>
+    <envirocontext light="/114" activity="/184"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Smartphone"/>
+      <connectionType wifi="/273" cellular="/296"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Context>
+    <usercontext>
+      <mood xsi:type="UserEnviro:Badmood"/>
+      <exp xsi:type="UserEnviro:Experienced"/>
+    </usercontext>
+    <usercontext xsi:type="UserEnviro:MiddleAgeUser"/>
+    <envirocontext light="/90" activity="/85"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Smartphone"/>
+      <connectionType wifi="/113" cellular="/208"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Context>
+    <usercontext vision="/76">
+      <mood xsi:type="UserEnviro:Badmood"/>
+    </usercontext>
+    <envirocontext light="/255" activity="/263"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Tablet"/>
+      <connectionType wifi="/105" cellular="/162"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Context>
+    <usercontext vision="/71">
+      <mood xsi:type="UserEnviro:Badmood"/>
+      <exp xsi:type="UserEnviro:Experienced"/>
+    </usercontext>
+    <envirocontext light="/67" activity="/109"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Smartphone"/>
+      <connectionType wifi="/223" cellular="/245"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Context>
+    <usercontext>
+      <mood xsi:type="UserEnviro:Neutralmood"/>
+      <exp xsi:type="UserEnviro:Experienced"/>
+    </usercontext>
+    <usercontext xsi:type="UserEnviro:YoungerUser"/>
+    <envirocontext light="/271" activity="/117"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Smartphone"/>
+      <connectionType wifi="/186" cellular="/202"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Context>
+    <usercontext>
+      <mood xsi:type="UserEnviro:Neutralmood"/>
+      <exp xsi:type="UserEnviro:Experienced"/>
+    </usercontext>
+    <usercontext xsi:type="UserEnviro:OldAgeUser"/>
+    <envirocontext light="/207" activity="/130"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Smartphone"/>
+      <connectionType wifi="/94" cellular="/216"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Context>
+    <usercontext>
+      <mood xsi:type="UserEnviro:Badmood"/>
+    </usercontext>
+    <usercontext xsi:type="UserEnviro:OldAgeUser"/>
+    <envirocontext light="/52" activity="/83"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Tablet"/>
+      <connectionType wifi="/218" cellular="/246"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Context>
+    <usercontext>
+      <mood xsi:type="UserEnviro:Badmood"/>
+      <exp xsi:type="UserEnviro:Experienced"/>
+    </usercontext>
+    <usercontext xsi:type="UserEnviro:MiddleAgeUser"/>
+    <envirocontext light="/173" activity="/66"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Smartphone"/>
+      <connectionType wifi="/132" cellular="/170"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Context>
+    <usercontext>
+      <mood xsi:type="UserEnviro:Neutralmood"/>
+    </usercontext>
+    <usercontext xsi:type="UserEnviro:MiddleAgeUser"/>
+    <envirocontext light="/172" activity="/175"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Tablet"/>
+      <connectionType wifi="/61" cellular="/222"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Context>
+    <usercontext>
+      <mood xsi:type="UserEnviro:Badmood"/>
+      <exp xsi:type="UserEnviro:Experienced"/>
+    </usercontext>
+    <usercontext xsi:type="UserEnviro:MiddleAgeUser"/>
+    <envirocontext light="/275" activity="/138"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Smartphone"/>
+      <connectionType wifi="/266" cellular="/284"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Context>
+    <usercontext>
+      <mood xsi:type="UserEnviro:Badmood"/>
+      <exp xsi:type="UserEnviro:Experienced"/>
+    </usercontext>
+    <usercontext xsi:type="UserEnviro:YoungerUser"/>
+    <envirocontext light="/139" activity="/122"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Smartphone"/>
+      <connectionType wifi="/205" cellular="/261"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Context>
+    <usercontext vision="/142">
+      <mood xsi:type="UserEnviro:Neutralmood"/>
+    </usercontext>
+    <envirocontext light="/81" activity="/283"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Tablet"/>
+      <connectionType wifi="/225" cellular="/231"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Context>
+    <usercontext vision="/57">
+      <mood xsi:type="UserEnviro:Neutralmood"/>
+    </usercontext>
+    <envirocontext light="/182" activity="/137"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Tablet"/>
+      <connectionType wifi="/224" cellular="/278"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Context>
+    <usercontext>
+      <mood xsi:type="UserEnviro:Badmood"/>
+    </usercontext>
+    <usercontext xsi:type="UserEnviro:YoungerUser"/>
+    <envirocontext light="/111" activity="/112"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Tablet"/>
+      <connectionType wifi="/241" cellular="/269"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Context>
+    <usercontext vision="/72">
+      <mood xsi:type="UserEnviro:Badmood"/>
+    </usercontext>
+    <envirocontext light="/55" activity="/96"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Tablet"/>
+      <connectionType wifi="/123" cellular="/195"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Context>
+    <usercontext>
+      <mood xsi:type="UserEnviro:Badmood"/>
+      <exp xsi:type="UserEnviro:Experienced"/>
+    </usercontext>
+    <usercontext xsi:type="UserEnviro:OldAgeUser"/>
+    <envirocontext light="/98" activity="/196"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Smartphone"/>
+      <connectionType wifi="/228" cellular="/292"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Context>
+    <usercontext>
+      <mood xsi:type="UserEnviro:Neutralmood"/>
+    </usercontext>
+    <usercontext xsi:type="UserEnviro:OldAgeUser"/>
+    <envirocontext light="/68" activity="/236"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Tablet"/>
+      <connectionType wifi="/60" cellular="/193"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Context>
+    <usercontext>
+      <mood xsi:type="UserEnviro:Neutralmood"/>
+    </usercontext>
+    <usercontext xsi:type="UserEnviro:MiddleAgeUser"/>
+    <envirocontext light="/148" activity="/126"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Tablet"/>
+      <connectionType wifi="/69" cellular="/156"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Context>
+    <usercontext vision="/73">
+      <mood xsi:type="UserEnviro:Badmood"/>
+    </usercontext>
+    <envirocontext light="/159" activity="/149"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Tablet"/>
+      <connectionType wifi="/82" cellular="/153"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Context>
+    <usercontext>
+      <mood xsi:type="UserEnviro:Badmood"/>
+    </usercontext>
+    <usercontext xsi:type="UserEnviro:YoungerUser"/>
+    <envirocontext light="/209" activity="/93"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Tablet"/>
+      <connectionType wifi="/53" cellular="/77"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Context>
+    <usercontext vision="/79">
+      <mood xsi:type="UserEnviro:Badmood"/>
+      <exp xsi:type="UserEnviro:Experienced"/>
+    </usercontext>
+    <envirocontext light="/70" activity="/154"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Smartphone"/>
+      <connectionType wifi="/119" cellular="/168"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Context>
+    <usercontext>
+      <mood xsi:type="UserEnviro:Badmood"/>
+      <exp xsi:type="UserEnviro:Experienced"/>
+    </usercontext>
+    <usercontext xsi:type="UserEnviro:MiddleAgeUser"/>
+    <envirocontext activity="/95"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Smartphone"/>
+      <connectionType wifi="/134" cellular="/267"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Context>
+    <usercontext vision="/128">
+      <mood xsi:type="UserEnviro:Badmood"/>
+    </usercontext>
+    <envirocontext light="/92" activity="/206"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Tablet"/>
+      <connectionType wifi="/87" cellular="/183"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Context>
+    <usercontext>
+      <mood xsi:type="UserEnviro:Neutralmood"/>
+      <exp xsi:type="UserEnviro:Experienced"/>
+    </usercontext>
+    <usercontext xsi:type="UserEnviro:OldAgeUser"/>
+    <envirocontext light="/91" activity="/161"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Smartphone"/>
+      <connectionType wifi="/160" cellular="/254"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Context>
+    <usercontext>
+      <mood xsi:type="UserEnviro:Neutralmood"/>
+    </usercontext>
+    <usercontext xsi:type="UserEnviro:MiddleAgeUser"/>
+    <envirocontext light="/188" activity="/201"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Tablet"/>
+      <connectionType wifi="/136" cellular="/268"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Context>
+    <usercontext>
+      <mood xsi:type="UserEnviro:Badmood"/>
+      <exp xsi:type="UserEnviro:Experienced"/>
+    </usercontext>
+    <usercontext xsi:type="UserEnviro:YoungerUser"/>
+    <envirocontext light="/51" activity="/265"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Smartphone"/>
+      <connectionType wifi="/200" cellular="/220"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Context>
+    <usercontext>
+      <mood xsi:type="UserEnviro:Neutralmood"/>
+    </usercontext>
+    <usercontext xsi:type="UserEnviro:MiddleAgeUser"/>
+    <envirocontext light="/74" activity="/62"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Tablet"/>
+      <connectionType wifi="/190" cellular="/219"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Context>
+    <usercontext>
+      <mood xsi:type="UserEnviro:Badmood"/>
+      <exp xsi:type="UserEnviro:Experienced"/>
+    </usercontext>
+    <usercontext xsi:type="UserEnviro:MiddleAgeUser"/>
+    <envirocontext light="/158" activity="/239"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Smartphone"/>
+      <connectionType wifi="/240" cellular="/256"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Context>
+    <usercontext>
+      <mood xsi:type="UserEnviro:Badmood"/>
+      <exp xsi:type="UserEnviro:Experienced"/>
+    </usercontext>
+    <usercontext xsi:type="UserEnviro:OldAgeUser"/>
+    <envirocontext light="/289" activity="/107"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Smartphone"/>
+      <connectionType wifi="/86" cellular="/235"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Context>
+    <usercontext>
+      <mood xsi:type="UserEnviro:Neutralmood"/>
+      <exp xsi:type="UserEnviro:Experienced"/>
+    </usercontext>
+    <usercontext xsi:type="UserEnviro:OldAgeUser"/>
+    <envirocontext light="/127" activity="/199"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Smartphone"/>
+      <connectionType wifi="/78" cellular="/106"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Context>
+    <usercontext vision="/141">
+      <mood xsi:type="UserEnviro:Neutralmood"/>
+      <exp xsi:type="UserEnviro:Experienced"/>
+    </usercontext>
+    <envirocontext light="/221" activity="/103"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Smartphone"/>
+      <connectionType wifi="/167" cellular="/204"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Context>
+    <usercontext>
+      <mood xsi:type="UserEnviro:Badmood"/>
+    </usercontext>
+    <usercontext xsi:type="UserEnviro:YoungerUser"/>
+    <envirocontext light="/131" activity="/152"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Tablet"/>
+      <connectionType wifi="/150" cellular="/230"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Context>
+    <usercontext>
+      <mood xsi:type="UserEnviro:Neutralmood"/>
+      <exp xsi:type="UserEnviro:Experienced"/>
+    </usercontext>
+    <usercontext xsi:type="UserEnviro:MiddleAgeUser"/>
+    <envirocontext light="/217" activity="/110"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Smartphone"/>
+      <connectionType wifi="/233" cellular="/259"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Context>
+    <usercontext>
+      <mood xsi:type="UserEnviro:Badmood"/>
+      <exp xsi:type="UserEnviro:Experienced"/>
+    </usercontext>
+    <usercontext xsi:type="UserEnviro:MiddleAgeUser"/>
+    <envirocontext light="/151" activity="/157"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Smartphone"/>
+      <connectionType wifi="/59" cellular="/257"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Context>
+    <usercontext>
+      <mood xsi:type="UserEnviro:Neutralmood"/>
+    </usercontext>
+    <usercontext xsi:type="UserEnviro:OldAgeUser"/>
+    <envirocontext light="/288" activity="/120"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Tablet"/>
+      <connectionType wifi="/155" cellular="/164"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Context>
+    <usercontext>
+      <mood xsi:type="UserEnviro:Neutralmood"/>
+      <exp xsi:type="UserEnviro:Experienced"/>
+    </usercontext>
+    <usercontext xsi:type="UserEnviro:YoungerUser"/>
+    <envirocontext light="/143" activity="/118"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Smartphone"/>
+      <connectionType wifi="/187" cellular="/210"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Context>
+    <usercontext vision="/65">
+      <mood xsi:type="UserEnviro:Badmood"/>
+    </usercontext>
+    <envirocontext light="/135" activity="/63"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Tablet"/>
+      <connectionType wifi="/212" cellular="/260"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Context>
+    <usercontext vision="/58">
+      <mood xsi:type="UserEnviro:Neutralmood"/>
+    </usercontext>
+    <envirocontext light="/56" activity="/178"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Tablet"/>
+      <connectionType wifi="/99" cellular="/146"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Context>
+    <usercontext>
+      <mood xsi:type="UserEnviro:Badmood"/>
+    </usercontext>
+    <usercontext xsi:type="UserEnviro:MiddleAgeUser"/>
+    <envirocontext light="/270" activity="/64"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Tablet"/>
+      <connectionType wifi="/97" cellular="/144"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Context>
+    <usercontext>
+      <mood xsi:type="UserEnviro:Neutralmood"/>
+      <exp xsi:type="UserEnviro:Experienced"/>
+    </usercontext>
+    <usercontext xsi:type="UserEnviro:MiddleAgeUser"/>
+    <envirocontext light="/226" activity="/104"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Smartphone"/>
+      <connectionType wifi="/102" cellular="/181"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Context>
+    <usercontext>
+      <mood xsi:type="UserEnviro:Badmood"/>
+    </usercontext>
+    <usercontext xsi:type="UserEnviro:MiddleAgeUser"/>
+    <envirocontext light="/140" activity="/145"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Tablet"/>
+      <connectionType wifi="/214" cellular="/248"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Context>
+    <usercontext>
+      <mood xsi:type="UserEnviro:Neutralmood"/>
+      <exp xsi:type="UserEnviro:Experienced"/>
+    </usercontext>
+    <usercontext xsi:type="UserEnviro:YoungerUser"/>
+    <envirocontext light="/84" activity="/174"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Smartphone"/>
+      <connectionType wifi="/54" cellular="/258"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Context>
+    <usercontext>
+      <mood xsi:type="UserEnviro:Badmood"/>
+    </usercontext>
+    <usercontext xsi:type="UserEnviro:YoungerUser"/>
+    <envirocontext light="/100" activity="/179"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Tablet"/>
+      <connectionType wifi="/163" cellular="/191"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Context>
+    <usercontext>
+      <mood xsi:type="UserEnviro:Badmood"/>
+      <exp xsi:type="UserEnviro:Experienced"/>
+    </usercontext>
+    <usercontext xsi:type="UserEnviro:YoungerUser"/>
+    <envirocontext light="/166" activity="/198"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Smartphone"/>
+      <connectionType wifi="/249" cellular="/262"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Context>
+    <usercontext>
+      <mood xsi:type="UserEnviro:Badmood"/>
+      <exp xsi:type="UserEnviro:Experienced"/>
+    </usercontext>
+    <usercontext xsi:type="UserEnviro:YoungerUser"/>
+    <envirocontext light="/108" activity="/89"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Smartphone"/>
+      <connectionType wifi="/121" cellular="/197"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Context>
+    <usercontext>
+      <mood xsi:type="UserEnviro:Badmood"/>
+    </usercontext>
+    <usercontext xsi:type="UserEnviro:OldAgeUser"/>
+    <envirocontext light="/242" activity="/125"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Tablet"/>
+      <connectionType wifi="/124" cellular="/232"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Context>
+    <usercontext>
+      <mood xsi:type="UserEnviro:Badmood"/>
+      <exp xsi:type="UserEnviro:Experienced"/>
+    </usercontext>
+    <usercontext xsi:type="UserEnviro:MiddleAgeUser"/>
+    <envirocontext light="/280" activity="/176"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Smartphone"/>
+      <connectionType wifi="/229" cellular="/247"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Context>
+    <usercontext>
+      <mood xsi:type="UserEnviro:Badmood"/>
+      <exp xsi:type="UserEnviro:Experienced"/>
+    </usercontext>
+    <usercontext xsi:type="UserEnviro:OldAgeUser"/>
+    <envirocontext light="/116" activity="/88"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Smartphone"/>
+      <connectionType wifi="/185" cellular="/227"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Context>
+    <usercontext vision="/75">
+      <mood xsi:type="UserEnviro:Neutralmood"/>
+    </usercontext>
+    <envirocontext light="/147" activity="/133"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Tablet"/>
+      <connectionType wifi="/115" cellular="/180"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Context>
+    <usercontext>
+      <mood xsi:type="UserEnviro:Badmood"/>
+    </usercontext>
+    <usercontext xsi:type="UserEnviro:YoungerUser"/>
+    <envirocontext light="/101" activity="/251"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Tablet"/>
+      <connectionType wifi="/177" cellular="/215"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Reducedvision/>
+  <UserEnviro:Reducedvision/>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Reducedvision/>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Reducedvision/>
+  <UserEnviro:Reducedvision/>
+  <UserEnviro:Reducedvision/>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Reducedvision/>
+  <UserEnviro:Reducedvision/>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Reducedvision/>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Reducedvision/>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Reducedvision/>
+  <UserEnviro:Reducedvision/>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Context>
+    <usercontext>
+      <mood xsi:type="UserEnviro:Neutralmood"/>
+    </usercontext>
+    <usercontext xsi:type="UserEnviro:OldAgeUser"/>
+    <envirocontext light="/272" activity="/203"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Tablet"/>
+      <connectionType wifi="/171" cellular="/213"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Context>
+    <usercontext>
+      <mood xsi:type="UserEnviro:Neutralmood"/>
+      <exp xsi:type="UserEnviro:Experienced"/>
+    </usercontext>
+    <usercontext xsi:type="UserEnviro:YoungerUser"/>
+    <envirocontext light="/194" activity="/237"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Smartphone"/>
+      <connectionType wifi="/211" cellular="/238"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Context>
+    <usercontext vision="/192">
+      <mood xsi:type="UserEnviro:Neutralmood"/>
+    </usercontext>
+    <envirocontext light="/287" activity="/250"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Tablet"/>
+      <connectionType wifi="/243" cellular="/276"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Reducedvision/>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Context>
+    <usercontext>
+      <mood xsi:type="UserEnviro:Badmood"/>
+    </usercontext>
+    <usercontext xsi:type="UserEnviro:YoungerUser"/>
+    <envirocontext light="/244" activity="/281"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Tablet"/>
+      <connectionType wifi="/286"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Context>
+    <usercontext vision="/277">
+      <mood xsi:type="UserEnviro:Neutralmood"/>
+      <exp xsi:type="UserEnviro:Experienced"/>
+    </usercontext>
+    <envirocontext light="/274" activity="/279"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Smartphone"/>
+      <connectionType wifi="/285" cellular="/293"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Reducedvision/>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Context>
+    <usercontext>
+      <mood xsi:type="UserEnviro:Badmood"/>
+    </usercontext>
+    <usercontext xsi:type="UserEnviro:YoungerUser"/>
+    <envirocontext light="/294" activity="/290"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Tablet"/>
+      <connectionType wifi="/291" cellular="/298"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Activity activityEnum="Standing"/>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Context>
+    <usercontext>
+      <mood xsi:type="UserEnviro:Badmood"/>
+    </usercontext>
+    <usercontext xsi:type="UserEnviro:OldAgeUser"/>
+    <envirocontext light="/300"/>
+    <platcontext>
+      <devicetype xsi:type="UserEnviro:Tablet"/>
+      <connectionType wifi="/301"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Context>
+    <usercontext>
+      <mood xsi:type="UserEnviro:Badmood"/>
+      <exp xsi:type="UserEnviro:Experienced"/>
+    </usercontext>
+    <usercontext xsi:type="UserEnviro:OldAgeUser"/>
+    <envirocontext/>
+    <platcontext>
+      <connectionType wifi="/299"/>
+    </platcontext>
+  </UserEnviro:Context>
+  <UserEnviro:Cellular>
+    <ConnectionSpeed xsi:type="UserEnviro:FourG"/>
+  </UserEnviro:Cellular>
+  <UserEnviro:Wifi/>
+  <UserEnviro:Ambientlight>
+    <lowLight/>
+  </UserEnviro:Ambientlight>
+  <UserEnviro:Wifi/>
+</xmi:XMI>

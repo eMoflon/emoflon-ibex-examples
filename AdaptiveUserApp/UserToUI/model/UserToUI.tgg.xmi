@@ -483,7 +483,7 @@
       <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//ContextToApp"/>
     </nodes>
     <nodes xsi:type="language:TGGRuleCorr" name="u2nav" domainType="CORR" outgoingEdges="//@rules.10/@edges.2 //@rules.10/@edges.3" source="//@rules.10/@nodes.1" target="//@rules.10/@nodes.4">
-      <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//UserToMoreNav"/>
+      <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//UserToNavigation"/>
     </nodes>
     <edges name="c2a__source__c_eMoflonEdge" domainType="CORR" srcNode="//@rules.10/@nodes.6" trgNode="//@rules.10/@nodes.0">
       <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//ContextToApp/source"/>
@@ -492,10 +492,10 @@
       <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//ContextToApp/target"/>
     </edges>
     <edges name="u2nav__source__u_eMoflonEdge" domainType="CORR" srcNode="//@rules.10/@nodes.7" trgNode="//@rules.10/@nodes.1">
-      <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//UserToMoreNav/source"/>
+      <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//UserToNavigation/source"/>
     </edges>
     <edges name="u2nav__target__nav_eMoflonEdge" domainType="CORR" srcNode="//@rules.10/@nodes.7" trgNode="//@rules.10/@nodes.4">
-      <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//UserToMoreNav/target"/>
+      <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//UserToNavigation/target"/>
     </edges>
     <edges name="c__usercontext__u_eMoflonEdge" srcNode="//@rules.10/@nodes.0" trgNode="//@rules.10/@nodes.1">
       <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context/usercontext"/>
@@ -1024,7 +1024,10 @@
       <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Activity"/>
       <attrExpr>
         <attribute href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Activity/activityEnum"/>
-        <valueExpr xsi:type="language:TGGLiteralExpression" value="&quot;Moving&quot;"/>
+        <valueExpr xsi:type="language:TGGEnumExpression">
+          <eenum href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//ActivityEnum"/>
+          <literal href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//ActivityEnum/Moving"/>
+        </valueExpr>
       </attrExpr>
     </nodes>
     <nodes name="a" domainType="TRG" incomingEdges="//@rules.19/@edges.1" outgoingEdges="//@rules.19/@edges.6" incomingCorrsTarget="//@rules.19/@nodes.6">
@@ -1151,7 +1154,7 @@
       <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//ContextToApp"/>
     </nodes>
     <nodes xsi:type="language:TGGRuleCorr" name="u2l" domainType="CORR" bindingType="CREATE" outgoingEdges="//@rules.21/@edges.2 //@rules.21/@edges.3" source="//@rules.21/@nodes.1" target="//@rules.21/@nodes.3">
-      <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//MUserToLayout"/>
+      <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//UserToLayout"/>
     </nodes>
     <edges name="c2a__source__c_eMoflonEdge" domainType="CORR" srcNode="//@rules.21/@nodes.5" trgNode="//@rules.21/@nodes.0">
       <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//ContextToApp/source"/>
@@ -1160,10 +1163,10 @@
       <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//ContextToApp/target"/>
     </edges>
     <edges name="u2l__source__u_eMoflonEdge" domainType="CORR" bindingType="CREATE" srcNode="//@rules.21/@nodes.6" trgNode="//@rules.21/@nodes.1">
-      <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//MUserToLayout/source"/>
+      <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//UserToLayout/source"/>
     </edges>
     <edges name="u2l__target__l_eMoflonEdge" domainType="CORR" bindingType="CREATE" srcNode="//@rules.21/@nodes.6" trgNode="//@rules.21/@nodes.3">
-      <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//MUserToLayout/target"/>
+      <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//UserToLayout/target"/>
     </edges>
     <edges name="c__usercontext__u_eMoflonEdge" bindingType="CREATE" srcNode="//@rules.21/@nodes.0" trgNode="//@rules.21/@nodes.1">
       <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context/usercontext"/>
@@ -1200,7 +1203,7 @@
       <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//ContextToApp"/>
     </nodes>
     <nodes xsi:type="language:TGGRuleCorr" name="u2l" domainType="CORR" bindingType="CREATE" outgoingEdges="//@rules.22/@edges.2 //@rules.22/@edges.3" source="//@rules.22/@nodes.1" target="//@rules.22/@nodes.3">
-      <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//OUserToLayout"/>
+      <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//UserToLayout"/>
     </nodes>
     <edges name="c2a__source__c_eMoflonEdge" domainType="CORR" srcNode="//@rules.22/@nodes.5" trgNode="//@rules.22/@nodes.0">
       <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//ContextToApp/source"/>
@@ -1209,10 +1212,10 @@
       <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//ContextToApp/target"/>
     </edges>
     <edges name="u2l__source__u_eMoflonEdge" domainType="CORR" bindingType="CREATE" srcNode="//@rules.22/@nodes.6" trgNode="//@rules.22/@nodes.1">
-      <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//OUserToLayout/source"/>
+      <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//UserToLayout/source"/>
     </edges>
     <edges name="u2l__target__l_eMoflonEdge" domainType="CORR" bindingType="CREATE" srcNode="//@rules.22/@nodes.6" trgNode="//@rules.22/@nodes.3">
-      <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//OUserToLayout/target"/>
+      <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//UserToLayout/target"/>
     </edges>
     <edges name="c__usercontext__u_eMoflonEdge" bindingType="CREATE" srcNode="//@rules.22/@nodes.0" trgNode="//@rules.22/@nodes.1">
       <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context/usercontext"/>
@@ -1249,7 +1252,7 @@
       <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//ContextToApp"/>
     </nodes>
     <nodes xsi:type="language:TGGRuleCorr" name="u2l" domainType="CORR" bindingType="CREATE" outgoingEdges="//@rules.23/@edges.2 //@rules.23/@edges.3" source="//@rules.23/@nodes.1" target="//@rules.23/@nodes.3">
-      <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//YUserToLayout"/>
+      <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//UserToLayout"/>
     </nodes>
     <edges name="c2a__source__c_eMoflonEdge" domainType="CORR" srcNode="//@rules.23/@nodes.5" trgNode="//@rules.23/@nodes.0">
       <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//ContextToApp/source"/>
@@ -1258,10 +1261,10 @@
       <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//ContextToApp/target"/>
     </edges>
     <edges name="u2l__source__u_eMoflonEdge" domainType="CORR" bindingType="CREATE" srcNode="//@rules.23/@nodes.6" trgNode="//@rules.23/@nodes.1">
-      <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//YUserToLayout/source"/>
+      <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//UserToLayout/source"/>
     </edges>
     <edges name="u2l__target__l_eMoflonEdge" domainType="CORR" bindingType="CREATE" srcNode="//@rules.23/@nodes.6" trgNode="//@rules.23/@nodes.3">
-      <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//YUserToLayout/target"/>
+      <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//UserToLayout/target"/>
     </edges>
     <edges name="c__usercontext__u_eMoflonEdge" bindingType="CREATE" srcNode="//@rules.23/@nodes.0" trgNode="//@rules.23/@nodes.1">
       <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context/usercontext"/>
@@ -1285,7 +1288,10 @@
       <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Activity"/>
       <attrExpr>
         <attribute href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Activity/activityEnum"/>
-        <valueExpr xsi:type="language:TGGLiteralExpression" value="&quot;Driving&quot;"/>
+        <valueExpr xsi:type="language:TGGEnumExpression">
+          <eenum href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//ActivityEnum"/>
+          <literal href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//ActivityEnum/Driving"/>
+        </valueExpr>
       </attrExpr>
     </nodes>
     <nodes name="a" domainType="TRG" incomingEdges="//@rules.24/@edges.1" outgoingEdges="//@rules.24/@edges.6" incomingCorrsTarget="//@rules.24/@nodes.6">
@@ -1344,7 +1350,10 @@
       <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Activity"/>
       <attrExpr>
         <attribute href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Activity/activityEnum"/>
-        <valueExpr xsi:type="language:TGGLiteralExpression" value="&quot;Standing&quot;"/>
+        <valueExpr xsi:type="language:TGGEnumExpression">
+          <eenum href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//ActivityEnum"/>
+          <literal href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//ActivityEnum/Standing"/>
+        </valueExpr>
       </attrExpr>
     </nodes>
     <nodes name="a" domainType="TRG" incomingEdges="//@rules.25/@edges.1" outgoingEdges="//@rules.25/@edges.6" incomingCorrsTarget="//@rules.25/@nodes.6">
@@ -1496,7 +1505,10 @@
       <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Activity"/>
       <attrExpr>
         <attribute href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Activity/activityEnum"/>
-        <valueExpr xsi:type="language:TGGLiteralExpression" value="&quot;Standing&quot;"/>
+        <valueExpr xsi:type="language:TGGEnumExpression">
+          <eenum href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//ActivityEnum"/>
+          <literal href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//ActivityEnum/Standing"/>
+        </valueExpr>
       </attrExpr>
     </nodes>
     <nodes name="a" domainType="TRG" incomingEdges="//@rules.27/@edges.1" outgoingEdges="//@rules.27/@edges.6" incomingCorrsTarget="//@rules.27/@nodes.5">
@@ -1558,7 +1570,7 @@
       <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//ContextToApp"/>
     </nodes>
     <nodes xsi:type="language:TGGRuleCorr" name="u2minav" domainType="CORR" bindingType="CREATE" outgoingEdges="//@rules.28/@edges.2 //@rules.28/@edges.3" source="//@rules.28/@nodes.1" target="//@rules.28/@nodes.4">
-      <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//UserToMinNav"/>
+      <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//UserToNavigation"/>
     </nodes>
     <edges name="c2a__source__c_eMoflonEdge" domainType="CORR" srcNode="//@rules.28/@nodes.5" trgNode="//@rules.28/@nodes.0">
       <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//ContextToApp/source"/>
@@ -1567,10 +1579,10 @@
       <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//ContextToApp/target"/>
     </edges>
     <edges name="u2minav__source__u_eMoflonEdge" domainType="CORR" bindingType="CREATE" srcNode="//@rules.28/@nodes.6" trgNode="//@rules.28/@nodes.1">
-      <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//UserToMinNav/source"/>
+      <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//UserToNavigation/source"/>
     </edges>
     <edges name="u2minav__target__minav_eMoflonEdge" domainType="CORR" bindingType="CREATE" srcNode="//@rules.28/@nodes.6" trgNode="//@rules.28/@nodes.4">
-      <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//UserToMinNav/target"/>
+      <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//UserToNavigation/target"/>
     </edges>
     <edges name="c__usercontext__u_eMoflonEdge" srcNode="//@rules.28/@nodes.0" trgNode="//@rules.28/@nodes.1">
       <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context/usercontext"/>
@@ -1603,7 +1615,7 @@
       <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//ContextToApp"/>
     </nodes>
     <nodes xsi:type="language:TGGRuleCorr" name="u2nav" domainType="CORR" bindingType="CREATE" outgoingEdges="//@rules.29/@edges.2 //@rules.29/@edges.3" source="//@rules.29/@nodes.1" target="//@rules.29/@nodes.4">
-      <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//UserToLessNav"/>
+      <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//UserToNavigation"/>
     </nodes>
     <edges name="c2a__source__c_eMoflonEdge" domainType="CORR" srcNode="//@rules.29/@nodes.5" trgNode="//@rules.29/@nodes.0">
       <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//ContextToApp/source"/>
@@ -1612,10 +1624,10 @@
       <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//ContextToApp/target"/>
     </edges>
     <edges name="u2nav__source__u_eMoflonEdge" domainType="CORR" bindingType="CREATE" srcNode="//@rules.29/@nodes.6" trgNode="//@rules.29/@nodes.1">
-      <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//UserToLessNav/source"/>
+      <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//UserToNavigation/source"/>
     </edges>
     <edges name="u2nav__target__lesnav_eMoflonEdge" domainType="CORR" bindingType="CREATE" srcNode="//@rules.29/@nodes.6" trgNode="//@rules.29/@nodes.4">
-      <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//UserToLessNav/target"/>
+      <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//UserToNavigation/target"/>
     </edges>
     <edges name="c__usercontext__u_eMoflonEdge" srcNode="//@rules.29/@nodes.0" trgNode="//@rules.29/@nodes.1">
       <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context/usercontext"/>
@@ -1648,7 +1660,7 @@
       <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//ContextToApp"/>
     </nodes>
     <nodes xsi:type="language:TGGRuleCorr" name="u2nav" domainType="CORR" bindingType="CREATE" outgoingEdges="//@rules.30/@edges.2 //@rules.30/@edges.3" source="//@rules.30/@nodes.1" target="//@rules.30/@nodes.4">
-      <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//UserToMoreNav"/>
+      <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//UserToNavigation"/>
     </nodes>
     <edges name="c2a__source__c_eMoflonEdge" domainType="CORR" srcNode="//@rules.30/@nodes.5" trgNode="//@rules.30/@nodes.0">
       <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//ContextToApp/source"/>
@@ -1657,10 +1669,10 @@
       <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//ContextToApp/target"/>
     </edges>
     <edges name="u2nav__source__u_eMoflonEdge" domainType="CORR" bindingType="CREATE" srcNode="//@rules.30/@nodes.6" trgNode="//@rules.30/@nodes.1">
-      <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//UserToMoreNav/source"/>
+      <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//UserToNavigation/source"/>
     </edges>
     <edges name="u2nav__target__mornav_eMoflonEdge" domainType="CORR" bindingType="CREATE" srcNode="//@rules.30/@nodes.6" trgNode="//@rules.30/@nodes.4">
-      <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//UserToMoreNav/target"/>
+      <type href="platform:/resource/UserToUI/model/UserToUI.ecore#//UserToNavigation/target"/>
     </edges>
     <edges name="c__usercontext__u_eMoflonEdge" srcNode="//@rules.30/@nodes.0" trgNode="//@rules.30/@nodes.1">
       <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Context/usercontext"/>

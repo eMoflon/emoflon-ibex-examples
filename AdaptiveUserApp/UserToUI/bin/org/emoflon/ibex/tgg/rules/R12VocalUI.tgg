@@ -11,7 +11,7 @@
 		++ -activity->ac
 	}
 	++ ac:Activity{
-		activityEnum := "Moving" 
+		activityEnum := enum::ActivityEnum::Moving
 }
 
 }

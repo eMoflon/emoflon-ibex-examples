@@ -27,7 +27,7 @@
 		#src->c
 		#trg->a
 	}
-	++ u2l:YUserToLayout{
+	++ u2l:UserToLayout{
 		#src->u
 		#trg->l
 	}

@@ -29,7 +29,7 @@
 		#src->c
 		#trg->a
 	}
-	u2nav:UserToMoreNav{
+	u2nav:UserToNavigation{
 		#src->u
 		#trg->nav
 	}

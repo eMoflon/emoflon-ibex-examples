@@ -14,7 +14,6 @@ class User{
 	ref UsageTime[1..1] time;
 	ref Vision vision;
 	
-	attr EString Name;
 	attr EInt Age;
 }
 
@@ -43,19 +42,12 @@ class Reducedvision extends Vision{
 	
 }
 
-abstract class Mood{
+class Mood{
 	 
 }
 
 class Badmood extends Mood{
-	attr BadEnum badEnum;
-}
-
-enum BadEnum{
-	Anger;
-	Sadness;
-	Disguss;
-	Contempt;	
+	
 }
 
 class Goodmood extends Mood{
@@ -66,7 +58,7 @@ class Neutralmood extends Mood{
 	
 }
 
-abstract class ExperienceLevel{
+class ExperienceLevel{
 	
 }
 
@@ -83,19 +75,16 @@ class Intermediate extends ExperienceLevel{
 }
 
 class UsageTime{
-	attr EInt usetime;
+	
 }
 
 class Environment{
 	ref Ambientlight[1..1] light;
 	ref Time[1..1] time;
 	ref Activity activity;
-	
-	
-	
 }
 
-abstract class ConnectionSpeed{
+class ConnectionSpeed{
 
 }
 
@@ -122,10 +111,6 @@ class Wifi{
 
 class Cellular{
 	val ConnectionSpeed ConnectionSpeed;
-}
-
-class Charging{
-	attr EBoolean unit;
 }
 
 class Ambientlight{
@@ -166,9 +151,9 @@ class Activity{
 }
 
 enum ActivityEnum{
-	Moving = 0;
-	Driving = 1;
-	Standing = 2;
+	Moving;
+	Driving;
+	Standing;
 }
 
 class Platform{
@@ -179,19 +164,17 @@ class Platform{
 	val DeviceHardware[0..1] hardware;
 	
 	val ConnectionType connectionType;
-	ref Charging charging;
 	
 }
 
-abstract class DeviceHardware{
+class DeviceHardware{
 	
 }
 
 class Camera extends DeviceHardware{
-	attr EBoolean enable;
 }
 
-class ScreenDimension{
+abstract class ScreenDimension{
 	attr EInt ScreenHeight;
 	attr EInt ScreenWidth;
 }
@@ -209,7 +192,7 @@ class LowBatterymode extends Batterymode{
 	
 }
 
-abstract class Devicetype{
+class Devicetype{
 	
 }
 

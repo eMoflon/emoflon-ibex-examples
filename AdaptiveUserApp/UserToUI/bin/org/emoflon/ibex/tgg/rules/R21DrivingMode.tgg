@@ -11,7 +11,7 @@
 		++ -activity->ac
 	}
 	++ ac:Activity{
-		activityEnum := "Driving"
+		activityEnum := enum:: ActivityEnum::Driving
 	}
 }
 

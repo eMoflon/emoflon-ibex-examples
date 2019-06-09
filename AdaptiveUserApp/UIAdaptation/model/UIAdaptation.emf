@@ -20,7 +20,6 @@ abstract class NaviType{
 }
 
 class GridNav extends NaviType{
-	attr EBoolean activate;
 }
 
 class DefaultNav extends NaviType{
@@ -28,7 +27,6 @@ class DefaultNav extends NaviType{
 }
 
 class TabletNav extends NaviType{
-	attr EBoolean activate;
 }
 
 class MinimumNavigation extends Navigation{
@@ -36,11 +34,9 @@ class MinimumNavigation extends Navigation{
 }
 
 class LessInformedNav extends Navigation{
-	
 }
 
 class MoreInformedNav extends Navigation{
-	
 }
 
 class FeedbackBar{
@@ -83,7 +79,7 @@ class MiddleSize extends FontSize{
 	
 }
 
-abstract class ColorScheme{
+class ColorScheme{
 	attr EBoolean BlacknWhiteMode;
 	attr EBoolean NightMode;
 	
@@ -114,18 +110,8 @@ class TaskFeature{
 	attr EBoolean VocalUI;
 }
 
-abstract class Menu{
-	attr MenuEnum menuEnum;
-}
-
-enum MenuEnum{
-	Inbox;
-	Drafts;
-	Sent;
-	Spam;
-	Trash;
-	Setting;
-	Logout;
+class Menu{
+	
 }
 
 class Attachments{
@@ -144,7 +130,7 @@ class ShowEmail{
 	ref EmailForm[0..1] emailForm;
 }
 
-abstract class WriteEmail{
+class WriteEmail{
 }
 
 class EmailForm{

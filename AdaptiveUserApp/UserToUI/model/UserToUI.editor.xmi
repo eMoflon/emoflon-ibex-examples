@@ -13,18 +13,6 @@
       <source href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//User"/>
       <target href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Navigation"/>
     </correspondenceTypes>
-    <correspondenceTypes name="UserToMinNav">
-      <source href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//User"/>
-      <target href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//MinimumNavigation"/>
-    </correspondenceTypes>
-    <correspondenceTypes name="UserToLessNav">
-      <source href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//User"/>
-      <target href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//LessInformedNav"/>
-    </correspondenceTypes>
-    <correspondenceTypes name="UserToMoreNav">
-      <source href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//User"/>
-      <target href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//MoreInformedNav"/>
-    </correspondenceTypes>
     <correspondenceTypes name="EnviroToLay">
       <source href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Environment"/>
       <target href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Layout"/>
@@ -32,18 +20,6 @@
     <correspondenceTypes name="EnviroToFeature">
       <source href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Environment"/>
       <target href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//TaskFeature"/>
-    </correspondenceTypes>
-    <correspondenceTypes name="MUserToLayout">
-      <source href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//MiddleAgeUser"/>
-      <target href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Layout"/>
-    </correspondenceTypes>
-    <correspondenceTypes name="OUserToLayout">
-      <source href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//OldAgeUser"/>
-      <target href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Layout"/>
-    </correspondenceTypes>
-    <correspondenceTypes name="YUserToLayout">
-      <source href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//YoungerUser"/>
-      <target href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Layout"/>
     </correspondenceTypes>
     <correspondenceTypes name="UserToLayout">
       <source href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//User"/>
@@ -122,7 +98,7 @@
       <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Layout"/>
     </targetPatterns>
     <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.0/@sourcePatterns.0" target="//@rules.0/@targetPatterns.0"/>
-    <correspondencePatterns name="e2l" type="//@schema/@correspondenceTypes.5" source="//@rules.0/@sourcePatterns.1" target="//@rules.0/@targetPatterns.1"/>
+    <correspondencePatterns name="e2l" type="//@schema/@correspondenceTypes.2" source="//@rules.0/@sourcePatterns.1" target="//@rules.0/@targetPatterns.1"/>
   </rules>
   <rules name="R7LowLight" supertypes="//@rules.0" schema="//@schema">
     <sourcePatterns name="e">
@@ -279,25 +255,25 @@
     <correspondencePatterns name="u2nav" type="//@schema/@correspondenceTypes.1" source="//@rules.4/@sourcePatterns.3" target="//@rules.4/@targetPatterns.2">
       <op value="++"/>
     </correspondencePatterns>
-    <correspondencePatterns name="e2l" type="//@schema/@correspondenceTypes.5" source="//@rules.4/@sourcePatterns.1" target="//@rules.4/@targetPatterns.1">
+    <correspondencePatterns name="e2l" type="//@schema/@correspondenceTypes.2" source="//@rules.4/@sourcePatterns.1" target="//@rules.4/@targetPatterns.1">
       <op value="++"/>
     </correspondencePatterns>
-    <correspondencePatterns name="e2t" type="//@schema/@correspondenceTypes.6" source="//@rules.4/@sourcePatterns.1" target="//@rules.4/@targetPatterns.3">
+    <correspondencePatterns name="e2t" type="//@schema/@correspondenceTypes.3" source="//@rules.4/@sourcePatterns.1" target="//@rules.4/@targetPatterns.3">
       <op value="++"/>
     </correspondencePatterns>
-    <correspondencePatterns name="p2nav" type="//@schema/@correspondenceTypes.11" source="//@rules.4/@sourcePatterns.2" target="//@rules.4/@targetPatterns.2">
+    <correspondencePatterns name="p2nav" type="//@schema/@correspondenceTypes.5" source="//@rules.4/@sourcePatterns.2" target="//@rules.4/@targetPatterns.2">
       <op value="++"/>
     </correspondencePatterns>
-    <correspondencePatterns name="e2nav" type="//@schema/@correspondenceTypes.12" source="//@rules.4/@sourcePatterns.1" target="//@rules.4/@targetPatterns.2">
+    <correspondencePatterns name="e2nav" type="//@schema/@correspondenceTypes.6" source="//@rules.4/@sourcePatterns.1" target="//@rules.4/@targetPatterns.2">
       <op value="++"/>
     </correspondencePatterns>
-    <correspondencePatterns name="p2l" type="//@schema/@correspondenceTypes.13" source="//@rules.4/@sourcePatterns.2" target="//@rules.4/@targetPatterns.1">
+    <correspondencePatterns name="p2l" type="//@schema/@correspondenceTypes.7" source="//@rules.4/@sourcePatterns.2" target="//@rules.4/@targetPatterns.1">
       <op value="++"/>
     </correspondencePatterns>
-    <correspondencePatterns name="p2t" type="//@schema/@correspondenceTypes.14" source="//@rules.4/@sourcePatterns.2" target="//@rules.4/@targetPatterns.3">
+    <correspondencePatterns name="p2t" type="//@schema/@correspondenceTypes.8" source="//@rules.4/@sourcePatterns.2" target="//@rules.4/@targetPatterns.3">
       <op value="++"/>
     </correspondencePatterns>
-    <correspondencePatterns name="u2l" type="//@schema/@correspondenceTypes.10" source="//@rules.4/@sourcePatterns.3" target="//@rules.4/@targetPatterns.1">
+    <correspondencePatterns name="u2l" type="//@schema/@correspondenceTypes.4" source="//@rules.4/@sourcePatterns.3" target="//@rules.4/@targetPatterns.1">
       <op value="++"/>
     </correspondencePatterns>
   </rules>
@@ -343,7 +319,7 @@
       </attributeConstraints>
     </targetPatterns>
     <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.5/@sourcePatterns.0" target="//@rules.5/@targetPatterns.0"/>
-    <correspondencePatterns name="p2l" type="//@schema/@correspondenceTypes.13" source="//@rules.5/@sourcePatterns.1" target="//@rules.5/@targetPatterns.1"/>
+    <correspondencePatterns name="p2l" type="//@schema/@correspondenceTypes.7" source="//@rules.5/@sourcePatterns.1" target="//@rules.5/@targetPatterns.1"/>
     <attrConditions name="//@schema/@attributeCondDefs.0">
       <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.5/@sourcePatterns.2">
         <attribute href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Batterymode/Charging"/>
@@ -393,7 +369,7 @@
       </attributeConstraints>
     </targetPatterns>
     <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.6/@sourcePatterns.0" target="//@rules.6/@targetPatterns.0"/>
-    <correspondencePatterns name="p2l" type="//@schema/@correspondenceTypes.13" source="//@rules.6/@sourcePatterns.1" target="//@rules.6/@targetPatterns.1"/>
+    <correspondencePatterns name="p2l" type="//@schema/@correspondenceTypes.7" source="//@rules.6/@sourcePatterns.1" target="//@rules.6/@targetPatterns.1"/>
     <attrConditions name="//@schema/@attributeCondDefs.0">
       <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.6/@sourcePatterns.2">
         <attribute href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Batterymode/Charging"/>
@@ -421,7 +397,7 @@
       <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Navigation"/>
     </targetPatterns>
     <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.7/@sourcePatterns.0" target="//@rules.7/@targetPatterns.0"/>
-    <correspondencePatterns name="p2nav" type="//@schema/@correspondenceTypes.11" source="//@rules.7/@sourcePatterns.1" target="//@rules.7/@targetPatterns.1"/>
+    <correspondencePatterns name="p2nav" type="//@schema/@correspondenceTypes.5" source="//@rules.7/@sourcePatterns.1" target="//@rules.7/@targetPatterns.1"/>
   </rules>
   <rules name="R19Smartphone" supertypes="//@rules.7" schema="//@schema">
     <sourcePatterns name="p">
@@ -505,7 +481,7 @@
       <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//GridNav"/>
     </targetPatterns>
     <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.10/@sourcePatterns.0" target="//@rules.10/@targetPatterns.0"/>
-    <correspondencePatterns name="u2nav" type="//@schema/@correspondenceTypes.4" source="//@rules.10/@sourcePatterns.1" target="//@rules.10/@targetPatterns.1"/>
+    <correspondencePatterns name="u2nav" type="//@schema/@correspondenceTypes.1" source="//@rules.10/@sourcePatterns.1" target="//@rules.10/@targetPatterns.1"/>
   </rules>
   <rules name="R18ExperiencedUser" schema="//@schema">
     <sourcePatterns name="c">
@@ -613,7 +589,7 @@
       <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//HTML"/>
     </targetPatterns>
     <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.12/@sourcePatterns.0" target="//@rules.12/@targetPatterns.0"/>
-    <correspondencePatterns name="p2ts" type="//@schema/@correspondenceTypes.14" source="//@rules.12/@sourcePatterns.1" target="//@rules.12/@targetPatterns.1"/>
+    <correspondencePatterns name="p2ts" type="//@schema/@correspondenceTypes.8" source="//@rules.12/@sourcePatterns.1" target="//@rules.12/@targetPatterns.1"/>
   </rules>
   <rules name="R27SlowMobileNetConnectionRule" schema="//@schema">
     <sourcePatterns name="c">
@@ -675,7 +651,7 @@
       <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//TextForm"/>
     </targetPatterns>
     <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.13/@sourcePatterns.0" target="//@rules.13/@targetPatterns.0"/>
-    <correspondencePatterns name="p2ts" type="//@schema/@correspondenceTypes.14" source="//@rules.13/@sourcePatterns.1" target="//@rules.13/@targetPatterns.1"/>
+    <correspondencePatterns name="p2ts" type="//@schema/@correspondenceTypes.8" source="//@rules.13/@sourcePatterns.1" target="//@rules.13/@targetPatterns.1"/>
   </rules>
   <rules name="R1BadMood" schema="//@schema">
     <sourcePatterns name="c">
@@ -857,7 +833,7 @@
       </attributeConstraints>
     </targetPatterns>
     <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.17/@sourcePatterns.0" target="//@rules.17/@targetPatterns.0"/>
-    <correspondencePatterns name="e2l" type="//@schema/@correspondenceTypes.5" source="//@rules.17/@sourcePatterns.1" target="//@rules.17/@targetPatterns.1"/>
+    <correspondencePatterns name="e2l" type="//@schema/@correspondenceTypes.2" source="//@rules.17/@sourcePatterns.1" target="//@rules.17/@targetPatterns.1"/>
   </rules>
   <rules name="R11NightModeRule" schema="//@schema">
     <sourcePatterns name="c">
@@ -901,7 +877,7 @@
       <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//NightModeScheme"/>
     </targetPatterns>
     <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.18/@sourcePatterns.0" target="//@rules.18/@targetPatterns.0"/>
-    <correspondencePatterns name="e2l" type="//@schema/@correspondenceTypes.5" source="//@rules.18/@sourcePatterns.1" target="//@rules.18/@targetPatterns.1"/>
+    <correspondencePatterns name="e2l" type="//@schema/@correspondenceTypes.2" source="//@rules.18/@sourcePatterns.1" target="//@rules.18/@targetPatterns.1"/>
     <attrConditions name="//@schema/@attributeCondDefs.0">
       <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.18/@targetPatterns.2">
         <attribute href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//ColorScheme/NightMode"/>
@@ -928,7 +904,10 @@
       <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Activity"/>
       <attributeAssignments op=":=">
         <attribute href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Activity/activityEnum"/>
-        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;Moving&quot;"/>
+        <valueExp xsi:type="tgg:EnumExpression">
+          <eenum href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//ActivityEnum"/>
+          <literal href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//ActivityEnum/Moving"/>
+        </valueExp>
       </attributeAssignments>
     </sourcePatterns>
     <targetPatterns name="a">
@@ -953,7 +932,7 @@
       <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//ReadEmail"/>
     </targetPatterns>
     <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.19/@sourcePatterns.0" target="//@rules.19/@targetPatterns.0"/>
-    <correspondencePatterns name="e2t" type="//@schema/@correspondenceTypes.6" source="//@rules.19/@sourcePatterns.1" target="//@rules.19/@targetPatterns.1"/>
+    <correspondencePatterns name="e2t" type="//@schema/@correspondenceTypes.3" source="//@rules.19/@sourcePatterns.1" target="//@rules.19/@targetPatterns.1"/>
   </rules>
   <rules name="R13ImpairedVision" schema="//@schema">
     <sourcePatterns name="c">
@@ -991,7 +970,7 @@
       <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//LargeSize"/>
     </targetPatterns>
     <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.20/@sourcePatterns.0" target="//@rules.20/@targetPatterns.0"/>
-    <correspondencePatterns name="u2l" type="//@schema/@correspondenceTypes.10" source="//@rules.20/@sourcePatterns.1" target="//@rules.20/@targetPatterns.1"/>
+    <correspondencePatterns name="u2l" type="//@schema/@correspondenceTypes.4" source="//@rules.20/@sourcePatterns.1" target="//@rules.20/@targetPatterns.1"/>
   </rules>
   <rules name="R14MiddleAgedUser" schema="//@schema">
     <sourcePatterns name="c">
@@ -1031,7 +1010,7 @@
       <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//MiddleSize"/>
     </targetPatterns>
     <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.21/@sourcePatterns.0" target="//@rules.21/@targetPatterns.0"/>
-    <correspondencePatterns name="u2l" type="//@schema/@correspondenceTypes.7" source="//@rules.21/@sourcePatterns.1" target="//@rules.21/@targetPatterns.1">
+    <correspondencePatterns name="u2l" type="//@schema/@correspondenceTypes.4" source="//@rules.21/@sourcePatterns.1" target="//@rules.21/@targetPatterns.1">
       <op value="++"/>
     </correspondencePatterns>
   </rules>
@@ -1069,7 +1048,7 @@
       <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//LargeSize"/>
     </targetPatterns>
     <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.22/@sourcePatterns.0" target="//@rules.22/@targetPatterns.0"/>
-    <correspondencePatterns name="u2l" type="//@schema/@correspondenceTypes.8" source="//@rules.22/@sourcePatterns.1" target="//@rules.22/@targetPatterns.1">
+    <correspondencePatterns name="u2l" type="//@schema/@correspondenceTypes.4" source="//@rules.22/@sourcePatterns.1" target="//@rules.22/@targetPatterns.1">
       <op value="++"/>
     </correspondencePatterns>
   </rules>
@@ -1107,7 +1086,7 @@
       <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//DefaultSize"/>
     </targetPatterns>
     <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.23/@sourcePatterns.0" target="//@rules.23/@targetPatterns.0"/>
-    <correspondencePatterns name="u2l" type="//@schema/@correspondenceTypes.9" source="//@rules.23/@sourcePatterns.1" target="//@rules.23/@targetPatterns.1">
+    <correspondencePatterns name="u2l" type="//@schema/@correspondenceTypes.4" source="//@rules.23/@sourcePatterns.1" target="//@rules.23/@targetPatterns.1">
       <op value="++"/>
     </correspondencePatterns>
   </rules>
@@ -1130,7 +1109,10 @@
       <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Activity"/>
       <attributeAssignments op=":=">
         <attribute href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Activity/activityEnum"/>
-        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;Driving&quot;"/>
+        <valueExp xsi:type="tgg:EnumExpression">
+          <eenum href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//ActivityEnum"/>
+          <literal href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//ActivityEnum/Driving"/>
+        </valueExp>
       </attributeAssignments>
     </sourcePatterns>
     <targetPatterns name="a">
@@ -1153,7 +1135,7 @@
       <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//GridNav"/>
     </targetPatterns>
     <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.24/@sourcePatterns.0" target="//@rules.24/@targetPatterns.0"/>
-    <correspondencePatterns name="e2nav" type="//@schema/@correspondenceTypes.12" source="//@rules.24/@sourcePatterns.1" target="//@rules.24/@targetPatterns.1"/>
+    <correspondencePatterns name="e2nav" type="//@schema/@correspondenceTypes.6" source="//@rules.24/@sourcePatterns.1" target="//@rules.24/@targetPatterns.1"/>
   </rules>
   <rules name="R22DeactivateDrivingMode" schema="//@schema">
     <sourcePatterns name="c">
@@ -1174,7 +1156,10 @@
       <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Activity"/>
       <attributeAssignments op=":=">
         <attribute href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Activity/activityEnum"/>
-        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;Standing&quot;"/>
+        <valueExp xsi:type="tgg:EnumExpression">
+          <eenum href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//ActivityEnum"/>
+          <literal href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//ActivityEnum/Standing"/>
+        </valueExp>
       </attributeAssignments>
     </sourcePatterns>
     <targetPatterns name="a">
@@ -1197,7 +1182,7 @@
       <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//DefaultNav"/>
     </targetPatterns>
     <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.25/@sourcePatterns.0" target="//@rules.25/@targetPatterns.0"/>
-    <correspondencePatterns name="e2nav" type="//@schema/@correspondenceTypes.12" source="//@rules.25/@sourcePatterns.1" target="//@rules.25/@targetPatterns.1"/>
+    <correspondencePatterns name="e2nav" type="//@schema/@correspondenceTypes.6" source="//@rules.25/@sourcePatterns.1" target="//@rules.25/@targetPatterns.1"/>
   </rules>
   <rules name="R25WiFi" schema="//@schema">
     <sourcePatterns name="c">
@@ -1283,7 +1268,7 @@
       <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//AutoDownload"/>
     </targetPatterns>
     <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.26/@sourcePatterns.0" target="//@rules.26/@targetPatterns.0"/>
-    <correspondencePatterns name="p2ts" type="//@schema/@correspondenceTypes.14" source="//@rules.26/@sourcePatterns.1" target="//@rules.26/@targetPatterns.1"/>
+    <correspondencePatterns name="p2ts" type="//@schema/@correspondenceTypes.8" source="//@rules.26/@sourcePatterns.1" target="//@rules.26/@targetPatterns.1"/>
     <attrConditions name="//@schema/@attributeCondDefs.0">
       <values xsi:type="tgg:AttributeExpression" objectVar="//@rules.26/@targetPatterns.7">
         <attribute href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//AutoDownload/enable"/>
@@ -1310,7 +1295,10 @@
       <type href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Activity"/>
       <attributeAssignments op=":=">
         <attribute href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//Activity/activityEnum"/>
-        <valueExp xsi:type="tgg:LiteralExpression" value="&quot;Standing&quot;"/>
+        <valueExp xsi:type="tgg:EnumExpression">
+          <eenum href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//ActivityEnum"/>
+          <literal href="platform:/resource/UserEnviro/model/UserEnviro.ecore#//ActivityEnum/Standing"/>
+        </valueExp>
       </attributeAssignments>
     </sourcePatterns>
     <targetPatterns name="a">
@@ -1327,7 +1315,7 @@
       </attributeConstraints>
     </targetPatterns>
     <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.27/@sourcePatterns.0" target="//@rules.27/@targetPatterns.0"/>
-    <correspondencePatterns name="e2ts" type="//@schema/@correspondenceTypes.6" source="//@rules.27/@sourcePatterns.1" target="//@rules.27/@targetPatterns.1"/>
+    <correspondencePatterns name="e2ts" type="//@schema/@correspondenceTypes.3" source="//@rules.27/@sourcePatterns.1" target="//@rules.27/@targetPatterns.1"/>
   </rules>
   <rules name="R4MinimalisticUserInterface" schema="//@schema">
     <sourcePatterns name="c">
@@ -1359,7 +1347,7 @@
       <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//MinimumNavigation"/>
     </targetPatterns>
     <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.28/@sourcePatterns.0" target="//@rules.28/@targetPatterns.0"/>
-    <correspondencePatterns name="u2minav" type="//@schema/@correspondenceTypes.2" source="//@rules.28/@sourcePatterns.1" target="//@rules.28/@targetPatterns.1">
+    <correspondencePatterns name="u2minav" type="//@schema/@correspondenceTypes.1" source="//@rules.28/@sourcePatterns.1" target="//@rules.28/@targetPatterns.1">
       <op value="++"/>
     </correspondencePatterns>
   </rules>
@@ -1393,7 +1381,7 @@
       <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//LessInformedNav"/>
     </targetPatterns>
     <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.29/@sourcePatterns.0" target="//@rules.29/@targetPatterns.0"/>
-    <correspondencePatterns name="u2nav" type="//@schema/@correspondenceTypes.3" source="//@rules.29/@sourcePatterns.1" target="//@rules.29/@targetPatterns.1">
+    <correspondencePatterns name="u2nav" type="//@schema/@correspondenceTypes.1" source="//@rules.29/@sourcePatterns.1" target="//@rules.29/@targetPatterns.1">
       <op value="++"/>
     </correspondencePatterns>
   </rules>
@@ -1427,7 +1415,7 @@
       <type href="platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//MoreInformedNav"/>
     </targetPatterns>
     <correspondencePatterns name="c2a" type="//@schema/@correspondenceTypes.0" source="//@rules.30/@sourcePatterns.0" target="//@rules.30/@targetPatterns.0"/>
-    <correspondencePatterns name="u2nav" type="//@schema/@correspondenceTypes.4" source="//@rules.30/@sourcePatterns.1" target="//@rules.30/@targetPatterns.1">
+    <correspondencePatterns name="u2nav" type="//@schema/@correspondenceTypes.1" source="//@rules.30/@sourcePatterns.1" target="//@rules.30/@targetPatterns.1">
       <op value="++"/>
     </correspondencePatterns>
   </rules>

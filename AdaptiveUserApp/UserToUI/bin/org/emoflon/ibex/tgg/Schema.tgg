@@ -22,21 +22,6 @@
 		#trg->UIAdaptation.Navigation
 	}
 	
-	UserToMinNav{
-		#src->User
-		#trg->MinimumNavigation
-	}
-	
-	UserToLessNav{
-		#src->User
-		#trg->LessInformedNav
-	}
-	
-	UserToMoreNav{
-		#src->User
-		#trg->MoreInformedNav
-	}
-	
 	EnviroToLay{
 		#src->Environment
 		#trg->Layout
@@ -45,21 +30,6 @@
 	EnviroToFeature{
 		#src->Environment
 		#trg->TaskFeature
-	}
-	
-	MUserToLayout{
-		#src->MiddleAgeUser
-		#trg->Layout
-	}
-	
-	OUserToLayout{
-		#src->OldAgeUser
-		#trg->Layout
-	}
-	
-	YUserToLayout{
-		#src->YoungerUser
-		#trg->Layout
 	}
 	
 	UserToLayout{

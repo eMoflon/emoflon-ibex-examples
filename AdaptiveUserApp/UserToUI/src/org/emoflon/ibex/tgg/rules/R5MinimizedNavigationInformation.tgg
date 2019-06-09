@@ -27,7 +27,7 @@
 		#trg->a
 	}
 	
-	++u2nav:UserToLessNav{
+	++u2nav:UserToNavigation{
 		#src->u
 		#trg->lesnav
 	}

@@ -10,18 +10,6 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="source" eType="ecore:EClass platform:/resource/UserEnviro/model/UserEnviro.ecore#//User"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="target" eType="ecore:EClass platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Navigation"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="UserToMinNav">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="source" eType="ecore:EClass platform:/resource/UserEnviro/model/UserEnviro.ecore#//User"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="target" eType="ecore:EClass platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//MinimumNavigation"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="UserToLessNav">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="source" eType="ecore:EClass platform:/resource/UserEnviro/model/UserEnviro.ecore#//User"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="target" eType="ecore:EClass platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//LessInformedNav"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="UserToMoreNav">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="source" eType="ecore:EClass platform:/resource/UserEnviro/model/UserEnviro.ecore#//User"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="target" eType="ecore:EClass platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//MoreInformedNav"/>
-  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="EnviroToLay">
     <eStructuralFeatures xsi:type="ecore:EReference" name="source" eType="ecore:EClass platform:/resource/UserEnviro/model/UserEnviro.ecore#//Environment"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="target" eType="ecore:EClass platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Layout"/>
@@ -29,18 +17,6 @@
   <eClassifiers xsi:type="ecore:EClass" name="EnviroToFeature">
     <eStructuralFeatures xsi:type="ecore:EReference" name="source" eType="ecore:EClass platform:/resource/UserEnviro/model/UserEnviro.ecore#//Environment"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="target" eType="ecore:EClass platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//TaskFeature"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="MUserToLayout">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="source" eType="ecore:EClass platform:/resource/UserEnviro/model/UserEnviro.ecore#//MiddleAgeUser"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="target" eType="ecore:EClass platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Layout"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="OUserToLayout">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="source" eType="ecore:EClass platform:/resource/UserEnviro/model/UserEnviro.ecore#//OldAgeUser"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="target" eType="ecore:EClass platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Layout"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="YUserToLayout">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="source" eType="ecore:EClass platform:/resource/UserEnviro/model/UserEnviro.ecore#//YoungerUser"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="target" eType="ecore:EClass platform:/resource/UIAdaptation/model/UIAdaptation.ecore#//Layout"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="UserToLayout">
     <eStructuralFeatures xsi:type="ecore:EReference" name="source" eType="ecore:EClass platform:/resource/UserEnviro/model/UserEnviro.ecore#//User"/>
@@ -188,7 +164,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__CORR__c2a" lowerBound="1"
         eType="ecore:EClass platform:/resource/UserToUI/model/UserToUI.ecore#//ContextToApp"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__CORR__u2l" lowerBound="1"
-        eType="ecore:EClass platform:/resource/UserToUI/model/UserToUI.ecore#//MUserToLayout"/>
+        eType="ecore:EClass platform:/resource/UserToUI/model/UserToUI.ecore#//UserToLayout"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="R15OlderUser__Marker" eSuperTypes="platform:/plugin/org.emoflon.ibex.tgg.core.runtime/model/Runtime.ecore#//TGGRuleApplication">
     <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__SRC__c" lowerBound="1"
@@ -204,7 +180,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__CORR__c2a" lowerBound="1"
         eType="ecore:EClass platform:/resource/UserToUI/model/UserToUI.ecore#//ContextToApp"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__CORR__u2l" lowerBound="1"
-        eType="ecore:EClass platform:/resource/UserToUI/model/UserToUI.ecore#//OUserToLayout"/>
+        eType="ecore:EClass platform:/resource/UserToUI/model/UserToUI.ecore#//UserToLayout"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="R16YoungerUser__Marker" eSuperTypes="platform:/plugin/org.emoflon.ibex.tgg.core.runtime/model/Runtime.ecore#//TGGRuleApplication">
     <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__SRC__c" lowerBound="1"
@@ -220,7 +196,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__CORR__c2a" lowerBound="1"
         eType="ecore:EClass platform:/resource/UserToUI/model/UserToUI.ecore#//ContextToApp"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__CORR__u2l" lowerBound="1"
-        eType="ecore:EClass platform:/resource/UserToUI/model/UserToUI.ecore#//YUserToLayout"/>
+        eType="ecore:EClass platform:/resource/UserToUI/model/UserToUI.ecore#//UserToLayout"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="R17InexperiencedUser__Marker" eSuperTypes="platform:/plugin/org.emoflon.ibex.tgg.core.runtime/model/Runtime.ecore#//TGGRuleApplication">
     <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__SRC__c" lowerBound="1"
@@ -238,7 +214,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__CORR__c2a" lowerBound="1"
         eType="ecore:EClass platform:/resource/UserToUI/model/UserToUI.ecore#//ContextToApp"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__CORR__u2nav" lowerBound="1"
-        eType="ecore:EClass platform:/resource/UserToUI/model/UserToUI.ecore#//UserToMoreNav"/>
+        eType="ecore:EClass platform:/resource/UserToUI/model/UserToUI.ecore#//UserToNavigation"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="R18ExperiencedUser__Marker" eSuperTypes="platform:/plugin/org.emoflon.ibex.tgg.core.runtime/model/Runtime.ecore#//TGGRuleApplication">
     <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__SRC__c" lowerBound="1"
@@ -543,7 +519,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__CORR__c2a" lowerBound="1"
         eType="ecore:EClass platform:/resource/UserToUI/model/UserToUI.ecore#//ContextToApp"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__CORR__u2minav"
-        lowerBound="1" eType="ecore:EClass platform:/resource/UserToUI/model/UserToUI.ecore#//UserToMinNav"/>
+        lowerBound="1" eType="ecore:EClass platform:/resource/UserToUI/model/UserToUI.ecore#//UserToNavigation"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="R5MinimizedNavigationInformation__Marker"
       eSuperTypes="platform:/plugin/org.emoflon.ibex.tgg.core.runtime/model/Runtime.ecore#//TGGRuleApplication">
@@ -560,7 +536,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__CORR__c2a" lowerBound="1"
         eType="ecore:EClass platform:/resource/UserToUI/model/UserToUI.ecore#//ContextToApp"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__CORR__u2nav" lowerBound="1"
-        eType="ecore:EClass platform:/resource/UserToUI/model/UserToUI.ecore#//UserToLessNav"/>
+        eType="ecore:EClass platform:/resource/UserToUI/model/UserToUI.ecore#//UserToNavigation"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="R6DisplayExtraInfo__Marker" eSuperTypes="platform:/plugin/org.emoflon.ibex.tgg.core.runtime/model/Runtime.ecore#//TGGRuleApplication">
     <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__SRC__c" lowerBound="1"
@@ -576,7 +552,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__CORR__c2a" lowerBound="1"
         eType="ecore:EClass platform:/resource/UserToUI/model/UserToUI.ecore#//ContextToApp"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__CORR__u2nav" lowerBound="1"
-        eType="ecore:EClass platform:/resource/UserToUI/model/UserToUI.ecore#//UserToMoreNav"/>
+        eType="ecore:EClass platform:/resource/UserToUI/model/UserToUI.ecore#//UserToNavigation"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="R7LowLight__Marker" eSuperTypes="platform:/plugin/org.emoflon.ibex.tgg.core.runtime/model/Runtime.ecore#//TGGRuleApplication">
     <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__SRC__c" lowerBound="1"

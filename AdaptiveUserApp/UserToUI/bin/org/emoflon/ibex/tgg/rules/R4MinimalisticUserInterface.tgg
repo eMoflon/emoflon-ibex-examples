@@ -32,7 +32,7 @@
 		#trg->a
 	}
 	
-	++u2minav:UserToMinNav{
+	++u2minav:UserToNavigation{
 		#src->u
 		#trg->minav
 	}
