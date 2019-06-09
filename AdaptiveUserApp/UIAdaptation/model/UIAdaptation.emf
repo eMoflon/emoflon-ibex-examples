@@ -110,7 +110,7 @@ class TaskFeature{
 	attr EBoolean VocalUI;
 }
 
-class Menu{
+abstract class Menu{
 	
 }
 
@@ -130,7 +130,7 @@ class ShowEmail{
 	ref EmailForm[0..1] emailForm;
 }
 
-class WriteEmail{
+abstract class WriteEmail{
 }
 
 class EmailForm{

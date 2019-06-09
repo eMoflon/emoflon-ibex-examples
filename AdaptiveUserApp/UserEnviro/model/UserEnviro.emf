@@ -42,7 +42,7 @@ class Reducedvision extends Vision{
 	
 }
 
-class Mood{
+abstract class Mood{
 	 
 }
 
@@ -58,7 +58,7 @@ class Neutralmood extends Mood{
 	
 }
 
-class ExperienceLevel{
+abstract class ExperienceLevel{
 	
 }
 
@@ -167,7 +167,7 @@ class Platform{
 	
 }
 
-class DeviceHardware{
+abstract class DeviceHardware{
 	
 }
 
@@ -192,7 +192,7 @@ class LowBatterymode extends Batterymode{
 	
 }
 
-class Devicetype{
+abstract class Devicetype{
 	
 }
 

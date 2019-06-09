@@ -64,7 +64,7 @@
         containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="VocalUI" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Menu"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Menu" abstract="true"/>
   <eClassifiers xsi:type="ecore:EClass" name="Attachments">
     <eStructuralFeatures xsi:type="ecore:EReference" name="autoDownload" eType="#//AutoDownload"/>
   </eClassifiers>
@@ -77,7 +77,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="ShowEmail">
     <eStructuralFeatures xsi:type="ecore:EReference" name="emailForm" eType="#//EmailForm"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="WriteEmail"/>
+  <eClassifiers xsi:type="ecore:EClass" name="WriteEmail" abstract="true"/>
   <eClassifiers xsi:type="ecore:EClass" name="EmailForm">
     <eStructuralFeatures xsi:type="ecore:EReference" name="html" eType="#//HTML" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="textForm" eType="#//TextForm"

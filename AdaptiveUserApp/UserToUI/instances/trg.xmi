@@ -1,1146 +1,128 @@
 <?xml version="1.0" encoding="ASCII"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UIAdaptation="platform:/resource/UIAdaptation/model/UIAdaptation.ecore">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:UIAdaptation="platform:/resource/UIAdaptation/model/UIAdaptation.ecore">
   <UIAdaptation:App>
-    <navigation menu="/103">
-      <button clickevent="/343"/>
-    </navigation>
-    <layout fontSize="/64">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/381"/>
-      <showEmail emailForm="/382"/>
-    </taskset>
+    <navigation/>
+    <layout/>
+    <taskset/>
   </UIAdaptation:App>
   <UIAdaptation:App>
-    <navigation menu="/59">
-      <button clickevent="/62"/>
-    </navigation>
-    <layout fontSize="/126">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/393"/>
-      <showEmail emailForm="/394"/>
-    </taskset>
+    <navigation/>
+    <layout/>
+    <taskset/>
   </UIAdaptation:App>
   <UIAdaptation:App>
-    <navigation menu="/60">
-      <button clickevent="/181"/>
-    </navigation>
-    <layout fontSize="/71">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/197"/>
-      <showEmail emailForm="/198"/>
-    </taskset>
+    <navigation/>
+    <layout/>
+    <taskset/>
   </UIAdaptation:App>
   <UIAdaptation:App>
-    <navigation menu="/158">
-      <button clickevent="/121"/>
-    </navigation>
-    <layout fontSize="/114">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/185"/>
-      <showEmail emailForm="/186"/>
-    </taskset>
+    <navigation/>
+    <layout/>
+    <taskset/>
   </UIAdaptation:App>
   <UIAdaptation:App>
-    <navigation menu="/249">
-      <button clickevent="/257"/>
-    </navigation>
-    <layout fontSize="/108">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/347"/>
-      <showEmail emailForm="/348"/>
-    </taskset>
+    <navigation/>
+    <layout/>
+    <taskset/>
   </UIAdaptation:App>
   <UIAdaptation:App>
-    <navigation menu="/183"/>
-    <layout fontSize="/104">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/306"/>
-      <showEmail emailForm="/307"/>
-    </taskset>
+    <navigation/>
+    <layout/>
+    <taskset/>
   </UIAdaptation:App>
   <UIAdaptation:App>
-    <navigation menu="/66"/>
-    <layout fontSize="/68">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/155"/>
-      <showEmail emailForm="/156"/>
-    </taskset>
+    <navigation/>
+    <layout/>
+    <taskset/>
   </UIAdaptation:App>
   <UIAdaptation:App>
-    <navigation menu="/189">
-      <button clickevent="/69"/>
-    </navigation>
-    <layout fontSize="/125">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/338"/>
-      <showEmail emailForm="/339"/>
-    </taskset>
+    <navigation/>
+    <layout/>
+    <taskset/>
   </UIAdaptation:App>
   <UIAdaptation:App>
-    <navigation menu="/163">
-      <button clickevent="/252"/>
-    </navigation>
-    <layout fontSize="/278">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/229"/>
-      <showEmail emailForm="/230"/>
-    </taskset>
+    <navigation/>
+    <layout/>
+    <taskset/>
   </UIAdaptation:App>
   <UIAdaptation:App>
-    <navigation menu="/98"/>
-    <layout fontSize="/188">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/90"/>
-      <showEmail emailForm="/91"/>
-    </taskset>
+    <navigation/>
+    <layout/>
+    <taskset/>
   </UIAdaptation:App>
   <UIAdaptation:App>
-    <navigation menu="/235">
-      <button clickevent="/173"/>
-    </navigation>
-    <layout fontSize="/157">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/388"/>
-      <showEmail emailForm="/389"/>
-    </taskset>
+    <navigation/>
+    <layout/>
+    <taskset/>
   </UIAdaptation:App>
   <UIAdaptation:App>
-    <navigation menu="/262">
-      <button clickevent="/264"/>
-    </navigation>
-    <layout fontSize="/144">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/324"/>
-      <showEmail emailForm="/325"/>
-    </taskset>
+    <navigation/>
+    <layout/>
+    <taskset/>
   </UIAdaptation:App>
   <UIAdaptation:App>
-    <navigation menu="/236"/>
-    <layout fontSize="/246">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/353"/>
-      <showEmail emailForm="/354"/>
-    </taskset>
+    <navigation/>
+    <layout/>
+    <taskset/>
   </UIAdaptation:App>
   <UIAdaptation:App>
-    <navigation menu="/119"/>
-    <layout fontSize="/67">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/350"/>
-      <showEmail emailForm="/351"/>
-    </taskset>
+    <navigation/>
+    <layout/>
+    <taskset/>
   </UIAdaptation:App>
   <UIAdaptation:App>
-    <navigation menu="/280">
-      <button clickevent="/332"/>
-    </navigation>
-    <layout fontSize="/65">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/371"/>
-      <showEmail emailForm="/372"/>
-    </taskset>
+    <navigation/>
+    <layout/>
+    <taskset/>
   </UIAdaptation:App>
   <UIAdaptation:App>
-    <navigation menu="/242">
-      <button clickevent="/135"/>
-    </navigation>
-    <layout fontSize="/110">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/212"/>
-      <showEmail emailForm="/213"/>
-    </taskset>
+    <navigation/>
+    <layout/>
+    <taskset/>
   </UIAdaptation:App>
   <UIAdaptation:App>
-    <navigation menu="/288">
-      <button clickevent="/94"/>
-    </navigation>
-    <layout fontSize="/296">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/357"/>
-      <showEmail emailForm="/358"/>
-    </taskset>
+    <navigation/>
+    <layout/>
+    <taskset/>
   </UIAdaptation:App>
   <UIAdaptation:App>
-    <navigation menu="/290"/>
-    <layout fontSize="/118">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/87"/>
-      <showEmail emailForm="/88"/>
-    </taskset>
+    <navigation/>
+    <layout/>
+    <taskset/>
   </UIAdaptation:App>
   <UIAdaptation:App>
-    <navigation menu="/190"/>
-    <layout fontSize="/179">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/106"/>
-      <showEmail emailForm="/107"/>
-    </taskset>
+    <navigation/>
+    <layout/>
+    <taskset/>
   </UIAdaptation:App>
   <UIAdaptation:App>
-    <navigation menu="/217">
-      <button clickevent="/250"/>
-    </navigation>
-    <layout fontSize="/111">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/129"/>
-      <showEmail emailForm="/130"/>
-    </taskset>
+    <navigation/>
+    <layout/>
+    <taskset/>
   </UIAdaptation:App>
   <UIAdaptation:App>
-    <navigation menu="/139">
-      <button clickevent="/159"/>
-    </navigation>
-    <layout fontSize="/226">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/53"/>
-      <showEmail emailForm="/54"/>
-    </taskset>
+    <navigation/>
+    <layout/>
+    <taskset/>
   </UIAdaptation:App>
   <UIAdaptation:App>
-    <navigation menu="/207">
-      <button clickevent="/218"/>
-    </navigation>
-    <layout fontSize="/120">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/203"/>
-      <showEmail emailForm="/204"/>
-    </taskset>
+    <navigation/>
+    <layout/>
+    <taskset/>
   </UIAdaptation:App>
   <UIAdaptation:App>
-    <navigation menu="/82">
-      <button clickevent="/303"/>
-    </navigation>
-    <layout fontSize="/92"/>
-    <taskset>
-      <readEmail attachments="/233"/>
-      <showEmail emailForm="/234"/>
-    </taskset>
+    <navigation/>
+    <layout/>
+    <taskset/>
   </UIAdaptation:App>
   <UIAdaptation:App>
-    <navigation menu="/172">
-      <button clickevent="/78"/>
-    </navigation>
-    <layout fontSize="/225">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/147"/>
-      <showEmail emailForm="/148"/>
-    </taskset>
+    <navigation/>
+    <layout/>
+    <taskset/>
   </UIAdaptation:App>
   <UIAdaptation:App>
-    <navigation menu="/93"/>
-    <layout fontSize="/101">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/270"/>
-      <showEmail emailForm="/271"/>
-    </taskset>
+    <navigation/>
+    <layout/>
+    <taskset/>
   </UIAdaptation:App>
-  <UIAdaptation:App>
-    <navigation menu="/263"/>
-    <layout fontSize="/167">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/239"/>
-      <showEmail emailForm="/240"/>
-    </taskset>
-  </UIAdaptation:App>
-  <UIAdaptation:App>
-    <navigation menu="/241">
-      <button clickevent="/340"/>
-    </navigation>
-    <layout fontSize="/102">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/319"/>
-      <showEmail emailForm="/320"/>
-    </taskset>
-  </UIAdaptation:App>
-  <UIAdaptation:App>
-    <navigation menu="/237"/>
-    <layout fontSize="/220">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/315"/>
-      <showEmail emailForm="/316"/>
-    </taskset>
-  </UIAdaptation:App>
-  <UIAdaptation:App>
-    <navigation menu="/76">
-      <button clickevent="/205"/>
-    </navigation>
-    <layout fontSize="/58">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/368"/>
-      <showEmail emailForm="/369"/>
-    </taskset>
-  </UIAdaptation:App>
-  <UIAdaptation:App>
-    <navigation menu="/143">
-      <button clickevent="/83"/>
-    </navigation>
-    <layout fontSize="/149">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/141"/>
-      <showEmail emailForm="/142"/>
-    </taskset>
-  </UIAdaptation:App>
-  <UIAdaptation:App>
-    <navigation menu="/162"/>
-    <layout fontSize="/151">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/116"/>
-      <showEmail emailForm="/117"/>
-    </taskset>
-  </UIAdaptation:App>
-  <UIAdaptation:App>
-    <navigation menu="/281"/>
-    <layout fontSize="/245">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/285"/>
-      <showEmail emailForm="/286"/>
-    </taskset>
-  </UIAdaptation:App>
-  <UIAdaptation:App>
-    <navigation menu="/171">
-      <button clickevent="/275"/>
-    </navigation>
-    <layout fontSize="/109">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/260"/>
-      <showEmail emailForm="/261"/>
-    </taskset>
-  </UIAdaptation:App>
-  <UIAdaptation:App>
-    <navigation menu="/145"/>
-    <layout fontSize="/80">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/363"/>
-      <showEmail emailForm="/364"/>
-    </taskset>
-  </UIAdaptation:App>
-  <UIAdaptation:App>
-    <navigation menu="/161">
-      <button clickevent="/131"/>
-    </navigation>
-    <layout fontSize="/311">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/74"/>
-      <showEmail emailForm="/75"/>
-    </taskset>
-  </UIAdaptation:App>
-  <UIAdaptation:App>
-    <navigation menu="/342"/>
-    <layout fontSize="/77">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/267"/>
-      <showEmail emailForm="/268"/>
-    </taskset>
-  </UIAdaptation:App>
-  <UIAdaptation:App>
-    <navigation menu="/195"/>
-    <layout fontSize="/187">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/309"/>
-      <showEmail emailForm="/310"/>
-    </taskset>
-  </UIAdaptation:App>
-  <UIAdaptation:App>
-    <navigation menu="/279">
-      <button clickevent="/133"/>
-    </navigation>
-    <layout fontSize="/99">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/330"/>
-      <showEmail emailForm="/331"/>
-    </taskset>
-  </UIAdaptation:App>
-  <UIAdaptation:App>
-    <navigation menu="/100"/>
-    <layout fontSize="/72">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/169"/>
-      <showEmail emailForm="/170"/>
-    </taskset>
-  </UIAdaptation:App>
-  <UIAdaptation:App>
-    <navigation menu="/222">
-      <button clickevent="/254"/>
-    </navigation>
-    <layout fontSize="/138">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/165"/>
-      <showEmail emailForm="/166"/>
-    </taskset>
-  </UIAdaptation:App>
-  <UIAdaptation:App>
-    <navigation menu="/137"/>
-    <layout fontSize="/127">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/177"/>
-      <showEmail emailForm="/178"/>
-    </taskset>
-  </UIAdaptation:App>
-  <UIAdaptation:App>
-    <navigation menu="/180">
-      <button clickevent="/123"/>
-    </navigation>
-    <layout fontSize="/113">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/335"/>
-      <showEmail emailForm="/336"/>
-    </taskset>
-  </UIAdaptation:App>
-  <UIAdaptation:App>
-    <navigation menu="/191"/>
-    <layout fontSize="/256">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/56"/>
-      <showEmail emailForm="/57"/>
-    </taskset>
-  </UIAdaptation:App>
-  <UIAdaptation:App>
-    <navigation menu="/221">
-      <button clickevent="/192"/>
-    </navigation>
-    <layout fontSize="/81">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/273"/>
-      <showEmail emailForm="/274"/>
-    </taskset>
-  </UIAdaptation:App>
-  <UIAdaptation:App>
-    <navigation menu="/345">
-      <button clickevent="/321"/>
-    </navigation>
-    <layout fontSize="/150">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/377"/>
-      <showEmail emailForm="/378"/>
-    </taskset>
-  </UIAdaptation:App>
-  <UIAdaptation:App>
-    <navigation menu="/61">
-      <button clickevent="/291"/>
-    </navigation>
-    <layout fontSize="/231">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/209"/>
-      <showEmail emailForm="/210"/>
-    </taskset>
-  </UIAdaptation:App>
-  <UIAdaptation:App>
-    <navigation menu="/227">
-      <button clickevent="/247"/>
-    </navigation>
-    <layout fontSize="/85">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/215"/>
-      <showEmail emailForm="/216"/>
-    </taskset>
-  </UIAdaptation:App>
-  <UIAdaptation:App>
-    <navigation menu="/96">
-      <button clickevent="/243"/>
-    </navigation>
-    <layout fontSize="/51">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/360"/>
-      <showEmail emailForm="/361"/>
-    </taskset>
-  </UIAdaptation:App>
-  <UIAdaptation:App>
-    <navigation menu="/282">
-      <button clickevent="/152"/>
-    </navigation>
-    <layout fontSize="/175">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/301"/>
-      <showEmail emailForm="/302"/>
-    </taskset>
-  </UIAdaptation:App>
-  <UIAdaptation:App>
-    <navigation menu="/283"/>
-    <layout fontSize="/112">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/200"/>
-      <showEmail emailForm="/201"/>
-    </taskset>
-  </UIAdaptation:App>
-  <UIAdaptation:App>
-    <navigation menu="/194">
-      <button clickevent="/223"/>
-    </navigation>
-    <layout fontSize="/97">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/298"/>
-      <showEmail emailForm="/299"/>
-    </taskset>
-  </UIAdaptation:App>
-  <UIAdaptation:MiddleSize/>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/52"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/55"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:MiddleSize/>
-  <UIAdaptation:DefaultNav/>
-  <UIAdaptation:DefaultNav/>
-  <UIAdaptation:DefaultNav/>
-  <UIAdaptation:ClickEvent view="/63"/>
-  <UIAdaptation:Feedback/>
-  <UIAdaptation:LargeSize/>
-  <UIAdaptation:DefaultSize/>
-  <UIAdaptation:DefaultNav/>
-  <UIAdaptation:LargeSize/>
-  <UIAdaptation:LargeSize/>
-  <UIAdaptation:ClickEvent view="/70"/>
-  <UIAdaptation:Feedback/>
-  <UIAdaptation:MiddleSize/>
-  <UIAdaptation:LargeSize/>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/73"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:DefaultNav/>
-  <UIAdaptation:LargeSize/>
-  <UIAdaptation:ClickEvent view="/79"/>
-  <UIAdaptation:Feedback/>
-  <UIAdaptation:MiddleSize/>
-  <UIAdaptation:DefaultSize/>
-  <UIAdaptation:DefaultNav/>
-  <UIAdaptation:ClickEvent view="/84"/>
-  <UIAdaptation:Feedback/>
-  <UIAdaptation:LargeSize/>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/86"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/89"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:MiddleSize/>
-  <UIAdaptation:DefaultNav/>
-  <UIAdaptation:ClickEvent view="/95"/>
-  <UIAdaptation:Feedback/>
-  <UIAdaptation:DefaultNav/>
-  <UIAdaptation:DefaultSize/>
-  <UIAdaptation:TabletNav/>
-  <UIAdaptation:LargeSize/>
-  <UIAdaptation:TabletNav/>
-  <UIAdaptation:LargeSize/>
-  <UIAdaptation:DefaultSize/>
-  <UIAdaptation:DefaultNav/>
-  <UIAdaptation:DefaultSize/>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/105"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:LargeSize/>
-  <UIAdaptation:DefaultSize/>
-  <UIAdaptation:LargeSize/>
-  <UIAdaptation:LargeSize/>
-  <UIAdaptation:LargeSize/>
-  <UIAdaptation:MiddleSize/>
-  <UIAdaptation:LargeSize/>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/115"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:LargeSize/>
-  <UIAdaptation:TabletNav/>
-  <UIAdaptation:LargeSize/>
-  <UIAdaptation:ClickEvent view="/122"/>
-  <UIAdaptation:Feedback/>
-  <UIAdaptation:ClickEvent view="/124"/>
-  <UIAdaptation:Feedback/>
-  <UIAdaptation:LargeSize/>
-  <UIAdaptation:DefaultSize/>
-  <UIAdaptation:MiddleSize/>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/128"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:ClickEvent view="/132"/>
-  <UIAdaptation:Feedback/>
-  <UIAdaptation:ClickEvent view="/134"/>
-  <UIAdaptation:Feedback/>
-  <UIAdaptation:ClickEvent view="/136"/>
-  <UIAdaptation:Feedback/>
-  <UIAdaptation:DefaultNav/>
-  <UIAdaptation:MiddleSize/>
-  <UIAdaptation:TabletNav/>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/140"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:DefaultNav/>
-  <UIAdaptation:DefaultSize/>
-  <UIAdaptation:DefaultNav/>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/146"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:LargeSize/>
-  <UIAdaptation:DefaultSize/>
-  <UIAdaptation:LargeSize/>
-  <UIAdaptation:ClickEvent view="/153"/>
-  <UIAdaptation:Feedback/>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/154"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:MiddleSize/>
-  <UIAdaptation:TabletNav/>
-  <UIAdaptation:ClickEvent view="/160"/>
-  <UIAdaptation:Feedback/>
-  <UIAdaptation:DefaultNav/>
-  <UIAdaptation:DefaultNav/>
-  <UIAdaptation:DefaultNav/>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/164"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:MiddleSize/>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/168"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:TabletNav/>
-  <UIAdaptation:TabletNav/>
-  <UIAdaptation:ClickEvent view="/174"/>
-  <UIAdaptation:Feedback/>
-  <UIAdaptation:LargeSize/>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/176"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:MiddleSize/>
-  <UIAdaptation:TabletNav/>
-  <UIAdaptation:ClickEvent view="/182"/>
-  <UIAdaptation:Feedback/>
-  <UIAdaptation:DefaultNav/>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/184"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:DefaultSize/>
-  <UIAdaptation:MiddleSize/>
-  <UIAdaptation:TabletNav/>
-  <UIAdaptation:TabletNav/>
-  <UIAdaptation:DefaultNav/>
-  <UIAdaptation:ClickEvent view="/193"/>
-  <UIAdaptation:Feedback/>
-  <UIAdaptation:TabletNav/>
-  <UIAdaptation:DefaultNav/>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/196"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/199"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/202"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:ClickEvent view="/206"/>
-  <UIAdaptation:Feedback/>
-  <UIAdaptation:DefaultNav/>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/208"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/211"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/214"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:TabletNav/>
-  <UIAdaptation:ClickEvent view="/219"/>
-  <UIAdaptation:Feedback/>
-  <UIAdaptation:MiddleSize/>
-  <UIAdaptation:TabletNav/>
-  <UIAdaptation:TabletNav/>
-  <UIAdaptation:ClickEvent view="/224"/>
-  <UIAdaptation:Feedback/>
-  <UIAdaptation:LargeSize/>
-  <UIAdaptation:DefaultSize/>
-  <UIAdaptation:TabletNav/>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/228"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:DefaultSize/>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/232"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:DefaultNav/>
-  <UIAdaptation:TabletNav/>
-  <UIAdaptation:TabletNav/>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/238"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:DefaultNav/>
-  <UIAdaptation:TabletNav/>
-  <UIAdaptation:ClickEvent view="/244"/>
-  <UIAdaptation:Feedback/>
-  <UIAdaptation:LargeSize/>
-  <UIAdaptation:LargeSize/>
-  <UIAdaptation:ClickEvent view="/248"/>
-  <UIAdaptation:Feedback/>
-  <UIAdaptation:DefaultNav/>
-  <UIAdaptation:ClickEvent view="/251"/>
-  <UIAdaptation:Feedback/>
-  <UIAdaptation:ClickEvent view="/253"/>
-  <UIAdaptation:Feedback/>
-  <UIAdaptation:ClickEvent view="/255"/>
-  <UIAdaptation:Feedback/>
-  <UIAdaptation:DefaultSize/>
-  <UIAdaptation:ClickEvent view="/258"/>
-  <UIAdaptation:Feedback/>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/259"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:DefaultNav/>
-  <UIAdaptation:TabletNav/>
-  <UIAdaptation:ClickEvent view="/265"/>
-  <UIAdaptation:Feedback/>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/266"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/269"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/272"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:ClickEvent view="/276"/>
-  <UIAdaptation:Feedback/>
-  <UIAdaptation:App>
-    <navigation menu="/390"/>
-    <layout fontSize="/287">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/294"/>
-      <showEmail emailForm="/295"/>
-    </taskset>
-  </UIAdaptation:App>
-  <UIAdaptation:MiddleSize/>
-  <UIAdaptation:TabletNav/>
-  <UIAdaptation:TabletNav/>
-  <UIAdaptation:DefaultNav/>
-  <UIAdaptation:DefaultNav/>
-  <UIAdaptation:TabletNav/>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/284"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:LargeSize/>
-  <UIAdaptation:DefaultNav/>
-  <UIAdaptation:App>
-    <navigation menu="/355"/>
-    <layout fontSize="/313">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/327"/>
-      <showEmail emailForm="/328"/>
-    </taskset>
-  </UIAdaptation:App>
-  <UIAdaptation:TabletNav/>
-  <UIAdaptation:ClickEvent view="/292"/>
-  <UIAdaptation:Feedback/>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/293"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:LargeSize/>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/297"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/300"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:ClickEvent view="/304"/>
-  <UIAdaptation:Feedback/>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/305"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/308"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:MiddleSize/>
-  <UIAdaptation:App>
-    <navigation menu="/366"/>
-    <layout fontSize="/317">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/374"/>
-      <showEmail emailForm="/375"/>
-    </taskset>
-  </UIAdaptation:App>
-  <UIAdaptation:DefaultSize/>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/314"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:LargeSize/>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/318"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:ClickEvent view="/322"/>
-  <UIAdaptation:Feedback/>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/323"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/326"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/329"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:ClickEvent view="/333"/>
-  <UIAdaptation:Feedback/>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/334"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/337"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:ClickEvent view="/341"/>
-  <UIAdaptation:Feedback/>
-  <UIAdaptation:TabletNav/>
-  <UIAdaptation:ClickEvent view="/344"/>
-  <UIAdaptation:Feedback/>
-  <UIAdaptation:DefaultNav/>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/346"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/349"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/352"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:DefaultNav/>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/356"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/359"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/362"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:App>
-    <navigation menu="/386">
-      <button clickevent="/384"/>
-    </navigation>
-    <layout fontSize="/383">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/402"/>
-      <showEmail emailForm="/403"/>
-    </taskset>
-  </UIAdaptation:App>
-  <UIAdaptation:TabletNav/>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/367"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/370"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/373"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/376"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:App>
-    <navigation menu="/391"/>
-    <layout fontSize="/395">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/399"/>
-      <showEmail emailForm="/400"/>
-    </taskset>
-  </UIAdaptation:App>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/380"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:DefaultSize/>
-  <UIAdaptation:ClickEvent view="/385"/>
-  <UIAdaptation:Feedback/>
-  <UIAdaptation:TabletNav/>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/387"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:TabletNav/>
-  <UIAdaptation:DefaultNav/>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/392"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:LargeSize/>
-  <UIAdaptation:App>
-    <navigation menu="/397">
-      <button clickevent="/404"/>
-    </navigation>
-    <layout fontSize="/409">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/407"/>
-      <showEmail emailForm="/408"/>
-    </taskset>
-  </UIAdaptation:App>
-  <UIAdaptation:TabletNav/>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/398"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/401"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:ClickEvent view="/405"/>
-  <UIAdaptation:Feedback/>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/406"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:DefaultSize/>
-  <UIAdaptation:App>
-    <navigation menu="/423">
-      <button clickevent="/417"/>
-    </navigation>
-    <layout fontSize="/419">
-      <colorScheme xsi:type="UIAdaptation:BlacknWhite"/>
-    </layout>
-    <taskset>
-      <readEmail attachments="/421"/>
-      <showEmail emailForm="/422"/>
-    </taskset>
-  </UIAdaptation:App>
-  <UIAdaptation:App>
-    <navigation menu="/412">
-      <button clickevent="/424"/>
-    </navigation>
-    <layout fontSize="/416"/>
-    <taskset>
-      <readEmail attachments="/414"/>
-      <showEmail emailForm="/415"/>
-    </taskset>
-  </UIAdaptation:App>
-  <UIAdaptation:DefaultNav/>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/413"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:LargeSize/>
-  <UIAdaptation:ClickEvent view="/418"/>
-  <UIAdaptation:Feedback/>
-  <UIAdaptation:LargeSize/>
-  <UIAdaptation:AutoDownload enable="true"/>
-  <UIAdaptation:Attachments autoDownload="/420"/>
-  <UIAdaptation:EmailForm>
-    <html/>
-  </UIAdaptation:EmailForm>
-  <UIAdaptation:TabletNav/>
-  <UIAdaptation:ClickEvent view="/425"/>
-  <UIAdaptation:Feedback/>
 </xmi:XMI>
