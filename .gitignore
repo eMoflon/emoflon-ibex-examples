@@ -81,3 +81,15 @@ socialNetworkSynchronisation/version2/Cheat1FacebookToInstagram/src/org/emoflon/
 socialNetworkSynchronisation/version2/FacebookToInstagram/src/org/emoflon/ibex/tgg/run/facebooktoinstagram/debug/INITIAL_BWD_Debug_App.java
 socialNetworkSynchronisation/version2/FacebookToInstagram/src/org/emoflon/ibex/tgg/run/facebooktoinstagram/debug/INITIAL_FWD_Debug_App.java
 socialNetworkSynchronisation/version2/FacebookToInstagram/src/org/emoflon/ibex/tgg/run/facebooktoinstagram/debug/MODELGEN_Debug_App.java
+AdaptiveUserApp/UserToUI/src/org/emoflon/ibex/tgg/csp/lib/AttrCondDefLibrary.tgg
+AdaptiveUserApp/UserToUI/src/org/emoflon/ibex/tgg/operational/csp/constraints/factories/usertoui/UserDefinedRuntimeTGGAttrConstraintFactory.java
+AdaptiveUserApp/UserToUI/src/org/emoflon/ibex/tgg/run/usertoui/_RegistrationHelper.java
+AdaptiveUserApp/UserToUI/src/org/emoflon/ibex/tgg/run/usertoui/_SchemaBasedAutoRegistration.java
+AdaptiveUserApp/UserToUI/src/org/emoflon/ibex/tgg/run/usertoui/BWD_OPT_App.java
+AdaptiveUserApp/UserToUI/src/org/emoflon/ibex/tgg/run/usertoui/CC_App.java
+AdaptiveUserApp/UserToUI/src/org/emoflon/ibex/tgg/run/usertoui/CO_App.java
+AdaptiveUserApp/UserToUI/src/org/emoflon/ibex/tgg/run/usertoui/FWD_OPT_App.java
+AdaptiveUserApp/UserToUI/src/org/emoflon/ibex/tgg/run/usertoui/INITIAL_BWD_App.java
+AdaptiveUserApp/UserToUI/src/org/emoflon/ibex/tgg/run/usertoui/INITIAL_FWD_App.java
+AdaptiveUserApp/UserToUI/src/org/emoflon/ibex/tgg/run/usertoui/MODELGEN_App.java
+AdaptiveUserApp/UserToUI/src/org/emoflon/ibex/tgg/run/usertoui/SYNC_App.java
