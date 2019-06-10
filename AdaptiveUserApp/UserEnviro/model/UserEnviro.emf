@@ -110,7 +110,7 @@ class Wifi{
 }
 
 class Cellular{
-	val ConnectionSpeed ConnectionSpeed;
+	val ConnectionSpeed[*] ConnectionSpeed;
 }
 
 class Ambientlight{
