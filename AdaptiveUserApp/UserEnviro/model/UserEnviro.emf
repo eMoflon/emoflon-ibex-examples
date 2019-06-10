@@ -1,0 +1,205 @@
+@GenModel(documentation="TODO: Add documentation for Blup")
+@namespace(uri="platform:/resource/UserEnviro/model/UserEnviro.ecore", prefix="UserEnviro")
+package UserEnviro;
+
+class Context{
+	val User[*] usercontext;
+	val Environment[1..1] envirocontext;
+	val Platform[1..1] platcontext;
+}
+
+class User{
+	val Mood[1..1] mood; 
+	val ExperienceLevel[1..1] exp;
+	ref UsageTime[1..1] time;
+	ref Vision vision;
+	
+	attr EInt Age;
+}
+
+
+class OldAgeUser extends User{
+	
+}
+
+class MiddleAgeUser extends User{
+	
+}
+
+class YoungerUser extends User{
+	
+}
+
+abstract class Vision{
+	
+}
+
+class Normalvision extends Vision{
+	
+}
+
+class Reducedvision extends Vision{
+	
+}
+
+abstract class Mood{
+	 
+}
+
+class Badmood extends Mood{
+	
+}
+
+class Goodmood extends Mood{
+	
+}
+
+class Neutralmood extends Mood{
+	
+}
+
+abstract class ExperienceLevel{
+	
+}
+
+class Experienced extends ExperienceLevel{
+	
+}
+
+class Inexperienced extends ExperienceLevel{
+	
+}
+
+class Intermediate extends ExperienceLevel{
+	
+}
+
+class UsageTime{
+	
+}
+
+class Environment{
+	ref Ambientlight[1..1] light;
+	ref Time[1..1] time;
+	ref Activity activity;
+}
+
+class ConnectionSpeed{
+
+}
+
+class ThreeG extends ConnectionSpeed{
+	
+}
+
+class TwoG extends ConnectionSpeed{
+	
+}
+
+class FourG extends ConnectionSpeed{
+	
+}
+
+class ConnectionType{
+	ref Wifi wifi;
+	ref Cellular cellular;
+}
+
+class Wifi{
+	
+}
+
+class Cellular{
+	val ConnectionSpeed ConnectionSpeed;
+}
+
+class Ambientlight{
+	val LowLight[0..1] lowLight;
+	val HighLight[0..1] highLight;
+	val NormalLight[0..1] normalLight;
+}
+
+class LowLight{
+	
+}
+
+class HighLight{
+
+}
+
+class NormalLight{
+	
+}
+
+class Time{
+	
+	ref SunRise[0..1] sunRise;
+	ref SunDawn[0..1] sunDawn;
+	
+}
+
+class SunRise{
+	
+}
+
+class SunDawn{
+
+}
+
+class Activity{
+	attr ActivityEnum activityEnum;
+}
+
+enum ActivityEnum{
+	Moving;
+	Driving;
+	Standing;
+}
+
+class Platform{
+	
+	val Devicetype[1..1] devicetype;
+	ref Batterymode[0..1] batterymode;	
+	ref ScreenDimension[0..1] screenDim;
+	val DeviceHardware[0..1] hardware;
+	
+	val ConnectionType connectionType;
+	
+}
+
+abstract class DeviceHardware{
+	
+}
+
+class Camera extends DeviceHardware{
+}
+
+abstract class ScreenDimension{
+	attr EInt ScreenHeight;
+	attr EInt ScreenWidth;
+}
+
+abstract class Batterymode{
+	attr EBoolean Charging;
+	attr EInt BatteryLevel;
+}
+
+class NormalBatterymode extends Batterymode{
+	
+}
+
+class LowBatterymode extends Batterymode{
+	
+}
+
+abstract class Devicetype{
+	
+}
+
+class Tablet extends Devicetype{
+	
+}
+
+class Smartphone extends Devicetype{
+	
+}

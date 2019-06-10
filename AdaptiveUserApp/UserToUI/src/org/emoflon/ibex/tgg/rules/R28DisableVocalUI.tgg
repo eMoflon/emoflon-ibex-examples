@@ -1,0 +1,39 @@
+#using UserToUI.*
+#using AttrCondDefLibrary.*
+
+#rule R28DisableVocalUI #with UserToUI
+
+#source { 
+	c:Context{
+		-envirocontext->e
+	}
+	e:Environment{
+		++ -activity->ac
+	}
+	++ ac:Activity{
+		activityEnum := enum::ActivityEnum::Standing
+	}
+}
+
+#target {
+	a:App{
+		-taskset->ts
+	}
+	ts:TaskFeature{
+		VocalUI == false
+	}
+}
+
+#correspondence {
+	c2a:ContextToApp{
+		#src->c
+		#trg->a
+	}
+	e2ts:EnviroToFeature{
+		#src->e
+		#trg->ts
+	}
+}
+
+#attributeConditions {
+ }

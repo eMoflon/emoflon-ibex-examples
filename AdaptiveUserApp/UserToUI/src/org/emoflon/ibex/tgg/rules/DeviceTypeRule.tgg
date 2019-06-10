@@ -1,0 +1,65 @@
+#using UserToUI.*
+#using AttrCondDefLibrary.*
+
+#abstract #rule DeviceTypeRule #with UserToUI
+
+#source { 
+	c:Context{
+		-platcontext->p
+	}
+	p:Platform
+}
+
+#target {
+	a:App{
+		-navigation->nav
+	}
+	nav:Navigation
+	
+}
+
+#correspondence {
+	c2a:ContextToApp{
+		#src->c
+		#trg->a
+	}
+	p2nav:PlatformToNavigation{
+		#src->p
+		#trg->nav
+	}
+}
+
+
+#rule R19Smartphone #extends DeviceTypeRule #with UserToUI
+
+#source { 
+	p:Platform{
+		++ -devicetype->dt
+	}
+	++ dt:Smartphone
+}
+
+#target {
+	nav:Navigation{
+		-menu->m
+	}
+	m:DefaultNav
+}
+
+#rule R20Tablet #extends DeviceTypeRule #with UserToUI
+
+#source { 
+	p:Platform{
+		++ -devicetype->dt
+	}
+	++ dt:Tablet
+}
+
+#target {
+	nav:Navigation{
+		++ -menu->m
+	}
+	++ m:TabletNav
+}
+
+

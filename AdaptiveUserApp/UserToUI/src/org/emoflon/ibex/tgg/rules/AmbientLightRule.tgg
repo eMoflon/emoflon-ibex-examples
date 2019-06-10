@@ -1,0 +1,93 @@
+#using UserToUI.*
+#using AttrCondDefLibrary.*
+
+#abstract #rule AmbientLight #with UserToUI
+
+#source { 
+	c:Context{
+		-envirocontext->e
+	}
+	e:Environment{
+	}
+	
+}
+
+#target {
+	a:App{
+		-layout->l
+	}
+	l:Layout{
+}
+	
+}
+
+#correspondence {
+	c2a:ContextToApp{
+		#src->c
+		#trg->a
+	}
+	e2l:EnviroToLay{
+		#src->e
+		#trg->l
+	}
+}
+
+#rule R7LowLight #extends AmbientLight #with UserToUI
+
+#source { 
+	e:Environment{
+		++ -light->lig
+	}
+	++lig:Ambientlight{
+		++ -lowLight->low
+	}
+	++low:LowLight
+}
+
+#target {
+	l:Layout{
+		++ -colorScheme->cs
+	}
+	++ cs:BlacknWhite
+	
+}
+
+#rule R8NormalLight #extends AmbientLight #with UserToUI
+
+#source { 
+	e:Environment{
+		-light->lig
+	}
+	lig:Ambientlight{
+		++ -normalLight->nor
+	}
+	++nor:NormalLight
+}
+
+#target {
+	l:Layout{
+		++ -colorScheme->cs
+	}
+	++ cs:CustomColor
+}
+
+#rule R9HighLight #extends AmbientLight #with UserToUI
+
+#source { 
+	e:Environment{
+		-light->lig
+	}
+	lig:Ambientlight{
+		++ -highLight->high
+	}
+	++high:HighLight
+}
+
+#target {
+	l:Layout{
+		++ -colorScheme->cs
+	}
+	++ cs:MonoChromatic
+}
+
+

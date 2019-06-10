@@ -1,0 +1,148 @@
+@GenModel(documentation="TODO: Add documentation for Blup")
+@namespace(uri="platform:/resource/UIAdaptation/model/UIAdaptation.ecore", prefix="UIAdaptation")
+package UIAdaptation;
+
+class App{
+	val Navigation[1..1] navigation;
+	val Layout[1..1] layout;
+	val TaskFeature[1..1] taskset;
+}
+
+class Navigation{
+	val FeedbackBar[0..1] button;
+	ref NaviType[1..1] menu;
+	
+	attr EBoolean DrivingMode;
+}
+
+abstract class NaviType{
+	
+}
+
+class GridNav extends NaviType{
+}
+
+class DefaultNav extends NaviType{
+	
+}
+
+class TabletNav extends NaviType{
+}
+
+class MinimumNavigation extends Navigation{
+	
+}
+
+class LessInformedNav extends Navigation{
+}
+
+class MoreInformedNav extends Navigation{
+}
+
+class FeedbackBar{
+	ref ClickEvent[0..1] clickevent;
+}
+
+class ClickEvent{
+	ref View[*] view;
+}
+
+abstract class View{
+}
+
+class Feedback extends View{
+	
+}
+
+class Inspiration extends View{
+	
+}
+
+class Layout{
+	val ColorScheme[1..1] colorScheme; 
+	ref FontSize[1..1] fontSize;
+}
+
+abstract class FontSize{
+	
+}
+
+class DefaultSize extends FontSize{
+	
+}
+
+class LargeSize extends FontSize{
+	
+}
+
+class MiddleSize extends FontSize{
+	
+}
+
+class ColorScheme{
+	attr EBoolean BlacknWhiteMode;
+	attr EBoolean NightMode;
+	
+}
+
+class CustomColor extends ColorScheme{
+	
+}
+
+class BlacknWhite extends ColorScheme{
+	
+}
+
+class MonoChromatic extends ColorScheme{
+	
+}
+
+class NightModeScheme extends ColorScheme{
+	
+}
+
+class TaskFeature{
+	val ReadEmail[0..1] readEmail;
+	val ShowEmail[1..1] showEmail;
+	val WriteEmail[0..1] writeEmail;
+	val Menu[1..1] menu;
+	
+	attr EBoolean VocalUI;
+}
+
+abstract class Menu{
+	
+}
+
+class Attachments{
+	ref AutoDownload autoDownload;
+}
+
+class AutoDownload{
+	attr EBoolean enable;
+}
+
+class ReadEmail{
+	ref Attachments[0..1] attachments;
+}
+
+class ShowEmail{
+	ref EmailForm[0..1] emailForm;
+}
+
+abstract class WriteEmail{
+}
+
+class EmailForm{
+    
+	val HTML[0..1] html;
+	val TextForm[0..1] textForm;
+}
+
+class HTML{
+	
+}
+
+class TextForm{
+	
+}

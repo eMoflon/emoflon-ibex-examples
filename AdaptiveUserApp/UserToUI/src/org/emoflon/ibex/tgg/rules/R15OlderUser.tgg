@@ -1,0 +1,38 @@
+#using UserToUI.*
+#using AttrCondDefLibrary.*
+
+#rule R15OlderUser #with UserToUI
+
+#source { 
+	c:Context{
+		++ -usercontext->u
+	}
+	++ u:OldAgeUser	{
+		Age >= 60
+	}
+}
+
+#target {
+	a:App{
+		-layout->l
+	}
+	l:Layout{
+		++ -fontSize->fs
+	}
+	++fs:LargeSize
+}
+
+#correspondence {
+	c2a:ContextToApp{
+		#src->c
+		#trg->a
+	}
+	++ u2l:UserToLayout{
+		#src->u
+		#trg->l
+	}
+}
+
+#attributeConditions {
+	
+}

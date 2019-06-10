@@ -1,0 +1,38 @@
+#using UserToUI.*
+#using AttrCondDefLibrary.*
+
+#rule R5MinimizedNavigationInformation #with UserToUI
+
+#source { 
+	c:Context{
+		-usercontext->u
+	}
+	
+	u:User{
+		++ -exp->ex
+	}
+	++ex:Intermediate
+}
+
+#target {
+	a:App{
+		++ -navigation->lesnav
+	}
+	++ lesnav:LessInformedNav
+}
+
+#correspondence {
+	c2a:ContextToApp{
+		#src->c
+		#trg->a
+	}
+	
+	++u2nav:UserToNavigation{
+		#src->u
+		#trg->lesnav
+	}
+}
+
+#attributeConditions {
+	
+}
