@@ -8,7 +8,7 @@
 		 -usercontext->u
 	}
 	u:User{
-	 	++ -exp->ex
+	 	++ -experience->ex
 	 }
 	 ++ex:Inexperienced
 }
@@ -43,7 +43,7 @@
 		-usercontext->u
 	}
 	u:User{
-	 	++ -exp->ex
+	 	++ -experience->ex
 	 }
 	 ++ex:Experienced
 }

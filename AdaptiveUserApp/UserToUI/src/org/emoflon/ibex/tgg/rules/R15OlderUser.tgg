@@ -8,7 +8,7 @@
 		++ -usercontext->u
 	}
 	++ u:OldAgeUser	{
-		Age >= 60
+		age >= 60
 	}
 }
 

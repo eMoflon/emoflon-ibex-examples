@@ -12,7 +12,7 @@ class Navigation{
 	val FeedbackBar[0..1] button;
 	ref NaviType[1..1] menu;
 	
-	attr EBoolean DrivingMode;
+	attr EBoolean drivingMode;
 }
 
 abstract class NaviType{
@@ -80,8 +80,8 @@ class MiddleSize extends FontSize{
 }
 
 class ColorScheme{
-	attr EBoolean BlacknWhiteMode;
-	attr EBoolean NightMode;
+	attr EBoolean blacknWhiteMode;
+	attr EBoolean nightMode;
 	
 }
 
@@ -107,7 +107,7 @@ class TaskFeature{
 	val WriteEmail[0..1] writeEmail;
 	val Menu[1..1] menu;
 	
-	attr EBoolean VocalUI;
+	attr EBoolean vocalUI;
 }
 
 abstract class Menu{

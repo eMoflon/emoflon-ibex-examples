@@ -20,7 +20,7 @@
 		-navigation->nav
 	}
 	nav:Navigation{
-		DrivingMode == true
+		drivingMode == true
 		-menu->m
 	}
 	m:GridNav

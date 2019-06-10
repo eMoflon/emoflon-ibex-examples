@@ -9,7 +9,7 @@
 	}
 	
 	u:User{
-		++ -exp->e
+		++ -experience->e
 	}
 	
 	++ e:Experienced

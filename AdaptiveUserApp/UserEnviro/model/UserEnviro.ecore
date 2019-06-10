@@ -16,11 +16,11 @@
   <eClassifiers xsi:type="ecore:EClass" name="User">
     <eStructuralFeatures xsi:type="ecore:EReference" name="mood" lowerBound="1" eType="#//Mood"
         containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="exp" lowerBound="1" eType="#//ExperienceLevel"
-        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="experience" lowerBound="1"
+        eType="#//ExperienceLevel" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="time" lowerBound="1" eType="#//UsageTime"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="vision" eType="#//Vision"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Age" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="age" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="OldAgeUser" eSuperTypes="#//User"/>
   <eClassifiers xsi:type="ecore:EClass" name="MiddleAgeUser" eSuperTypes="#//User"/>
@@ -52,7 +52,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Wifi"/>
   <eClassifiers xsi:type="ecore:EClass" name="Cellular">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="ConnectionSpeed" upperBound="-1"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="connectionSpeed" upperBound="-1"
         eType="#//ConnectionSpeed" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Ambientlight">
@@ -93,12 +93,12 @@
   <eClassifiers xsi:type="ecore:EClass" name="DeviceHardware" abstract="true"/>
   <eClassifiers xsi:type="ecore:EClass" name="Camera" eSuperTypes="#//DeviceHardware"/>
   <eClassifiers xsi:type="ecore:EClass" name="ScreenDimension" abstract="true">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ScreenHeight" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ScreenWidth" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="screenHeight" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="screenWidth" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Batterymode" abstract="true">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Charging" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="BatteryLevel" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="charging" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="batteryLevel" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="NormalBatterymode" eSuperTypes="#//Batterymode"/>
   <eClassifiers xsi:type="ecore:EClass" name="LowBatterymode" eSuperTypes="#//Batterymode"/>

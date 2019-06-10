@@ -9,7 +9,7 @@
 	}
 	
 	u:User{
-		++ -exp->ex
+		++ -experience->ex
 	}
 	++ex:Intermediate
 }

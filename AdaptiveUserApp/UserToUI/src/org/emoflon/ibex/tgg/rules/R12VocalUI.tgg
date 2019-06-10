@@ -21,7 +21,7 @@
 		-taskset->t
 	}
 	t:TaskFeature{
-		VocalUI == true
+		vocalUI == true
 	++ -readEmail->re
 	}
 	++ re:ReadEmail
