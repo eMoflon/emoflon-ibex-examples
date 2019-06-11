@@ -24,7 +24,7 @@
 		-colorScheme->cs
 	}
 	cs:CustomColor{
-		NightMode == false
+		nightMode == false
 	}
 	
 }
@@ -78,5 +78,5 @@
 }
 
 #attributeConditions {
-	eq_boolean(cs.NightMode, true)
+	eq_boolean(cs.nightMode, true)
 }

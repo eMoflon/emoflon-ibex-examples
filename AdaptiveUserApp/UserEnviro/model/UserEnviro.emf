@@ -10,11 +10,11 @@ class Context{
 
 class User{
 	val Mood[1..1] mood; 
-	val ExperienceLevel[1..1] exp;
+	val ExperienceLevel[1..1] experience;
 	ref UsageTime[1..1] time;
 	ref Vision vision;
 	
-	attr EInt Age;
+	attr EInt age;
 }
 
 
@@ -110,7 +110,7 @@ class Wifi{
 }
 
 class Cellular{
-	val ConnectionSpeed[*] ConnectionSpeed;
+	val ConnectionSpeed[*] connectionSpeed;
 }
 
 class Ambientlight{
@@ -175,13 +175,13 @@ class Camera extends DeviceHardware{
 }
 
 abstract class ScreenDimension{
-	attr EInt ScreenHeight;
-	attr EInt ScreenWidth;
+	attr EInt screenHeight;
+	attr EInt screenWidth;
 }
 
 abstract class Batterymode{
-	attr EBoolean Charging;
-	attr EInt BatteryLevel;
+	attr EBoolean charging;
+	attr EInt batteryLevel;
 }
 
 class NormalBatterymode extends Batterymode{

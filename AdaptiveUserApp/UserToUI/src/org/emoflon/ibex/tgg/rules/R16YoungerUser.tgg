@@ -8,7 +8,7 @@
 		++ -usercontext->u
 	}
 	++ u:YoungerUser{
-		Age <= 45
+		age <= 45
 	}	
 }
 

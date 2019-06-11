@@ -14,8 +14,8 @@
 		++ -cellular->ce
 	}
 	++ ce:Cellular{
-		++ -ConnectionSpeed->cs3
-		++ -ConnectionSpeed->cs4
+		++ -connectionSpeed->cs3
+		++ -connectionSpeed->cs4
 	}
 	
 	++cs3:ThreeG
@@ -64,7 +64,7 @@
 		-cellular->ce
 	}
 	ce:Cellular{
-		++ -ConnectionSpeed->cs
+		++ -connectionSpeed->cs
 	}	
 	++cs:TwoG
 }

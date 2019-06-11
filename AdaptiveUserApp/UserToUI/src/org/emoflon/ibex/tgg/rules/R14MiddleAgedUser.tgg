@@ -8,8 +8,8 @@
 		++ -usercontext->u
 	}
 	++ u:MiddleAgeUser{
-		Age >= 45
-		Age <= 60
+		age >= 45
+		age <= 60
 	}
 }
 

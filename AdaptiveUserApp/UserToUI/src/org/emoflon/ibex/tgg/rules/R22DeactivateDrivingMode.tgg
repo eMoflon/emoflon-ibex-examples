@@ -20,7 +20,7 @@
 		-navigation->nav
 	}
 	nav:Navigation{
-		DrivingMode == false
+		drivingMode == false
 		-menu->m
 	}
 	m:DefaultNav

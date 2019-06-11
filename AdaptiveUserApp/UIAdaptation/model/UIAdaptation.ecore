@@ -17,7 +17,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="button" eType="#//FeedbackBar"
         containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="menu" lowerBound="1" eType="#//NaviType"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="DrivingMode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="drivingMode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="NaviType" abstract="true"/>
   <eClassifiers xsi:type="ecore:EClass" name="GridNav" eSuperTypes="#//NaviType"/>
@@ -46,8 +46,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="LargeSize" eSuperTypes="#//FontSize"/>
   <eClassifiers xsi:type="ecore:EClass" name="MiddleSize" eSuperTypes="#//FontSize"/>
   <eClassifiers xsi:type="ecore:EClass" name="ColorScheme">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="BlacknWhiteMode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="NightMode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="blacknWhiteMode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nightMode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="CustomColor" eSuperTypes="#//ColorScheme"/>
   <eClassifiers xsi:type="ecore:EClass" name="BlacknWhite" eSuperTypes="#//ColorScheme"/>
@@ -62,7 +62,7 @@
         containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="menu" lowerBound="1" eType="#//Menu"
         containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="VocalUI" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="vocalUI" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Menu" abstract="true"/>
   <eClassifiers xsi:type="ecore:EClass" name="Attachments">

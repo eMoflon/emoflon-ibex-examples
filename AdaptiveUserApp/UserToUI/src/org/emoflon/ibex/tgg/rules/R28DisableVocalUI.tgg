@@ -20,7 +20,7 @@
 		-taskset->ts
 	}
 	ts:TaskFeature{
-		VocalUI == false
+		vocalUI == false
 	}
 }
 
