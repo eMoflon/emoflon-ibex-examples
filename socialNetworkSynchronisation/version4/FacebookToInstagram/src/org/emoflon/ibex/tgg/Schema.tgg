@@ -22,7 +22,10 @@
 		#trg->InstagramLanguage.User
 	}
 }
-
 #attributeConditions {
-	
-}
+	#userDefined
+   date(Date: EDate) {
+       #sync: [F]
+       #gen:  [F]
+   }
+ }

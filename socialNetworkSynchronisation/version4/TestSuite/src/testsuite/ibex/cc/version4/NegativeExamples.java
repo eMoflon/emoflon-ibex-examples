@@ -55,7 +55,7 @@ public class NegativeExamples extends CCTestCase {
 	}
 	//Extra friendship node in source but no followership for the same in target
 	@Test
-	public void testForHandleIntraNetworkFollowersNAC() throws IOException {
+	public void testForHandleIntraNetworkFollowersNAC11() throws IOException {
 		testForPairOfModels("version4/users/FacebookNACFriendship", "version4/users/InstgramFollowershipUsers");
 	}
 	//Followership bidirectional in target but no friendship node for the same in source

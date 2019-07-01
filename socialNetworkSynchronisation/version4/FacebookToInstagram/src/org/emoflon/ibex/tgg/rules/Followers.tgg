@@ -1,0 +1,49 @@
+#using Cheat1FacebookToInstagram.*
+#using AttrCondDefLibrary.*
+
+#abstract #rule Followers #with FacebookToInstagram
+
+#source { 
+	n:FacebookLanguage.Network {
+		-users->fn
+	}
+	
+	fu:FacebookLanguage.User
+	fn:FacebookLanguage.User
+}
+
+#target {
+	iu:InstagramLanguage.User {
+		-followerships->fou
+	}
+	fou:InstagramLanguage.Followership{
+		-from->fru
+	}
+	fru:InstagramLanguage.From
+		
+	
+	in:InstagramLanguage.User {
+		-followerships->fon
+	}
+	fon:InstagramLanguage.Followership{
+		-to->ton
+	}
+	
+	ton:InstagramLanguage.To{
+		++ -follows->fru
+	}
+}
+
+#correspondence {
+	fu2iu:FacebookToInstagram.FbUserToInUser {
+    	#src->fu
+   		#trg->iu
+  	}
+  	fn2in:FacebookToInstagram.FbUserToInUser {
+  		#src->fn
+  		#trg->in
+  	}
+}
+
+
+
