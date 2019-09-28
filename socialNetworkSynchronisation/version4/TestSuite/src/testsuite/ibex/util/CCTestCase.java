@@ -9,6 +9,8 @@ import java.util.function.Supplier;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.emoflon.ibex.tgg.operational.defaults.IbexOptions;
 import org.emoflon.ibex.tgg.operational.strategies.OperationalStrategy;
+import org.emoflon.ibex.tgg.operational.strategies.opt.BWD_OPT;
+import org.emoflon.ibex.tgg.operational.strategies.opt.FWD_OPT;
 import org.emoflon.ibex.tgg.operational.strategies.opt.cc.CC;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -17,6 +19,8 @@ import org.junit.runners.Parameterized.Parameters;
 @RunWith(Parameterized.class)
 public abstract class CCTestCase extends TestCase {
 	protected CC checker;
+	protected FWD_OPT forward;
+	protected BWD_OPT backward;
 	
 	private Supplier<IbexOptions> createOptions;
 	private BiConsumer<ResourceSet, OperationalStrategy> registerMetamodels;
@@ -24,6 +28,14 @@ public abstract class CCTestCase extends TestCase {
 	public void createChecker(String srcInstance, String trgInstance) throws IOException {
 		checker = new CC_App_ForTesting(srcInstance, trgInstance, createOptions, registerMetamodels);
 	}
+	
+	public void createForward(String srcInstance) throws IOException{
+		forward = new Forward_App_ForTesting(srcInstance, createOptions, registerMetamodels);
+		}
+	
+	public void createBackward(String trgInstance) throws IOException{
+		backward = new Backward_App_ForTesting(trgInstance, createOptions, registerMetamodels);
+		}
 
 	public CCTestCase(Supplier<IbexOptions> createOptions,
 			BiConsumer<ResourceSet, OperationalStrategy> registerMetamodels, String name) {
@@ -59,5 +71,18 @@ public abstract class CCTestCase extends TestCase {
 	protected void runCC() throws IOException {
 		checker.run();
 		checker.terminate();
+		checker.saveModels(); //usability
+	}
+	
+	protected void runFWD_OPT() throws IOException { //usability
+		forward.forward();
+		forward.terminate();
+		forward.saveModels();
+	}
+	
+	protected void runBWD_OPT() throws IOException { //usability
+		backward.backward();
+		backward.terminate();
+		backward.saveModels();
 	}
 }

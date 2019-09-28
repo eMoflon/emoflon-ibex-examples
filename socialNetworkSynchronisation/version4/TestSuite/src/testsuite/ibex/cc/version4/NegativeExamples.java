@@ -22,6 +22,34 @@ public class NegativeExamples extends CCTestCase {
 		runCC();
 		Assert.assertFalse(checker.modelsAreConsistent());
 	}
+	
+	//usability
+		private void testForFWD(String source) throws IOException{
+			runFWD_OPT();
+			runCC();
+			Assert.assertFalse(checker.modelsAreConsistent());
+		}
+		
+		private void testForBWD(String target) throws IOException{
+			runBWD_OPT();
+			runCC();
+			Assert.assertFalse(checker.modelsAreConsistent());
+		}
+		
+		
+		//adding forward n backward testcase
+		//usability
+		@Test
+		public void testForForward() throws IOException{
+			testForFWD("version4/users/FacebookNACFriendship");
+		}
+		
+		@Test
+		public void testForBackward() throws IOException{
+			testForBWD("version4/users/InstgramFollowershipUsers");
+		}
+		
+	
 	//adding friendship in users in source model
 	@Test
 	public void testForUserToUserIslandRuleOneUser() throws IOException {

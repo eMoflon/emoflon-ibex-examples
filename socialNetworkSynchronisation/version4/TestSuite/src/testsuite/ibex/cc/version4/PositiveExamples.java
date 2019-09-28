@@ -23,6 +23,32 @@ public class PositiveExamples extends CCTestCase {
 		runCC();
 		Assert.assertTrue(checker.modelsAreConsistent());
 	}
+	
+	//usability
+		private void testForFWD(String source) throws IOException{
+			runFWD_OPT();
+			runCC();
+			Assert.assertTrue(checker.modelsAreConsistent());
+		}
+		
+		private void testForBWD(String target) throws IOException{
+			runBWD_OPT();
+			runCC();
+			Assert.assertTrue(checker.modelsAreConsistent());
+		}
+		
+		//adding forward n backward testcase
+			//usability
+			@Test
+			public void testForForward() throws IOException{
+				testForFWD("version4/users/FacebookNACFriendship2");
+			}
+			
+			@Test
+			public void testForBackward() throws IOException{
+				testForBWD("version4/users/OneInstagramUser4");
+			}
+	
 	@Test
 	public void testForUserToUserIslandRuleOneUser() throws IOException {
 		testForPairOfModels("version4/users/OneFacebookUser", "version4/users/OneInstagramUser");
