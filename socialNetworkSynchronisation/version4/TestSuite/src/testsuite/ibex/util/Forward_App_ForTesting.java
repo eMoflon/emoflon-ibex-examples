@@ -29,9 +29,9 @@ public class Forward_App_ForTesting extends FWD_OPT{
 	@Override
 	public void loadModels() throws IOException {
 		s = loadResource("Testsuite/resources/" + src + ".xmi");
-		t = createResource("Testsuite/resources/" + "trg.xmi");
-		c = createResource("Testsuite/instances/corr.xmi");
-		p = createResource("Testsuite/instances/protocol.xmi");
+		t = createResource("Testsuite/resources/CO/trg.xmi");
+		c = createResource("Testsuite/resources/CO/corr.xmi");
+		p = createResource("Testsuite/resources/CO/protocol.xmi");
 
 		EcoreUtil.resolveAll(rs);
 	}

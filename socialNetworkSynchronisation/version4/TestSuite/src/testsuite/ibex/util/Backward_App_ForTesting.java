@@ -29,10 +29,10 @@ public class Backward_App_ForTesting extends BWD_OPT{
 
 	@Override
 	public void loadModels() throws IOException {
-		s = createResource("Testsuite/resources/" + "src.xmi");
+		s = createResource("Testsuite/resources/CO/src.xmi");
 		t = loadResource("Testsuite/resources/" + trg + ".xmi");
-		c = createResource("Testsuite/instances/corr.xmi");
-		p = createResource("Testsuite/instances/protocol.xmi");
+		c = createResource("Testsuite/resources/CO/corr.xmi");
+		p = createResource("Testsuite/resources/CO/protocol.xmi");
 
 		EcoreUtil.resolveAll(rs);
 	}

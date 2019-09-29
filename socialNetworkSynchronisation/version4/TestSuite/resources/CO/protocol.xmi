@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:FacebookToInstagram="platform:/resource/FacebookToInstagram/model/FacebookToInstagram.ecore">
+  <FacebookToInstagram:UserToUserIslandRule__Marker>
+    <CREATE__SRC__flu href="../version4/users/FacebookNACFriendship.xmi#//@users.1"/>
+    <CREATE__TRG__fo href="trg.xmi#/0"/>
+    <CREATE__TRG__fr href="trg.xmi#/1"/>
+    <CREATE__TRG__ilu href="trg.xmi#/2"/>
+    <CREATE__TRG__to href="trg.xmi#/3"/>
+    <CREATE__CORR__f2i href="corr.xmi#/0"/>
+  </FacebookToInstagram:UserToUserIslandRule__Marker>
+  <FacebookToInstagram:NetworkToNetworkIslandRule__Marker>
+    <CREATE__SRC__fl href="../version4/users/FacebookNACFriendship.xmi#_0"/>
+    <CREATE__TRG__il href="trg.xmi#/4"/>
+    <CREATE__CORR__n2n href="corr.xmi#/1"/>
+  </FacebookToInstagram:NetworkToNetworkIslandRule__Marker>
+  <FacebookToInstagram:UserToUserIslandRule__Marker>
+    <CREATE__SRC__flu href="../version4/users/FacebookNACFriendship.xmi#_0.@users.0"/>
+    <CREATE__TRG__fo href="trg.xmi#/5"/>
+    <CREATE__TRG__fr href="trg.xmi#/6"/>
+    <CREATE__TRG__ilu href="trg.xmi#/7"/>
+    <CREATE__TRG__to href="trg.xmi#/8"/>
+    <CREATE__CORR__f2i href="corr.xmi#/2"/>
+  </FacebookToInstagram:UserToUserIslandRule__Marker>
+  <FacebookToInstagram:HandleIntraNetworkFollowers__Marker>
+    <CONTEXT__SRC__fn href="../version4/users/FacebookNACFriendship.xmi#_0.@users.0"/>
+    <CREATE__SRC__fri href="../version4/users/FacebookNACFriendship.xmi#//@friendships.0"/>
+    <CONTEXT__SRC__fu href="../version4/users/FacebookNACFriendship.xmi#//@users.1"/>
+    <CONTEXT__SRC__n href="../version4/users/FacebookNACFriendship.xmi#_0"/>
+    <CONTEXT__TRG__fon href="trg.xmi#/5"/>
+    <CONTEXT__TRG__fou href="trg.xmi#/0"/>
+    <CONTEXT__TRG__fru href="trg.xmi#/1"/>
+    <CONTEXT__TRG__in href="trg.xmi#/7"/>
+    <CONTEXT__TRG__iu href="trg.xmi#/2"/>
+    <CONTEXT__TRG__ton href="trg.xmi#/8"/>
+    <CONTEXT__CORR__fn2in href="corr.xmi#/2"/>
+    <CONTEXT__CORR__fu2iu href="corr.xmi#/0"/>
+  </FacebookToInstagram:HandleIntraNetworkFollowers__Marker>
+  <FacebookToInstagram:HandleIntraNetworkFollowers__Marker>
+    <CONTEXT__SRC__fn href="../version4/users/FacebookNACFriendship.xmi#//@users.1"/>
+    <CREATE__SRC__fri href="../version4/users/FacebookNACFriendship.xmi#//@friendships.1"/>
+    <CONTEXT__SRC__fu href="../version4/users/FacebookNACFriendship.xmi#_0.@users.0"/>
+    <CONTEXT__SRC__n href="../version4/users/FacebookNACFriendship.xmi#_0"/>
+    <CONTEXT__TRG__fon href="trg.xmi#/0"/>
+    <CONTEXT__TRG__fou href="trg.xmi#/5"/>
+    <CONTEXT__TRG__fru href="trg.xmi#/6"/>
+    <CONTEXT__TRG__in href="trg.xmi#/2"/>
+    <CONTEXT__TRG__iu href="trg.xmi#/7"/>
+    <CONTEXT__TRG__ton href="trg.xmi#/3"/>
+    <CONTEXT__CORR__fn2in href="corr.xmi#/0"/>
+    <CONTEXT__CORR__fu2iu href="corr.xmi#/2"/>
+  </FacebookToInstagram:HandleIntraNetworkFollowers__Marker>
+  <FacebookToInstagram:UserNetworkBridgeRule__Marker>
+    <CONTEXT__SRC__f href="../version4/users/FacebookNACFriendship.xmi#_0"/>
+    <CONTEXT__SRC__fu href="../version4/users/FacebookNACFriendship.xmi#//@users.1"/>
+    <CONTEXT__TRG__i href="trg.xmi#/4"/>
+    <CONTEXT__TRG__iu href="trg.xmi#/2"/>
+    <CONTEXT__CORR__f2i href="corr.xmi#/1"/>
+    <CONTEXT__CORR__fu2iu href="corr.xmi#/0"/>
+  </FacebookToInstagram:UserNetworkBridgeRule__Marker>
+  <FacebookToInstagram:UserNetworkBridgeRule__Marker>
+    <CONTEXT__SRC__f href="../version4/users/FacebookNACFriendship.xmi#_0"/>
+    <CONTEXT__SRC__fu href="../version4/users/FacebookNACFriendship.xmi#_0.@users.0"/>
+    <CONTEXT__TRG__i href="trg.xmi#/4"/>
+    <CONTEXT__TRG__iu href="trg.xmi#/7"/>
+    <CONTEXT__CORR__f2i href="corr.xmi#/1"/>
+    <CONTEXT__CORR__fu2iu href="corr.xmi#/2"/>
+  </FacebookToInstagram:UserNetworkBridgeRule__Marker>
+</xmi:XMI>

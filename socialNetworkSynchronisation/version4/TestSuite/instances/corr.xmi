@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:FacebookToInstagram="platform:/resource/FacebookToInstagram/model/FacebookToInstagram.ecore">
+  <FacebookToInstagram:FbUserToInUser>
+    <source href="../resources/CO/src.xmi#//@users.1"/>
+    <target href="../resources/version4/users/InstgramFollowershipUsers.xmi#//@users.1"/>
+  </FacebookToInstagram:FbUserToInUser>
+  <FacebookToInstagram:NetworkToNetwork>
+    <source href="../resources/CO/src.xmi#/"/>
+    <target href="../resources/version4/users/InstgramFollowershipUsers.xmi#_0"/>
+  </FacebookToInstagram:NetworkToNetwork>
+  <FacebookToInstagram:FbUserToInUser>
+    <source href="../resources/CO/src.xmi#//@users.0"/>
+    <target href="../resources/version4/users/InstgramFollowershipUsers.xmi#_0.@users.0"/>
+  </FacebookToInstagram:FbUserToInUser>
+</xmi:XMI>

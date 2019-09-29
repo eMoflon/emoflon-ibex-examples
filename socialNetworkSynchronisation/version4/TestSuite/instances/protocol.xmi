@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:FacebookToInstagram="platform:/resource/FacebookToInstagram/model/FacebookToInstagram.ecore">
+  <FacebookToInstagram:UserToUserIslandRule__Marker>
+    <CREATE__SRC__flu href="../resources/CO/src.xmi#//@users.1"/>
+    <CREATE__TRG__fo href="../resources/version4/users/InstgramFollowershipUsers.xmi#//@users.1/@followerships"/>
+    <CREATE__TRG__fr href="../resources/version4/users/InstgramFollowershipUsers.xmi#//@users.1/@followerships/@from"/>
+    <CREATE__TRG__ilu href="../resources/version4/users/InstgramFollowershipUsers.xmi#//@users.1"/>
+    <CREATE__TRG__to href="../resources/version4/users/InstgramFollowershipUsers.xmi#//@users.1/@followerships/@to"/>
+    <CREATE__CORR__f2i href="corr.xmi#/0"/>
+  </FacebookToInstagram:UserToUserIslandRule__Marker>
+  <FacebookToInstagram:NetworkToNetworkIslandRule__Marker>
+    <CREATE__SRC__fl href="../resources/CO/src.xmi#/"/>
+    <CREATE__TRG__il href="../resources/version4/users/InstgramFollowershipUsers.xmi#_0"/>
+    <CREATE__CORR__n2n href="corr.xmi#/1"/>
+  </FacebookToInstagram:NetworkToNetworkIslandRule__Marker>
+  <FacebookToInstagram:UserNetworkBridgeRule__Marker>
+    <CONTEXT__SRC__f href="../resources/CO/src.xmi#/"/>
+    <CONTEXT__SRC__fu href="../resources/CO/src.xmi#//@users.1"/>
+    <CONTEXT__TRG__i href="../resources/version4/users/InstgramFollowershipUsers.xmi#_0"/>
+    <CONTEXT__TRG__iu href="../resources/version4/users/InstgramFollowershipUsers.xmi#//@users.1"/>
+    <CONTEXT__CORR__f2i href="corr.xmi#/1"/>
+    <CONTEXT__CORR__fu2iu href="corr.xmi#/0"/>
+  </FacebookToInstagram:UserNetworkBridgeRule__Marker>
+  <FacebookToInstagram:UserToUserIslandRule__Marker>
+    <CREATE__SRC__flu href="../resources/CO/src.xmi#//@users.0"/>
+    <CREATE__TRG__fo href="../resources/version4/users/InstgramFollowershipUsers.xmi#//@users.0/@followerships"/>
+    <CREATE__TRG__fr href="../resources/version4/users/InstgramFollowershipUsers.xmi#//@users.0/@followerships/@from"/>
+    <CREATE__TRG__ilu href="../resources/version4/users/InstgramFollowershipUsers.xmi#_0.@users.0"/>
+    <CREATE__TRG__to href="../resources/version4/users/InstgramFollowershipUsers.xmi#//@users.0/@followerships/@to"/>
+    <CREATE__CORR__f2i href="corr.xmi#/2"/>
+  </FacebookToInstagram:UserToUserIslandRule__Marker>
+  <FacebookToInstagram:HandleIntraNetworkFollowers__Marker>
+    <CONTEXT__SRC__fn href="../resources/CO/src.xmi#//@users.1"/>
+    <CREATE__SRC__fri href="../resources/CO/src.xmi#//@friendships.0"/>
+    <CONTEXT__SRC__fu href="../resources/CO/src.xmi#//@users.0"/>
+    <CONTEXT__SRC__n href="../resources/CO/src.xmi#/"/>
+    <CONTEXT__TRG__fon href="../resources/version4/users/InstgramFollowershipUsers.xmi#//@users.1/@followerships"/>
+    <CONTEXT__TRG__fou href="../resources/version4/users/InstgramFollowershipUsers.xmi#//@users.0/@followerships"/>
+    <CONTEXT__TRG__fru href="../resources/version4/users/InstgramFollowershipUsers.xmi#//@users.0/@followerships/@from"/>
+    <CONTEXT__TRG__in href="../resources/version4/users/InstgramFollowershipUsers.xmi#//@users.1"/>
+    <CONTEXT__TRG__iu href="../resources/version4/users/InstgramFollowershipUsers.xmi#_0.@users.0"/>
+    <CONTEXT__TRG__ton href="../resources/version4/users/InstgramFollowershipUsers.xmi#//@users.1/@followerships/@to"/>
+    <CONTEXT__CORR__fn2in href="corr.xmi#/0"/>
+    <CONTEXT__CORR__fu2iu href="corr.xmi#/2"/>
+  </FacebookToInstagram:HandleIntraNetworkFollowers__Marker>
+  <FacebookToInstagram:UserNetworkBridgeRule__Marker>
+    <CONTEXT__SRC__f href="../resources/CO/src.xmi#/"/>
+    <CONTEXT__SRC__fu href="../resources/CO/src.xmi#//@users.0"/>
+    <CONTEXT__TRG__i href="../resources/version4/users/InstgramFollowershipUsers.xmi#_0"/>
+    <CONTEXT__TRG__iu href="../resources/version4/users/InstgramFollowershipUsers.xmi#_0.@users.0"/>
+    <CONTEXT__CORR__f2i href="corr.xmi#/1"/>
+    <CONTEXT__CORR__fu2iu href="corr.xmi#/2"/>
+  </FacebookToInstagram:UserNetworkBridgeRule__Marker>
+  <FacebookToInstagram:HandleIntraNetworkFollowers__Marker>
+    <CONTEXT__SRC__fn href="../resources/CO/src.xmi#//@users.0"/>
+    <CREATE__SRC__fri href="../resources/CO/src.xmi#//@friendships.1"/>
+    <CONTEXT__SRC__fu href="../resources/CO/src.xmi#//@users.1"/>
+    <CONTEXT__SRC__n href="../resources/CO/src.xmi#/"/>
+    <CONTEXT__TRG__fon href="../resources/version4/users/InstgramFollowershipUsers.xmi#//@users.0/@followerships"/>
+    <CONTEXT__TRG__fou href="../resources/version4/users/InstgramFollowershipUsers.xmi#//@users.1/@followerships"/>
+    <CONTEXT__TRG__fru href="../resources/version4/users/InstgramFollowershipUsers.xmi#//@users.1/@followerships/@from"/>
+    <CONTEXT__TRG__in href="../resources/version4/users/InstgramFollowershipUsers.xmi#_0.@users.0"/>
+    <CONTEXT__TRG__iu href="../resources/version4/users/InstgramFollowershipUsers.xmi#//@users.1"/>
+    <CONTEXT__TRG__ton href="../resources/version4/users/InstgramFollowershipUsers.xmi#//@users.0/@followerships/@to"/>
+    <CONTEXT__CORR__fn2in href="corr.xmi#/2"/>
+    <CONTEXT__CORR__fu2iu href="corr.xmi#/0"/>
+  </FacebookToInstagram:HandleIntraNetworkFollowers__Marker>
+</xmi:XMI>
